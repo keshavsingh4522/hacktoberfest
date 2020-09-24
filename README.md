@@ -21,7 +21,7 @@
 
 📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
 
-> Few issues for developer's. Take up any issue and send your first PR! 
+>send your first PR! 
 
 | Repository  | Issues  | Pull Requests  | Forks |
 |---|---|---|---|
