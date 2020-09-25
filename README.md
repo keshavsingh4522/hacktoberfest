@@ -14,6 +14,8 @@
 
 
  <a href="https://github.com/keshavsingh4522/hacktoberfest2020/pulls"><img src="https://img.shields.io/github/issues-pr/keshavsingh4522/hacktoberfest2020" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/keshavsingh4522/hacktoberfest2020/blob/master/LICENSE"><img src="https://img.shields.io/github/license/keshavsingh4522/hacktoberfest2020?color=2b9348" alt="License Badge"/></a>
+
 </div>
 
 
