@@ -39,3 +39,16 @@
 
 To the extent possible under law, [Keshav Singh](https://www.linkedin.com/in/keshavsingh4522/) has waived all copyright and related or neighboring rights to this work.
 
+***
+Steps for adding your name below
+
+    1. Fork this repo
+    2. Edit this file to include your information under "Participants"
+    3. Add your Name also link your github profile
+    4. Make pull request
+
+<h1 align="center">Participents<h1>
+
+| Name | Github |
+| ---- | ------ |
+| Keshav Singh | [@keshavsingh4522](https://github.com/keshavsingh4522/) |
