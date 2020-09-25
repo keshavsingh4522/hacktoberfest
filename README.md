@@ -35,7 +35,7 @@
 ## Rules
 
 - Don't use dirty words and be welcome for beginners and other people in this community.
-- Add your code,files or project in **Hactoberfest2020** folder, this folder is present in each resporatory which is mentioned below
+- Add your code,files or project in **Hactoberfest2020** folder, this folder is present in each resporatory which is mentioned above
 
 ## License 
 
