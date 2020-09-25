@@ -37,12 +37,6 @@
 - Don't use dirty words and be welcome for beginners and other people in this community.
 - Add your code,files or project in **Hactoberfest2020** folder, this folder is present in each resporatory which is mentioned above
 
-## License 
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Keshav Singh](https://www.linkedin.com/in/keshavsingh4522/) has waived all copyright and related or neighboring rights to this work.
-
 ***
 Steps for adding your name below
 
@@ -56,3 +50,14 @@ Steps for adding your name below
 | Name | Github |
 | ---- | ------ |
 | Keshav Singh | [@keshavsingh4522](https://github.com/keshavsingh4522/) |
+
+
+***
+
+## License 
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [Keshav Singh](https://www.linkedin.com/in/keshavsingh4522/) has waived all copyright and related or neighboring rights to this work.
+
+<img src="Assets/SponsorsDarkBoxed.svg" align="center" />
