@@ -47,7 +47,7 @@ Steps for adding your name below
     3. Add your Name also link your github profile
     4. Make pull request
 
-<h1 align="center">Participents<h1>
+<h1 align="center">Participents</h1>
 
 | Name | Github |
 | ---- | ------ |
