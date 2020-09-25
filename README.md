@@ -21,7 +21,7 @@
 
 📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
 
-> Add important code, files or project in **Hactoberfest2020** secton, this folder is present in each resporatory ,now send your first PR! 
+> Add important code, files or project in **Hactoberfest2020** folder, this folder is present in each resporatory ,now send your first PR! 
 
 | Repository  | Issues  | Pull Requests  | Forks |
 |---|---|---|---|
