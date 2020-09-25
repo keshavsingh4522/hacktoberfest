@@ -34,7 +34,6 @@
 
 ## Rules
 
-Please submit only one pull request at the time and don't spam. Please wait until your pull request is reviewed, it can take some time.
 Don't use dirty words and be welcome for beginners and other people in this community.
 
 ## License 
