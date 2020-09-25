@@ -32,6 +32,10 @@
 | [Bootstrap](https://github.com/keshavsingh4522/Bootstrap/) | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/Bootstrap?color=pink&logo=github)](https://github.com/keshavsingh4522/Bootstrap/issues)  | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/Bootstrap?style=social&logo=github)](https://github.com/keshavsingh4522/Bootstrap/pulls) | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/Bootstrap?style=flat-square&logo=git)](https://github.com/keshavsingh4522/Bootstrap/network) |
 | [HTML5](https://github.com/keshavsingh4522/HTML5/) | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/HTML5?color=pink&logo=github)](https://github.com/keshavsingh4522/HTML5/issues)  | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/HTML5?style=social&logo=github)](https://github.com/keshavsingh4522/HTML5/pulls)  | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/HTML5?logo=git)](https://github.com/keshavsingh4522/HTML5/network) |
 
+## Rules
+
+Please submit only one pull request at the time and don't spam. Please wait until your pull request is reviewed, it can take some time.
+Don't use dirty words and be welcome for beginners and other people in this community.
 
 ## License 
 
