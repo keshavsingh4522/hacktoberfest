@@ -63,6 +63,7 @@ Steps for adding your name below
 | Aman Gupta | [@find-aman](https://github.com/find-aman) |
 | Vatsal Narwal | [@VatsalNarwal](https://github.com/VatsalNarwal) |
 | Pratik Shirodkar|[@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)|
+| Kanishk J |[@Kanishk7559](https://github.com/kanishk7559)|
 ***
 
 ## License 
