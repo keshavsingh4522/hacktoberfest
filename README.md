@@ -61,6 +61,7 @@ Steps for adding your name below
 | Sarthak Shastri | [@sarthak815](https://github.com/sarthak815) |
 | Aman Gupta | [@find-aman](https://github.com/find-aman) |
 | Vatsal Narwal | [@VatsalNarwal](https://github.com/VatsalNarwal) |
+| Pratik Shirodkar|[@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)|
 ***
 
 ## License 
