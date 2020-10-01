@@ -59,6 +59,7 @@ Steps for adding your name below
 | Siddarth Awasthi | [@siddarth308](https://github.com/siddarth308/) |
 | Hero Tiwari | [@Skywalkers-24](https://github.com/Skywalkers-24/) |
 | Sarthak Shastri | [@sarthak815](https://github.com/sarthak815) |
+| Aman Gupta | [@find-aman](https://github.com/find-aman) |
 ***
 
 ## License 
