@@ -57,7 +57,7 @@ Steps for adding your name below
 | Richard Timothy | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |
 | Sumit Soni | [@isumit19](https://github.com/isumit19/) |
 | Siddarth Awasthi | [@siddarth308](https://github.com/siddarth308/) |
-
+| Hero Tiwari | [@Skywalkers-24](https://github.com/Skywalkers-24/) |
 ***
 
 ## License 
