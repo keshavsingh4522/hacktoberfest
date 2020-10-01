@@ -13,7 +13,8 @@
  <a href="https://github.com/keshavsingh4522" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
 
 
- <a href="https://github.com/keshavsingh4522/hacktoberfest2020/pulls"><img src="https://img.shields.io/github/issues-pr/keshavsingh4522/hacktoberfest2020" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/keshavsingh4522/hacktoberfest2020/pulls"><img src="https://img.shields.io/github/issues-pr/keshavsingh4522/hacktoberfest2020" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/keshavsingh4522/hacktoberfest2020/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/keshavsingh4522/hacktoberfest2020?color=2b9348"></a>
 <a href="https://github.com/keshavsingh4522/hacktoberfest2020/blob/master/LICENSE"><img src="https://img.shields.io/github/license/keshavsingh4522/hacktoberfest2020?color=2b9348" alt="License Badge"/></a>
 
 </div>
