@@ -58,6 +58,7 @@ Steps for adding your name below
 | Sumit Soni | [@isumit19](https://github.com/isumit19/) |
 | Siddarth Awasthi | [@siddarth308](https://github.com/siddarth308/) |
 | Hero Tiwari | [@Skywalkers-24](https://github.com/Skywalkers-24/) |
+| Sarthak Shastri | [@sarthak815](https://github.com/sarthak815) |
 ***
 
 ## License 
