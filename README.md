@@ -60,6 +60,7 @@ Steps for adding your name below
 | Hero Tiwari | [@Skywalkers-24](https://github.com/Skywalkers-24/) |
 | Sarthak Shastri | [@sarthak815](https://github.com/sarthak815) |
 | Aman Gupta | [@find-aman](https://github.com/find-aman) |
+| Vatsal Narwal | [@VatsalNarwal](https://github.com/VatsalNarwal) |
 ***
 
 ## License 
