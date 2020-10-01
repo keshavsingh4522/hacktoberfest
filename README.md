@@ -55,6 +55,7 @@ Steps for adding your name below
 | Justinus Hermawan | [@justinushermawan](https://github.com/justinushermawan/) |
 | Shruti Jha       | [@ShrutiJha31](https://github.com/ShrutiJha31/) |
 | Richard Timothy | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |
+| Sumit Soni | [@isumit19](https://github.com/isumit19/) |
 
 ***
 
