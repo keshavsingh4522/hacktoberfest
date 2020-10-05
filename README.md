@@ -13,7 +13,8 @@
  <a href="https://github.com/keshavsingh4522" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
 
 
- <a href="https://github.com/keshavsingh4522/hacktoberfest2020/pulls"><img src="https://img.shields.io/github/issues-pr/keshavsingh4522/hacktoberfest2020" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/keshavsingh4522/hacktoberfest2020/pulls"><img src="https://img.shields.io/github/issues-pr/keshavsingh4522/hacktoberfest2020" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/keshavsingh4522/hacktoberfest2020/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/keshavsingh4522/hacktoberfest2020?color=2b9348"></a>
 <a href="https://github.com/keshavsingh4522/hacktoberfest2020/blob/master/LICENSE"><img src="https://img.shields.io/github/license/keshavsingh4522/hacktoberfest2020?color=2b9348" alt="License Badge"/></a>
 
 </div>
@@ -23,7 +24,7 @@
 
 📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
 
-> Add important code, files or project in **Hactoberfest2020** folder, this folder is present in each resporatory ,now send your first PR! 
+> Add important code, files or project in **Hactoberfest2020** folder, this folder is present in each repository which is mentioned below, now send your first PR! 
 
 | Repository  | Issues  | Pull Requests  | Forks |
 |---|---|---|---|
@@ -47,14 +48,26 @@ Steps for adding your name below
     3. Add your Name also link your github profile
     4. Make pull request
 
-<h1 align="center">Participents</h1>
+<h1 align="center">Participants</h1>
 
 | Name | Github |
 | ---- | ------ |
 | Keshav Singh | [@keshavsingh4522](https://github.com/keshavsingh4522/) |
 | Justinus Hermawan | [@justinushermawan](https://github.com/justinushermawan/) |
-
-
+| Shruti Jha       | [@ShrutiJha31](https://github.com/ShrutiJha31/) |
+| Richard Timothy | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |
+| Sumit Soni | [@isumit19](https://github.com/isumit19/) |
+| Siddarth Awasthi | [@siddarth308](https://github.com/siddarth308/) |
+| Hero Tiwari | [@Skywalkers-24](https://github.com/Skywalkers-24/) |
+| Sarthak Shastri | [@sarthak815](https://github.com/sarthak815) |
+| Aman Gupta | [@find-aman](https://github.com/find-aman) |
+| Vatsal Narwal | [@VatsalNarwal](https://github.com/VatsalNarwal) |
+| Pratik Shirodkar|[@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)|
+| Kanishk J |[@Kanishk7559](https://github.com/kanishk7559)
+| Misa Dravid|[@Misa-Dravid](https://github.com/misa-bot)|
+| Pranjal Soni|[@sonipranjal](https://github.com/sonipranjal)|
+| Rithvik Ayithapu|[@rithvik2607](https://github.com/rithvik2607)|
+| Divy | [@dr-one-punch](https://github.com/dr-one-punch) |
 ***
 
 ## License 
