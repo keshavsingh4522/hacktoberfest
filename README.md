@@ -68,6 +68,7 @@ Steps for adding your name below
 | Pranjal Soni|[@sonipranjal](https://github.com/sonipranjal)|
 | Rithvik Ayithapu|[@rithvik2607](https://github.com/rithvik2607)|
 | Divy | [@dr-one-punch](https://github.com/dr-one-punch) |
+| Juli Cheng | [@julicheng](https://github.com/julicheng) |
 ***
 
 ## License 
