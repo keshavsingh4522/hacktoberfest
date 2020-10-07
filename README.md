@@ -69,6 +69,7 @@ Steps for adding your name below
 | Divy              | [@dr-one-punch](https://github.com/dr-one-punch)              |
 | Juli Cheng        | [@julicheng](https://github.com/julicheng)                    |
 | Dakshay Ahuja     | [@dakshayahuja](https://github.com/dakshayahuja)              |
+| Aman Jain         | [@amanjain](https://github.io/amnjain)                        |
 
 ---
 
