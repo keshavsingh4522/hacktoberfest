@@ -24,6 +24,10 @@
 
 > Add important code, files or project in **Hactoberfest2020** folder, this folder is present in each repository which is mentioned below, now send your first PR!
 
+<b align="center">OR</b>
+
+> Upload your code in this repository to particular section if folder is not present then create folder. 
+
 | Repository                                                  | Issues                                                                                                                                                           | Pull Requests                                                                                                                                                     | Forks                                                                                                                                                             |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Python](https://github.com/keshavsingh4522/Python)         | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/Python?color=pink&logo=github)](https://github.com/keshavsingh4522/Python/issues)         | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/Python?style=social&logo=github)](https://github.com/keshavsingh4522/Python/pulls)         | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/Python?logo=git)](https://github.com/keshavsingh4522/Python/network)                         |
@@ -36,7 +40,6 @@
 ## Rules
 
 - Don't use dirty words and be welcome for beginners and other people in this community.
-- Add your code,files or project in **Hactoberfest2020** folder, this folder is present in each resporatory which is mentioned above
 
 ---
 
