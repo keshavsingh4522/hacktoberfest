@@ -74,7 +74,6 @@ Steps for adding your name below
 | Dakshay Ahuja     | [@dakshayahuja](https://github.com/dakshayahuja)              |
 | Aman Jain         | [@amanjain](https://github.io/amnjain)                        |
 | Satyam Gadekar    | [@07Satyam](https://github.com/07Satyam)                      |
-| Musadiq Peerzada  | [@muxa11] (https://github.com/muxa11)                         |
 
 ---
 
