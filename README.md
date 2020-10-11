@@ -76,7 +76,7 @@ Steps for adding your name below
 | Satyam Gadekar    | [@07Satyam](https://github.com/07Satyam)                      |
 | Musadiq Peerzada  | [@muxa11](https://github.com/muxa11)                          |
 | Mayank Sharma     | [@MayankGeek](https://github.com/MayankGeek)                  |
-
+| Ananya Sajwan    | [@ananya2407](https://github.com/ananya2407)                  |
 ---
 
 ## License
