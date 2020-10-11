@@ -78,6 +78,8 @@ Steps for adding your name below
 | Mayank Sharma     | [@MayankGeek](https://github.com/MayankGeek)                  |
 | Ananya Sajwan    | [@ananya2407](https://github.com/ananya2407)                   |
 | Phagun Jain    | [@PHAGUN-JAIN](https://github.com/PHAGUN-JAIN)                   |
+| Deepakshi Sood    | [@deepakshisud](https://github.com/deepakshisud)              |
+
 ---
 
 ## License
