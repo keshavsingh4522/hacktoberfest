@@ -77,6 +77,7 @@ Steps for adding your name below
 | Musadiq Peerzada  | [@muxa11](https://github.com/muxa11)                          |
 | Mayank Sharma     | [@MayankGeek](https://github.com/MayankGeek)                  |
 | Ananya Sajwan    | [@ananya2407](https://github.com/ananya2407)                  |
+| Deepakshi Sood    | [@deepakshisud](https://github.com/deepakshisud)              |
 ---
 
 ## License
