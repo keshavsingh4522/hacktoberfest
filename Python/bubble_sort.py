@@ -11,8 +11,9 @@ def bubble_sort(list):
         list[j], list[j + 1] = list[j + 1], list[j]
 
 #Test simple
-list = [71, 77, 9, 11, 88]
+example_list = [71, 77, 9, 11, 88]
 
 #call function
-bubble_sort(list)
-print(list)
+bubble_sort(example_list)
+print(example_list)
+#OUTPUT: [9, 11, 71, 77, 88]
