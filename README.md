@@ -80,6 +80,8 @@ Steps for adding your name below
 | Phagun Jain    | [@PHAGUN-JAIN](https://github.com/PHAGUN-JAIN)                   |
 | Deepakshi Sood    | [@deepakshisud](https://github.com/deepakshisud)              |
 | Swayamsidh Nayak  | [@swayam50](https://github.com/swayam50)                      |
+| Arigato haxroot   | [@Arigatohaxroot](https://github.com/Arigatohaxroot)          |
+
 
 ---
 
