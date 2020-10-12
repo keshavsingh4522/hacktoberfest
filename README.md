@@ -79,8 +79,8 @@ Steps for adding your name below
 | Ananya Sajwan    | [@ananya2407](https://github.com/ananya2407)                   |
 | Phagun Jain    | [@PHAGUN-JAIN](https://github.com/PHAGUN-JAIN)                   |
 | Deepakshi Sood    | [@deepakshisud](https://github.com/deepakshisud)              |
-| Swayamsidh Nayak  | [@swayam50](https://github.com/swayam50)                      | Arigato haxroot   |[@Arigatohaxroot]
-(https://github.com/Arigatohaxroot)
+| Swayamsidh Nayak  | [@swayam50](https://github.com/swayam50)                      |
+| Arigato haxroot   | [@Arigatohaxroot](https://github.com/Arigatohaxroot)          |
 
 
 ---
