@@ -81,6 +81,7 @@ Steps for adding your name below
 | Deepakshi Sood    | [@deepakshisud](https://github.com/deepakshisud)              |
 | Swayamsidh Nayak  | [@swayam50](https://github.com/swayam50)                      |
 | Arigato haxroot   | [@Arigatohaxroot](https://github.com/Arigatohaxroot)          |
+| Muhammad Bilal    | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |
 
 
 ---
