@@ -82,6 +82,8 @@ Steps for adding your name below
 | Swayamsidh Nayak  | [@swayam50](https://github.com/swayam50)                      |
 | Arigato haxroot   | [@Arigatohaxroot](https://github.com/Arigatohaxroot)          |
 | Rupali            | [@Rupali409](https://github.com/Rupali409)                    |
+| Muhammad Bilal    | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |
+
 
 ---
 
