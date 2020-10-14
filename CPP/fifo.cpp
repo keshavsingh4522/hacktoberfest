@@ -32,7 +32,6 @@ public:
 
 class FIFO2 : public FIFO		// Child Class
 {
-
 public:
 	FIFO2() : FIFO()
 	{
