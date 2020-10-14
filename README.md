@@ -85,7 +85,7 @@ Steps for adding your name below
 | Muhammad Bilal    | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |
 | Sandi Aris        | [@Sandi-aris](https://github.com/sandi-aris)                  |
 | Misbahud Din      | [@Misbahud-Din](https://github.com/Misbahud-Din)              |
-
+| Rohit P S         | [@rockchipgh](https://github.com/rockchipgh)                  |
 
 ---
 
