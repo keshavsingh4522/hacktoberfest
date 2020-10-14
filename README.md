@@ -86,7 +86,7 @@ Steps for adding your name below
 | Sandi Aris        | [@Sandi-aris](https://github.com/sandi-aris)                  |
 | Misbahud Din      | [@Misbahud-Din](https://github.com/Misbahud-Din)              |
 | Ganzabahl         | [@Ganzabahl](https://github.com/Ganzabahl)                    |
-
+| Ashish            | [@ashish-garg18](https://github.com/ashish-garg18)            |
 
 ---
 
