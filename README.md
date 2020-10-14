@@ -83,6 +83,7 @@ Steps for adding your name below
 | Arigato haxroot   | [@Arigatohaxroot](https://github.com/Arigatohaxroot)          |
 | Rupali            | [@Rupali409](https://github.com/Rupali409)                    |
 | Muhammad Bilal    | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |
+| Sandi Aris        | [@Sandi-aris](https://github.com/sandi-aris)                  |
 
 
 ---
