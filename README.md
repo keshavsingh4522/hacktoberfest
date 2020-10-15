@@ -87,6 +87,7 @@ Steps for adding your name below
 | Misbahud Din      | [@Misbahud-Din](https://github.com/Misbahud-Din)              |
 | Ganzabahl         | [@Ganzabahl](https://github.com/Ganzabahl)                    |
 | Ashish            | [@ashish-garg18](https://github.com/ashish-garg18)            |
+| Mitarth Jain      | [@mitarthjain](https://github.com/mitarthjain)                |
 
 ---
 
