@@ -2,19 +2,20 @@
 print("enter list elements: ")
 sample = list(map(int, input().split()))
  
-sum = 0
+sumi = 0
  
 sum_left=[]
 for val in sample:
-    sum += val
-    sum_left.append(sum)
+    sumi += val
+    sum_left.append(sumi)
      
 sum_right=[]
 for val in sample:
-    sum_right.append(sum)
-    sum -= val
- 
-for i in range(len(sum_left)):
+    sum_right.append(sumi)
+    sumi -= val
+
+k=len(sum_left)
+for i in range(k):
     if sum_left[i] == sum_right[i]:
         print(f"Matching index is {i}.")
         break
