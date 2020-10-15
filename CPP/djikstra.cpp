@@ -31,7 +31,6 @@ int main()
 		sptset[idx] = true;
 		for(int i = 0;i<adj[idx].size();i++)
 		{
-
 			int v = (adj[idx][i]).first;
 			int w = (adj[idx][i]).second;
 			if((sptset[v]==false) && dist[v]>dist[idx]+w)
