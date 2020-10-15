@@ -10,7 +10,6 @@ int main()
 		int src,dest,w;
 		cin>>src>>dest>>w;
 		adj[src].push_back({dest,w});
-
 	}
 	int src;
 	cin>>src;
@@ -51,5 +50,4 @@ int main()
 	}
 	for(int i=0;i<v;i++)cout<<dist[i]<<' ';
 	cout<<endl;
-
 }
