@@ -106,6 +106,7 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/Misbahud-Din"><img src="https://avatars3.githubusercontent.com/Misbahud-Din?size=400" width="100px;" alt=""/><br /><sub><b>Misbahud Din</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Misbahud-Din" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/Ganzabahl"><img src="https://avatars3.githubusercontent.com/Ganzabahl?size=400" width="100px;" alt=""/><br /><sub><b>Ganzabahl</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Ganzabahl" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/ashish-garg18"><img src="https://avatars3.githubusercontent.com/ashish-garg18?size=400" width="100px;" alt=""/><br /><sub><b>Ashish</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ashish-garg18" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/mitarthjain"><img src="https://avatars3.githubusercontent.com/mitarthjain?size=400" width="100px;" alt=""/><br /><sub><b>Mitarth Jain</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=mitarthjain" title="Code">💻</a></td>  
 </tr>
 </table>
 
