@@ -48,7 +48,6 @@ Steps for adding your name below
     3. Add your Name also link your github profile
     4. Make pull request
 
-*Note :* _we will add you in contributers section as soon as possible_
 
 ## Contributors
 
@@ -76,7 +75,7 @@ Steps for adding your name below
 
 </tr>
 <tr>
-<td align="center"><a href="https://github.com/Misa-Dravid"><img src="https://avatars3.githubusercontent.com/Misa-Dravid?size=400" width="100px;" alt=""/><br /><sub><b>Misa Dravid</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Misa-Dravid" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/misa-bot"><img src="https://avatars3.githubusercontent.com/misa-bot?size=400" width="100px;" alt=""/><br /><sub><b>Misa Dravid</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Misa-Dravid" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/sonipranjal"><img src="https://avatars3.githubusercontent.com/sonipranjal?size=400" width="100px;" alt=""/><br /><sub><b>Pranjal Soni</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=sonipranjal" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/rithvik2607"><img src="https://avatars3.githubusercontent.com/rithvik2607?size=400" width="100px;" alt=""/><br /><sub><b>Rithvik Ayithapu</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=rithvik2607" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/dr-one-punch"><img src="https://avatars3.githubusercontent.com/dr-one-punch?size=400" width="100px;" alt=""/><br /><sub><b>Divy</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=dr-one-punch" title="Code">💻</a></td>
@@ -113,7 +112,8 @@ Steps for adding your name below
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-This project follows the [all-contributors](https://github.com/keshavsingh4522/hacktoberfest2020) specification. Contributions of any kind welcome!
+
+Contributions of any kind welcome!
 
 >    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
 
