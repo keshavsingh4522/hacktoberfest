@@ -33,4 +33,5 @@
 | Misbahud Din      | [@Misbahud-Din](https://github.com/Misbahud-Din)              |
 | Ganzabahl         | [@Ganzabahl](https://github.com/Ganzabahl)                    |
 | Ashish            | [@ashish-garg18](https://github.com/ashish-garg18)            |
-| Mitarth Jain      | [@mitarthjain](https://github.com/mitarthjain)                |
+| Mitarth Jain      | [@mitarthjain](https://github.com/mitarthjain)  
+| Arisandi          | [@arisandi1](https://github.com/arisandi1) |
