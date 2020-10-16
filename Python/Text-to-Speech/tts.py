@@ -1,4 +1,4 @@
-from tkinter import Button,Entry,Image,Label,LabelFrame,Pack,Place,PhotoImage,Spinbox,Text,Tk,END
+from tkinter import Button,Entry,Label,LabelFrame,Pack,Place,PhotoImage,Spinbox,Text,Tk,END
 from PIL import Image, ImageTk
 import tkinter.font as font
 import pyttsx3
