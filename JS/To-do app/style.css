@@ -19,7 +19,7 @@
 	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	border: 2px solid black;
 	background-image: linear-gradient(120deg,#fd9644,#e15f41);
 	/*background-image: linear-gradient(120deg,#ffc048,#fd9644);*/
