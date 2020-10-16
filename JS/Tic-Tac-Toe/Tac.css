@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	transform: scale(0.4,0.6);
+}
+
+button {
+	height: 50px;
+	width: 200px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.PlayerX {
+	position: absolute;
+	top: 8%;
+	left: 33%;
+}
+.PlayerY {
+	position: absolute;
+	top: 8%;
+	left: 50%;
+}
+
+.cont {
+	flex: 1 0 30%;
+	min-height: 33.33vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.one {
+	border-right: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+.two {
+	border-right: 10px solid black;
+	border-bottom: 10px solid black;
+	pointer-events: none;
+}
+
+.three {
+	border-bottom: 10px solid black;	
+}
+
+.four {
+	border-right: 10px solid black;
+	border-bottom: 10px solid black;	
+}
+
+.five {
+	border-right: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+.six {
+	border-bottom: 10px solid black;		
+}
+
+.seven {
+	border-right: 10px solid black;
+}
+
+.eight {
+	border-right: 10px solid black;
+}
+
+.nine {
+
+}	
+
+.cont.x:hover::before {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 200px;
+		background-color: gray;
+		transform: rotate(45deg);
+	}
+
+.cont.x:hover::after {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 200px;
+		background-color: gray;
+		transform: rotate(-45deg);
+	}		
+
+.cont.circle:hover::before {
+		content: "";
+		position: absolute;
+		width: 170px;
+		height: 150px;
+		border-radius: 50%;
+		border: 20px solid gray;
+	}
+
+.cont.X::before {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 200px;
+		background-color: black;
+		transform: rotate(45deg);
+	}
+
+.cont.X::after {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 200px;
+		background-color: black;
+		transform: rotate(-45deg);
+	}		
+
+.cont.O::before {
+		content: "";
+		position: absolute;
+		width: 170px;
+		height: 150px;
+		border-radius: 50%;
+		border: 20px solid black;
+	}
+
+.message {
+	width: 200px;
+	height: 100px;
+	font-style: 30px;
+	border: 2px solid black;
+	position: absolute;
+	top: 85vh;
+	left: 40vw;
+}	
