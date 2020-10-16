@@ -38,3 +38,5 @@
 | Shaunak Deshpande | [@Shaunak04](https://github.com/Shaunak04)                    |
 | Nikhil Chapre     | [@NikhilC2209](https://github.com/NikhilC2209)                |
 | Ankit Sharma      | [@ANKITSHARMA98](https://github.com/ANKITSHARMA98)            |
+| Nikhil Sachan     | [@nikhil254](https://github.com/nikhil254)                    |
+| Ritik Bagora      | [@ritik1999](https://github.com/ritik1999)                    |
