@@ -40,3 +40,4 @@
 | Ankit Sharma      | [@ANKITSHARMA98](https://github.com/ANKITSHARMA98)            |
 | Nikhil Sachan     | [@nikhil254](https://github.com/nikhil254)                    |
 | Ritik Bagora      | [@ritik1999](https://github.com/ritik1999)                    |
+| Ananya Sharma     | [@AnanyaSharma22](https://github.com/AnanyaSharma22)          |
