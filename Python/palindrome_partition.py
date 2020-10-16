@@ -32,13 +32,11 @@ def palindromePartitions(string):
 
     findAllPartitions(allPartitions, subPartitions, 0, len(string), string)
     
-    for i in range(len(allPartitions)): 
-        for j in range(len(allPartitions[i])): 
-            print(allPartitions[i][j], end = " ") 
+    for i in enumerate(allPartitions):
+        for j in enumerate(allPartitions[i[0]]):
+            print(allPartitions[i[0]][j[0]], end = " ") 
         print() 
 
 #Take a string input
 string = str(input())
 palindromePartitions(string) 
-
-
