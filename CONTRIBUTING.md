@@ -35,3 +35,4 @@
 | Ashish            | [@ashish-garg18](https://github.com/ashish-garg18)            |
 | Mitarth Jain      | [@mitarthjain](https://github.com/mitarthjain)                |
 | Arisandi          | [@arisandi1](https://github.com/arisandi1)                    |
+| Shaunak Deshpande | [@Shaunak04](https://github.com/Shaunak04)                    |
