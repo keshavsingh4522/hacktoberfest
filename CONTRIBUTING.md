@@ -42,3 +42,4 @@
 | Ritik Bagora      | [@ritik1999](https://github.com/ritik1999)                    |
 | Raghav Agarwal    | [@ragharwal](https://github.com/ragharwal)                    |
 | Ananya Sharma     | [@AnanyaSharma22](https://github.com/AnanyaSharma22)          |
+| Tanmay Khandelwal | [@Dude-901](https://github.com/Dude-901)                      |
