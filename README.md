@@ -44,7 +44,7 @@
 Steps for adding your name below
 
     1. Fork this repo
-    2. Edit `CONTRIBUTING.md` file
+    2. Edit `CONTRIBUTERS.md` file
     3. Add your Name also link your github profile
     4. Make pull request
 
@@ -115,6 +115,14 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/ANKITSHARMA98"><img src="https://avatars3.githubusercontent.com/ANKITSHARMA98?size=400" width="100px;" alt=""/><br /><sub><b>Ankit Sharma</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ANKITSHARMA98" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/nikhil254"><img src="https://avatars3.githubusercontent.com/nikhil254?size=400" width="100px;" alt=""/><br /><sub><b>Nikhil Sachan</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=nikhil254" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/ritik1999"><img src="https://avatars3.githubusercontent.com/ritik1999?size=400" width="100px;" alt=""/><br /><sub><b>Ritik Bagora</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ritik1999" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/ragharwal"><img src="https://avatars3.githubusercontent.com/ragharwal?size=400" width="100px;" alt=""/><br /><sub><b>Raghav Agarwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ragharwal" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/AnanyaSharma22"><img src="https://avatars3.githubusercontent.com/AnanyaSharma22?size=400" width="100px;" alt=""/><br /><sub><b>Ananya Sharma</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=AnanyaSharma22" title="Code">💻</a></td>
+
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/Dude-901"><img src="https://avatars3.githubusercontent.com/Dude-901?size=400" width="100px;" alt=""/><br /><sub><b>Tanmay Khandelwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Dude-901" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/rahulbollisetty"><img src="https://avatars3.githubusercontent.com/rahulbollisetty?size=400" width="100px;" alt=""/><br /><sub><b>B Rahul</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=rahulbollisetty" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/onymousproduktions"><img src="https://avatars3.githubusercontent.com/onymousproduktions?size=400" width="100px;" alt=""/><br /><sub><b>AbuBakar Sheikh</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=onymousproduktions" title="Code">💻</a></td>
 </tr>
 </table>
 
