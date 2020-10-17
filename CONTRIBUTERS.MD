@@ -1,6 +1,7 @@
 | Name              | Github                                                        |
 | ----------------- | ------------------------------------------------------------- |
 | Keshav Singh      | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |
+| Abhay Pratap Rana | [@officialmrknox] (https://github.com/OfficialMrKnoX)         |
 | Justinus Hermawan | [@justinushermawan](https://github.com/justinushermawan/)     |
 | Shruti Jha        | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |
 | Richard Timothy   | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |
