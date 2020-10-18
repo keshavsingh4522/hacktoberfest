@@ -48,3 +48,4 @@
 | AbuBakar Sheikh   | [@onymousproduktions](https://github.com/onymousproduktions)  |
 | Dung T. Vo        | [@dungxibo123](https://github.com/dungxibo123)                |
 | Mitadru Datta     | [@MitadruDatta](https://github.com/MitadruDatta)              |
+| Maninderjit Singh | [@ManinderAngural](https://github.com/ManinderAngural)        |
