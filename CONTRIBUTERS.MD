@@ -47,3 +47,4 @@
 | B Rahul           | [@rahulbollisetty](https://github.com/rahulbollisetty)        |
 | AbuBakar Sheikh   | [@onymousproduktions](https://github.com/onymousproduktions)  |
 | Dung T. Vo        | [@dungxibo123](https://github.com/dungxibo123)  |
+| Niraj Dhalani     | [@nirajdhalani(https://github.com/nirajdhalani |
