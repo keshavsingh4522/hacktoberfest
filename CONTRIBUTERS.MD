@@ -49,3 +49,4 @@
 | Dung T. Vo        | [@dungxibo123](https://github.com/dungxibo123)                |
 | Mitadru Datta     | [@MitadruDatta](https://github.com/MitadruDatta)              |
 | Maninderjit Singh | [@ManinderAngural](https://github.com/ManinderAngural)        |
+| Niraj Dhalani     | [@nirajdhalani](https://github.com/nirajdhalani)              |
