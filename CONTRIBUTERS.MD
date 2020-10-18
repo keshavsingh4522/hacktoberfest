@@ -46,5 +46,6 @@
 | Tanmay Khandelwal | [@Dude-901](https://github.com/Dude-901)                      |
 | B Rahul           | [@rahulbollisetty](https://github.com/rahulbollisetty)        |
 | AbuBakar Sheikh   | [@onymousproduktions](https://github.com/onymousproduktions)  |
-| Dung T. Vo        | [@dungxibo123](https://github.com/dungxibo123)  |
+| Dung T. Vo        | [@dungxibo123](https://github.com/dungxibo123)                |
+| Mitadru Datta     | [@MitadruDatta](https://github.com/MitadruDatta)              |
 | Maninderjit Singh | [@ManinderAngural](https://github.com/ManinderAngural)        |
