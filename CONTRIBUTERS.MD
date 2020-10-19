@@ -13,7 +13,7 @@
 | Vatsal Narwal     | [@VatsalNarwal](https://github.com/VatsalNarwal)              |
 | Pratik Shirodkar  | [@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)      |
 | Kanishk J         | [@Kanishk7559](https://github.com/kanishk7559)                |
-| Misa Dravid       | [@Misa-Dravid](https://github.com/misa-bot)                   |
+| Misa Dravid       | [@misa-bot](https://github.com/misa-bot)                      |
 | Pranjal Soni      | [@sonipranjal](https://github.com/sonipranjal)                |
 | Rithvik Ayithapu  | [@rithvik2607](https://github.com/rithvik2607)                |
 | Divy              | [@dr-one-punch](https://github.com/dr-one-punch)              |
