@@ -52,4 +52,5 @@
 | Niraj Dhalani     | [@nirajdhalani](https://github.com/nirajdhalani)              |
 | Sanidhya Breja    | [@SanidhyaBreja](https://github.com/SanidhyaBreja)            |
 | Saurav Navdhare   | [@Saurav-Navdhare](https://github.com/Saurav-Navdhare)        |
+| Mohan             | [@stone-dr](https://github.com/stone-dr)                      |
 | Ibad Mukrom       | [@IbadMukrom](https://github.com/IbadMukrom)                  |
