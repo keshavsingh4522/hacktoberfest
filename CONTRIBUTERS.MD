@@ -50,3 +50,4 @@
 | Mitadru Datta     | [@MitadruDatta](https://github.com/MitadruDatta)              |
 | Maninderjit Singh | [@ManinderAngural](https://github.com/ManinderAngural)        |
 | Niraj Dhalani     | [@nirajdhalani](https://github.com/nirajdhalani)              |
+| Sanidhya Breja    | [@SanidhyaBreja](https://github.com/SanidhyaBreja)            |
