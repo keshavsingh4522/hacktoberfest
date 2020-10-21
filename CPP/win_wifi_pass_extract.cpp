@@ -58,6 +58,5 @@ int main() {
 		wifienumRSLT += exec(wifienumc);
 	}
 	wifienumfile << wifienumRSLT;
-	system("rm wifis.txt");
 	wifienumfile.close();
 }
