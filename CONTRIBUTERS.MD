@@ -55,4 +55,6 @@
 | Mohan             | [@stone-dr](https://github.com/stone-dr)                      |
 | Ibad Mukrom       | [@IbadMukrom](https://github.com/IbadMukrom)                  |
 | Kritik Agarwal    | [@Agarwal-Kritik](https://github.com/Agarwal-Kritik)          |
+| Crowfunder        | [@Crowfunder](https://github.com/Crowfunder)                  |
+| Anirudh Bagri     | [@anirudhbagri](https://github.com/anirudhbagri)    
 | Iris ALmeida      |  [@7irisalm](https://github.com/7irisalm)
