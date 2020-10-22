@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Example of EventNameEnum
+/// </summary>
 public enum EventName
 {
     Say,
