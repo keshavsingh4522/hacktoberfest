@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public enum EventName
 {
     Say,
@@ -54,8 +53,7 @@ public static class EventCenter
             }
         }
     }
-
-
+    
     /// <summary>
     /// 将所有和指定对象有关的事件全部移除，一般用于对象被销毁时
     /// </summary>
@@ -105,8 +103,7 @@ public static class EventCenter
             ((Action) d).Invoke();
         }
     }
-
-
+    
     public static void Fire<T1>(EventName eventName, T1 arg1)
     {
         foreach (var d in FireCheck(eventName))
