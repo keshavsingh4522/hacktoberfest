@@ -57,7 +57,7 @@ Steps for adding your name below
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/officialmrknox"><img src="https://avatars3.githubusercontent.com/officialmrknox?size=400" width="100px;" alt=""/><br /><sub><b>Abhay Pratap Rana</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=officialmrknox" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/officialmrknox"><img src="https://avatars3.githubusercontent.com/officialmrknox?size=400" width="100px;" alt=""/><br /><sub><b>Abhay Pratap Rana</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=officialmrknox" title="Code"> :computer: </a></td>
 <td align="center"><a href="https://github.com/onymousproduktions"><img src="https://avatars3.githubusercontent.com/onymousproduktions?size=400" width="100px;" alt=""/><br /><sub><b>AbuBakar Sheikh</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=onymousproduktions" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/find-aman"><img src="https://avatars3.githubusercontent.com/find-aman?size=400" width="100px;" alt=""/><br /><sub><b>Aman Gupta</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=find-aman" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/amanjain"><img src="https://avatars3.githubusercontent.com/amanjain?size=400" width="100px;" alt=""/><br /><sub><b>Aman Jain</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=amanjain" title="Code">💻</a></td>
