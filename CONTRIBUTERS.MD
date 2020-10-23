@@ -1,6 +1,5 @@
 | Name              | Github                                                        |
 | ----------------- | ------------------------------------------------------------- |
-| Bilal Ahmad       | [@half-developer](https://github.com/half-developer)          |
 | Keshav Singh      | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |
 | Abhay Pratap Rana | [@officialmrknox](https://github.com/OfficialMrKnoX)          |
 | Justinus Hermawan | [@justinushermawan](https://github.com/justinushermawan/)     |
@@ -54,11 +53,12 @@
 | Sanidhya Breja    | [@SanidhyaBreja](https://github.com/SanidhyaBreja)            |
 | Saurav Navdhare   | [@Saurav-Navdhare](https://github.com/Saurav-Navdhare)        |
 | Mohan             | [@stone-dr](https://github.com/stone-dr)                      |
+| Bilal Ahmad       | [@half-developer](https://github.com/half-developer)          |
 | Ibad Mukrom       | [@IbadMukrom](https://github.com/IbadMukrom)                  |
 | Kritik Agarwal    | [@Agarwal-Kritik](https://github.com/Agarwal-Kritik)          |
 | Crowfunder        | [@Crowfunder](https://github.com/Crowfunder)                  |
 | Anirudh Bagri     | [@anirudhbagri](https://github.com/anirudhbagri)              |
-| Iris ALmeida      |  [@7irisalm](https://github.com/7irisalm)                     |
-| Krosskid12        |  [@Krosskid12](https://github.com/Krosskid12)                 |
-| Namita Mutha      |  [@namitamutha](https://github.com/namitamutha)               |
-| Yashi Srivastava  |  [@yashii](https://github.com/yashii)                         |
+| Iris ALmeida      | [@7irisalm](https://github.com/7irisalm)                      |
+| Krosskid12        | [@Krosskid12](https://github.com/Krosskid12)                  |
+| Namita Mutha      | [@namitamutha](https://github.com/namitamutha)                |
+| Yashi Srivastava  | [@yashii](https://github.com/yashii)                          |
