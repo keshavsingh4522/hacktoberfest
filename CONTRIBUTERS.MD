@@ -61,3 +61,4 @@
 | Iris ALmeida      |  [@7irisalm](https://github.com/7irisalm)                     |
 | Krosskid12        |  [@Krosskid12](https://github.com/Krosskid12)                 |
 | Namita Mutha      |  [@namitamutha](https://github.com/namitamutha)               |
+| Yashi Srivastava  |  [@yashii](https://github.com/yashii)                         |
