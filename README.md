@@ -112,38 +112,43 @@ Steps for adding your name below
 </tr>
 <tr>
 <td align="center"><a href="https://github.com/muxa11"><img src="https://avatars3.githubusercontent.com/muxa11?size=400" width="100px;" alt=""/><br /><sub><b>Musadiq Peerzada</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=muxa11" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/namitamutha"><img src="https://avatars3.githubusercontent.com/namitamutha?size=400" width="100px;" alt=""/><br /><sub><b>Namita Mutha</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=namitamutha" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/NikhilC2209"><img src="https://avatars3.githubusercontent.com/NikhilC2209?size=400" width="100px;" alt=""/><br /><sub><b>Nikhil Chapre</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=NikhilC2209" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/nikhil254"><img src="https://avatars3.githubusercontent.com/nikhil254?size=400" width="100px;" alt=""/><br /><sub><b>Nikhil Sachan</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=nikhil254" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/nirajdhalani"><img src="https://avatars3.githubusercontent.com/nirajdhalani?size=400" width="100px;" alt=""/><br /><sub><b>Niraj Dhalani</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=nirajdhalani" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/PHAGUN-JAIN"><img src="https://avatars3.githubusercontent.com/PHAGUN-JAIN?size=400" width="100px;" alt=""/><br /><sub><b>Phagun Jain</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=PHAGUN-JAIN" title="Code">💻</a></td>
-<td align="center"><a href="https://github.com/sonipranjal"><img src="https://avatars3.githubusercontent.com/sonipranjal?size=400" width="100px;" alt=""/><br /><sub><b>Pranjal Soni</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=sonipranjal" title="Code">💻</a></td>
 
 </tr>
 <tr>
+<td align="center"><a href="https://github.com/sonipranjal"><img src="https://avatars3.githubusercontent.com/sonipranjal?size=400" width="100px;" alt=""/><br /><sub><b>Pranjal Soni</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=sonipranjal" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/Pratik-Shirodkar"><img src="https://avatars3.githubusercontent.com/Pratik-Shirodkar?size=400" width="100px;" alt=""/><br /><sub><b>Pratik Shirodkar</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Pratik-Shirodkar" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/ragharwal"><img src="https://avatars3.githubusercontent.com/ragharwal?size=400" width="100px;" alt=""/><br /><sub><b>Raghav Agarwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ragharwal" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/RichardTimothy1307"><img src="https://avatars3.githubusercontent.com/RichardTimothy1307?size=400" width="100px;" alt=""/><br /><sub><b>Richard Timothy</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=RichardTimothy1307" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/rithvik2607"><img src="https://avatars3.githubusercontent.com/rithvik2607?size=400" width="100px;" alt=""/><br /><sub><b>Rithvik Ayithapu</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=rithvik2607" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/ritik1999"><img src="https://avatars3.githubusercontent.com/ritik1999?size=400" width="100px;" alt=""/><br /><sub><b>Ritik Bagora</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ritik1999" title="Code">💻</a></td>
-<td align="center"><a href="https://github.com/Rupali409"><img src="https://avatars3.githubusercontent.com/Rupali409?size=400" width="100px;" alt=""/><br /><sub><b>Rupali</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Rupali409" title="Code">💻</a></td>
 
 </tr>
 <tr>
+<td align="center"><a href="https://github.com/Rupali409"><img src="https://avatars3.githubusercontent.com/Rupali409?size=400" width="100px;" alt=""/><br /><sub><b>Rupali</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Rupali409" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/Sandi-aris"><img src="https://avatars3.githubusercontent.com/Sandi-aris?size=400" width="100px;" alt=""/><br /><sub><b>Sandi Aris</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Sandi-aris" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/SanidhyaBreja"><img src="https://avatars3.githubusercontent.com/SanidhyaBreja?size=400" width="100px;" alt=""/><br /><sub><b>Sanidhya Breja</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=SanidhyaBreja" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/sarthak815"><img src="https://avatars3.githubusercontent.com/sarthak815?size=400" width="100px;" alt=""/><br /><sub><b>Sarthak Shastri</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=sarthak815" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/07Satyam"><img src="https://avatars3.githubusercontent.com/07Satyam?size=400" width="100px;" alt=""/><br /><sub><b>Satyam Gadekar</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=07Satyam" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/Saurav-Navdhare"><img src="https://avatars3.githubusercontent.com/Saurav-Navdhare?size=400" width="100px;" alt=""/><br /><sub><b>Saurav Navdhare</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Saurav-Navdhare" title="Code">💻</a></td>
-<td align="center"><a href="https://github.com/Shaunak04"><img src="https://avatars3.githubusercontent.com/Shaunak04?size=400" width="100px;" alt=""/><br /><sub><b>Shaunak Deshpande</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Shaunak04" title="Code">💻</a></td>
 
 </tr>
 <tr>
+<td align="center"><a href="https://github.com/Shaunak04"><img src="https://avatars3.githubusercontent.com/Shaunak04?size=400" width="100px;" alt=""/><br /><sub><b>Shaunak Deshpande</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Shaunak04" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/ShrutiJha31"><img src="https://avatars3.githubusercontent.com/ShrutiJha31?size=400" width="100px;" alt=""/><br /><sub><b>Shruti Jha</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ShrutiJha31" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/siddarth308"><img src="https://avatars3.githubusercontent.com/siddarth308?size=400" width="100px;" alt=""/><br /><sub><b>Siddarth Awasthi</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=siddarth308" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/isumit19"><img src="https://avatars3.githubusercontent.com/isumit19?size=400" width="100px;" alt=""/><br /><sub><b>Sumit Soni</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=isumit19" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/swayam50"><img src="https://avatars3.githubusercontent.com/swayam50?size=400" width="100px;" alt=""/><br /><sub><b>Swayamsidh Nayak</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=swayam50" title="Code">💻</a></td>
 <td align="center"><a href="https://github.com/Dude-901"><img src="https://avatars3.githubusercontent.com/Dude-901?size=400" width="100px;" alt=""/><br /><sub><b>Tanmay Khandelwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Dude-901" title="Code">💻</a></td>
+
+</tr>
+<tr>
 <td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/yashii"><img src="https://avatars3.githubusercontent.com/yashii?size=400" width="100px;" alt=""/><br /><sub><b>Yashi Srivastava</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=yashii" title="Code">💻</a></td>
 </tr>
 </table>
 <!-- markdownlint-enable -->
