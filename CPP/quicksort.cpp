@@ -37,8 +37,8 @@ int Partition(int a[], int low, int high)
 
 int RandomPivotPartition(int a[], int low, int high)
 {
-	int pvt, n, temp;
-	n = rand();
+	int pvt, temp;
+	 int n = rand();
 
 	pvt = low + n%(high-low+1);
  
@@ -52,11 +52,8 @@ int QuickSort(int a[], int low, int high)
 {
 	int pindex;
 	if(low < high)
-	{
-
-		pindex = RandomPivotPartition(a, low, high);
-	
-		QuickSort(a, low, pindex-1);
+	{       pindex = RandomPivotPartition(a, low, high);
+	 	QuickSort(a, low, pindex-1);
 		QuickSort(a, pindex+1, high);
 	}
 	return 0;
