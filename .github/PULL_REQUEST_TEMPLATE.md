@@ -3,7 +3,7 @@
 
 - [ ] 🚀 Added Name
 - [ ] ✨ Feature
-- [ ] 🌟 ed the repo
+- [ ] 🌟 stared the repo
 - [ ] 🐛 Grammatical Error
 - [ ] 📝 Documentation Update
 - [ ] 🚩 Other
