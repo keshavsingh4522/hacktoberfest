@@ -37,10 +37,12 @@
 | Muhammad Bilal       | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |         0        |
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
+| Namita Mutha         | [@namitamutha](https://github.com/namitamutha)                |         1        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi             | [@arisandi1](https://github.com/arisandi1)                    |         0        |
+| MenakaKonara         | [@MenakaKonara](https://github.com/MenakaKonara)              |         1        |
 | Shaunak Deshpande    | [@Shaunak04](https://github.com/Shaunak04)                    |         0        |
 | Nikhil Chapre        | [@NikhilC2209](https://github.com/NikhilC2209)                |         0        |
 | Ankit Sharma         | [@ANKITSHARMA98](https://github.com/ANKITSHARMA98)            |         0        |
