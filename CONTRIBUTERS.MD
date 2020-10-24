@@ -1,9 +1,11 @@
 | Name                 | Github                                                        | Starred the repo |
 | -------------------- | ------------------------------------------------------------- | ---------------- |
+| war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
 | Justinus Hermawan    | [@justinushermawan](https://github.com/justinushermawan/)     |         0        |
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
+| Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
 | Sumit Soni           | [@isumit19](https://github.com/isumit19/)                     |         0        |
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
@@ -15,10 +17,12 @@
 | Kanishk J            | [@Kanishk7559](https://github.com/kanishk7559)                |         0        |
 | Misa Dravid          | [@misa-bot](https://github.com/misa-bot)                      |         0        |
 | Pranjal Soni         | [@sonipranjal](https://github.com/sonipranjal)                |         0        |
+| Preeti Advani        | [@preetiadvani1](https://github.com/preetiadvani1)            |         1        |
 | Rithvik Ayithapu     | [@rithvik2607](https://github.com/rithvik2607)                |         0        |
 | Divy                 | [@dr-one-punch](https://github.com/dr-one-punch)              |         0        |
 | Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
 | Dakshay Ahuja        | [@dakshayahuja](https://github.com/dakshayahuja)              |         0        |
+| Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
 | Satyam Gadekar       | [@07Satyam](https://github.com/07Satyam)                      |         0        |
 | Musadiq Peerzada     | [@muxa11](https://github.com/muxa11)                          |         0        |
@@ -29,7 +33,7 @@
 | Deepakshi Sood       | [@deepakshisud](https://github.com/deepakshisud)              |         0        |
 | Swayamsidh Nayak     | [@swayam50](https://github.com/swayam50)                      |         0        |
 | Arigato haxroot      | [@Arigatohaxroot](https://github.com/Arigatohaxroot)          |         0        |
-| Rupali               | [@Rupali409](https://github.com/Rupali409)                    |         0        |
+| Rupali               | [@Rupali409](https://github.com/Rupali409)                    |         1        |
 | Muhammad Bilal       | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |         0        |
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
@@ -53,7 +57,7 @@
 | Maninderjit Singh    | [@ManinderAngural](https://github.com/ManinderAngural)        |         0        |
 | Niraj Dhalani        | [@nirajdhalani](https://github.com/nirajdhalani)              |         0        |
 | Sanidhya Breja       | [@SanidhyaBreja](https://github.com/SanidhyaBreja)            |         0        |
-| Saurav Navdhare      | [@Saurav-Navdhare](https://github.com/Saurav-Navdhare)        |         0        |
+| Saurav Navdhare      | [@Saurav-Navdhare](https://github.com/Saurav-Navdhare)        |         1        |
 | Mohan                | [@stone-dr](https://github.com/stone-dr)                      |         0        |
 | Bilal Ahmad          | [@half-developer](https://github.com/half-developer)          |         0        |
 | Ibad Mukrom          | [@IbadMukrom](https://github.com/IbadMukrom)                  |         0        |
@@ -65,3 +69,4 @@
 | lidonghui            | [@ldh](https://github.com/ldh)                                |         1        |
 | Namita Mutha         | [@namitamutha](https://github.com/namitamutha)                |         1        |
 | Yashi Srivastava     | [@yashii](https://github.com/yashii)                          |         1        |
+| tej-oops-dev         | [@tej-oops-dev](https://github.com/tej-oops-dev)              |         1        |
