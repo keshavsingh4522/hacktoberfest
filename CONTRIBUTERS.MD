@@ -37,7 +37,6 @@
 | Muhammad Bilal       | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |         0        |
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
-| Namita Mutha         | [@namitamutha](https://github.com/namitamutha)                |         1        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
@@ -69,7 +68,7 @@
 | Iris ALmeida         | [@7irisalm](https://github.com/7irisalm)                      |         0        |
 | Krosskid12           | [@Krosskid12](https://github.com/Krosskid12)                  |         1        |
 | lidonghui            | [@ldh](https://github.com/ldh)                                |         1        |
-| Namita Mutha         | [@namitamutha](https://github.com/namitamutha)                |         1        |
+| Namita Mutha         | [@namitamutha](https://github.com/namitamutha)                |         0        |
 | Yashi Srivastava     | [@yashii](https://github.com/yashii)                          |         1        |
 | tej-oops-dev         | [@tej-oops-dev](https://github.com/tej-oops-dev)              |         1        |
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
