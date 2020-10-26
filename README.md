@@ -141,6 +141,8 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/swayam50"><img src="https://avatars3.githubusercontent.com/swayam50?size=400" width="100px;" alt=""/><br /><sub><b>Swayamsidh Nayak</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=swayam50" title="Code"> :computer: </a> </td>
 </tr>
 <tr><td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> </td>
+</tr>
+<tr><td align="center"><a href="https://github.com/umarbrowser"><img src="https://avatars3.githubusercontent.com/umarbrowser?size=400" width="100px;" alt=""/><br /><sub><b>Umar Haruna Abdullahi</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=umarbrowser" title="Code"> :computer: </a> </td>
 </tr></table>
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
