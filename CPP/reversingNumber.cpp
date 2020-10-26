@@ -17,8 +17,9 @@ int main()
 { 
     int num;
     cin>>num; 
+    int sign = (num>=0?1:-1);
     cout << "Reverse of no. is "
-         << reverseDigits(num); 
+         << (sign*reverseDigits(abs(num))); 
     
     return 0; 
 } 
