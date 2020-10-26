@@ -44,11 +44,11 @@ for i,j,k in zip(df['Name'],df['Github'],df['Starred repo']):
     html='''<td align="center"><a href="https://github.com/{0}"><img src="https://avatars3.githubusercontent.com/{0}?size=400" width="100px;" alt=""/><br /><sub><b>{1}</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author={0}" title="Code"> :computer: </a> '''.format(j,i)
     f.write(html)
     
-    if k==1:
-        star_a="<a href='https://github.com/keshavsingh4522/hacktoberfest2020/stargazers' title='starred the repo'> :star2: </a> "        
-        f.write(star_a+'</td>\n')
-    else:
-        f.write('</td>\n')
+    # if k==1:
+    #     star_a="<a href='https://github.com/keshavsingh4522/hacktoberfest2020/stargazers' title='starred the repo'> :star2: </a> "        
+    #     f.write(star_a+'</td>\n')
+    # else:
+    f.write('</td>\n')
 f.write('</tr>')
 f.write('</table>')
 f.close()
