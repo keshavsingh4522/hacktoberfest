@@ -73,3 +73,4 @@
 | Yashi Srivastava     | [@yashii](https://github.com/yashii)                          |         1        |
 | tej-oops-dev         | [@tej-oops-dev](https://github.com/tej-oops-dev)              |         1        |
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
+| Abhinav Verma        | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
