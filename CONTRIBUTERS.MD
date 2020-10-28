@@ -78,4 +78,3 @@
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |   
 |Tseme Botlhe          | [@Tsemester123](https://github.com/Tsemester123)              |         1        |
-|
