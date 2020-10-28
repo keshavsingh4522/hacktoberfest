@@ -1,4 +1,5 @@
-import socket, time
+import socket
+import time
 
 portlist = {
     "20" : "ftp data transfer",
