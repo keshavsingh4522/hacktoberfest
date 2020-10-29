@@ -81,3 +81,4 @@
 | Tseme Botlhe         | [@Tsemester123](https://github.com/Tsemester123)              |         1        |
 | Nikhil Varshney      | [@Codengg](https://github.com/Codengg)                        |         0        |
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
+| Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
