@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class InsertionSort {
+public class Insertion_sort {
 	static int[] nums = { 12, 43, 2, 4, 1, 0, -23, -93 };
 
 	public static void main(String[] args) {
