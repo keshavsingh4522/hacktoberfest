@@ -21,22 +21,16 @@ def getAccount():
     r = requests.get(urlBase)
     if (r.ok and time.time() < int(r.json()['user_info']['exp_date']) ):
         return r.json()
-    else:
-        return False
 
 def getLiveCategories():
     r = requests.get(urlLiveCategories)
     if (r.ok):
         return r.json()
-    else:
-        return False
 
 def getLiveStreams():
     r = requests.get(urlLiveStreams)
     if (r.ok):
         return r.json()
-    else:
-        return False
 
 def buildM3u(jsonCat, jsonLive):
     output = open('playlist.m3u', 'w+')
@@ -70,4 +64,3 @@ else:
 if __name__ == "__main__":
     # Create playlist.msu file.
     buildM3u(getLiveCategories(), getLiveStreams() )
-
