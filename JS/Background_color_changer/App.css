@@ -5,7 +5,7 @@
     font-size: 25px;
     width: 600px;
     height: 500px;
-    margin: 50px auto 50px;
+    margin: 50px auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
     text-align: center;
     width: 200px;
     height: 50px;
-    margin: 50px auto 50px;
+    margin: 50px auto;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: black;
