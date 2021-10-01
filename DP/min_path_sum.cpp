@@ -47,14 +47,14 @@ int main()
     int m,n;
     cin>>m>>n;
     vector<vector<int>> grid( m , vector<int> (n));
-		for(int i=0;i<m;i++){
-      for(int j=0;j<n;j++){
+    for(int i=0;i<m;i++){
+       for(int j=0;j<n;j++){
             cin>> grid[i][j];
+             }
          }
-      }
-		cout << minPathSum(grid) << "\n";
-	}
-	return 0;
+    cout << minPathSum(grid) << "\n";
+}
+return 0;
 }
 
 
