@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class calc extends JFrame implements ActionListener {
+public class Calculator extends JFrame implements ActionListener {
     String str = "";
     float re = 0;
     char d, f;
@@ -26,7 +26,7 @@ public class calc extends JFrame implements ActionListener {
     JButton bdel = new JButton("Delete");
     JTextField t = new JTextField();
 
-    public calc() {
+    public Calculator() {
         setTitle("Calculator");
         setVisible(true);
         setSize(300, 426);
@@ -253,6 +253,7 @@ public class calc extends JFrame implements ActionListener {
                         re = re * (Float.parseFloat(str));
                         break;
                     }
+                default:break;
             }
 
             str = Float.toString(re);
@@ -292,11 +293,12 @@ public class calc extends JFrame implements ActionListener {
                     re = re * (Float.parseFloat(str));
                     break;
                 }
+            default:break;
         }
 
     }
     public static void main(String args[]) {
-        calc n = new calc();
+        Calculator n = new Calculator();
 
     }
 }
