@@ -22,7 +22,6 @@
 
 📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
 
-
 > Upload your code in this repository to particular section if folder is not present then create folder.
 > some more repos for contribution
 
@@ -42,12 +41,14 @@
 ---
 
 ## Github Contribution Rules
+
 - Pull requests can be submitted to any opted-in repository on GitHub or GitLab.
 - The pull request must contain commits you made yourself.
 - If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
 - If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
 - To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
 - This year, the first 50,000 participants can earn a T-shirt.
+
 ---
 
 Steps for adding your name below
@@ -56,7 +57,6 @@ Steps for adding your name below
     2. Edit `CONTRIBUTERS.md` file
     3. Add your Name also link your github profile
     4. Make pull request
-
 
 ## Contributors
 
@@ -156,20 +156,75 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/Shaunak04"><img src="https://avatars3.githubusercontent.com/Shaunak04?size=400" width="100px;" alt=""/><br /><sub><b>Shaunak Deshpande</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Shaunak04" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/ShrutiJha31"><img src="https://avatars3.githubusercontent.com/ShrutiJha31?size=400" width="100px;" alt=""/><br /><sub><b>Shruti Jha</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=ShrutiJha31" title="Code"> :computer: </a> </td>
 </tr>
-<tr><td align="center"><a href="https://github.com/siddarth308"><img src="https://avatars3.githubusercontent.com/siddarth308?size=400" width="100px;" alt=""/><br /><sub><b>Siddarth Awasthi</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=siddarth308" title="Code"> :computer: </a> </td>
-<td align="center"><a href="https://github.com/isumit19"><img src="https://avatars3.githubusercontent.com/isumit19?size=400" width="100px;" alt=""/><br /><sub><b>Sumit Soni</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=isumit19" title="Code"> :computer: </a> </td>
-<td align="center"><a href="https://github.com/swayam50"><img src="https://avatars3.githubusercontent.com/swayam50?size=400" width="100px;" alt=""/><br /><sub><b>Swayamsidh Nayak</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=swayam50" title="Code"> :computer: </a> </td>
-<td align="center"><a href="https://github.com/tridib2003"><img src="https://avatars3.githubusercontent.com/tridib2003?size=400" width="100px;" alt=""/><br /><sub><b>Tridib Samanta</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=tridib2003" title="Code"> :computer: </a> </td>
-<td align="center"><a href="https://github.com/drd3rp"><img src="https://avatars3.githubusercontent.com/drd3rp?size=400" width="100px;" alt=""/><br /><sub><b>Tristan Brown</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=drd3rp" title="Code"> :computer: </a> </td>
-<td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> </td>
-</tr></table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/siddarth308">
+            <img src="https://avatars3.githubusercontent.com/siddarth308?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Siddarth Awasthi</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=siddarth308" title="Code"> :computer: </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/isumit19">
+            <img src="https://avatars3.githubusercontent.com/isumit19?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Sumit Soni</b></sub>
+        </a>
+        <br/>
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=isumit19" title="Code"> :computer: </a> 
+    </td>
+    <td align="center">
+        <a href="https://github.com/swayam50"><img src="https://avatars3.githubusercontent.com/swayam50?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Swayamsidh Nayak</b></sub>
+        </a>
+        <br/>
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=swayam50" title="Code"> :computer: </a>    
+    </td>
+    <td align="center">
+        <a href="https://github.com/tridib2003"><img src="https://avatars3.githubusercontent.com/tridib2003?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Tridib Samanta</b></sub>
+        </a>
+        <br/>
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=tridib2003" title="Code"> :computer: </a> 
+    </td>
+    <td align="center">
+        <a href="https://github.com/drd3rp"><img src="https://avatars3.githubusercontent.com/drd3rp?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Tristan Brown</b></sub>
+        </a>
+        <br/>
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=drd3rp" title="Code"> :computer: </a> 
+    </td>
+    <td align="center">
+        <a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Vatsal Narwal</b></sub>
+        </a>
+        <br/>
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> 
+    </td>
+    <td align="center">
+        <a href="https://github.com/Shivam118"><img src="https://avatars3.githubusercontent.com/Shivam118?size=400" width="100px;" alt=""/>
+            <br/>
+            <sub><b>Shivam Sharma</b></sub>
+        </a>
+        <br/>
+        <a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Shivam118" title="Code"> :computer: </a> 
+    </td>
+    </tr>
+
+</table>
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Contributions of any kind welcome!
 
->    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
+> NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
 
 ## License
 
