@@ -118,7 +118,7 @@ while not exited:
 				current_key = " "
 			elif key == key.esc:
 				print("Exiting program...")
-				exit = True
+				exited = True
 			else:
 				current_key = str(key)
 		keys+= current_key
