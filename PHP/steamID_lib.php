@@ -90,7 +90,7 @@
 
 
 
-	    function GetXMLURL($info){ // todo, more elseifs
+	    function GetXMLURL($info){ 
 
 	    	if (stristr($info, 'http://steamcommunity.com/id/')){
 
