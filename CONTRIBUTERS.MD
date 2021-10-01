@@ -18,6 +18,7 @@
 | Misa Dravid          | [@misa-bot](https://github.com/misa-bot)                      |         0        |
 | Pranjal Soni         | [@sonipranjal](https://github.com/sonipranjal)                |         0        |
 | Preeti Advani        | [@preetiadvani1](https://github.com/preetiadvani1)            |         1        |
+| Souvik Nayak         | [@Souvik-Nayak](https://github.com/Souvik-Nayak)              |         1        |
 | Rithvik Ayithapu     | [@rithvik2607](https://github.com/rithvik2607)                |         0        |
 | Divy                 | [@dr-one-punch](https://github.com/dr-one-punch)              |         0        |
 | Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
