@@ -1,6 +1,6 @@
 class Solution:
     def factorial(self, N):
-        fact = 1;
+        fact = 1
         while(N>=1):
             fact = fact * N
             N = N-1
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     for _ in range(t):
         N = int(input())
         ob = Solution()
-        ans = ob.factorial(N);
+        ans = ob.factorial(N)
         for i in ans:
             print(i,end="")
         print()
