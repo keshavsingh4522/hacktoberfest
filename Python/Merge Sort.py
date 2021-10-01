@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+
 
 
 def mergeSort(arr):
@@ -51,14 +51,6 @@ if __name__ == '__main__':
     print("Sorted array")
     display(arr)
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
