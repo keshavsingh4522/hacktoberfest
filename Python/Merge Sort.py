@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-
-
 
 def mergeSort(arr):
     if len(arr) > 1:
