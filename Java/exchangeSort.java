@@ -1,6 +1,6 @@
 import java.util.*;
  
-public class Example {
+public class Exchange {
  
    public static void main(String[] args) {
  
