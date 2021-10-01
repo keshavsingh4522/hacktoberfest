@@ -39,4 +39,3 @@ inputElem = browser.find_element_by_id('edit-program')
 inputElem.send_keys(code)
 
 browser.find_element_by_id("edit-submit").click()
-
