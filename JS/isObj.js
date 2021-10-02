@@ -1,5 +1,5 @@
-function isObj(obj){
-   return typeof obj == "object" 
+function isObj(obj) {
+  return typeof obj === "object"
 }
 
 console.log(isObj({
