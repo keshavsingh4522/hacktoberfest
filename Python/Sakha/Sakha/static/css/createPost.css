@@ -1,0 +1,215 @@
+/*************************
+REGISTRATION FORM SECTION
+**************************/
+.form {
+  border: .12em dashed #888;
+  padding: 2em 1.5em;
+}
+
+.form--main {
+  width: 90%;
+  max-width: 640px;
+  margin: 8em auto 3em;
+  background-color: var(--color-white);
+  font-family: 'Poppins',sans-serif;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: .45em;
+}
+
+.form legend {
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Nunito',sans-serif;
+  color: var(--general-color);
+  letter-spacing: .1em;
+  position: relative;
+}
+
+.form legend::after, .form legend::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  height: .2em;
+  border-radius: 50%;
+}
+
+.form legend::after {
+  right: 0;
+  left: 60%;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(30%, var(--grad-color-1)), color-stop(50%, var(--grad-color-2)), to(var(--grad-color-3)));
+  background-image: linear-gradient(to top right, var(--grad-color-1) 30%, var(--grad-color-2) 50%, var(--grad-color-3));
+}
+
+.form legend::before {
+  left: 10%;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(30%, var(--grad-color-1)), color-stop(50%, var(--grad-color-2)), to(var(--grad-color-3)));
+  background-image: linear-gradient(to top left, var(--grad-color-1) 30%, var(--grad-color-2) 50%, var(--grad-color-3));
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form__group label {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--label-color);
+  letter-spacing: .03em;
+}
+
+.form__group textarea {
+  width: 100%;
+  padding: .6em .7em;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1em;
+  letter-spacing: .75px;
+  font-weight: 400;
+  background-color: var(--input-color);
+  border-radius: .25em;
+  border: none;
+  border: 0.1em solid var(--input-color);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  outline: none;
+  resize: vertical;
+  height: 15em;
+}
+
+.form__group textarea:focus {
+  border-color: var(--input-border-color);
+}
+
+.form__group span {
+  font-family: 'Poppins',sans-serif;
+  font-size: .7em;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #ce2727;
+}
+
+.form__submit__group {
+  margin-bottom: 1em;
+}
+
+.form__submit__group input[type="submit"] {
+  margin-top: 1em;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--btn-color-1)), to(var(--btn-color-2)));
+  background-image: linear-gradient(to top, var(--btn-color-1), var(--btn-color-2));
+  color: var(--color-white);
+  width: 100%;
+  padding: .75em;
+  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  border: none;
+  font-size: 1em;
+  position: relative;
+  border-radius: .35em;
+  letter-spacing: .05em;
+  -webkit-box-shadow: 0 0 4px var(--btn-shadow-color);
+          box-shadow: 0 0 4px var(--btn-shadow-color);
+}
+
+.form__submit__group input[type="submit"]:hover, .form__submit__group input[type="submit"]:focus {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--btn-hover-color-1)), to(var(--btn-hover-color-2)));
+  background-image: linear-gradient(to top, var(--btn-hover-color-1), var(--btn-hover-color-2));
+}
+
+.form ::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.form :-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form ::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form ::placeholder {
+  font-style: italic;
+}
+
+/******************
+Upload Button Styling
+*********************/
+input {
+  font-family: 'Nunito',sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.form__group input::file-selector-button {
+  padding: .7em 2.5em;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: .4em;
+  -webkit-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+}
+
+.form__group input::file-selector-button:hover, .form__group input::file-selector-button:focus {
+  cursor: pointer;
+  background-image: linear-gradient(60deg, #2f353b 0%, #223a53 100%);
+}
+
+.form__group input::-ms-browse {
+  padding: .7em 2.5em;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: .4em;
+  -webkit-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+}
+
+.form__group input::-ms-browse:hover, .form__group input::-ms-browse:focus {
+  cursor: pointer;
+  background-image: linear-gradient(60deg, #2f353b 0%, #223a53 100%);
+}
+
+.form__group input::-webkit-file-upload-button {
+  padding: .7em 2.5em;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: .4em;
+  -webkit-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+}
+
+.form__group input::-webkit-file-upload-button:hover, .form__group input::-webkit-file-upload-button:focus {
+  cursor: pointer;
+  background-image: linear-gradient(60deg, #2f353b 0%, #223a53 100%);
+}
