@@ -118,3 +118,4 @@
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
 | Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
 | Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
+| Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
