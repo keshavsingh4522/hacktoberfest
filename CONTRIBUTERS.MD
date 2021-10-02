@@ -1,4 +1,5 @@
-| Name                 | Github                                                        | Starred the repo |
+|Kamal Singh Khanna    |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |
+1        |
 | -------------------- | ------------------------------------------------------------- | ---------------- |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
@@ -119,4 +120,6 @@
 | Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
 | Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
-| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        |  
+| Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
+| Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
+| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
