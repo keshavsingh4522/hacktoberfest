@@ -87,8 +87,9 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Apoorva Mehta        | [@apoorva1823000](https://github.com/apoorva1823000)         |         1        |
-| Rajan Joshi              | [@razanjoshi](https://github.com/razanjoshi)                  |         0        |
+| Adamay Mann          | [@mannadamay12](https://github.com/mannadamay12)              |         1        |
+| Apoorva Mehta        | [@apoorva1823000](https://github.com/apoorva1823000)          |         1        |
+| Rajan Joshi          | [@razanjoshi](https://github.com/razanjoshi)                  |         0        |
 | Tushant Dagur        | [@TushantDagur](https://github.com/TushantDagur)              |         1        |
 | Brian Tham           | [@Nightey3s](https://github.com/Nightey3s)                    |         1        |
 | Srishti Mittal       | [@Chia2712](https://github.com/Chia2712)                      |         1        |
