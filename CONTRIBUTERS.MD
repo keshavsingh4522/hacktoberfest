@@ -27,6 +27,7 @@
 | Souvik Nayak         | [@Souvik-Nayak](https://github.com/Souvik-Nayak)              |         1        |
 | Rithvik Ayithapu     | [@rithvik2607](https://github.com/rithvik2607)                |         0        |
 | Divy                 | [@dr-one-punch](https://github.com/dr-one-punch)              |         0        |
+| Tanmay               | [@Tanmay-901](https://github.com/Tanmay-901)                  |         1        |
 | Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
 | Dakshay Ahuja        | [@dakshayahuja](https://github.com/dakshayahuja)              |         0        |
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
@@ -45,7 +46,6 @@
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
-
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi             | [@arisandi1](https://github.com/arisandi1)                    |         0        |
