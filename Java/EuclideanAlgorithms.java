@@ -7,15 +7,19 @@ import java.lang.*;
 
 public class EuclideanAlgorithms {
     public static void main(String[] args) {
-        int a = 10, b = 15, g;
+        int a = 10;
+        int b = 15; 
+        int g;
         g = gcd(a, b);
         System.out.println("GCD(" + a +  " , " + b+ ") = " + g);
          
-        a = 35; b = 10;
+        a = 35; 
+        b = 10;
         g = gcd(a, b);
         System.out.println("GCD(" + a +  " , " + b+ ") = " + g);
          
-        a = 31; b = 2;
+        a = 31; 
+        b = 2;
         g = gcd(a, b);
         System.out.println("GCD(" + a +  " , " + b+ ") = " + g);
  
