@@ -98,6 +98,7 @@
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
 | Candra Perdana       | [@cp2940](https://github.com/cp2940)                          |         0        |
 | Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
+| Kindi Setiadi        | [@kindise](https://github.com/kindise)                        |         1        |
 | Harsh Raj            | [@harshraj8843](https://github.com/harshraj8843)              |         1        |
 | Sourav Saha          | [@sourav-developer](https://github.com/platinumpmo-amigo)     |         1        |
 | Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
@@ -114,3 +115,4 @@
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
 | Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         1        |
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
+| Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
