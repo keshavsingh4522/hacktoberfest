@@ -1,4 +1,4 @@
-// C code for recursively inserting a node in BST
+// C++ code for recursively inserting a node in BST
 // Constructed using structure
 // Contributed by Vaibhav Sharma
 #include <iostream>
