@@ -92,5 +92,5 @@
 | thecoderkd           | [@thecoderkd](https://github.com/thecoderkd)                  |         1        |
 | Aman Srivastava      | [@aman1210](https://github.com/aman1210)                      |         1        |
 | Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
+| Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
-
