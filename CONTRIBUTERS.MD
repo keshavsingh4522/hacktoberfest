@@ -16,6 +16,7 @@
 | Aman Gupta           | [@find-aman](https://github.com/find-aman)                    |         1        |
 | Vatsal Narwal        | [@VatsalNarwal](https://github.com/VatsalNarwal)              |         0        |
 | Pratik Shirodkar     | [@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)      |         0        |
+| Ramya Neelakantan    | [@ramya-neelakantan](https://github.com/ramya-neelakantan)    |         1        |
 | Kanishk J            | [@Kanishk7559](https://github.com/kanishk7559)                |         0        |
 | Misa Dravid          | [@misa-bot](https://github.com/misa-bot)                      |         0        |
 | Pranjal Soni         | [@sonipranjal](https://github.com/sonipranjal)                |         0        |
@@ -77,7 +78,7 @@
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
 | Tristan Brown        | [@drd3rp](https://github.com/drd3rp)                          |         0        |
 | Abhinav Verma        | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
-| Tridib Samanta	   | [@tridib2003](https://github.com/tridib2003)                    |         0        |
+| Tridib Samanta	    | [@tridib2003](https://github.com/tridib2003)                   |         0        |
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |
 | Aswin A              | [@Aswin1362](https://github.com/Aswin1362)                    |         0        |
@@ -88,9 +89,16 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Koddi Evangelista    | [@Koddi-Evangelista](https://github.com/Koddi-Evangelista)    |         14       |
+| Ravi                 | [@guptaravi5400](https://github.com/guptaravi5400)            |         0        |
+| Ananda Andra         | [@anandaandra](https://github.com/anandaandra)                |         0        |
+| Kanishk Chhabra      | [@mrkc2303](https://github.com/mrkc2303)                      |         1        |
+| Vishal               | [@whysogreen](https://github.com/vishal0535)                  |         0        |
+| Hardik Sharma        | [@hardik302001](https://github.com/hardik302001)              |         1        |
+| Raghav Rastogi       | [@raghav2404](https://github.com/raghav2404)                  |         0        |
+| Nirbhay Sigh         | [@nirbhay007](https://github.com/nirbhay007)                  |         1        |
+| Koddi Evangelista    | [@Koddi-Evangelista](https://github.com/Koddi-Evangelista)    |         1        |
 | Nukholis Ramadhan    | [@ramadh-an](https://github.com/ramadh-an)                    |         1        |
-| Ravi              | [@srravigupt](https://github.com/srravigupt)                  |         0        |
+| Ravi                 | [@srravigupt](https://github.com/srravigupt)                  |         0        |
 | Anish Karan          | [@0Ani](https://github.com/0Ani)                              |         1        |
 | Shambashib Majumdar  | [@shambashib20](https://github.com/shambashib20)              |         1        |
 | Gautham Sai Swaroop  | [@gssp4167](https://github.com/gssp4167)                      |         1        |
@@ -157,7 +165,7 @@
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
 | Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
-| Tanmoy Sengupta | [@TSG405](https://github.com/tsg405)                        |         1        |
+| Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Rakesh Mahato        | [@mahatorakesh](https://github.com/mahatorakesh)              |         1        |
 | Abay Kappassov       | [@kappassov](https://github.com/kappassov)                    |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
@@ -175,3 +183,4 @@
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
 | Kinjalk Bajpai       | [@kinb98](https://github.com/kinb98)                          |         1        |
+| Ritaban Datta        | [@reetoo](https://github.com/Reetoo)                          |         1        |
