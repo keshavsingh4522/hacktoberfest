@@ -1,3 +1,4 @@
+import java.util.*;
 public class BinarySearch { 
 
     public static int binarySearch(int[] arr, int x) {
@@ -17,5 +18,4 @@ public class BinarySearch {
         }
         return -1;
     }
-
 }
