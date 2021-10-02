@@ -85,6 +85,7 @@
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
+| Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
 | Thimira              | [Thimira97](https://github.com/Thimira97)                     |         1        |
 | Yuvraj Singh Chaudhry| [@yuvrajchaudhry](https://github.com/yuvrajchaudhry)          |         0        |
