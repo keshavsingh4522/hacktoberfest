@@ -164,8 +164,8 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/drd3rp"><img src="https://avatars3.githubusercontent.com/drd3rp?size=400" width="100px;" alt=""/><br /><sub><b>Tristan Brown</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=drd3rp" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> </td>
 </tr>
-<tr><td align="center"><a href="https://github.com/shoom1337"><kbd><img src="https://avatars3.githubusercontent.com/shoom1337?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ivan Shoom</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=shoom1337" title="Code"> :computer: </a> </td>
-
+<td align="center"><a href="https://github.com/shoom1337"><kbd><img src="https://avatars3.githubusercontent.com/shoom1337?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ivan Shoom</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=shoom1337" title="Code"> :computer: </a> </td>
+<td align="center"><a href="https://github.com/hippyaki"><kbd><img src="https://avatars3.githubusercontent.com/hippyaki?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Akshayan Sinha</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=hippyaki" title="Code"> :computer: </a> </td>
 </tr>
 </table>
 
