@@ -84,7 +84,8 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Ishaan Gupta              | [@ishaangupta-YB](https://github.com/ishaangupta-YB)     |         0        |
+| UBG100               | [@UBG100](https://github.com/UBG100)                          |         1        |
+| Ishaan Gupta         | [@ishaangupta-YB](https://github.com/ishaangupta-YB)          |         0        |
 | thecoderkd           | [@thecoderkd](https://github.com/thecoderkd)                  |         1        |
 | Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
 
