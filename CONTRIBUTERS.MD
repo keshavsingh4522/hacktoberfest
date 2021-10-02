@@ -119,4 +119,4 @@
 | Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
 | Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
-| Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
+| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        |  
