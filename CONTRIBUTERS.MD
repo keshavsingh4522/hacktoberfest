@@ -90,6 +90,7 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Abinash Gogoi        | [@abinashstack](https://github.com/abinashstack)              |         1        |
 | Santanu Biswas       | [@SantanuxD](https://github.com/SantanuxD)                    |         1        |
 | Chetan Atrawalkar    | [@ChetanAtrawalkarCA](https://github.com/ChetanAtrawalkarCA)  |         1        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
