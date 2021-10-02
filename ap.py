@@ -1,5 +1,5 @@
 # animals list
-animals = ['cat', 'dog', 'rabbit']
+animals = ['cat', 'dog', 'rabbit','mouse']
 
 # list of wild animals
 wild_animals = ['tiger', 'fox']
