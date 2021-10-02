@@ -45,7 +45,6 @@
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
-
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi             | [@arisandi1](https://github.com/arisandi1)                    |         0        |
@@ -206,7 +205,9 @@
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
-| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                      
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                    
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
+| Riya Bhatia          | [@riyabhatia26](https://github.com/riyabhatia26)              |         0        |
+
