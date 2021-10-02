@@ -88,7 +88,8 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)         |         0        |
+| Priyadarshini Acharjee| [@Priyadarshini-25](https://github.com/Priyadarshini-25)     |         1        |
+| Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)            |         0        |
 | Mann Patel           | [@manncodes](https://github.com/manncodes)                    |         1        |
 | Varun Sunil Pathak   | [@pathakvsp1](https://github.com/pathakvsp1)                  |         1        |
 | Adamay Mann          | [@mannadamay12](https://github.com/mannadamay12)              |         1        |
@@ -147,6 +148,11 @@
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
 | Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
+| Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
+| Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
+| Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
+| Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
+| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                    |         1        |
 | Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
