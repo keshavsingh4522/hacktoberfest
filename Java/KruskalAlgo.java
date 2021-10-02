@@ -1,54 +1,94 @@
-
+import Java.util.*;  
 import java.util.Scanner;
+    
+class KruskalAlgorithm {  
+    class Edge implements Comparable<Edge> {  
+        int source, destination, weight;  
+        public int compareTo(Edge edgeToCompare) {  
+            return this.weight - edgeToCompare.weight;  
+        }  
+    };  
+   
+    class Subset {  
+        int parent, value;  
+    };    
+    int vertices, edges;  
+    Edge edgeArray[];  
+    
+    KruskalAlgorithm(int vertices, int edges) {  
+        this.vertices = vertices;  
+        this.edges = edges;  
+        edgeArray = new Edge[this.edges];  
+        for (int i = 0; i < edges; ++i)  
+            edgeArray[i] = new Edge();
+    }  
+    void applyKruskal() {  
+        Edge finalResult[] = new Edge[vertices];  
+        int newEdge = 0;  
+        int index = 0;  
+        for (index = 0; index < vertices; ++index)  
+            finalResult[index] = new Edge();  
+        Arrays.sort(edgeArray);  
+        Subset subsetArray[] = new Subset[vertices];    
+        for (index = 0; index < vertices; ++index)  
+            subsetArray[index] = new Subset();  
+ 
+        for (int vertex = 0; vertex < vertices; ++vertex) {  
+            subsetArray[vertex].parent = vertex;  
+            subsetArray[vertex].value = 0;  
+        }  
+        index = 0;   
+        while (newEdge < vertices - 1) {  
+            Edge nextEdge = new Edge();  
+            nextEdge = edgeArray[index++];         
+            int nextSource = findSetOfElement(subsetArray, nextEdge.source);  
+            int nextDestination = findSetOfElement(subsetArray, nextEdge.destination);  
+            if (nextSource != nextDestination) {  
+                finalResult[newEdge++] = nextEdge;  
+                performUnion(subsetArray, nextSource, nextDestination);  
+            }  
+        }  
+        for (index = 0; index < newEdge; ++index)  
+            System.out.println(finalResult[index].source + " - " + finalResult[index].destination + ": " + finalResult[index].weight);  
+    }  
+    int findSetOfElement(Subset subsetArray[], int i) {  
+        if (subsetArray[i].parent != i)  
+            subsetArray[i].parent = findSetOfElement(subsetArray, subsetArray[i].parent);  
+        return subsetArray[i].parent;  
+    }  
+ 
+    void performUnion(Subset subsetArray[], int sourceRoot, int destinationRoot) {           
+        int nextSourceRoot = findSetOfElement(subsetArray, sourceRoot);  
+        int nextDestinationRoot = findSetOfElement(subsetArray, destinationRoot);  
+  
+        if (subsetArray[nextSourceRoot].value < subsetArray[nextDestinationRoot].value)  
+            subsetArray[nextSourceRoot].parent = nextDestinationRoot;  
+        else if (subsetArray[nextSourceRoot].value > subsetArray[nextDestinationRoot].value)  
+            subsetArray[nextDestinationRoot].parent = nextSourceRoot;  
+        else {  
+            subsetArray[nextDestinationRoot].parent = nextSourceRoot;  
+            subsetArray[nextSourceRoot].value++;  
+        }  
+    }  
 
-class MstKruskal {                      //mst -> minimum spanning tree
-    void kruskal(int cost[][], int n){
-        int [] par = new int[n];
-        for(int i=0;i<n;i++){
-            par[i]= -1;
-        }
-        int a=0, b=0, u=0, v=0, mincost=0, min, ne =0;
-        System.out.println("MST edges are: ");
-        while(ne < n-1) {
-            min = 999;
-            for(int i=0; i<n; i++) {
-                for(int j=0; j<n; j++) {
-                    if(cost[i][j]< min){
-                        min = cost[i][j];
-                        a=u=i;
-                        b=v=j;
-                    }
-                }
-            }
-            while(par[u]!= -1)
-                 u = par[u];
-            if(u!=v) {
-                System.out.println("from vertex "+a+" to vertex "+b+" and the cost = "+min);
-                System.out.println(a+"----->"+b+" with cost= "+min);
-                mincost+=min;
-                par[b] = a;
-                ne++;
-            }
-            cost[a][b] = cost[b][a] = 999;
-        }
-        System.out.println("cost of mst = "+mincost);
-    }
-}
-public class KruskalAlgo {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter the number of vertices: ");
-        int n = s.nextInt();
-        int c[][] = new int[n][n];
-        System.out.println("Enter the cost of matrix: ");
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                c[i][j] = s.nextInt();
-            }
-        }
-        System.out.println("Enter the source node: ");
-        int source = s.nextInt();
-        MstKruskal obj = new MstKruskal();
-        obj.kruskal(c, n);
-    }   
-}
+    public static void main(String[] args) {         
+        int v, e;  
+        Scanner sc = new Scanner(System.in);  
+        System.out.println("Enter number of vertices: ");  
+        v = sc.nextInt();
+        System.out.println("Enter number of edges");  
+        e = sc.nextInt();  
+          
+        KruskalAlgorithm graph = new KruskalAlgorithm(v, e);
+          
+        for(int i = 0; i < e; i++){  
+            System.out.println("Enter source value for edge["+ i +"]");  
+            graph.edgeArray[i].source = sc.nextInt();             
+            System.out.println("Enter destination value for edge["+ i +"]");  
+            graph.edgeArray[i].destination = sc.nextInt();  
+            System.out.println("Enter weight for edge["+i+"]");  
+            graph.edgeArray[i].weight = sc.nextInt();  
+        }  
+        graph.applyKruskal();  
+    }  
+}  
