@@ -1,6 +1,7 @@
 | Name                 | Github                                                        | Starred the repo |
 | -------------------- | ------------------------------------------------------------- | ---------------- |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
+| Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
 | Justinus Hermawan    | [@justinushermawan](https://github.com/justinushermawan/)     |         0        |
@@ -108,4 +109,7 @@
 | Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
 | Gary Zhao            | [@garyjzhao](https://github.com/garyjzhao)                    |         1        |
 | Siddhant             | [@SiddhantManze](https://github.com/SiddhantManze)            |         1        |
-| Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         17       |
+| Nicolas Nasr         | [@Nicolanasr](https://github.com/Nicolanasr)                  |         1        |
+| Himanshu Mishra      | [@himanshukm2301](https://github.com/himanshukm2301)          |         0        |
+| Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
+| Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         1        |
