@@ -1,0 +1,40 @@
+body {
+    background: #67B26F;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+    background: linear-gradient(to right, #4ca2cd, #67B26F); 
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+#mortgagecalculator {
+    width: 525px;
+    height: 345px;
+    background: #134E5E;
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+    background: linear-gradient(to right, #71B280, #134E5E);
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    padding-left: 90px;
+    padding-top: 20px;
+}
+
+#months, #amount, #interest_rate {
+    width: 175px;
+    height: 25px;
+    margin: 10px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
