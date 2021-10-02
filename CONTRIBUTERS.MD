@@ -183,4 +183,4 @@
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
 | Ritaban Datta        | [@reetoo](https://github.com/Reetoo)                          |         1        |
-| Harshit Gupta        | [@HarshitGupta150](https://github.com/HarshitGupta150)  
+| Harshit Gupta        | [@HarshitGupta150](https://github.com/HarshitGupta150)        |         0        |
