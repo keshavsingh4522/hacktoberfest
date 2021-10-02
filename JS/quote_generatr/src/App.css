@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+  font-family: 'ubuntu';
+}
+
+#quotes-box{
+  background-color: white;
+  width: 40%;
+  margin-left: 300px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 50px 50px;
+  border-radius: 1.5em;
+}
+
+#button{
+  background-color: black;
+  background-color:'transparent';
+  border: none;
+  color: white;
+  border-radius: 0.5em;
+  height: 3em;
+  width: 8em;
+}
+
+#text{
+  font-size: 2em;
+}
+
+#author{
+  font-size: 1em;
+  padding: 20px;
+  text-align: right;
+}
+
+#tweet-quote{
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+}
+
+#tweetbtn{
+  display: inline-flex;
+  width: 100%;
+}
+
+#new-quote{
+  position: relative;
+  right: -350px;
+}
