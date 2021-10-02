@@ -94,4 +94,5 @@
 | Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
 | Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
-| Candra Perdana              | [@cp2940](https://github.com/cp2940)                  |         0        |
+| Candra Perdana              | [@cp2940](https://github.com/cp2940)                   |         0        |
+| Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
