@@ -94,7 +94,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 0px;
+    grid-gap: 1px;
     flex-grow: 1;
     padding: 10px;
 }
