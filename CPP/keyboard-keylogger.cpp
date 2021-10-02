@@ -1,6 +1,6 @@
 // This is a keylogger that creates a file called 'Record.txt' in the same directory
 // and records the keystrokes of your keyboard in that file
-// To stopit you need to kill the code execution.
+// To stop it you need to kill the code execution.
 
 #include <iostream>
 #include <windows.h>
