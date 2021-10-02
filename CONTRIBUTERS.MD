@@ -1,5 +1,5 @@
-| Name                  | Github                                                        | Starred the repo |
-| --------------------- | ------------------------------------------------------------- | ---------------- |
+| Name                 | Github                                                        | Starred the repo |
+| ---------------------| ------------------------------------------------------------- | ---------------- |
 | Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
@@ -82,7 +82,7 @@
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
 | Tristan Brown        | [@drd3rp](https://github.com/drd3rp)                          |         0        |
 | Abhinav Verma        | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
-| Tridib Samanta	     | [@tridib2003](https://github.com/tridib2003)                  |         0        |
+| Tridib Samanta       | [@tridib2003](https://github.com/tridib2003)                  |         0        |
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |
 | Aswin A              | [@Aswin1362](https://github.com/Aswin1362)                    |         0        |
@@ -102,7 +102,7 @@
 | Vaibhav Sharma       | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
 | Aman Sharma          | [@arcAman07](https://github.com/arcAman07)                    |         1        |
 | Vishal Kumar         | [@vishaaal](https://github.com/vishaaal)                      |         1        |
-| Sayan Manna          |[@sayan0306](https://github.com/sayan0306)                     |         0        |
+| Sayan Manna          | [@sayan0306](https://github.com/sayan0306)                    |         0        |
 | Thamal Wijetunge     | [@thamaltw97](https://github.com/Thamaltw97)                  |         1        |
 | Ravi                 | [@guptaravi5400](https://github.com/guptaravi5400)            |         0        |
 | Ananda Andra         | [@anandaandra](https://github.com/anandaandra)                |         0        |
@@ -119,7 +119,7 @@
 | Gautham Sai Swaroop  | [@gssp4167](https://github.com/gssp4167)                      |         1        |
 | Swarnava Halder      | [@swrnv](https://github.com/swrnv)                            |         1        |
 | Dev Boy              | [@devboy](https://github.com/DevBoy69)                        |         1        |
-| Priyadarshini Acharjee| [@Priyadarshini-25](https://github.com/Priyadarshini-25)     |         1        |
+| Priyadarshini Acharjee|[@Priyadarshini-25](https://github.com/Priyadarshini-25)      |         1        |
 | Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)            |         0        |
 | Mann Patel           | [@manncodes](https://github.com/manncodes)                    |         1        |
 | Varun Sunil Pathak   | [@pathakvsp1](https://github.com/pathakvsp1)                  |         1        |
@@ -152,7 +152,7 @@
 | Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
 | Max Max              | [@nothanks](https://github.com/nothanks)                      |         1        |
 | Aimee Temple         | [@AimeeT8](https://github.com/AimeeT8)                        |         0        |
-| thexkey			         | [@samdisk11](https://github.com/samdisk11)					           |		     1		    |
+| thexkey	       | [@samdisk11](https://github.com/samdisk11)		       |         1	  |
 | Piero Narciso        | [@PieroNarciso](https://github.com/PieroNarciso)              |         0        |
 | Sneha Mishra         | [@Medulla9991](https://github.com/Medulla9991)                |         1        |
 | Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
@@ -173,7 +173,7 @@
 | Daksh Jain           | [@DakshJain](https://github.com/Dakshjain1)                   |         1        |
 | Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
 | Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
-| Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
+| Kamal Singh Khanna   | [@KamalSinghKhanna](https://github.com/KamalSinghKhanna)      |         1        |
 | Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
 | Yothin Homjan        | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
@@ -188,7 +188,7 @@
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
-| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                    |         1        |
+| Raj Patra 	       | [@raj-patra](https://github.com/raj-patra)                    |         1        |
 | Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
@@ -205,8 +205,8 @@
 | Harshit Gupta        | [@HarshitGupta150](https://github.com/HarshitGupta150)        |         0        |
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
-| Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
-| Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
+| Yashraj Singh Boparai| [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)      |         1        |
+| Saurabh Nikam        | [@saurabh-nikam](https://github.com/saurabh-nikam)            |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
 | Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                      
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
@@ -215,3 +215,4 @@
 | Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
+| Anisha Singh         | [@Anishahaha](https://github.com/Anishahaha)                  |         1        |
