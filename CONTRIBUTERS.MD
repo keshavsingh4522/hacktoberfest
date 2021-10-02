@@ -180,6 +180,8 @@
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
 | Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
+| Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
+| Kushal Goel          | [@kushalgoel786](https://github.com/kushalgoel786)            |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Rakesh Mahato        | [@mahatorakesh](https://github.com/mahatorakesh)              |         1        |
 | Abay Kappassov       | [@kappassov](https://github.com/kappassov)                    |         1        |
@@ -204,3 +206,9 @@
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
 | Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
+| Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
+| Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                      
+| Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
+| Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
+| Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
