@@ -193,9 +193,6 @@
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
-<<<<<<< HEAD
-| Agus Himawan      | [@Agushm](https://github.com/Agushm)                          |         1        |
-=======
 | Bikram Purkait       | [@IamBikramPurkait](https://github.com/IamBikramPurkait)      |         1        |
 | Yashas H Majmudar    | [@yashas-hm](https://github.com/yashas-hm)                    |         1        |
 | Muhammad Gimnastiar  | [@muhammadgimnastiar](https://github.com/muhammadgimnastiar)  |         1        |
@@ -216,4 +213,4 @@
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
->>>>>>> 518fb4b1e5ad55b9d089ef823ac5fcee10fbee6c
+| Agus Himawan      | [@Agushm](https://github.com/Agushm)                          |         1        |
