@@ -38,7 +38,7 @@
 
 ## Rules
 
-- Don't use dirty words and be welcome for beginners and other people in this community.
+- Don't use filthy words and be welcome for beginners and other people in this community.
 
 ---
 
