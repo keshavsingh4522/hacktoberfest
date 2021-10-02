@@ -106,3 +106,4 @@
 | Piero Narciso        | [@PieroNarciso](https://github.com/PieroNarciso)              |         0        |
 | Sneha Mishra         | [@Medulla9991](https://github.com/Medulla9991)                |         1        |
 | Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
+| Gary Zhao            | [@garyjzhao](https://github.com/garyjzhao)                    |         1        |
