@@ -185,3 +185,4 @@
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
 | Kinjalk Bajpai       | [@kinb98](https://github.com/kinb98)                          |         1        |
 | Ritaban Datta        | [@reetoo](https://github.com/Reetoo)                          |         1        |
+| Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
