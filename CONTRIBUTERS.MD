@@ -85,3 +85,4 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
 | Gabriel Santos              | [@gabriel](https://github.com/gabriel-github)                  |         1        |
+| Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
