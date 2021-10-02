@@ -102,3 +102,4 @@
 | Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
 | Max Max              | [@nothanks](https://github.com/nothanks)                      |         1        |
 | Aimee Temple         | [@AimeeT8](https://github.com/AimeeT8)                        |         0        |
+| thexkey			         | [@samdisk11](https://github.com/samdisk11)					           |		     1		    |
