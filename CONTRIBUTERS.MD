@@ -203,4 +203,5 @@
 | Harshit Gupta        | [@HarshitGupta150](https://github.com/HarshitGupta150)        |         0        |
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
-| Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                    |         1        |
+| Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
+| Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
