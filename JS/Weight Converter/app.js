@@ -1,7 +1,4 @@
-const gm = document.getElementById("gram");
-const pound = document.getElementById("pound");
-const ounce = document.getElementById("ounce");
-const kg = document.getElementById("kg");
+
 
 const gmInput = document.getElementById("gramInput");
 const poundInput = document.getElementById("poundInput");
@@ -16,7 +13,7 @@ const gmSelect = document.getElementById("gramSelect");
 const ounceSelect = document.getElementById("ounceSelect");
 
 select = document.getElementById("select");
-inputs = document.querySelectorAll(".inputs");
+// inputs = document.querySelectorAll(".inputs");
 
 //Events
 
