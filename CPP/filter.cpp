@@ -1,5 +1,4 @@
 //Coded by Abhijay Mitra (AbJ) on 2021 / 03 / 30 in 23 : 59 : 09
-//title - E_Filters.cpp
 #include <iostream>
 #include <stdlib.h>
 #include <algorithm>
