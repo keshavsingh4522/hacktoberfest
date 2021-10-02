@@ -1,0 +1,49 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/contact.min.css')}}">
+{% endblock %}
+
+{% block body %}
+<section class="contactus--section">
+
+    <div class="contactus__heading__container">
+        <h1>CONTACT US</h1>
+        <p>This is a customer support of Team Sakha. You can either call or send email 
+            to our team and they will reach out as soon as possible.
+        </p>
+    </div>
+
+    <div class="contactus__cards__container">
+
+        <div class="call__card card">
+            <div class="card__header">
+                <h3>CALL US</h3>
+            </div>
+            <div class="card__body">
+                <p>
+                    Contact No : <a href="tel:+919122109422">+91-9122109422</a>
+                </p>
+                <p>
+                    Hours : 9am to 5pm (MON - FRI)
+                </p>
+            </div>
+        </div>
+
+        <div class="mail__card card">
+            <div class="card__header">
+                <h3>MAIL US</h3>
+            </div>
+            <div class="card__body">
+                <p>
+                    Email : 
+                    <a href="mailto:rahulkumar109422@gmail.com">
+                        rahulkumar109422@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}
