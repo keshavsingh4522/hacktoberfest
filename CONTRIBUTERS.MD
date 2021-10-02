@@ -117,3 +117,4 @@
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
 | Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
+| Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
