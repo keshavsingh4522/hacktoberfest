@@ -189,4 +189,4 @@
 | Kinjalk Bajpai       | [@kinb98](https://github.com/kinb98)                          |         1        |
 | Ritaban Datta        | [@reetoo](https://github.com/Reetoo)                          |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
-| Akshayan Sinha       | [@hippyaki](https://github.com/hippyaki)                      |         1        |
+
