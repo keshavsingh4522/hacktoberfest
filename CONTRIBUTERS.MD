@@ -86,6 +86,7 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Yuvraj Singh Chaudhry| [@yuvrajchaudhry](https://github.com/yuvrajchaudhry)          |         0        |
 | Karan Heer           | [@karanheer](https://github.com/karanheer)                    |         1        |
 | Mohammad Asif        | [@geekyasif](https://github.com/geekyasif)                    |         0        |
 | Shabaj Ansari        | [@SHabaj-dev](https://github.com/SHabaj-dev)                  |         0        |
