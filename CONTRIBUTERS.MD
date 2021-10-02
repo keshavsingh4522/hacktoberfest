@@ -212,5 +212,9 @@
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
+| Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
+
+| Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
+
 | Agus Himawan      | [@Agushm](https://github.com/Agushm)                          |         1        |
