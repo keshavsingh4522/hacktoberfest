@@ -108,3 +108,4 @@
 | Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
 | Gary Zhao            | [@garyjzhao](https://github.com/garyjzhao)                    |         1        |
 | Siddhant             | [@SiddhantManze](https://github.com/SiddhantManze)            |         1        |
+| Nicolas Nasr         | [@Nicolanasr](https://github.com/Nicolanasr)                  |         1        |
