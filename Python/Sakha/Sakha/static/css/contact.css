@@ -161,7 +161,7 @@ MEDIA QUERIES
 @media (min-width: 992px) {
   .card {
     width: 35%;
-    margin: 0 0 auto 0;
+    margin-left:auto;
   }
   .call__card {
     margin-right: 1em;
