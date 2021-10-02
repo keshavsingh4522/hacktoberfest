@@ -121,3 +121,4 @@
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
+| Daksh Jain          | [@DakshJain](https://github.com/Dakshjain1)                    |         1        |
