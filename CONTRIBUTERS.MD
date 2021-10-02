@@ -84,16 +84,12 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
+| Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
+| Ukesh Shrestha       | [@Ukesh-dev](https://github.com/Ukesh-dev)                    |         1        |
 | Felipe Gangorra      | [@Gangorra](https://github.com/Gangorra)                      |         1        |
-
 | UBG100               | [@UBG100](https://github.com/UBG100)                          |         1        |
 | Ishaan Gupta         | [@ishaangupta-YB](https://github.com/ishaangupta-YB)          |         0        |
 | thecoderkd           | [@thecoderkd](https://github.com/thecoderkd)                  |         1        |
-| Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
-
 | Aman Srivastava      | [@aman1210](https://github.com/aman1210)                      |         1        |
-
 | Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
-
-
+| Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
