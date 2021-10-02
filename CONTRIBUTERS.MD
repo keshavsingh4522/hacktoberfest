@@ -45,6 +45,7 @@
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
+| Jaya Srikar          | [@znjs](https://github.com/znjs)                              |         0        |
 
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
