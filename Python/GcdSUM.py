@@ -1,10 +1,18 @@
 import math
- 
- 
-testcase=int(input())
+
+
+try:
+   testcase=int(input())
+except:
+   print("Please enter a number")
+   testcase = 0
 while testcase!=0:
     gcd=0
-    num=int(input())
+    try:
+        num=int(input())
+    except:
+        print("please enter a number")
+        num = 0
     while gcd==0:
         suma=0
         for i in str(num):
@@ -16,5 +24,8 @@ while testcase!=0:
             print(num)
             gcd=1 
     
-    testcase=testcase-1   
+    testcase=testcase-1 
+    
+
+    
     
