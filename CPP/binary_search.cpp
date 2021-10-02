@@ -1,4 +1,3 @@
-//Recursive Method:
 
 int binsearch(int A[], int low, int high, int key){
     
