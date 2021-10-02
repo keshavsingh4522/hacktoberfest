@@ -88,6 +88,9 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Nirbhay Sigh              | [@nirbhay007](https://github.com/nirbhay007)             |         1        |
+| Koddi Evangelista    | [@Koddi-Evangelista](https://github.com/Koddi-Evangelista)    |         14       |
+| Nukholis Ramadhan    | [@ramadh-an](https://github.com/ramadh-an)                    |         1        |
 | Ravi              | [@srravigupt](https://github.com/srravigupt)                  |         0        |
 | Anish Karan          | [@0Ani](https://github.com/0Ani)                              |         1        |
 | Shambashib Majumdar  | [@shambashib20](https://github.com/shambashib20)              |         1        |
