@@ -98,6 +98,7 @@
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
 | Candra Perdana       | [@cp2940](https://github.com/cp2940)                          |         0        |
 | Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
+| Kindi Setiadi        | [@kindise](https://github.com/kindise)                        |         1        |
 | Harsh Raj            | [@harshraj8843](https://github.com/harshraj8843)              |         1        |
 | Sourav Saha          | [@sourav-developer](https://github.com/platinumpmo-amigo)     |         1        |
 | Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
@@ -112,4 +113,11 @@
 | Nicolas Nasr         | [@Nicolanasr](https://github.com/Nicolanasr)                  |         1        |
 | Himanshu Mishra      | [@himanshukm2301](https://github.com/himanshukm2301)          |         0        |
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
+| Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         1        |
+| SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
+| Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
+| Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
+| Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
+| Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
+| Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
