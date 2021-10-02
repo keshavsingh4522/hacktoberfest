@@ -188,3 +188,5 @@
 | Kinjalk Bajpai       | [@kinb98](https://github.com/kinb98)                          |         1        |
 | Ritaban Datta        | [@reetoo](https://github.com/Reetoo)                          |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |
+0        |                                                                      
