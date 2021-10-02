@@ -24,7 +24,7 @@ int main(){
     insert(55);
     insert(65);
     insert(75);
-    insert(85);
+    insert(05);
 
     node *add= new node;
     add->data=69;
