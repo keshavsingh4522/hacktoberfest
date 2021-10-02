@@ -16,11 +16,11 @@ const selectionSort = (inputArr) => {
   return inputArr;
 };
 
-// swap function
+// efficient swap function using bitwise XOR.
 const swap = (inputArr, i, minIndex) => {
-  let temp = inputArr[i];
-  inputArr[i] = inputArr[minIndex];
-  inputArr[minIndex] = temp;
+  inputArr[i] = inputArr[i] ^ inputArr[minIndex];
+  inputArr[minIndex] = inputArr[i] ^ inputArr[minIndex];
+  inputArr[i] = inputArr[i] ^ inputArr[minIndex];
   return inputArr;
 };
 
