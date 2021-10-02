@@ -38,7 +38,7 @@
 
 ## Rules
 
-- Don't use dirty words and be welcome for beginners and other people in this community.
+- Don't use filthy words and be welcome for beginners and other people in this community.
 
 ---
 
@@ -57,6 +57,7 @@ Steps for adding your name below
     2. Edit `CONTRIBUTERS.md` file
     3. Add your Name also link your github profile
     4. Make pull request
+
 
 
 ## Contributors
