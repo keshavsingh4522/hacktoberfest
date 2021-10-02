@@ -130,3 +130,4 @@
 | Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
 | Yothin Homjan        | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
+| Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
