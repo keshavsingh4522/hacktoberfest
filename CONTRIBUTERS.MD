@@ -10,6 +10,7 @@
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
+| Aniket Nayek         | [@AniketNayek3101](https://github.com/AniketNayek3101)        |         0        |
 | Sumit Soni           | [@isumit19](https://github.com/isumit19/)                     |         0        |
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
 | Hero Tiwari          | [@Skywalkers-24](https://github.com/Skywalkers-24/)           |         0        |
@@ -43,6 +44,7 @@
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
+
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi             | [@arisandi1](https://github.com/arisandi1)                    |         0        |
