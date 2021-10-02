@@ -1,4 +1,5 @@
-| Name                 | Github                                                        | Starred the repo |
+|Kamal Singh Khanna    |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |
+1        |
 | -------------------- | ------------------------------------------------------------- | ---------------- |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
