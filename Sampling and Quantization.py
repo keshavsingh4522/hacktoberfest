@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,42 +8,20 @@ plt.xlabel("Time")
 plt.ylabel("Amplitude")
 plt.plot(time,amp)
 plt.show()
-
-
-# In[2]:
-
-
 print(amp)
 l = str(len(amp))
 print("There are "+l+" bits")
-
-
-# In[10]:
-
-
 plt.scatter(time,amp)
 plt.vlines(time,[0]*32,amp)
 plt.title("Sampled Wave")
-
-
-# In[3]:
-
 
 quant = 4
 ampl = (amp * (2**quant)).astype(int)
 print(ampl)
 
-
-# In[11]:
-
-
 plt.plot(time,ampl)
 plt.scatter(time,ampl)
 plt.vlines(time,[0]*32,ampl)
-
-
-# In[5]:
-
 
 for i in range (32):
     b = ampl[i]
@@ -62,4 +34,3 @@ for i in range (32):
         print('0'+'.'+(e-1)*'0'+s)
     else:
         print(n)
-
