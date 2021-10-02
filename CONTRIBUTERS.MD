@@ -96,7 +96,7 @@
 | Santanu Biswas       | [@SantanuxD](https://github.com/SantanuxD)                    |         1        |
 | Chetan Atrawalkar    | [@ChetanAtrawalkarCA](https://github.com/ChetanAtrawalkarCA)  |         1        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
-| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        | 
+| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
 | Amrit Anwesh         | [@shinozaki1595](https://github.com/shinozaki1595)            |         1        |
 | Ravi Gupta           | [@guptaravi540](https://github.com/@guptaravi540)             |         0        |
 | Vaibhav Sharma       | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
@@ -171,7 +171,7 @@
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
 | Daksh Jain           | [@DakshJain](https://github.com/Dakshjain1)                   |         1        |
-| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
+| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        |
 | Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
 | Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
 | Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
@@ -215,3 +215,4 @@
 | Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
+| Bhavika Gianey   | [@Bhavika-Gianey](https://github.com/Bhavika-Gianey)
