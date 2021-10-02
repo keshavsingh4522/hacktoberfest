@@ -1,0 +1,84 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/login.min.css')}}">
+{% endblock stylesheet %}
+
+{% block body %}
+<main class="form--main">
+
+    <form method="post" class="form" autocomplete="off">
+        {{form.hidden_tag()}}
+
+        <legend>Login</legend>
+
+        <div class="form__group">
+            {{form.email.label}}
+            {{form.email(placeholder="Enter Email Address")}}
+            {% if form.email.errors %}
+            {% for error in form.email.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form__group">
+            {{form.password.label}}
+            <div class="password__field">
+                {{form.password(placeholder="Enter Password")}}
+                <i class="fa fa-eye"></i>
+            </div>   
+            {% if form.password.errors %}
+            {% for error in form.password.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form__remember__group">
+            {{form.remember}}
+            {{form.remember.label}}
+        </div>
+
+        <div class="form__submit__group">
+            {{form.submit}}
+        </div>
+
+        <p class="register__link__section">
+            New here
+            <a href="{{url_for('register')}}" class="register__link">register</a>
+            folk
+        </p>
+
+    </form>
+   
+
+</main>
+{% endblock %}
+
+{% block script %}
+<script>
+
+    /*********************To show or hide password**********************/
+    const password = document.querySelector('.password__field input')
+    const eyeIcon = document.querySelector('.password__field .fa-eye');
+    let tracker = true;
+
+    eyeIcon.addEventListener('click', () => {
+        if(tracker) {
+            password.type="text";
+            eyeIcon.classList.add('fa-eye-slash');
+            tracker = false;
+        }
+        else {
+            password.type="password";
+            eyeIcon.classList.remove('fa-eye-slash');
+            tracker = true;
+        }
+    });
+
+    // /********************To prevent default refreshing when client submit the form********************/
+    // const form = document.querySelector('.form');
+    // form.addEventListener('submit', e => e.preventDefault());
+
+</script>
+{% endblock %}
