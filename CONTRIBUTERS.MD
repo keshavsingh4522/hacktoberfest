@@ -1,6 +1,8 @@
 | Name                  | Github                                                        | Starred the repo |
 | --------------------- | ------------------------------------------------------------- | ---------------- |
+| Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
+| Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
@@ -9,6 +11,7 @@
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
+| Aniket Nayek         | [@AniketNayek3101](https://github.com/AniketNayek3101)        |         0        |
 | Sumit Soni           | [@isumit19](https://github.com/isumit19/)                     |         0        |
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
 | Hero Tiwari          | [@Skywalkers-24](https://github.com/Skywalkers-24/)           |         0        |
@@ -42,6 +45,7 @@
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
+
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi             | [@arisandi1](https://github.com/arisandi1)                    |         0        |
@@ -87,10 +91,18 @@
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
-| Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Abinash Gogoi        | [@abinashstack](https://github.com/abinashstack)              |         1        |
+| Santanu Biswas       | [@SantanuxD](https://github.com/SantanuxD)                    |         1        |
+| Chetan Atrawalkar    | [@ChetanAtrawalkarCA](https://github.com/ChetanAtrawalkarCA)  |         1        |
+| Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
+| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        | 
+| Amrit Anwesh         | [@shinozaki1595](https://github.com/shinozaki1595)            |         1        |
+| Ravi Gupta           | [@guptaravi540](https://github.com/@guptaravi540)             |         0        |
+| Vaibhav Sharma       | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
+| Aman Sharma          | [@arcAman07](https://github.com/arcAman07)                    |         1        |
 | Vishal Kumar         | [@vishaaal](https://github.com/vishaaal)                      |         1        |
-|Sayan Manna           |[@sayan0306](https://github.com/sayan0306)
+| Sayan Manna          |[@sayan0306](https://github.com/sayan0306)                     |         0        |
 | Thamal Wijetunge     | [@thamaltw97](https://github.com/Thamaltw97)                  |         1        |
 | Ravi                 | [@guptaravi5400](https://github.com/guptaravi5400)            |         0        |
 | Ananda Andra         | [@anandaandra](https://github.com/anandaandra)                |         0        |
@@ -185,8 +197,13 @@
 | Kadambini Panda      | [@kadambinipanda](https://github.com/kadambinipanda)          |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
+| Pavleen Kaur         | [@pavleen14](https://github.com/pavleen14)                    |         1        |
 | Kinjalk Bajpai       | [@kinb98](https://github.com/kinb98)                          |         1        |
 | Ritaban Datta        | [@reetoo](https://github.com/Reetoo)                          |         1        |
+| Harshit Gupta        | [@HarshitGupta150](https://github.com/HarshitGupta150)        |         0        |
+| Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
-| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |
-0        |                                                                      
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                      
+| Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
+| Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
+| Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
