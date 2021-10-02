@@ -84,3 +84,4 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Tushar Tiwari        | [@Tushar Tiwari](https://github.com/brassgolem-25)            |         0        |
