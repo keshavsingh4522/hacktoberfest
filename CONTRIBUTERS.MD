@@ -99,3 +99,4 @@
 | Harsh Raj            | [@harshraj8843](https://github.com/harshraj8843)              |         1        |
 | Sourav Saha          | [@sourav-developer](https://github.com/platinumpmo-amigo)     |         1        |
 | Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
+| Max Max              | [@nothanks](https://github.com/nothanks)                      |         1        |
