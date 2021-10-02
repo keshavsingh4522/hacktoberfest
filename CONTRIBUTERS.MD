@@ -88,7 +88,12 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)         |         0        |
+| Shambashib Majumdar  | [@shambashib20](https://github.com/shambashib20)              |         1        |
+| Gautham Sai Swaroop  | [@gssp4167](https://github.com/gssp4167)                      |         1        |
+| Swarnava Halder      | [@swrnv](https://github.com/swrnv)                            |         1        |
+| Dev Boy              | [@devboy](https://github.com/DevBoy69)                        |         1        |
+| Priyadarshini Acharjee| [@Priyadarshini-25](https://github.com/Priyadarshini-25)     |         1        |
+| Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)            |         0        |
 | Mann Patel           | [@manncodes](https://github.com/manncodes)                    |         1        |
 | Varun Sunil Pathak   | [@pathakvsp1](https://github.com/pathakvsp1)                  |         1        |
 | Adamay Mann          | [@mannadamay12](https://github.com/mannadamay12)              |         1        |
@@ -134,10 +139,11 @@
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
 | Foksha               | [@fokshawastaken](https://github.com/FokshaWasTaken)          |         1        |
 | Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
+| Teddy Firman Winarto | [@TeddyFirman](https://github.com/TeddyFirman)                |         1        |
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
-| Daksh Jain          | [@DakshJain](https://github.com/Dakshjain1)                    |         1        |
+| Daksh Jain           | [@DakshJain](https://github.com/Dakshjain1)                   |         1        |
 | Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
 | Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
 | Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
@@ -146,6 +152,12 @@
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
 | Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
+| Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
+| Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
+| Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
+| Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
+| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                    |         1        |
+| Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
