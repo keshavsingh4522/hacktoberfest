@@ -88,6 +88,7 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Swarnava Halder      | [@swrnv](https://github.com/swrnv)                            |         1        |
 | Dev Boy              | [@devboy](https://github.com/DevBoy69)                        |         1        |
 | Priyadarshini Acharjee| [@Priyadarshini-25](https://github.com/Priyadarshini-25)     |         1        |
 | Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)            |         0        |
