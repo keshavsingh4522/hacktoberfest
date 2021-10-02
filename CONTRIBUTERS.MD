@@ -90,6 +90,7 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Vaibhav Sharma       | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
 | Aman Sharma          | [@arcAman07](https://github.com/arcAman07)                    |         1        |
 | Vishal Kumar         | [@vishaaal](https://github.com/vishaaal)                      |         1        |
 | Sayan Manna          |[@sayan0306](https://github.com/sayan0306)                     |         0        |
