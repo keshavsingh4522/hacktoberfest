@@ -6,8 +6,8 @@ lower_alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p
 numbers = ['0','1','2','3','4','5','6','7','8','9']
 symbols = ['*','/','.','?','[]',';','@','!','$','#','^','%','&','+','-']
 
-positive_response = ['y','yes','ok','Y']
-negative_response = ['n','N','no']
+positive_response = ['y','yes','ok','Y','YES"]
+negative_response = ['n','N','no','NO']
 
 sym_include = input("Include Symbols? (y/n) ")
 
