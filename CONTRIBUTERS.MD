@@ -170,3 +170,6 @@
 | Kadambini Panda      | [@kadambinipanda] (https://github.com/kadambinipanda)         |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
+| Pavleen Kaur         | [@pavleen14](https://github.com/pavleen14)                    |         1        |
+
+
