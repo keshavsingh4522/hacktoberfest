@@ -212,3 +212,4 @@
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
+| Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
