@@ -248,10 +248,6 @@ def follow_action():
         current_user.unfollow(user)
         db.session.commit()
         return {'follow':'follow', 'followers':user.followers.count()}
-    elif not current_user.is_following(user): 
-        current_user.follow(user)
-        db.session.commit()
-        return {'unfollow':'following', 'followers':user.followers.count()}
 
 
 
