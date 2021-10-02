@@ -1,5 +1,5 @@
-| Name                 | Github                                                        | Starred the repo |
-| -------------------- | ------------------------------------------------------------- | ---------------- |
+| Name                  | Github                                                        | Starred the repo |
+| --------------------- | ------------------------------------------------------------- | ---------------- |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
@@ -86,6 +86,10 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Yuvraj Singh Chaudhry| [@yuvrajchaudhry](https://github.com/yuvrajchaudhry)          |         0        |
+| Karan Heer           | [@karanheer](https://github.com/karanheer)                    |         1        |
+| Mohammad Asif        | [@geekyasif](https://github.com/geekyasif)                    |         0        |
+| Shabaj Ansari        | [@SHabaj-dev](https://github.com/SHabaj-dev)                  |         0        |
 | Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
 | Ukesh Shrestha       | [@Ukesh-dev](https://github.com/Ukesh-dev)                    |         1        |
 | Felipe Gangorra      | [@Gangorra](https://github.com/Gangorra)                      |         1        |
@@ -116,9 +120,16 @@
 | Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         1        |
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
-| Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
+| Foksha               | [@fokshawastaken](https://github.com/FokshaWasTaken)          |         1        |
 | Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
 | Daksh Jain          | [@DakshJain](https://github.com/Dakshjain1)                    |         1        |
+| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
+| Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
+| Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
+| Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
+| Yothin Homjan        | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
+| Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
+| Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
