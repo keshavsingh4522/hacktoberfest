@@ -89,8 +89,9 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
-| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Ravi Gupta           | [@guptaravi540](https://github.com/@guptaravi540)           |         0        |
+| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        | 
+| Amrit Anwesh         | [@shinozaki1595](https://github.com/shinozaki1595)            |         1        |
+| Ravi Gupta           | [@guptaravi540](https://github.com/@guptaravi540)             |         0        |
 | Vaibhav Sharma       | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
 | Aman Sharma          | [@arcAman07](https://github.com/arcAman07)                    |         1        |
 | Vishal Kumar         | [@vishaaal](https://github.com/vishaaal)                      |         1        |
