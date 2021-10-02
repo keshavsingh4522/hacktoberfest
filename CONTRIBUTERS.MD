@@ -166,3 +166,4 @@
 | Muhammad Gimnastiar  | [@muhammadgimnastiar](https://github.com/muhammadgimnastiar)  |         1        |
 | Kadambini Panda      | [@kadambinipanda] (https://github.com/kadambinipanda)         |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
+| Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
