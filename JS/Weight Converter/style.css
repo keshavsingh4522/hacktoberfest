@@ -40,11 +40,10 @@ form {
 input {
   outline: none;
   border: none;
-}
-input {
   width: 80%;
   height: 2em;
 }
+
 select {
   height: 2em;
   outline: none;
