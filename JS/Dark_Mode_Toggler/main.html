@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Toggler Webpage</title>
+
+    <script
+      src="https://kit.fontawesome.com/677e7f498e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styler.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container intro">
+        <div class="text-container">
+          <h1>Are you Vaccinated against COVID-19 ?</h1>
+          <p>
+            Vaccines save millions of lives each year. Vaccines work by training
+            and preparing the body’s natural defences – the immune system – to
+            recognize and fight off the viruses and bacteria they target. After
+            vaccination, if the body is later exposed to those disease-causing
+            germs, the body is immediately ready to destroy them, preventing
+            illness.
+          </p>
+
+          <div class="buttons">
+            <button
+              type="button"
+              class="btn btn-left"
+              onclick="window.location.href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines/advice';"
+            >
+              Learn More
+            </button>
+            <button
+              type="button"
+              class="btn btn-right"
+              onClick="window.location.href='https://www.vaccines.gov';"
+            >
+              Get Vaccine
+            </button>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="./images/doc.svg" alt="doc" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy Open Source Project by Binaya Bajracharya 2021</p>
+    </footer>
+
+    <span class="toggler">
+      <span class="toggle-txt">Dark</span>
+      <i class="fas fa-toggle-on"></i>
+    </span>
+
+    <script src="toggler.js"></script>
+  </body>
+</html>
