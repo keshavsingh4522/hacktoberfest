@@ -167,6 +167,7 @@
 | Foksha               | [@fokshawastaken](https://github.com/FokshaWasTaken)          |         1        |
 | Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
 | Teddy Firman Winarto | [@TeddyFirman](https://github.com/TeddyFirman)                |         1        |
+| Yusril Adriansyah Putra | [@yusril-adr](https://github.com/yusril-adr)                |         1        |
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
