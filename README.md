@@ -163,8 +163,7 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/drd3rp"><img src="https://avatars3.githubusercontent.com/drd3rp?size=400" width="100px;" alt=""/><br /><sub><b>Tristan Brown</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=drd3rp" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> </td>
 </tr></table>
-<td align="center"><a href="https://github.com/brassgolem-25"><img src="https://avatars3.githubusercontent.com/brassgolem-25?size=400" width="100px;" alt=""/><br /><sub><b>Tushar Tiwari</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2021/commits?author=brassgolem-25" title="Code"> :computer: </a> </td>
-</tr></table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
