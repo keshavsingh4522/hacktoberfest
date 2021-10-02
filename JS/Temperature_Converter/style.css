@@ -1,0 +1,67 @@
+/* <form id="form" onsubmit="calculate(); return false">
+<label id="heading">INPUT THE TEMPURATURE YOU WANT TO CONVERT</label>
+<br> <input type="number" name="" id="heading2">
+ <select name="temp_diff" id="temp_diff">
+     <option value="celcius">°celcius</option>
+     <option value="farhenite">°farhenite</option>
+ </select> <br>
+ <input type="submit" name="submit">
+ <br>
+ <div id="res">
+
+ </div>
+</form> */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+#heading{
+    position: relative;
+    left: 100px;
+    top: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#heading2{
+    position: relative;
+    left: 130px;
+    top: 30px
+}
+
+#temp_diff{
+    position: relative;
+    left: 140px;
+    top: 30px;;
+}
+
+#submit{
+    position: relative;
+    top:40px;
+    left:250px;
+}
+
+#res{
+    position: relative;
+    top: 50px;
+    width:100px;
+    left: 240px;
+    font-size:20px;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-color: #52e0ad;
+    display: grid;
+    place-items: center;
+}
+
+#form{
+    border:5px solid black;
+    height:200px;
+    width: 600px;
+    background-color: whitesmoke;
+    padding-top: 24px;
+}
+
+#result{
+    border:1px solid black;
+   
+}
