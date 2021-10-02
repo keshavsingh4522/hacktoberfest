@@ -215,3 +215,4 @@
 | Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
+| Faiz Alam            | [@zhcet19](https://github.com/zhcet19)                        |         1        |
