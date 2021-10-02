@@ -94,9 +94,10 @@
 | Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
 | Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
-| Candra Perdana              | [@cp2940](https://github.com/cp2940)                   |         0        |
+| Candra Perdana       | [@cp2940](https://github.com/cp2940)                          |         0        |
 | Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
 | Harsh Raj            | [@harshraj8843](https://github.com/harshraj8843)              |         1        |
 | Sourav Saha          | [@sourav-developer](https://github.com/platinumpmo-amigo)     |         1        |
 | Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
 | Max Max              | [@nothanks](https://github.com/nothanks)                      |         1        |
+| Aimee Temple         | [@AimeeT8](https://github.com/AimeeT8)                        |         0        |
