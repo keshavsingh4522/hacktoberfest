@@ -1,0 +1,62 @@
+table {
+  font-size: 100%;
+}
+table thead th {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* --- TOP NAVBAR ---------------------------------------------------------- */
+
+.navbar-inverse .brand {
+  color: #fff;
+}
+.navbar-inverse .brand:hover {
+  color: #fff;
+}
+.navbar-inverse .brand img {
+  margin-bottom: 2px;
+}
+.navbar-inverse .nav > li > a.logged-in-user {
+  color: #fff;
+}
+
+/* --- BODY ---------------------------------------------------------------- */
+
+.bd {
+  margin-top: 40px;
+}
+
+/* flash messages */
+.flash {
+  display: block;
+  margin: 0 20px 20px;
+  font-weight: bold;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* forms */
+form .controls {
+  margin-bottom: 5px;
+  line-height: 28px;
+}
+.select2-container {
+  line-height: 20px;
+}
+.required:before {
+  content: "*";
+  color: #c00;
+  font-weight: bold;
+}
+
+/* --- FOOTER -------------------------------------------------------------- */
+
+.ft {
+  font-size: 11px;
+  text-align: center;
+}
+.ft .app {
+  margin-left: 10px;
+}
