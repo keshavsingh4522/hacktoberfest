@@ -74,7 +74,7 @@
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
 | Tristan Brown        | [@drd3rp](https://github.com/drd3rp)                          |         0        |
 | Abhinav Verma        | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
-| Tridib Samanta	   | [@tridib2003](https://github.com/tridib2003)                  |         0        |
+| Tridib Samanta	     | [@tridib2003](https://github.com/tridib2003)                  |         0        |
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |
 | Aswin A              | [@Aswin1362](https://github.com/Aswin1362)                    |         0        |
@@ -84,5 +84,16 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
-| Gabriel Santos              | [@gabriel](https://github.com/gabriel-github)                  |         1        |
+| Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
+| Ukesh Shrestha       | [@Ukesh-dev](https://github.com/Ukesh-dev)                    |         1        |
+| Felipe Gangorra      | [@Gangorra](https://github.com/Gangorra)                      |         1        |
+| UBG100               | [@UBG100](https://github.com/UBG100)                          |         1        |
+| Ishaan Gupta         | [@ishaangupta-YB](https://github.com/ishaangupta-YB)          |         0        |
+| thecoderkd           | [@thecoderkd](https://github.com/thecoderkd)                  |         1        |
+| Aman Srivastava      | [@aman1210](https://github.com/aman1210)                      |         1        |
+| Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
+| Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
+| SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
+| Candra Perdana              | [@cp2940](https://github.com/cp2940)                   |         0        |
+| Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
 | Harsh Raj            | [@harshraj8843](https://github.com/harshraj8843)              |         1        |
