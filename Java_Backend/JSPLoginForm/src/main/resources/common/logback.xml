@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+  <!--
+  Propagates changes made to the level of any logback-classic logger onto the
+  java.util.logging framework. Such propagation eliminates the performance
+  impact of disabled log statements. Instances of LogRecord will be sent to
+  logback (via SLF4J) only for enabled log statements.
+
+  Setting the resetJUL property of LevelChangePropagator will reset all
+  previous level configurations of all j.u.l. loggers. However, previously
+  installed handlers will be left untouched.
+
+  http://logback.qos.ch/manual/configuration.html
+  -->
+  <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+    <resetJUL>true</resetJUL>
+  </contextListener>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date [%thread] %-5level %logger{36} - [%X{username}] - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="APP_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${catalina.base}/logs/address-book-demo.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>address-book-demo.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory> <!-- days -->
+    </rollingPolicy>
+    <encoder>
+      <Pattern>%date [%thread] %-5level %logger{36} - [%X{username}] - %msg%n</Pattern>
+    </encoder>
+  </appender>
+
+  <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
+    <smtpHost>localhost</smtpHost>
+    <!--
+    <smtpPort>587</smtpPort>
+    <STARTTLS>true</STARTTLS>
+    <username>test@localhost</username>
+    <password>test</password>
+    -->
+
+    <to>test@localhost</to>
+    <from>noreply@localhost</from>
+    <subject>[ADDRESS_BOOK] %X{username} - %m</subject>
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <pattern>%date %-5level %logger{36} - [%X{username}] - %message%n</pattern>
+    </layout>
+  </appender>
+
+  <logger name="com.todc" level="DEBUG" />
+  <logger name="org.springframework" level="WARN" />
+
+  <root level="INFO">
+    <appender-ref ref="APP_FILE" />
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <root level="ERROR">
+    <appender-ref ref="EMAIL" />
+  </root>
+
+</configuration>
