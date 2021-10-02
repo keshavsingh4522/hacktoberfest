@@ -67,11 +67,8 @@ def login():
         user = User.query.filter_by(email=form.email.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
-            next = request.args.get('next')
             flash(f'Welcome back {user.firstname}, you are logged in', 'info')
-            return redirect(next) if next else redirect(url_for('home'))
-        else:
-            flash('Either username or password is wrong', 'warning')
+            return redirect(url_for('home'))
     return render_template('users/login.html', title='Login Here', form=form)
 
 
@@ -158,7 +155,8 @@ def profile():
 @login_required
 def user_profile(user_id):
     user = User.query.filter_by(id=user_id).first_or_404()
-    if user == current_user: return redirect(url_for('profile'))
+    if user == current_user: 
+      return redirect(url_for('profile'))
     posts =Post.query.filter_by(userId=user.id).order_by(Post.postDate.desc()).all()
     return render_template('users/userProfile.html', title=f'{user.firstname} \
                          {user.lastname}', user=user, posts=posts)
@@ -180,7 +178,7 @@ def delete_pic(file):
         try:
             os.remove(path)
         except:
-            pass
+            return None
 
 @app.route('/avatar', methods=['GET', 'POST'])
 @login_required
@@ -250,7 +248,7 @@ def follow_action():
         current_user.unfollow(user)
         db.session.commit()
         return {'follow':'follow', 'followers':user.followers.count()}
-    else: 
+    elif not current_user.is_following(user): 
         current_user.follow(user)
         db.session.commit()
         return {'unfollow':'following', 'followers':user.followers.count()}
