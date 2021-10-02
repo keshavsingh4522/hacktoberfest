@@ -1,50 +1,35 @@
-#include <iostream>
+//Insertion sort
 
+#include<bits/stdc++.h>
 using namespace std;
-
-
-void insertionsort( int arr[], int n)
-{
-    int key , j;
-   for(int i=1; i<n; i++)
-   {
-       key = arr[i];
-       j = i-1;
-
-       while( j>=0 && arr[j] > key)
-       {
-           arr[j+1] = arr[j];
-           j = j-1;
-       }
-       arr[j+1] = key;
-       }
-
-
-}
-void printarr(int arr[] , int n)
-{
-    for(int i=0; i<n; i++)
-       {
-           cout <<arr[i]<<endl;
-
-       }
-}
-
 
 int main()
 {
-    int arr[10];
-    int n;
-    cout <<"Enter value of n" <<endl;
-    cin >> n;
-
-    cout << "Enter array value" << endl;
-    for(int i=0;i<n;i++)
+    int s,i,j,current;
+    cout<<"enter size of array :";
+    cin>>s;
+    int arr[s];
+    for(i=0;i<s;i++)
     {
-        cin >> arr[i];
+        cin>>arr[i];
     }
-
-    insertionsort(arr , n);
-    printarr(arr , n);
+    
+    for(i=1;i<s;i++)
+    {
+        current=arr[i];
+        j=i-1;
+        
+        while(arr[j]>current&&j>=0)
+        {
+            arr[j+1]=arr[j];
+            j--;
+        }
+        j++;
+        arr[j]=current;
+    }
+    for(i=0;i<s;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
     return 0;
 }
