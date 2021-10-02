@@ -249,16 +249,16 @@ void HuffmanCodes(char data[], int freq[], int size)
 
 int main()
 {
-    int sum=0;
+    // int sum=0;
 	char arr[] = { 'a', 'b', 'c', 'd', 'e', 'f'};
-	int freq[6];
-	srand(time(0)); 
-    for(int i=0;i<5;i++){
-      freq[i]=(rand() % 10)+ 1;  
-       sum=sum+freq[i];
-          }
-    freq[5]=50-sum;
-	// int freq[] = { 5, 9, 12, 13, 16, 45 };  
+	// int freq[6];
+	// srand(time(0)); 
+    // for(int i=0;i<5;i++){
+    //   freq[i]=(rand() % 10)+ 1;  
+    //    sum=sum+freq[i];
+    //       }
+    // freq[5]=50-sum;
+	int freq[] = { 5, 9, 12, 13, 16, 45 };  
     int size = sizeof(arr) / sizeof(arr[0]);
 	HuffmanCodes(arr, freq, size);
 	printf("\n------------------------------------------------");
