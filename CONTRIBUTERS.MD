@@ -87,6 +87,7 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Brian Tham           | [@Nightey3s](https://github.com/Nightey3s)                    |         1        |
 | Srishti Mittal       | [@Chia2712](https://github.com/Chia2712)                      |         1        |
 | Thimira              | [Thimira97](https://github.com/Thimira97)                     |         1        |
 | Yuvraj Singh Chaudhry| [@yuvrajchaudhry](https://github.com/yuvrajchaudhry)          |         0        |
