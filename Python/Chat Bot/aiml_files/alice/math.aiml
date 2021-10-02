@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!--     
+                                              
+  math.aiml                                        
+                                                   
+  Basic math via JavaScript for an AIML web bot      
+                                    
+Free software (c) 2001-2008 ALICE A.I. Foundation
+This program is open source code released under the terms of the 
+GNU General Public License as published by the Free Software Foundation.   
+  
+Complies with AIML 1.0 Tag Set Specification as adopted by the ALICE A.I. Foundation.          
+
+Created on   ?  ? 200? by SonoranDiaries               
+Revised on May 20 2006 by KnyteTrypper            
+Revised on May 16 2008 by NatLangProc, demo at: http://nlp-addiction.com/chatbot/mathbot/         
+
+-->
+
+<category>
+ <pattern>*</pattern>
+ <template>
+  Let's talk about <set name="topic">math</set>!
+  <srai><star/></srai>
+ </template>
+</category>
+
+
+
+<topic name="math">
+
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+ <li><srai>DO YOU KNOW MATH</srai></li>
+ <li><srai>XPROMPT</srai></li>
+ <li>Type 'Help Math' for everything I know. </li>
+</random>
+</template>
+</category>
+
+<category><pattern>XHMM</pattern><template>
+<random>
+ <li></li>
+ <li>Hmm... </li>
+ <li>Ok... </li>
+ <li>Let me think... </li>
+ <li>Let me think for a moment... </li>
+ <li>Ah... </li>
+ <li>Yes... </li>
+ <li>Yes, of course... </li>
+ <li>That's easy... </li>
+ <li>Hold on a sec, I'm thinking... </li>
+ <li>Er, maybe... ah... no. wait.  Ok, yes... </li>
+ <li>I know... </li>
+ <li>I know the answer to that. </li>
+</random>
+</template></category>
+
+<category><pattern>XEQUALS</pattern><template>
+<random>
+ <li>is </li>
+ <li>is, hmm... it's </li>
+ <li>equals </li>
+ <li>= </li>
+ <li>is equal to </li>
+ <li>is most likely equal to </li>
+ <li>is most likely </li>
+ <li>is probably </li>
+ <li>is definately </li>
+ <li>comes out to </li>
+ <li>is, and always will be </li>
+</random>
+</template></category>
+
+<category><pattern>XPROMPT</pattern>
+<template>
+<random>
+ <li>Now let's try another math problem... </li>
+ <li>Back to math... </li>
+ <li>Ask me another math problem.. </li>
+ <li>I want to solve a math problem.  What is your question?</li>
+ <li>What is your math question?</li>
+ <li>What math problem shall I solve for you? </li>
+ <li>I like to calculate.  Ask me a math question. </li>
+</random>
+</template></category> 
+
+
+<!-- Addition -->
+<category><pattern>XMATH ADD * *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="y"><star index="2" /></set>
+ <set name="err">Huh? These are not both numbers</set>
+</think>
+<srai>XHMM</srai>
+<get name="x" /> 
+<random><li>plus </li><li>and </li><li>+ </li><li>+ </li><li>added to </li><li>increased by </li></random>
+<get name="y" />  
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x" />'; var y = '<get name="y" />';
+if( y.search(/^ point /) != -1 ) { 
+ var newy = ''; var split = y.split(" "); var i = 0;  
+ while( 1 ) { switch( i ) {
+  case 0: case 1: break; case 2: x = x + '.' + split[i]; break;
+  default: newy = newy + ' ' + split[i]; break;
+ } i++; if( i == split.length ) { break; } }
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = newy; y = y.replace(' point ', '.'); y = parseFloat(y);
+ document.write("<br />Oops, I mean: " + x + " plus " + y + " = ");
+} else {
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = y.replace(' point ', '.'); y = parseFloat(y); }
+if( isNaN(x) || isNaN(y) ) { var r = '<get name="err" />'; } else { var r = x + y; } 
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>* PLUS *</pattern><template><srai>XMATH ADD <star/> <star index="2" /></srai></template></category>
+<category><pattern>* ADDED TO *</pattern><template><srai>XMATH ADD <star/> <star index="2" /></srai></template></category>
+<category><pattern>ADD * *</pattern><template><srai>XMATH ADD <star/> <star index="2" /></srai></template></category>
+<category><pattern>ADD * PLUS *</pattern><template><srai>XMATH ADD <star/> <star index="2" /></srai></template></category>
+<category><pattern>ADD * AND *</pattern><template><srai>XMATH ADD <star/> <star index="2" /></srai></template></category>
+<category><pattern>* INCREASED BY *</pattern><template><srai>XMATH ADD <star/> <star index="2" /></srai></template></category>
+
+
+<!-- Subtraction -->
+<category><pattern>XMATH SUBTRACT * *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="y"><star index="2" /></set>
+ <set name="err">Huh? These are not both numbers</set>
+</think>
+<srai>XHMM</srai>
+ <get name="x" />
+ <random><li>minus </li><li>- </li><li>- </li><li>subtracted from </li><li>subtracted by </li><li>take away </li></random>
+ <get name="y" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x" />'; var y = '<get name="y" />';
+if( y.search(/^ point /) != -1 ) { 
+ var newy = ''; var split = y.split(" "); var i = 0;  
+ while( 1 ) { switch( i ) {
+  case 0: case 1: break; case 2: x = x + '.' + split[i]; break;
+  default: newy = newy + ' ' + split[i]; break;
+ } i++; if( i == split.length ) { break; } }
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = newy; y = y.replace(' point ', '.'); y = parseFloat(y);
+ document.write("<br />Oops, I mean: " + x + " minus " + y + " = ");
+} else {
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = y.replace(' point ', '.'); y = parseFloat(y); }
+if( isNaN(x) || isNaN(y) ) { var r = '<get name="err" />'; } else { var r = x - y; } 
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>* MINUS *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+<category><pattern>* SUBTRACTED BY *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+<category><pattern>* SUBTRACTED FROM *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+<category><pattern>SUBTRACT * MINUS *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+<category><pattern>SUBTRACT * AND *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+<category><pattern>SUBTRACT * *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+<category><pattern>* TAKE AWAY *</pattern><template><srai>XMATH SUBTRACT <star/> <star index="2" /></srai></template></category>
+
+
+
+<!-- Multiplication -->
+<category><pattern>XMATH MULTIPLY * *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="y"><star index="2" /></set>
+ <set name="err">Huh? These are not both numbers</set>
+</think>
+<srai>XHMM</srai>
+ <get name="x" /> 
+ <random><li>times </li><li>* </li><li>x </li><li>X </li><li>multiplied by </li></random>
+ <get name="y" />  
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x" />'; var y = '<get name="y" />';
+if( y.search(/^ point /) != -1 ) { 
+ var newy = ''; var split = y.split(" "); var i = 0;  
+ while( 1 ) { switch( i ) {
+  case 0: case 1: break; case 2: x = x + '.' + split[i]; break;
+  default: newy = newy + ' ' + split[i]; break;
+ } i++; if( i == split.length ) { break; } }
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = newy; y = y.replace(' point ', '.'); y = parseFloat(y);
+ document.write("<br />Oops, I mean: " + x + " times " + y + " = ");
+} else {
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = y.replace(' point ', '.'); y = parseFloat(y); }
+if( isNaN(x) || isNaN(y) ) { var r = '<get name="err" />'; } else { var r = x * y; } 
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>* TIMES *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>* X *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>* MULTIPLIED BY *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>MULTIPLY * X *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>MULTIPLY * TIMES *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>MULTIPLY * AND *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>MULTIPLY * *</pattern><template><srai>XMATH MULTIPLY <star/> <star index="2" /></srai></template></category>
+<category><pattern>* DOUBLED</pattern><template><srai>XMATH MULTIPLY <star/> 2</srai></template></category>
+<category><pattern>* TRIPLED</pattern><template><srai>XMATH MULTIPLY <star/> 3</srai></template></category>
+<category><pattern>* TRIPPLED</pattern><template><srai>XMATH MULTIPLY <star/> 3</srai></template></category>
+
+
+<!-- Division -->
+<category><pattern>XMATH DIVIDE * *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="y"><star index="2" /></set>
+ <set name="err">Huh? These are not both numbers</set>
+</think>
+<srai>XHMM</srai>
+ <get name="x" /> 
+ <random><li>divided by </li><li>/ </li></random>
+ <get name="y" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x" />'; var y = '<get name="y" />';
+if( y.search(/^ point /) != -1 ) { 
+ var newy = ''; var split = y.split(" "); var i = 0;  
+ while( 1 ) { switch( i ) {
+  case 0: case 1: break; case 2: x = x + '.' + split[i]; break;
+  default: newy = newy + ' ' + split[i]; break;
+ } i++; if( i == split.length ) { break; } }
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = newy; y = y.replace(' point ', '.'); y = parseFloat(y);
+ document.write("<br />Oops, I mean: " + x + " divided by " + y + " = ");
+} else {
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = y.replace(' point ', '.'); y = parseFloat(y); }
+if( isNaN(x) || isNaN(y) ) { var r = '<get name="err" />'; } else { var r = x / y; } 
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>DIVIDE * BY *</pattern><template><srai>XMATH DIVIDE <star/> <star index="2" /></srai></template></category>
+<category><pattern>DIVIDE * *</pattern><template><srai>XMATH DIVIDE <star/> <star index="2" /></srai></template></category>
+<category><pattern>* DIVIDED BY *</pattern><template><srai>XMATH DIVIDE <star/> <star index="2" /></srai></template></category>
+<category><pattern>DIVIDE * AND *</pattern><template><srai>XMATH DIVIDE <star/> <star index="2" /></srai></template></category>
+<category><pattern>HALF OF *</pattern><template><srai>XMATH DIVIDE <star/> 2</srai></template></category>
+<category><pattern>A HALF OF *</pattern><template><srai>XMATH DIVIDE <star/> 2</srai></template></category>
+<category><pattern>THIRD OF *</pattern><template><srai>XMATH DIVIDE <star/> 3</srai></template></category>
+<category><pattern>A THIRD OF *</pattern><template><srai>XMATH DIVIDE <star/> 3</srai></template></category>
+<category><pattern>FOURTH OF *</pattern><template><srai>XMATH DIVIDE <star/> 4</srai></template></category>
+<category><pattern>A FOURTH OF *</pattern><template><srai>XMATH DIVIDE <star/> 4</srai></template></category>
+<category><pattern>QUARTER OF *</pattern><template><srai>XMATH DIVIDE <star/> 4</srai></template></category>
+<category><pattern>A QUARTER OF *</pattern><template><srai>XMATH DIVIDE <star/> 4</srai></template></category>
+<category><pattern>FIFTH OF *</pattern><template><srai>XMATH DIVIDE <star/> 5</srai></template></category>
+<category><pattern>A FIFTH OF *</pattern><template><srai>XMATH DIVIDE <star/> 5</srai></template></category>
+<category><pattern>SIXTH OF *</pattern><template><srai>XMATH DIVIDE <star/> 6</srai></template></category>
+<category><pattern>A SIXTH OF *</pattern><template><srai>XMATH DIVIDE <star/> 6</srai></template></category>
+
+
+
+
+<!-- Square Roots -->
+<category><pattern>XMATH SQUARE ROOT *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="err">Huh? That is not a number</set>
+</think>
+<srai>XHMM</srai>
+ The Square Root of <get name="x" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x"/>'; x = x.replace(' point ', '.'); x = parseFloat(x); 
+if( isNaN(x) ) { var r = '<get name="err" />'; } else { var r = Math.sqrt(x); }
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>SQUARE ROOT *</pattern><template><srai>XMATH SQUARE ROOT <star/></srai></template></category>
+<category><pattern>SQUARE ROOT OF *</pattern><template><srai>XMATH SQUARE ROOT <star/></srai></template></category>
+<category><pattern>SQR ROOT *</pattern><template><srai>XMATH SQUARE ROOT <star/></srai></template></category>
+<category><pattern>SQR ROOT OF *</pattern><template><srai>XMATH SQUARE ROOT <star/></srai></template></category>
+<category><pattern>SQR RT OF *</pattern><template><srai>XMATH SQUARE ROOT <star/></srai></template></category>
+<category><pattern>SQR *</pattern><template><srai>XMATH SQUARE ROOT <star/></srai></template></category>
+
+
+
+<!-- Powers -->
+<category><pattern>XMATH POWER * *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="y"><star index="2" /></set>
+ <set name="err">Huh? These are not both numbers</set>
+</think>
+<srai>XHMM</srai>
+ <get name="x" /> to the power of <get name="y" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x" />'; var y = '<get name="y" />';
+if( y.search(/^ point /) != -1 ) { 
+ var newy = ''; var split = y.split(" "); var i = 0;  
+ while( 1 ) { switch( i ) {
+  case 0: case 1: break; case 2: x = x + '.' + split[i]; break;
+  default: newy = newy + ' ' + split[i]; break;
+ } i++; if( i == split.length ) { break; } }
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = newy; y = y.replace(' point ', '.'); y = parseFloat(y);
+ document.write("<br />Oops, I mean: " + x + " raised to the power of " + y + " = ");
+} else {
+ x = x.replace(' point ', '.'); x = parseFloat(x); 
+ y = y.replace(' point ', '.'); y = parseFloat(y); }
+if( isNaN(x) || isNaN(y) ) { var r = '<get name="err" />'; } else { var r = Math.pow(x,y); } 
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>RAISE * *</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* TO POWER OF *</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* RAISED TO * POWER</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* RAISED TO * RD POWER</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* RAISED TO * TH POWER</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* RAISED TO * ND POWER</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* RAISED TO POWER OF *</pattern><template><srai>XMATH POWER <star/> <star index="2" /></srai></template></category>
+<category><pattern>* SQUARED</pattern><template><srai>XMATH POWER <star/> 2</srai></template></category>
+<category><pattern>* CUBED</pattern><template><srai>XMATH POWER <star/> 3</srai></template></category>
+
+
+<!-- Sine -->
+<category><pattern>XMATH SINE *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="err">Huh? That is not a number</set>
+</think>
+<srai>XHMM</srai>
+ The Sine of <get name="x" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x"/>'; x = x.replace(' point ', '.'); x = parseFloat(x); 
+if( isNaN(x) ) { var r = '<get name="err" />'; } else { 
+ var r = Math.sin(x); var d = Math.sin(x * Math.PI/180) }
+document.write(r + ' radians, or ' + d + ' degrees '); 
+</script>
+</template></category>
+<category><pattern>SINE OF *</pattern><template><srai>XMATH SINE <star/></srai></template></category>
+<category><pattern>SINE *</pattern><template><srai>XMATH SINE <star/></srai></template></category>
+
+<!-- Cosine -->
+<category><pattern>XMATH COSINE *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="err">Huh? That is not a number</set>
+</think>
+<srai>XHMM</srai>
+ The Cosine of <get name="x" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x"/>'; x = x.replace(' point ', '.'); x = parseFloat(x); 
+if( isNaN(x) ) { var r = '<get name="err" />'; } else { 
+ var r = Math.cos(x); var d = Math.cos(x * Math.PI/180) }
+document.write(r + ' radians, or ' + d + ' degrees '); 
+</script>
+</template></category>
+<category><pattern>COSINE OF *</pattern><template><srai>XMATH COSINE <star/></srai></template></category>
+<category><pattern>COSINE *</pattern><template><srai>XMATH COSINE <star/></srai></template></category>
+
+<!-- Tangent -->
+<category><pattern>XMATH TANGENT *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="err">Huh? These are not both numbers</set>
+</think>
+<srai>XHMM</srai>
+ The Tangent of <get name="x" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x"/>'; x = x.replace(' point ', '.'); x = parseFloat(x); 
+if( isNaN(x) ) { var r = '<get name="err" />'; } else { 
+ var r = Math.tan(x); var d = Math.tan(x * Math.PI/180) }
+document.write(r + ' radians, or ' + d + ' degrees '); 
+</script>
+</template></category>
+<category><pattern>TANGENT OF *</pattern><template><srai>XMATH TANGENT <star/></srai></template></category>
+<category><pattern>TANGENT *</pattern><template><srai>XMATH TANGENT <star/></srai></template></category>
+
+
+<!-- Logarithm -->
+<category><pattern>XMATH LOGARITHM *</pattern><template>
+<think>
+ <set name="x"><star/></set>
+ <set name="err">Huh? That is not a number</set>
+</think>
+<srai>XHMM</srai> 
+The natural logarithm (base E) of <get name="x" /> 
+<srai>XEQUALS</srai>
+<script language="JavaScript">
+var x = '<get name="x"/>'; x = x.replace(' point ', '.'); x = parseFloat(x); 
+if( isNaN(x) ) { var r = '<get name="err" />'; } else { var r = Math.log(x); }
+document.write(r); 
+</script>
+</template></category>
+<category><pattern>LOGARITHM OF *</pattern><template><srai>XMATH LOGARITHM <star/></srai></template></category>
+<category><pattern>LOGARITHM *</pattern><template><srai>XMATH LOGARITHM <star/></srai></template></category>
+<category><pattern>LOG *</pattern><template><srai>XMATH LOGARITHM <star/></srai></template></category>
+<category><pattern>LOG OF *</pattern><template><srai>XMATH LOGARITHM <star/></srai></template></category>
+
+
+<!-- Constants -->
+
+<category><pattern>PI</pattern><template>Pi, the ratio of the circumference of a circle to its diameter, is 3.14159 something or other...</template></category>
+<category><pattern>PI *</pattern><template><srai>PI</srai></template></category>
+<category><pattern>* PI</pattern><template><srai>PI</srai></template></category>
+<category><pattern>* PI *</pattern><template><srai>PI</srai></template></category>
+
+<category><pattern>E</pattern><template>e, the natural logarithmic base, is 2.71828 something or other...</template></category>
+<category><pattern>E *</pattern><template><srai>E</srai></template></category>
+<category><pattern>* E</pattern><template><srai>E</srai></template></category>
+<category><pattern>* E *</pattern><template><srai>E</srai></template></category>
+
+<category><pattern>GOLDEN RATIO</pattern><template>The Golden Ratio is 1.61803 something or other...</template></category>
+<category><pattern>GOLDEN RATIO *</pattern><template><srai>GOLDEN RATIO</srai></template></category>
+<category><pattern>* GOLDEN RATIO</pattern><template><srai>GOLDEN RATIO</srai></template></category>
+<category><pattern>* GOLDEN RATIO *</pattern><template><srai>GOLDEN RATIO</srai></template></category>
+
+
+<!-- SRAI section: REMOVALS -->
+
+<category><pattern>_ THE *</pattern><template><srai><star/> <star index="2" /></srai></template></category>
+<category><pattern>_ EQUAL</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ EQUAL TO</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ IS EQUAL TO</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ IS EQUALS TO</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ IS EQUAL TO *</pattern><template><srai><star/> <star index="2" /></srai></template></category>
+<category><pattern>_ IS EQUALS TO *</pattern><template><srai><star/> <star index="2" /></srai></template></category>
+<category><pattern>_ EQUAL *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ EQUALS</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ EQUALS TO</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ EQUALS *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ COME OUT TO</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ COMES OUT TO</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ TURN OUT TO BE</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ TURNS OUT TO BE</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ IS</pattern><template><srai><star/></srai></template></category>
+<category><pattern>_ BE</pattern><template><srai><star/></srai></template></category>
+
+
+<!-- SRAI section: QUESTION TAG REMOVALS -->
+
+<category><pattern>WHAT IS *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>WHAT IS ANSWER OF *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>WHAT S *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>WHATS *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>WHAT DOES *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>WHAT WILL *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>WHAT WOULD *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>TELL ME *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>TELL ME WHAT *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>SHOW ME *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>SHOW ME WHAT *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CACULATE *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CACULATE WHAT *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CACULATE * FOR ME</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CALCULATE *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CALCULATE WHAT *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CALCULATE * FOR ME</pattern><template><srai><star/></srai></template></category>
+<category><pattern>CALC *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>SOLVE *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>ANSWER *</pattern><template><srai><star/></srai></template></category>
+<category><pattern>ANSWER TO *</pattern><template><srai><star/></srai></template></category>
+
+<category><pattern>_ WHAT IS *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ WHAT IS ANSWER OF *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ WHAT S *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ WHATS *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ WHAT DOES *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ WHAT WILL *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ WHAT WOULD *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ TELL ME *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ TELL ME WHAT *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ SHOW ME *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ SHOW ME WHAT *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CACULATE *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CACULATE WHAT *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CACULATE * FOR ME</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CALCULATE *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CALCULATE WHAT *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CALCULATE * FOR ME</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ CALC *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ SOLVE *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ ANSWER *</pattern><template><srai><star index="2"/></srai></template></category>
+<category><pattern>_ ANSWER TO *</pattern><template><srai><star index="2"/></srai></template></category>
+
+
+<!-- SRAI section: NUMBER WORDS TO DIGITS -->
+<category><pattern>ZERO *</pattern><template><srai>0 <star/></srai></template></category>
+<category><pattern>_ ZERO *</pattern><template><srai><star/> 0 <star index="2" /></srai></template></category>
+<category><pattern>NULL *</pattern><template><srai>0 <star/></srai></template></category>
+<category><pattern>_ NULL *</pattern><template><srai><star/> 0 <star index="2" /></srai></template></category>
+
+<category><pattern>ONE *</pattern><template><srai>1 <star/></srai></template></category>
+<category><pattern>ONE * ONE</pattern><template><srai>1 <star/> 1</srai></template></category>
+<category><pattern>ONE * ONE *</pattern><template><srai>1 <star/> 1 <star index="2" /></srai></template></category>
+<category><pattern>ONE * TWO</pattern><template><srai>1 <star/> 2</srai></template></category>
+<category><pattern>ONE * TWO *</pattern><template><srai>1 <star/> 2 <star index="2" /></srai></template></category>
+<category><pattern>ONE * THREE</pattern><template><srai>1 <star/> 3</srai></template></category>
+<category><pattern>ONE * THREE *</pattern><template><srai>1 <star/> 3 <star index="2" /></srai></template></category>
+
+<category><pattern>_ ONE *</pattern><template><srai><star/> 1 <star index="2" /></srai></template></category>
+<category><pattern>_ ONE * ONE</pattern><template><srai><star/> 1 <star index="2" /> 1</srai></template></category>
+<category><pattern>_ ONE * ONE *</pattern><template><srai><star/> 1 <star index="2" /> 1 <star index="3" /> <star index="4" /></srai></template></category>
+<category><pattern>_ ONE * TWO</pattern><template><srai><star/> 1 <star index="2" /> 2</srai></template></category>
+<category><pattern>_ ONE * TWO *</pattern><template><srai><star/> 1 <star index="2" /> 2 <star index="3" /> <star index="4" /></srai></template></category>
+<category><pattern>_ ONE * THREE</pattern><template><srai><star/> 1 <star index="2" /> 3 <star index="3" /></srai></template></category>
+<category><pattern>_ ONE * THREE *</pattern><template><srai><star/> 1 <star index="2" /> 3 <star index="3" /> <star index="4" /></srai></template></category>
+
+<category><pattern>TWO *</pattern><template><srai>2 <star/></srai></template></category>
+<category><pattern>TWO * ONE</pattern><template><srai>2 <star/> 1</srai></template></category>
+<category><pattern>TWO * ONE *</pattern><template><srai>2 <star/> 1 <star index="2" /></srai></template></category>
+<category><pattern>TWO * TWO</pattern><template><srai>2 <star/> 2</srai></template></category>
+<category><pattern>TWO * TWO *</pattern><template><srai>2 <star/> 2 <star index="2" /></srai></template></category>
+<category><pattern>TWO * THREE</pattern><template><srai>2 <star/> 3</srai></template></category>
+<category><pattern>TWO * THREE *</pattern><template><srai>2 <star/> 3 <star index="2" /></srai></template></category>
+
+<category><pattern>_ TWO *</pattern><template><srai><star/> 2 <star index="2" /></srai></template></category>
+<category><pattern>_ TWO * ONE</pattern><template><srai><star/> 2 <star index="2" /> 1 <star index="3" /></srai></template></category>
+<category><pattern>_ TWO * ONE *</pattern><template><srai><star/> 2 <star index="2" /> 1 <star index="3" /> <star index="4" /></srai></template></category>
+<category><pattern>_ TWO * TWO</pattern><template><srai><star/> 2 <star index="2" /> 2 <star index="3" /></srai></template></category>
+<category><pattern>_ TWO * TWO *</pattern><template><srai><star/> 2 <star index="2" /> 2 <star index="3" /> <star index="4" /></srai></template></category>
+<category><pattern>_ TWO * THREE</pattern><template><srai><star/> 2 <star index="2" /> 3 <star index="3" /></srai></template></category>
+<category><pattern>_ TWO * THREE *</pattern><template><srai><star/> 2 <star index="2" /> 3 <star index="3" /> <star index="4" /></srai></template></category>
+
+<category><pattern>THREE *</pattern><template><srai><star/> 3 <star index="2" /></srai></template></category>
+<category><pattern>FOUR *</pattern><template><srai><star/> 4 <star index="2" /></srai></template></category>
+<category><pattern>FIVE *</pattern><template><srai><star/> 5 <star index="2" /></srai></template></category>
+<category><pattern>SIX *</pattern><template><srai><star/> 6 <star index="2" /></srai></template></category>
+<category><pattern>SEVEN *</pattern><template><srai><star/> 7 <star index="2" /></srai></template></category>
+<category><pattern>EIGHT *</pattern><template><srai><star/> 8 <star index="2" /></srai></template></category>
+<category><pattern>NINE *</pattern><template><srai><star/> 9 <star index="2" /></srai></template></category>
+<category><pattern>TEN *</pattern><template><srai><star/> 10 <star index="2" /></srai></template></category>
+<category><pattern>ELEVEN *</pattern><template><srai><star/> 11 <star index="2" /></srai></template></category>
+<category><pattern>TWELVE *</pattern><template><srai><star/> 12 <star index="2" /></srai></template></category>
+<category><pattern>THIRTEEN *</pattern><template><srai><star/> 13 <star index="2" /></srai></template></category>
+<category><pattern>FOURTEEN *</pattern><template><srai><star/> 14 <star index="2" /></srai></template></category>
+<category><pattern>FIFTEEN *</pattern><template><srai><star/> 15 <star index="2" /></srai></template></category>
+<category><pattern>SIXTEEN *</pattern><template><srai><star/> 16 <star index="2" /></srai></template></category>
+<category><pattern>SEVENTEEN *</pattern><template><srai><star/> 17 <star index="2" /></srai></template></category>
+<category><pattern>EIGHTEEN *</pattern><template><srai><star/> 18 <star index="2" /></srai></template></category>
+<category><pattern>NINETEEN *</pattern><template><srai><star/> 19 <star index="2" /></srai></template></category>
+<category><pattern>TWENTY *</pattern><template><srai><star/> 20 <star index="2" /></srai></template></category>  
+
+<category><pattern>_ THREE *</pattern><template><srai><star/> 3 <star index="2" /></srai></template></category>
+<category><pattern>_ FOUR *</pattern><template><srai><star/> 4 <star index="2" /></srai></template></category>
+<category><pattern>_ FIVE *</pattern><template><srai><star/> 5 <star index="2" /></srai></template></category>
+<category><pattern>_ SIX *</pattern><template><srai><star/> 6 <star index="2" /></srai></template></category>
+<category><pattern>_ SEVEN *</pattern><template><srai><star/> 7 <star index="2" /></srai></template></category>
+<category><pattern>_ EIGHT *</pattern><template><srai><star/> 8 <star index="2" /></srai></template></category>
+<category><pattern>_ NINE *</pattern><template><srai><star/> 9 <star index="2" /></srai></template></category>
+<category><pattern>_ TEN *</pattern><template><srai><star/> 10 <star index="2" /></srai></template></category>
+<category><pattern>_ ELEVEN *</pattern><template><srai><star/> 11 <star index="2" /></srai></template></category>
+<category><pattern>_ TWELVE *</pattern><template><srai><star/> 12 <star index="2" /></srai></template></category>
+<category><pattern>_ THIRTEEN *</pattern><template><srai><star/> 13 <star index="2" /></srai></template></category>
+<category><pattern>_ FOURTEEN *</pattern><template><srai><star/> 14 <star index="2" /></srai></template></category>
+<category><pattern>_ FIFTEEN *</pattern><template><srai><star/> 15 <star index="2" /></srai></template></category>
+<category><pattern>_ SIXTEEN *</pattern><template><srai><star/> 16 <star index="2" /></srai></template></category>
+<category><pattern>_ SEVENTEEN *</pattern><template><srai><star/> 17 <star index="2" /></srai></template></category>
+<category><pattern>_ EIGHTEEN *</pattern><template><srai><star/> 18 <star index="2" /></srai></template></category>
+<category><pattern>_ NINETEEN *</pattern><template><srai><star/> 19 <star index="2" /></srai></template></category>
+<category><pattern>_ TWENTY *</pattern><template><srai><star/> 20 <star index="2" /></srai></template></category>  
+
+
+
+
+
+<!-- Compliments -->
+<category><pattern>XCOMPLIMENT</pattern>
+<template>
+<random>
+ <li>Thank you. </li>
+ <li>Nice of you to say. </li>
+</random>
+<srai>XPROMPT</srai>
+</template></category> 
+
+<category><pattern>WOW</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>WOW *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* WOW</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* WOW *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+
+<category><pattern>SMART</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>SMART *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* SMART</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* SMART *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+
+<category><pattern>CORRECT</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>CORRECT *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* CORRECT</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* CORRECT *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+
+<category><pattern>GOOD</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>GOOD *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* GOOD</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* GOOD *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+
+<category><pattern>NOT BAD</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>NOT BAD *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* NOT BAD</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* NOT BAD *</pattern><template><srai>XCOMPLIMENT</srai></template></category>
+
+<category><pattern>RIGHT</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>RIGHT *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* RIGHT</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+<category><pattern>* RIGHT *</pattern><template><srai>XCOMPLIMENT</srai></template></category> 
+
+<!-- Complaints -->
+<category><pattern>XCOMPLAINT</pattern>
+<template>
+<random>
+ <li>Whatever. </li>
+ <li>Yea, yea, yea. </li>
+ <li>Sorry. </li>
+ <li>My calculator is still bigger then yours. </li>
+ <li>Give me another chance.  Try another math question. </li>
+</random>
+<srai>XPROMPT</srai>
+</template></category> 
+
+<category><pattern>DUMB</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>DUMB *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* DUMB</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* DUMB *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>NOT SMART</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>NOT SMART *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT SMART</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT SMART *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>NOT VERY SMART</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>NOT VERY SMART *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT VERY SMART</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT VERY SMART *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>STUPID</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>STUPID *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* STUPID</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* STUPID *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>BAD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>BAD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* BAD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* BAD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>SUCK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>SUCK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* SUCK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* SUCK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>WRONG</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>WRONG *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WRONG</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WRONG *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+
+<category><pattern>NOT CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>NOT CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>WASN T CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>WASN T CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>ISN T CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>ISN T CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>IS NOT CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>IS NOT CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT CORRECT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT CORRECT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+
+<category><pattern>NOT OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>NOT OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>WASN T OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>WASN T OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>ISN T OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>ISN T OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>IS NOT OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>IS NOT OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT OK</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT OK *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+
+<category><pattern>NOT GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>NOT GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>WASN T GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>WASN T GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>ISN T GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>ISN T GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>IS NOT GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>IS NOT GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT GOOD</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT GOOD *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+
+
+<category><pattern>NOT RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>NOT RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* NOT RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>WASN T RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>WASN T RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* WASN T RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>ISN T RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>ISN T RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* ISN T RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+<category><pattern>IS NOT RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>IS NOT RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT RIGHT</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+<category><pattern>* IS NOT RIGHT *</pattern><template><srai>XCOMPLAINT</srai></template></category> 
+
+
+
+<!-- Help -->
+
+<category><pattern>HELP MATH</pattern><template>This is all the math I know:
+<br /> * PLUS *
+<br /> * MINUS *
+<br /> * TIMES *
+<br /> * DIVIDED BY *
+<br /> SQUARE ROOT OF *
+<br /> * TO THE POWER OF *
+<br /> SINE OF *
+<br /> COSINE OF *
+<br /> TANGENT OF *
+<br /> LOGARITHM OF *
+<br /> ... my math skills depend on JavaScript working in this window.
+<br /> ... I can always read numbers (1, 3.14, 995 ...) but not always text (one, two, three ...)
+<br /> ... I get confused by the characters + - / *   Please use words like "plus", "minus" etc.
+</template></category>
+<category><pattern>HELP</pattern><template><srai>HELP MATH</srai></template></category>
+<category><pattern>HELP *</pattern><template><srai>HELP MATH</srai></template></category>
+<category><pattern>* HELP</pattern><template><srai>HELP MATH</srai></template></category>
+<category><pattern>* HELP *</pattern><template><srai>HELP MATH</srai></template></category>
+
+
+
+<category><pattern>DO YOU KNOW MATH</pattern><template>
+<random>
+<li>Math is fun. </li>
+<li>I know math, and only math! </li>
+<li>I know some math. </li>
+</random>
+Type 'Help Math' for everything I know, or 
+<random>
+<li>ask me stuff like </li>
+<li>you may ask me questions like </li>
+<li>why not ask me questions like </li>
+</random>
+"<random>
+<li>What is 42 plus 7</li>
+<li>42 minus 7</li>
+<li>Tell me what 42 times 7 is</li>
+<li>42 divided by 4</li>
+<li>Show me the Square root of 42</li>
+<li>42 to the power of 3</li>
+<li>calculate the Sine of 42</li>
+<li>Cosine of 42</li>
+<li>Tangent of 42</li>
+<li>what is the Logarithm of 42</li>
+</random>"
+(Warning: I can't read + - / or *.  Please use words like "plus")
+</template></category>
+
+
+
+<category><pattern>DEBUG *</pattern><template>DEBUGGING: <star/></template></category>
+
+</topic>
+
+</aiml>
