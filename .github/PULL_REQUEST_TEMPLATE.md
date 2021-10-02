@@ -6,7 +6,7 @@
 - [ ] 🌟 stared the repo
 - [ ] 🐛 Grammatical Error
 - [ ] 📝 Documentation Update
-- [ ] 🍳 Other
+- [ ] 🚩 Other
 
 ## Description
 
