@@ -122,5 +122,6 @@
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
 | Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
-| Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |        0         |
-| Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |        1         |
+| Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
+| Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
+| Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
