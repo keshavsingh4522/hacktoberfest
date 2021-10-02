@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.25;
+            background: #201c55;
+        }
+        
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 20px 0;
+            padding: 0;
+            width: 100%;
+            table-layout: fixed;
+            box-shadow: 5px 5px 20px 0px #05021f;
+        }
+        
+        table caption {
+            font-size: 1.5em;
+            padding: .75em 0 .75em;
+            color: #fff;
+            background: rgb(100, 213, 159);
+            background: linear-gradient(158deg, rgba(100, 213, 159, 1) 13%, rgba(20, 148, 215, 1) 47%, rgba(54, 47, 191, 1) 85%);
+        }
+        
+        table tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: .35em;
+        }
+        
+        table tr:nth-child(odd) {
+            background: #f8f8f8;
+        }
+        
+        table tr:nth-child(even) {
+            background: #e8e8e8;
+        }
+        
+        table th,
+        table td {
+            padding: .625em;
+            text-align: left;
+        }
+        
+        table th {
+            font-size: .85em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            background: #e8e8e8;
+        }
+        
+        .flexContainer {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1360px;
+            margin: auto;
+        }
+        
+        .halfScreen {
+            width: 48%;
+            margin: 1%;
+        }
+        
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+            table caption {
+                font-size: 1.3em;
+            }
+            table thead {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+            table tr {
+                box-shadow: 5px 5px 5px -2px #8e8e8e;
+                display: block;
+                margin-bottom: .625em;
+            }
+            table tr:last-child {
+                margin-bottom: 0;
+            }
+            table td {
+                border-bottom: 1px solid #ddd;
+                display: block;
+                font-size: .8em;
+                text-align: right;
+            }
+            table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-right: 20px;
+            }
+            table td:last-child {
+                border-bottom: 0;
+            }
+            .halfScreen {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexContainer">
+        <div class="halfScreen">
+            <table>
+                <caption>Table 1</caption>
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="halfScreen">
+            <table>
+                <caption>Table 2</caption>
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Table 3</caption>
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem Ipsum</td>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
