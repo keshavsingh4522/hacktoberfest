@@ -86,6 +86,8 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Thimira              | [Thimira97](https://github.com/Thimira97)                     |         1        |
+| Yuvraj Singh Chaudhry| [@yuvrajchaudhry](https://github.com/yuvrajchaudhry)          |         0        |
 | Karan Heer           | [@karanheer](https://github.com/karanheer)                    |         1        |
 | Mohammad Asif        | [@geekyasif](https://github.com/geekyasif)                    |         0        |
 | Shabaj Ansari        | [@SHabaj-dev](https://github.com/SHabaj-dev)                  |         0        |
@@ -124,6 +126,7 @@
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
+| Daksh Jain          | [@DakshJain](https://github.com/Dakshjain1)                    |         1        |
 | Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
 | Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
 | Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
@@ -131,3 +134,4 @@
 | Yothin Homjan        | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
+| Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
