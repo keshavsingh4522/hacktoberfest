@@ -11,6 +11,7 @@
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
+| Aniket Nayek         | [@AniketNayek3101](https://github.com/AniketNayek3101)        |         0        |
 | Sumit Soni           | [@isumit19](https://github.com/isumit19/)                     |         0        |
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
 | Hero Tiwari          | [@Skywalkers-24](https://github.com/Skywalkers-24/)           |         0        |
@@ -44,6 +45,7 @@
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
+
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi             | [@arisandi1](https://github.com/arisandi1)                    |         0        |
@@ -90,6 +92,7 @@
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Abinash Gogoi        | [@abinashstack](https://github.com/abinashstack)              |         1        |
 | Santanu Biswas       | [@SantanuxD](https://github.com/SantanuxD)                    |         1        |
 | Chetan Atrawalkar    | [@ChetanAtrawalkarCA](https://github.com/ChetanAtrawalkarCA)  |         1        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
@@ -177,6 +180,8 @@
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
 | Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
+| Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
+| Kushal Goel          | [@kushalgoel786](https://github.com/kushalgoel786)            |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Rakesh Mahato        | [@mahatorakesh](https://github.com/mahatorakesh)              |         1        |
 | Abay Kappassov       | [@kappassov](https://github.com/kappassov)                    |         1        |
@@ -200,4 +205,16 @@
 | Harshit Gupta        | [@HarshitGupta150](https://github.com/HarshitGupta150)        |         0        |
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
+
+| Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
+| Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
+| Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                      
+| Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
+| Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
+| Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
+| Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
+| Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
+| Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Ravindu Lakmina      | [@Ravi-lk](https://github.com/ravi-lk)                        |         1        |
+

@@ -1,7 +1,7 @@
 import Java.util.*;  
 import java.util.Scanner;
     
-class KruskalAlgorithm {  
+class KruskalAlgo {  
     class Edge implements Comparable<Edge> {  
         int source, destination, weight;  
         public int compareTo(Edge edgeToCompare) {  
