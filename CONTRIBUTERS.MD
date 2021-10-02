@@ -78,7 +78,7 @@
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
 | Tristan Brown        | [@drd3rp](https://github.com/drd3rp)                          |         0        |
 | Abhinav Verma        | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
-| Tridib Samanta	   | [@tridib2003](https://github.com/tridib2003)                    |         0        |
+| Tridib Samanta	     | [@tridib2003](https://github.com/tridib2003)                  |         0        |
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |
 | Aswin A              | [@Aswin1362](https://github.com/Aswin1362)                    |         0        |
@@ -87,8 +87,9 @@
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
-| Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
+| Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Vishal Kumar         | [@vishaaal](https://github.com/vishaaal)                      |         1        |
 |Sayan Manna           |[@sayan0306](https://github.com/sayan0306)
 | Thamal Wijetunge     | [@thamaltw97](https://github.com/Thamaltw97)                  |         1        |
 | Ravi                 | [@guptaravi5400](https://github.com/guptaravi5400)            |         0        |
@@ -181,7 +182,7 @@
 | Bikram Purkait       | [@IamBikramPurkait](https://github.com/IamBikramPurkait)      |         1        |
 | Yashas H Majmudar    | [@yashas-hm](https://github.com/yashas-hm)                    |         1        |
 | Muhammad Gimnastiar  | [@muhammadgimnastiar](https://github.com/muhammadgimnastiar)  |         1        |
-| Kadambini Panda      | [@kadambinipanda] (https://github.com/kadambinipanda)         |         1        |
+| Kadambini Panda      | [@kadambinipanda](https://github.com/kadambinipanda)          |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
 | Kinjalk Bajpai       | [@kinb98](https://github.com/kinb98)                          |         1        |
