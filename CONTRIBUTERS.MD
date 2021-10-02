@@ -204,3 +204,7 @@
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |                                                                      
+| Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
+| Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
+| Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
