@@ -20,6 +20,7 @@
 | Misa Dravid          | [@misa-bot](https://github.com/misa-bot)                      |         0        |
 | Pranjal Soni         | [@sonipranjal](https://github.com/sonipranjal)                |         0        |
 | Preeti Advani        | [@preetiadvani1](https://github.com/preetiadvani1)            |         1        |
+| Souvik Nayak         | [@Souvik-Nayak](https://github.com/Souvik-Nayak)              |         1        |
 | Rithvik Ayithapu     | [@rithvik2607](https://github.com/rithvik2607)                |         0        |
 | Divy                 | [@dr-one-punch](https://github.com/dr-one-punch)              |         0        |
 | Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
@@ -85,7 +86,20 @@
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
+| Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Varun Sunil Pathak   | [@pathakvsp1](https://github.com/pathakvsp1)                  |         1        |
+| Adamay Mann          | [@mannadamay12](https://github.com/mannadamay12)              |         1        |
+| Apoorva Mehta        | [@apoorva1823000](https://github.com/apoorva1823000)          |         1        |
+| Rajan Joshi          | [@razanjoshi](https://github.com/razanjoshi)                  |         0        |
+| Tushant Dagur        | [@TushantDagur](https://github.com/TushantDagur)              |         1        |
+| Brian Tham           | [@Nightey3s](https://github.com/Nightey3s)                    |         1        |
+| Srishti Mittal       | [@Chia2712](https://github.com/Chia2712)                      |         1        |
+| Thimira              | [Thimira97](https://github.com/Thimira97)                     |         1        |
+| Yuvraj Singh Chaudhry| [@yuvrajchaudhry](https://github.com/yuvrajchaudhry)          |         0        |
+| Karan Heer           | [@karanheer](https://github.com/karanheer)                    |         1        |
+| Mohammad Asif        | [@geekyasif](https://github.com/geekyasif)                    |         0        |
+| Shabaj Ansari        | [@SHabaj-dev](https://github.com/SHabaj-dev)                  |         0        |
 | Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
 | Ukesh Shrestha       | [@Ukesh-dev](https://github.com/Ukesh-dev)                    |         1        |
 | Felipe Gangorra      | [@Gangorra](https://github.com/Gangorra)                      |         1        |
@@ -121,9 +135,12 @@
 | Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
+| Daksh Jain          | [@DakshJain](https://github.com/Dakshjain1)                    |         1        |
 | Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
 | Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
 | Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
 | Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
 | Yothin Homjan        | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
+| Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
+| Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
