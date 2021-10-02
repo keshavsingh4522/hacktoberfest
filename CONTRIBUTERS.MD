@@ -85,4 +85,4 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
 | Gabriel Santos              | [@gabriel](https://github.com/gabriel-github)                  |         1        |
-| Candra Perdana              | [@cp2940](https://github.com/cp2940)                  |         1        |
+| Candra Perdana              | [@cp2940](https://github.com/cp2940)                  |         0        |
