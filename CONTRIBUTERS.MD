@@ -108,3 +108,4 @@
 | Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
 | Gary Zhao            | [@garyjzhao](https://github.com/garyjzhao)                    |         1        |
 | Siddhant             | [@SiddhantManze](https://github.com/SiddhantManze)            |         1        |
+| Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         17       |
