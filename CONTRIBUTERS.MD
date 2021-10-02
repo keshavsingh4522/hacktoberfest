@@ -88,6 +88,7 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Bhaskar Kumar        | [@bhaskarkumar1] (https://github.com/bhaskarkumar1)           |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Ravi Gupta           | [@raviguptalive](https://github.com/raviguptalive)         |         0        |
 | Mann Patel           | [@manncodes](https://github.com/manncodes)                    |         1        |
 | Varun Sunil Pathak   | [@pathakvsp1](https://github.com/pathakvsp1)                  |         1        |
 | Adamay Mann          | [@mannadamay12](https://github.com/mannadamay12)              |         1        |
