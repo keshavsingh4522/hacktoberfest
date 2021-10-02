@@ -88,6 +88,8 @@
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
+| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
+| Chetan Atrawalkar    | [@ChetanAtrawalkarCA](https://github.com/ChetanAtrawalkarCA)  |         1        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        | 
 | Amrit Anwesh         | [@shinozaki1595](https://github.com/shinozaki1595)            |         1        |
