@@ -16,7 +16,7 @@ struct node *makenode(int x)
     p->right=NULL;
     return p;
 }
-int BSTinsert(int key)
+void BSTinsert(int key)
 {
     struct node *x,*y,*z;
     x=root;
@@ -68,7 +68,7 @@ struct node *BSTsearch(int key)
     }
     return NULL;
 }
-int InOrdertraversal(struct node *t)
+void InOrdertraversal(struct node *t)
 {
     if(t!=NULL)
     {
