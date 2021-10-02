@@ -104,3 +104,4 @@
 | Aimee Temple         | [@AimeeT8](https://github.com/AimeeT8)                        |         0        |
 | thexkey			         | [@samdisk11](https://github.com/samdisk11)					           |		     1		    |
 | Piero Narciso        | [@PieroNarciso](https://github.com/PieroNarciso)              |         0        |
+| Sneha Mishra         | [@Medulla9991](https://github.com/Medulla9991)                |         1        |
