@@ -116,3 +116,4 @@
 | Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         1        |
 | SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
 | Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
+| Foksha              | [@fokshawastaken](https://github.com/FokshaWasTaken)           |         1        |
