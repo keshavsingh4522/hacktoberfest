@@ -1,9 +1,11 @@
-| Name                 | Github                                                        | Starred the repo |
-| -------------------- | ------------------------------------------------------------- | ---------------- |
+| Name                  | Github                                                        | Starred the repo |
+| --------------------- | ------------------------------------------------------------- | ---------------- |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
+| Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
 | Justinus Hermawan    | [@justinushermawan](https://github.com/justinushermawan/)     |         0        |
+| Yunxin Gan           | [@samganyx](https://github.com/samganyx/)                     |         0        |
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
@@ -85,3 +87,45 @@
 | Anku Kumar           | [@ankukumar](https://github.com/katanaop6)                    |         0        |
 | Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
 | Mohammad Asif        | [@geekyasif](https://github.com/geekyasif)                    |         0        |
+| Shabaj Ansari        | [@SHabaj-dev](https://github.com/SHabaj-dev)                  |         0        |
+| Gabriel Santos       | [@gabriel](https://github.com/gabriel-github)                 |         1        |
+| Ukesh Shrestha       | [@Ukesh-dev](https://github.com/Ukesh-dev)                    |         1        |
+| Felipe Gangorra      | [@Gangorra](https://github.com/Gangorra)                      |         1        |
+| UBG100               | [@UBG100](https://github.com/UBG100)                          |         1        |
+| Ishaan Gupta         | [@ishaangupta-YB](https://github.com/ishaangupta-YB)          |         0        |
+| thecoderkd           | [@thecoderkd](https://github.com/thecoderkd)                  |         1        |
+| Aman Srivastava      | [@aman1210](https://github.com/aman1210)                      |         1        |
+| Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
+| Ayush Jha            | [@A-jha383](https://github.com/A-jha383)                      |         1        |
+| SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
+| Candra Perdana       | [@cp2940](https://github.com/cp2940)                          |         0        |
+| Kavisha Nethmini     | [@kavisha-nethmini](https://github.com/kavisha-nethmini)      |         1        |
+| Kindi Setiadi        | [@kindise](https://github.com/kindise)                        |         1        |
+| Harsh Raj            | [@harshraj8843](https://github.com/harshraj8843)              |         1        |
+| Sourav Saha          | [@sourav-developer](https://github.com/platinumpmo-amigo)     |         1        |
+| Rahul Kumar          | [@Rahulbaran](https://github.com/Rahulbaran)                  |         1        |
+| Max Max              | [@nothanks](https://github.com/nothanks)                      |         1        |
+| Aimee Temple         | [@AimeeT8](https://github.com/AimeeT8)                        |         0        |
+| thexkey			         | [@samdisk11](https://github.com/samdisk11)					           |		     1		    |
+| Piero Narciso        | [@PieroNarciso](https://github.com/PieroNarciso)              |         0        |
+| Sneha Mishra         | [@Medulla9991](https://github.com/Medulla9991)                |         1        |
+| Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
+| Gary Zhao            | [@garyjzhao](https://github.com/garyjzhao)                    |         1        |
+| Siddhant             | [@SiddhantManze](https://github.com/SiddhantManze)            |         1        |
+| Nicolas Nasr         | [@Nicolanasr](https://github.com/Nicolanasr)                  |         1        |
+| Himanshu Mishra      | [@himanshukm2301](https://github.com/himanshukm2301)          |         0        |
+| Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
+| Naufal Fawwaz        | [@andriawan24](https://github.com/andriawan24)                |         1        |
+| SAFNEY               | [@safney](https://github.com/safeny)                          |         1        |
+| Dhananjay Pai        | [@dhananjaypai08](https://github.com/dhananjaypai08)          |         0        |
+| Foksha               | [@fokshawastaken](https://github.com/FokshaWasTaken)          |         1        |
+| Gokulraj Puviyarasu  | [@gokulrajpuviyarasu](https://github.com/gokulrajpuviyarasu)  |         1        |
+| Yashi Shukla         | [@yashi4001](https://github.com/yashi4001)                    |         0        |
+| Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
+| Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
+| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
+| Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
+| Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
+| Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
+| Yothin Homjan        | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
+| Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
