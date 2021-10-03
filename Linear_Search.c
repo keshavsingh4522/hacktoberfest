@@ -1,27 +1,26 @@
-// C code to linearly search x in arr[].
-// If x is present then return its location, otherwise return -1
-
-#include <stdio.h>
-
-int search(int arr[], int n, int x)
-{
-	int i;
-	for (i = 0; i < n; i++)
-		if (arr[i] == x)
-			return i;
-	return -1;
-}
-
-int main(void)
-{
-	int arr[] = { 2, 36, 4, 15, 40 };
-	int x = 4;
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	// Function call
-	int result = search(arr, n, x);
-	(result == -1)
-		? printf("Element is not present in array")
-		: printf("Element is present at index %d", result);
-	return 0;
-}
+#include<stdio.h>   
+void main ()  
+{  
+    int a[10] = {10, 23, 40, 1, 2, 0, 14, 13, 50, 9};  
+    int item, i,flag;  
+    printf("\nEnter Item which is to be searched\n");  
+    scanf("%d",&item);  
+    for (i = 0; i< 10; i++)  
+    {  
+        if(a[i] == item)   
+        {  
+            flag = i+1;  
+            break;  
+        }   
+        else   
+        flag = 0;  
+    }   
+    if(flag != 0)  
+    {  
+        printf("\nItem found at location %d\n",flag);  
+    }  
+    else  
+    {  
+        printf("\nItem not found\n");   
+    }  
+}   
