@@ -16,6 +16,7 @@
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
 | Hero Tiwari          | [@Skywalkers-24](https://github.com/Skywalkers-24/)           |         0        |
 | Sarthak Shastri      | [@sarthak815](https://github.com/sarthak815)                  |         0        |
+| Diya Acharya         |  [@diyaacharya](https://github.com/diyaacharya/)              |         1        |
 | Aman Gupta           | [@find-aman](https://github.com/find-aman)                    |         1        |
 | Vatsal Narwal        | [@VatsalNarwal](https://github.com/VatsalNarwal)              |         0        |
 | Pratik Shirodkar     | [@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)      |         0        |
