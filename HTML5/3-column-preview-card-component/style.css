@@ -1,0 +1,90 @@
+
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.row{
+    margin:10% 20%;
+}
+
+/* Card  */
+.card{
+    padding: 5%;
+    border-radius: 0px;
+}
+
+/* Card Body */
+.card-img{
+    width: 50px;;
+}
+
+h1{
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 5% 0;
+}
+
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 40%;
+    
+}
+
+/* Card Background */
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Buttons */
+.btn{
+    border-radius: 40px;
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+}
+.sedans .btn-outline{
+    color:hsl(31, 77%, 52%);
+}
+
+.sedans .btn-outline:hover{
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+}
+
+.suv .btn-outline{
+    color:hsl(184, 100%, 22%);
+}
+
+.suv .btn-outline:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+}
+
+.luxury .btn-outline{
+    color:hsl(179, 100%, 13%); 
+}
+
+.luxury .btn-outline:hover{
+    background-color: hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
