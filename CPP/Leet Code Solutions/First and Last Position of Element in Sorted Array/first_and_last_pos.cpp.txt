@@ -1,0 +1,37 @@
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int i = 0, k = 0;
+        int j = nums.size()- 1;
+        vector<int> res = {-1, -1};
+        
+        while(i <= j) {
+            int m = (i + j)/2;
+            
+            if(nums[m] == target) {
+                if(nums[i] < target)
+                    i++;
+                else if(nums[j] > target)
+                    j--;
+                else {
+                    k = 1;
+                    break;
+                }
+            }
+            else {
+                if(target < nums[m])
+                    j = m-1;
+                else
+                    i = m+1;
+            }
+        }
+        
+        if(k == 1) {
+            res[0] = i;
+            res[1] = j;
+        }
+        
+        return res;
+    }
+        
+};
