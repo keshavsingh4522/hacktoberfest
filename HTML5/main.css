@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+a,
+a:link,
+a:visited {
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+.noscroll {
+  min-height: 100vh;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #d8cc25, #dff1ff);
+  /* z-index: -2; */
+}
+section .color {
+  position: absolute;
+  filter: blur(150px);
+}
+section .color:nth-child(1) {
+  top: -350px;
+  background: #ff359b;
+  width: 600px;
+  height: 600px;
+}
+section .color:nth-child(2) {
+  bottom: -150px;
+  left: 200px;
+  background: #87ff9b;
+  width: 500px;
+  height: 500px;
+}
+section .color:nth-child(3) {
+  bottom: -50px;
+  left: 400px;
+  background: #00d2ff;
+  width: 300px;
+  height: 300px;
+}
+.fullContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+.imgBx {
+  position: relative;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  width: 100%;
+}
+.imgBx h3 {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(236, 66, 117);
+    display: inline-block;
+    line-height: 1;
+}
+
+.imgBx p {
+  width: 60%;
+  text-align: center;
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.72);
+  font-size: 20px;
+  z-index: 0;
+}
+.imgBx img {
+  max-width: 400px;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+.contactDoor {
+  position: relative;
+  order: 2;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactDoor img {
+  width: 100%;
+  /* height: 90vh; */
+}
+.contactDoor img:nth-child(2) {
+  z-index: 1;
+}
+.contactDoor img:nth-child(1) {
+  z-index: 3;
+}
+.contactDoor ul {
+  position: absolute;
+}
+.contactDoor ul li {
+  padding: 10px;
+}
+.contactDoor ul li a {
+  position: relative;
+  right: 60px;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: right 0.6s, z-index 0s, transform 0.6s;
+  transition-delay: 0.6s, 0.6s, 0s;
+}
+.contactDoor ul li a:hover {
+  transition-delay: 0s, 0.6s, 0.6s;
+  right: -170px;
+  transform: translateX(-170px);
+  z-index: 11;
+}
+.contactDoor ul li:nth-child(1) a {
+  background: rgba(56, 85, 165, 0.671);
+}
+.contactDoor ul li:nth-child(2) a {
+  background: rgba(9, 198, 255, 0.671);
+}
+.contactDoor ul li:nth-child(3) a {
+  background: rgba(255, 0, 191, 0.671);
+}
+.contactDoor ul li:nth-child(4) a {
+  background: rgba(11, 119, 221, 0.671);
+}
+.contactDoor ul li:nth-child(5) a {
+  background: rgba(19, 141, 56, 0.671);
+}
+
+.contactDoor ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(-350px);
+  transition: 1s;
+}
+.contactDoor ul li a:hover::before {
+  transform: skewX(45deg) translateX(350px);
+}
+.contactDoor ul li a p {
+  position: absolute;
+  left: 30px;
+}
+.contactDoor ul li a i {
+  position: absolute;
+  right: 30px;
+}
