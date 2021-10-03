@@ -1,0 +1,47 @@
+                        Hashing Technqiues
+Hashing Techniques are another way of searching.
+We are already familiar with the two searching methods -
+Linear Search - O(n)
+Binary Search - O(log n) - works only on soreted array
+
+Can we get a search method faster than these two??
+That is where Hashing Technique comes in. If used properly, Hashing gives a time comlexity of O(1)
+i.e. contant time or O(lambda) - lambda = loading factor <<< n.
+
+In hashing table, we have a key space(Set of keys) which are mapped to a hash table.
+THe size of the hash table will depend on the type of hash function we are goping to use for mapping.
+The key space can be thought of as domain and the hash table as range.
+We are mapping the elements in domain to elements in range using a relation or better function(hash function).
+Out of the 4 types of mapping , only two are possible for functions, namely
+One-One mapping and Many-one Mapping
+Example of one one is Ideal Function
+Example of many one include Modulus hash function.
+
+Ideal Hashing
+Ideal Hashing is simply storing the number at their respective indices.
+For this we require an auxiliary array with size equal to that of max element of array.
+Hashing Function - h(x) = x (Also called Ideal Function)
+Time Complexity : O(1)
+Space Complexity : O(n)
+Drawback : Wastes lots of space for larger ranges in the array.
+
+Modification
+Modulus hash function - h(x) = x%SIZE
+Advantage - limits the size of hash table.
+
+Drawback
+Two elements may be mapped to the same index, leading to a COLLISON.
+Funtion becomes many to one.
+
+Possible Solutions
+1.Open Hashing
+    i. Chaining
+2. Closed Hashing
+    i. Linear Probing
+    ii. Quadratic Probing
+    iii. Double Hashing
+
+Closed Hashing - It does not require any extra consumption of space. Space will be limited
+                to size of the hash table.
+
+Open Hashing - Extra consumption of space beyond the actual size of Hash Table.
