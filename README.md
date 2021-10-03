@@ -13,7 +13,7 @@ keep in mind that repo has hacktoberfest topic..
 ```
 
 ### dont contribute in this repo, contribute only in below repo,.
-[open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021)
+[open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/HacktoberFest-2021)
 
 # check this before commiting code
 [open-for-everyone/hacktoberfest2021/discussions/747](https://github.com/open-for-everyone/hacktoberfest2021/discussions/747)
