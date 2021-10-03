@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define ll long long int
+
+int main(){
+	int t;
+	cin>>t;
+	for(int tt  = 1;tt<=t;tt++){
+	int n;
+	cin>>n;
+	string s;
+	cin>>s;
+	int i = 0;
+	char curr;
+	while(s[i]=='F') i++;
+	int ans = 0;
+	if(i<n){
+	    curr = s[i];
+	    while(i<n){
+	        if(s[i]==curr||s[i]=='F') i++;
+	        else {
+	            ans++;
+	            curr = s[i];
+	            i++;
+	        }
+	    }
+	}
+	cout<<"Case #"<<tt<<": "<<ans<<endl;
+    }
+	return 0;
+}

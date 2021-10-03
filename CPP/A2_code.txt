@@ -1,0 +1,62 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define ll long long int
+#define mod 1000000007
+
+void solve(int cnt) 
+{   
+    int n;
+    cin>>n;
+
+    string s;
+    cin>>s;
+
+    char chg='F';
+
+    for(auto c: s)
+    {
+        if(c=='X' || c=='O')
+        {
+            chg=c;
+            break;
+        }
+    }
+
+    if(chg=='X') chg='O';
+    else chg='X';
+
+    int prev=0;
+
+    int ans=0;
+
+    for(int i=0; i<n; i++)
+    {
+        if(s[i]==chg)
+        {
+            int left = prev;
+            int right = i+1;
+            ans = (ans%mod + (left*(n-right+1))%mod)%mod;
+            if(chg=='X') chg='O';
+            else chg='X';
+            prev=i+1;
+        }
+        else if(s[i]!='F')
+        {
+            prev=i+1;
+        }
+    }
+
+    ans = ans%mod;
+
+    cout<<"Case #"<<cnt<<": "<<ans<<endl;
+}
+
+int main(){
+	int t;
+	cin>>t;
+	for(int tt  = 1;tt<=t;tt++){
+	 solve(tt);
+    }
+	return 0;
+}
