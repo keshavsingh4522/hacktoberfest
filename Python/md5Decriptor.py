@@ -4,7 +4,7 @@ import itertools
 # list of character to make some combination
 stringKey = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-# hashedMessage is 'abc'
+# hashedMessage is 'abcd'
 hashedMessage = 'e2fc714c4727ee9395f324cd2e7f331f' 
 
 # if your hashedMessage too complex, it may take for a long time
