@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Explore Norway</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <style>
+      .main-container {
+        position: relative;
+      }
+      .main-slider {
+        position: absolute;
+        width: 100%;
+      }
+
+      .container-nav {
+        width: 100% !important;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      .nav-bar {
+        padding-top: 50px;
+        width: 100%;
+      }
+      .nav-logo {
+        padding-left: 100px;
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .nav-end {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .slider-image {
+        max-height: 100vh;
+      }
+      .second-box {
+        height: 300px;
+        background-color: rgb(204, 204, 204);
+      }
+      .nav-ctrl-bullets {
+        padding-right: 50px;
+        padding-left: 25px;
+      }
+      .nav-bullet {
+        height: 12px;
+        width: 12px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .slider-out {
+        height: 50px;
+        width: 50px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        margin: auto;
+      }
+      .slider-btn-wrap {
+        padding-left: 3px;
+        padding-top: 3px;
+      }
+      .slider-btn {
+        font-size: 40px;
+        color: #fff;
+      }
+      .slider-num {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .slider-ctrl {
+        display: flex;
+        float: right;
+        align-items: center;
+      }
+      .main-nav {
+        padding-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-slider">
+        <div>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100 slider-image"
+                  src="https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100 slider-image"
+                  src="https://images.pexels.com/photos/753994/pexels-photo-753994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100 slider-image"
+                  src="https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100 slider-image"
+                  src="https://images.pexels.com/photos/1102912/pexels-photo-1102912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Forth slide"
+                  data-ride="4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-slider">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <div class="nav-logo">WeTrip</div></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse main-nav"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Let's Trek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Adventure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div>
+          <div class="slider-ctrl">
+            <div class="nav-ctrl mr-3">
+              <div class="slider-out">
+                <div id="subSlide" class="slider-btn-wrap">
+                  <a
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                    onclick="subSlide()"
+                  >
+                    <i class="fas fa-chevron-circle-left slider-btn"></i>
+                  </a>
+                </div>
+              </div>
+              <div id="slideNo" class="slider-num">01</div>
+              <div id="addSlide" class="slider-out">
+                <div class="slider-btn-wrap">
+                  <a
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                    onclick="addSlide()"
+                  >
+                    <i class="fas fa-chevron-circle-right slider-btn"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let activeSlideNo = 1;
+      const totalSlideNo = 4;
+      const slideNum = document.getElementById("slideNo");
+
+      setSlide = (slideNo, elid) => {
+        slideNum.innerHTML = "0" + slideNo;
+        activeSlideNo = slideNo;
+        console.log(elid);
+      };
+
+      function addSlide() {
+        let newNo = activeSlideNo + 1;
+        let slideNo = checkAddslide(newNo);
+        activeSlideNo = slideNo;
+        slideNum.innerHTML = "0" + activeSlideNo;
+      }
+
+      function subSlide() {
+        let newNo = activeSlideNo - 1;
+        let slideNo = checkSubSlide(newNo);
+        activeSlideNo = slideNo;
+        slideNum.innerHTML = "0" + activeSlideNo;
+      }
+
+      function checkSubSlide(newSlideNo) {
+        if (newSlideNo === 0) {
+          return totalSlideNo;
+        } else {
+          return newSlideNo;
+        }
+      }
+
+      function checkAddslide(newSlideNo) {
+        if (newSlideNo > totalSlideNo) {
+          return 1;
+        } else {
+          return newSlideNo;
+        }
+      }
+    </script>
+  </body>
+</html>
