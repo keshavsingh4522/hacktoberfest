@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+ int a;
+ int b;
+ int c;
+ int x;
+ int y;
+ float s1;
+ float s2;
+
+ printf("Please write your quadratic function in terms of a, b and c: \n ax^2+bx+c \n \n");
+ printf("Value of a = "); 
+ scanf("%d", &a);
+ printf("Value of b = ");
+ scanf("%d", &b);
+ printf("Value of c = ");
+ scanf("%d", &c);
+
+ x = (b*b)-4*a*c;
+ y = sqrt(x);
+ if(x<0)
+ {
+ printf("Roots are Imaginary"); 
+ }
+ else
+ {
+ s1 = ((-b)+y)/(2*a);
+ s2 = ((-b)-y)/(2*a);
+
+ printf("The solutions of the equation are %f and %f", s1, s2);
+ }
+}
