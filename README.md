@@ -1,8 +1,21 @@
-# dont contribute in this repo, contribute only in below repo,.
-[https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021)
+# Special Note For Everyone
+```py
+'''
+always make more then 4 pull request different project lets you have made only 4 pull request to different projects
+but one project is excluded from hackoctoberfest event then your pull request will not be count and then
+you have remains 3 valid pull request if these projects is not excluded.
+if you fail to make 4 pull request then you cant get swags or t-shirts.
+
+i will recommend you make pull request to your own repo which is very very saffest side for you..
+keep in mind that repo should have hacktoctoberfest topic..
+'''
+```
+
+### dont contribute in this repo, contribute only in below repo,.
+[open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021)
 
 # check this before commiting code
-[https://github.com/open-for-everyone/hacktoberfest2021/discussions/747](https://github.com/open-for-everyone/hacktoberfest2021/discussions/747)
+[open-for-everyone/hacktoberfest2021/discussions/747](https://github.com/open-for-everyone/hacktoberfest2021/discussions/747)
 
 <p align="center">
     <a href="https://hacktoberfest.digitalocean.com/">
