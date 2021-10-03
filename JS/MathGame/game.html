@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>🎮️Math Game🎮️</title>
+		<link href="game.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+
+	</head>
+	<body>	
+		<img src="mathImg.png" id="image"/>
+		<h1 id='header'>10 Second Math Game</h1>
+		<div id="range">
+			<h1 id="limit">Number Limit</h1>
+			<input id="slideBar" type="range" min="10" max="100" step="2" oninput="range()"/>
+			<div id="showRange"><p id="value">0</p></div>
+		</div>
+		<div id="operations">
+			<input type="checkbox" class='operatorsAll' id="op1" onclick="op(this)" value="+" checked >
+			<span class="op">Addition</span><br>
+			<input type="checkbox" class='operatorsAll' id="op2" onclick="op(this)" value="-">
+			<span  class="op">Subraction</span><br>
+			<input type="checkbox" class='operatorsAll' id="op3" onclick="op(this)" value="*">
+			<span class="op">Multiplication</span><br>
+			<input type="checkbox" class='operatorsAll' id="op4" onclick="op(this)" value="/">
+			<span class="op">Division</span><br>
+			<input type="checkbox" class='operatorsAll' id="op5" onclick="op(this)" value="root">
+			<span class="op">Square Root</span><br>
+			<input type="checkbox" class='operatorsAll' id="op6"onclick="op(this)" value='square'>
+			<span class="op">Square values</span><br>
+		</div>
+		<div id="time">10<span id="remTime">Second(s) left !</span><!-- <div id="lengthBar"></div >--></div>
+		<div id="common">
+			<div id="question">12 + 13</div>
+			<input type="text" id="answer" oninput="checkAnswer()" placeholder="?">
+		</div>	
+		<div id="scoreBox">
+			<p id="score1">
+				
+			</p>
+			<input type="button" id="newGame" onclick="newGame()" value="New Game!">
+		</div>
+		<div class="comments" id="comment1"></div>
+		<div class="comments" id="comment2"></div>
+	</body>
+	<script src="game.js">
+	</script>
+</html>
