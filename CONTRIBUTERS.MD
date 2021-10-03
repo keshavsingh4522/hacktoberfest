@@ -214,5 +214,6 @@
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
 | Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
+| Mostafa Mansour      | [@tifa64](https://github.com/tifa64/)                         |         0
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)
