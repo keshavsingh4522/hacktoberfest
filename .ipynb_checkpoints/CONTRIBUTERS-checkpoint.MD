@@ -46,3 +46,4 @@
 | Tanmay Khandelwal | [@Dude-901](https://github.com/Dude-901)                      |
 | B Rahul           | [@rahulbollisetty](https://github.com/rahulbollisetty)        |
 | AbuBakar Sheikh   | [@onymousproduktions](https://github.com/onymousproduktions)  |
+|Fancy Angeline U   | [@Fancy Angeline U](https://github.com/Fancy-angel)           |
