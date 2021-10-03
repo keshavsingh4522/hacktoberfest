@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Google</title>
+  <meta name="description" content="Google Search">
+  <meta name="author" content="Saugat Rimal">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+  <meta property="og:title" content="Google Search Clone">
+  <meta property="og:type" content="Google Search">
+  <meta property="og:url" content="Google Search">
+  <meta property="og:description" content="Google Search">
+  <meta property="og:image" content="https://raw.githubusercontent.com/twowaits/make-pull-request/master/Images/2ndOct_1.png">
+
+  <style type="text/css" media="screen">
+
+     /*Tags Styling*/
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    li{
+      list-style-type: none;
+    }
+
+    a:link{
+      text-decoration: none;
+    }
+
+
+    body{
+      font-family: arial,sans-serif;
+      font-size: 14px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+
+
+
+    
+    /*Header Styling*/
+
+
+      header {
+        height: 60px;
+      }
+
+    .navbar {
+      font-size: 13px;
+      height: 100%;
+      width: 100%;
+      padding: 10px 20px;  
+
+      }
+
+      .navbar ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+      }
+
+     .navbar_left {
+      justify-content: flex-start;
+      
+     }
+
+    .navbar_right {
+      justify-content: flex-end;
+      margin-top: -40px;
+    }
+
+    .navbar ul li{
+        margin-left: 15px;
+
+      }
+
+    .navbar ul li a {
+        color: black;
+      }
+
+    .link:hover {
+        text-decoration: underline;
+      }
+
+    .circle-shadow{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }  
+
+    .circle-shadow:hover{
+      background-color: rgba(0, 0, 0, 0.07);
+    }
+
+    .app-icon {
+      font-size: 18px;
+    }
+
+
+
+
+
+
+     /*Content Styling*/
+
+
+     .content-section{
+     flex-grow: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     }
+
+     .content-wrapper{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+     }
+
+     .logo-img{
+      margin-bottom: 20px;
+     }
+
+     .search-bar {
+      border:  1px solid lightgrey;
+      width: 600px;
+      height: 45px;
+      border-radius: 35px;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+     }
+
+     .search-bar:hover {
+      box-shadow: 0px 0px 6px 0px #B5B5B5;
+     }
+
+     .material-icons.md-dark {
+     color: rgba(0, 0, 0, 0.54);
+     margin-right: 15px;
+     cursor: pointer;        
+     }
+
+    .material-icons.md-brown{
+      color: #9AA0A6;
+      margin-right: 15px;
+     cursor: pointer;  
+    }
+
+    .material-icons.md-18 { 
+      font-size: 18px;
+    }
+
+    .search-bar input {
+      flex-grow: 1;
+      height: 30px;
+      margin-right: 15px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .search-bar input:focus {
+      outline: none;
+
+    }
+
+    .search-btns{
+      margin-top: 20px;
+    }
+
+    .search-btns button{
+      height: 40px;
+      width: 142.5px;
+      font-size: 14px;
+      border:  none;
+      border-radius: 5px;
+      margin-left: 10px;
+      color: #444547;
+      background-color: #F8F9FA;
+
+      }
+
+    .search-btns button:hover {
+      border:  1px solid lightgrey;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px;
+    }  
+
+
+
+
+    .tips{
+     margin-top: 20px;
+     text-align: center;
+     font-size: 13px;
+     margin-left: 15px;
+    }
+
+    .tips p a {
+      color: blue;
+    }
+
+    .tips p a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+    /* Footer */
+
+    footer{
+      background-color: #f2f2f2f2;
+      height: 50px;
+    }
+
+    .footer-content{
+      display: flex;
+      text-align: center;
+      padding:  20px;
+    }
+
+    .footer-content{
+      height: 10%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-content ul li a{
+      color: gray;
+      margin-right: 15px;
+    }
+
+    .footer-content ul li a:hover{
+      text-decoration: underline;
+    }
+
+    .left-footer{
+      display: flex;
+    }
+
+    .right-footer{
+      display: flex;
+
+    }
+
+    .center-footer{
+     padding-right: 60px;     }
+
+
+
+
+
+    /* Mobile and Responsiveness */
+
+    @media only screen and (max-width: 650px){
+      .search-bar{
+        width: 90%;
+      }
+
+      footer{
+        height: 100px;
+      }
+
+      .footer-content{
+         flex-direction: column;
+         align-items: center
+          }
+
+      .left-footer{
+      align-items: center
+    }
+
+    .center-footer{
+      padding: 10px;
+    }
+  }
+
+  </style>
+
+
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <header id="header" class="header-top">
+    <nav class="navbar">
+      <ul class="navbar_left">
+        <li>
+           <a class="link" href="" title="About">About</a>
+        </li>
+        <li>
+           <a class="link" href="" title="Store">Store</a>
+        </li>
+      </ul>
+      <ul class="navbar_right">
+        <li>
+           <a class="link" href="" title="Gmail">Gmail</a>
+        </li>
+        <li>
+           <a class="link" href="" title="Images">Images</a>
+        </li>
+        <li>
+           <a class="apps-icon circle-shadow" href="" title="Apps"><span class="material-icons"> apps </span></a>
+        </li>
+        <li>
+          <a class="user-icon circle-shadow" href="" title="Profile"><span class="material-icons">account_circle</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header><!-- /header -->
+  <!-- Header ends -->
+
+  <!-- Content Starts -->
+  <section class="content-section">
+    <div class="content-wrapper">
+      <img class="logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo Image">
+
+      <!--https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif-->
+    
+    <div class="search-bar">
+      <span class="material-icons md-brown  md-18">search</span>
+      <input class="search-input" id="search-input" type="text" name="google-search">
+      <span class="material-icons md-dark">mic</span>
+    </div>
+    <div class="search-btns">
+      <button id="google-search-btn" class="google-search-btn grey">Google Search</button>
+      <button  class="lucky-search-btn grey">I'm Feeling Lucky</button>
+    </div>
+    <div class="tips">
+      <p>Go <span><a href="https://www.saugatreemal.engineer/" target="_blank">behind-the-scenes</a></span> of today's Doodle</p>
+
+    </div>  
+    </div>
+
+  </section>
+  <!-- Content Ends -->
+
+  <!-- Footer Starts -->
+  <footer>
+    <div class="footer-content">
+      <ul class="left-footer">
+        <li>
+          <a href="">Advertising</a>
+        </li>
+        <li>
+          <a href="">Business</a>
+        </li>
+        <li>
+          <a href="">How Search Works</a>
+        </li>
+      </ul>
+      <ul class="center-footer">
+        <li>
+          <a href=""><img src="https://cdn-icons-png.flaticon.com/512/834/834374.png" width="10px" height="10px"> Carbon Neutral Since 2007</a>
+        </li>
+      </ul><ul class="right-footer">
+        <li>
+          <a href="">Privacy</a>
+        </li>
+        <li>
+          <a href="">Terms</a>
+        </li>
+        <li>
+          <a href="">Setting</a>
+        </li>
+      </ul>
+    </div>
+    </footer>
+  <!-- Footer Ends -->
+
+
+
+
+
+  <!-- Javascript Starts... -->
+  <script type="text/javascript" charset="utf-8" async defer>
+
+    const searchInput = document.querySelector("#search-input");
+
+    searchInput.addEventListener("keydown", function(event){
+      if(event.code === "Enter") {
+        search();
+      }
+
+    });
+
+    function search() {
+      const input = searchInput.value;
+      window.location.href = "https://www.google.com/search?q=" + input + "&oq=" + input + "&aqs=chrome..69i57j69i60l3.435j0j9&sourceid=chrome&ie=UTF-8"
+    }
+  </script>
+</body>
+</html>
