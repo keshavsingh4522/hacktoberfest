@@ -22,8 +22,6 @@ def printURL(URL):
     result = {'headers': http_info.items(), 'body': project_info}
     pprint.pprint(result, sort_dicts=False)
 
-#printFILE("C:\\Users\\tamkh\\Downloads\\Playnite9Beta\\fullscreenConfig.json")
-
 if args.Type.lower() == "file":
     printFILE(args.Path)
 elif args.Type.lower() == "url":
