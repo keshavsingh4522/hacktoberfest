@@ -53,6 +53,7 @@ int main()
   cin>>V;
   Graph g(V);
   int m;
+  cout<<"Enter the number of edges"<<endl;
   cin>>m;
   while(m--)
   {
