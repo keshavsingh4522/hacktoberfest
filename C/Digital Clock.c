@@ -21,7 +21,7 @@ int main()
         fflush(stdout);
          
          //increase second
-        second++;
+        second=second+1;
  
         //update hour, minute and second
         if(second==60){
