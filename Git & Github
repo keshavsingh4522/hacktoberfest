@@ -1,0 +1,144 @@
+Roadmap for getting started with Git & Github 
+
+-------Git-----------
+creator: Linus Torvalds
+
+what is Git?
+
+-Git is a version control system that tracks the changes you make to files, 
+-It provides a record of what has been done, and you can revert to specific versions(or save points just like in video games). 
+-Version control means that we can control and manipulate the version of the saved files that we created.
+-Each version will have its own ID. 
+-Files and their history are stored on your computer.
+
+Why was it created in the first place?
+
+There are huge numbers of developers that live around the globe in different time zones. Git along with github enables these people to 
+contribute to single or Multiple Repositries(directories/FIles) at their flexible time, they can change, manipulate, or revert back to the previous versions of the 
+files that they worked on. This is nothing more than a social media of the developers, but highly inclined towards the WORK.
+Devlopers build softwares, amazing games, Open source apps that the common people can use without paying any fees as they have to pay for using
+similar softwares on other platforms. 
+
+Okay seems interesting, How to learn Git and Github?
+
+1)Installation
+  - Git is a software Github is a website. So we need to install Git on our computers to use it.
+
+2) How to install? 
+    link: https://git-scm.com/downloads 
+    simply choose your system Operating system and download git Bash.
+
+3) Once installation is complete open the terminal and run the command:  git --version if it shows 2.33.0 as of date: 03-10-2021 
+   then git bash is successfully installed into you system.
+
+This completes the installation and now you are good to go to work on you projects/files
+
+Okay I installed my files, but how to use Git?
+
+As discussed above that Git is a version control system. Therefore git is your companion that works according your "COMMANDS"
+
+What are Git Commands?
+Let's assume that you have a project folder in which you have worked on building something say a Website, and now you want it to be saved on github. 
+In the upcoming points you will be understandin the Git commands as a Version control system and why it is called one. Let's dive in
+
+Open you Git bash folder in you Project folder by right clicking in the folder and select "Git Bash Here" or you can do that in the same using 
+Git bash as well by using the Cd project folder name (make sure to navigate correctly to that specific location)
+
+1. ls -a: shows you all the hidden files of you folder
+   note: files starting with .(dot) are hidden files.
+   
+2. git init: initializes an empty git repository in your project folder. This folder is hidden and tracks / saves all the chnges that you will 
+              now be making in this project folder of yours.
+
+3. git status: shows you the status of your files, more specifically abou the untracked files.
+
+4. git add. : Adds all the files in the staging area, staging area is basically the files that are about to be committed. This doesn't commit those files 
+              but shows only the "changes to be made".
+    
+5. git commit -m "Your_message_about_the_file" : this commits the files in the project folder, which means those file now have a their first commit, 
+                                                 and these commits have an id called as "HASH ID" which is basically used for their tracking in future
+                                                 purposes.
+
+6. vi <filename>:  This command opens the message terminal where you can write the content of that file name.
+
+7. cat <filename>:  shows you the content within the file.
+
+8. git restore --staged <filename>: this commands unstage those files which you have previously staged (see 4.). This command is useful when you 
+                                    have staged some files by mistake.
+
+9. git log: shows the histroy of the files commits. using this command we can obtain the Hash Id and use it to uncommit those changes which we might 
+            have done by mistake.
+            
+10. Git reset Hash Id: This restores the file at that particular instance. All the commits above this Commit's Hash ID's will be removed and we will be back  
+                       at that point when this particular commit happened.
+
+      what about the files that were changed after this commit which is reset? 
+      Those files that were changed after this commit are in the stagin area.
+
+Now you understood that how to do things with the files now you can go to the github and make your profile, signup and then create a repository for this 
+project.
+
+link: https://github.com/
+
+How to add these project folder files to the github repository?
+you have two options: - using github GUI
+                      - using git cli(command line interface)
+                    
+11. git remote add origin URL: Using this command we are adding an origin URL where we will be sharing this project folder files on our repository.
+                
+    how to get the URL? 
+    go to the repository click on the Green button called as "Code" above you repo's name and copy the URL from there.
+    
+
+Let us understand Branches.
+
+Imagine a Tree that has a lots of branches but it has one main branch that rises from its roots. On a similar context, the main files/most important of the 
+reposiory is stored in the main branch whereas other files that are under development/progress are working on different branch.
+When you create a repository on Github, Github creates the repository with a single branch. This first branch in the repository 
+is the default branch. The default branch is the branch that GitHub displays when anyone visits your repository.
+
+push: push on github is basically you are pushing you files let's day locally(your computer) to the remote directory(github)
+pull: bring some other files on another remote directory into yours 
+HEAD: is basically the pointer that points to the branch name, or it shows the branch that we are working on.
+
+12.git push origin main: The files will be now be pushed into the "main" branch of you newly created repository.
+
+13.git remote -v:  shows the URL's attached to that folder on github.
+
+stashing: This method is used when we want to work on the same project but with a clean codebase, which means that we want to experiment with the 
+          code without affecting the original codebase. 
+
+15. git stash: after staging the required files then use this command it will stash those files. 
+
+16. git stash pop: brings back all the stashed files to the unstaging area.
+
+17. Esc :x : this is used when you are working with the vi in the file and you want to quit with saved changes.
+
+Lets say we want to work on a pre existing files that are not owned by us but some organisation or somebody else on github.
+
+how do we do that?
+
+
+18. Fork the that repo into you account and the git clone URL(your forked repo): this downloads all those foked files into your local system.
+
+lets say you want to change the branch that you are working on
+
+19. git checkout branch name: changes the HEAD of the branch to the speicified branch. 
+
+how to confirm?
+
+20. git branch: show you all the branches associated with that project folder and the one with the (*) upfornt in on which you are working currently. 
+
+OK, now I uderstood how to work with files and make changed with them, but how to get them merged to another person's main folder? 
+
+21. -Find a project you want to contribute to
+    -Fork it from that project folder into yours
+    -Clone it to your local system
+    -Make a new branch of that repository
+    -Make your changes to the forked repository
+    -Push it back to your repository
+    -Click on "Compare & pull request" button
+    -Click "Create pull request" to open a new pull request 
+
+
+Yayy!! I understood all of them and now I know that difference between GIT & GITHUB. 
