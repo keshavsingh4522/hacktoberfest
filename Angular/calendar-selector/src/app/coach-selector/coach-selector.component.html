@@ -1,0 +1,13 @@
+<form title="{{testEmitter$ | async}}">
+    <div class="coach-selector-group form-group">
+        <label class="form-control-lg" for="availableCoachesSelect">Please select from the available coaches </label>
+        <select multiple class="form-control form-control-lg" id="availableCoachesSelect" (change)="onChange($event.target.options)">
+            <ng-container *ngFor="let coach of availableCoaches">
+                <option>{{ coach }}</option>
+            </ng-container> 
+        </select>
+    </div> <br/>
+    <!-- multipleSelect = {{ selectedCoaches }}<br/> -->
+    <!--<button type="submit" class="btn btn-primary" (click)="selectDates()">Check Dates</button> -->
+
+</form>
