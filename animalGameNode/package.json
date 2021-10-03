@@ -1,0 +1,22 @@
+{
+  "name": "day-12---animal-game-challenge-kanishkagarwal6101",
+  "version": "1.0.0",
+  "description": "We're going to write a console-based 'animal guessing game'.  Here's an example of the input and output of the program:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McLaren-College/day-12---animal-game-challenge-kanishkagarwal6101.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McLaren-College/day-12---animal-game-challenge-kanishkagarwal6101/issues"
+  },
+  "homepage": "https://github.com/McLaren-College/day-12---animal-game-challenge-kanishkagarwal6101#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
