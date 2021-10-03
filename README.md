@@ -1,3 +1,6 @@
+# contribute only in below repo dont contribute in this.
+[https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021)
+
 # check this before commiting code
 [https://github.com/open-for-everyone/hacktoberfest2021/discussions/747](https://github.com/open-for-everyone/hacktoberfest2021/discussions/747)
 
