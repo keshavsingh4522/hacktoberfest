@@ -60,5 +60,9 @@ int main()
     cin>>src>>dest>>weight;
     g.addEdge(src,dest,weight);
   }
+  cout<<"Enter the source vertex"<<endl;
+  int src;
+  cin>>src;
+  g.shortestPath(src);
 	return 0;
 }
