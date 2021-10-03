@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
- // } Driver Code Ends
 class Solution{
 		
 
@@ -22,8 +20,6 @@ class Solution{
 	    return (*max_element(lis,lis+n));
 	}  
 };
-
-// { Driver Code Starts.
 int main() 
 {
    	
