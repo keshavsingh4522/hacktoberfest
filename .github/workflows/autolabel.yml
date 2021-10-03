@@ -1,0 +1,62 @@
+name: Pull Request Messenger
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      
+    steps:
+      - uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            # Create comment body as Markdown
+
+            var msg = `👋 Thanks for participating! I will review as soon as possible, usually within a few hours.
+
+            **Watch for notifications** as I may request some small changes to make sure this meets the guidelines.`
+
+            # Get pull request description
+            var body = context.payload.pull_request.body
+
+            # If `body` exists, check for conditions
+            # related to being from a contributor
+            if(body) {
+              var isContribution = body.contains('New Submission')
+              var incompleteGuidelines = body.contains('[]')
+            }
+
+            if(isContribution) {
+              # Create comment
+              github.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: msg
+              })
+
+              # Add 'hacktoberfest-accepted' label
+              github.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['hacktoberfest-accepted']
+              })
+
+              # If missed checking guidelines,
+              # add 'invalid' label
+              if(incompleteGuidelines) {
+                github.issues.addLabels({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  labels: ['invalid']
+                })
+              }
+            }
