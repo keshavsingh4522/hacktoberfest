@@ -1,4 +1,4 @@
-/* anagram or not */
+/* program to check whether the given string is anagram or not */
 #include<stdio.h>
 #include<string.h>
 int main(){
