@@ -1,3 +1,23 @@
+# Special Note For Everyone
+```py
+'''
+always make more then 4 pull request
+lets you have made only 4 pull request to different projects
+but one project is excluded from hackoctoberfest event then your pull request will not be count and 
+then you have remains 3 valid pull request if these projects is not excluded.
+if you fail to make 4 pull request then you cant get swags or t-shirts.
+
+i will recommend you make pull request to your own repo which is very very saffest side for you..
+keep in mind that repo should have hacktoctoberfest topic..
+'''
+```
+
+### dont contribute in this repo, contribute only in below repo,.
+[open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/open-for-everyone/HacktoberFest-2021)
+
+# check this before commiting code
+[open-for-everyone/hacktoberfest2021/discussions/747](https://github.com/open-for-everyone/hacktoberfest2021/discussions/747)
+
 <p align="center">
     <a href="https://hacktoberfest.digitalocean.com/">
         <img src="https://raw.githubusercontent.com/keshavsingh4522/hacktoberfest2021/35fc6060c5ddead5792f29a2437fea160dbe9804/Assets/logo-hacktoberfest-full.f42e3b1.svg" width="30%">
@@ -28,6 +48,7 @@
 
 | Repository                                                  | Issues                                                                                                                                                           | Pull Requests                                                                                                                                                     | Forks                                                                                                                                                             |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [hacktoberfest2021](https://github.com/open-for-everyone/HacktoberFest-2021)         | [![GitHub issues](https://img.shields.io/github/issues/open-for-everyone/HacktoberFest-2021?color=pink&logo=github)](https://github.com/open-for-everyone/HacktoberFest-2021/issues)         | [![GitHub PRs](https://img.shields.io/github/issues-pr/open-for-everyone/HacktoberFest-2021?style=social&logo=github)](https://github.com/open-for-everyone/HacktoberFest-2021/pulls)         | [![GitHub forks](https://img.shields.io/github/forks/open-for-everyone/HacktoberFest-2021?logo=git)](https://github.com/open-for-everyone/HacktoberFest-2021/network)                         |
 | [Python](https://github.com/keshavsingh4522/Python)         | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/Python?color=pink&logo=github)](https://github.com/keshavsingh4522/Python/issues)         | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/Python?style=social&logo=github)](https://github.com/keshavsingh4522/Python/pulls)         | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/Python?logo=git)](https://github.com/keshavsingh4522/Python/network)                         |
 | [C](https://github.com/keshavsingh4522/c/)                  | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/c?color=pink&logo=github)](https://github.com/keshavsingh4522/c/issues)                   | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/c?style=social&logo=github)](https://github.com/keshavsingh4522/c/pulls)                   | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/c?logo=git)](https://github.com/keshavsingh4522/c/network)                                   |
 | [Javascript](https://github.com/keshavsingh4522/javascript) | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/javascript?color=pink&logo=github)](https://github.com/keshavsingh4522/javascript/issues) | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/javascript?style=social&logo=github)](https://github.com/keshavsingh4522/javascript/pulls) | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/javascript?logo=git)](https://github.com/keshavsingh4522/javascript/network)                 |
@@ -166,6 +187,8 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> </td>
 </tr>
 <tr><td align="center"><a href="https://github.com/shoom1337"><kbd><img src="https://avatars3.githubusercontent.com/shoom1337?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ivan Shoom</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=shoom1337" title="Code"> :computer: </a> </td>
+<td align="center"><a href="https://github.com/agrajagrawal"><kbd><img src="https://avatars3.githubusercontent.com/agrajagrawal?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Agraj Agrawal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=agrajagrawal" title="Code"> :computer: </a> </td>
+    <td align="center"><a href="https://github.com/anmol-19"><kbd><img src="https://avatars3.githubusercontent.com/anmol-19?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Anmol Jain</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=anmol-19" title="Code"> :computer: </a> </td>
 
 </tr>
 </table>
