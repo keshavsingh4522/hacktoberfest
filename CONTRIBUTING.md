@@ -10,3 +10,6 @@ Thank you for your suggestions!
 
 Name - Anshir Chaudhary
 Github - https://github.com/Anshir08
+
+Name - Avaneesh Singh
+Github - https://github.com/avi-11
