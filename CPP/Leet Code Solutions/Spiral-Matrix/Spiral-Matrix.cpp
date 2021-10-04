@@ -1,40 +1,40 @@
 class Solution {
 public:
-    vector<int> spiralOrder(vector<vector<int>>& m) 
+    vector<int> spiralOrder(vector<vector<int>>& matrix) 
     {
-        int row=m.size();
-        int col=m[0].size();
+        int m=matrix.size();
+        int n=matrix[0].size();
 
-        vector<int> res(row*col);
+        vector<int> res(m*n);
         int resi=0;
 
         int j;
-        for(int i=0; i<row; i++)
+        for(int i=0; i<m; i++)
         {
-            if(resi==row*col)
+            if(resi==m*n)
                 break;
 
             j=i;
-            for(; j<col-i && resi!=row*col; j++)
+            for(; j<n-i && resi!=m*n; j++)
             {
-                res[resi++]=m[i][j];
+                res[resi++]=matrix[i][j];
             }
 
             int k;
-            for(k=i+1; k<row-i-1 && resi!=row*col; k++){
-                res[resi++]=m[k][j-1];
+            for(k=i+1; k<m-i-1 && resi!=m*n; k++){
+                res[resi++]=matrix[k][j-1];
             }
 
             int l;
-            for(l=j-1; l>=i && resi!=row*col; l--)
+            for(l=j-1; l>=i && resi!=m*n; l--)
             {
-                res[resi++]=m[k][l];
+                res[resi++]=matrix[k][l];
             }
 
             int m1;
-            for(int m1=k-1; m1>i && resi!=row*col; m1--)
+            for(int m1=k-1; m1>i && resi!=m*n; m1--)
             {
-                res[resi++]=m[m1][i];
+                res[resi++]=matrix[m1][i];
             }
         }
         vector<int>::iterator it;
