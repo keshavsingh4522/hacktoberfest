@@ -86,7 +86,7 @@
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |
 | Aswin A              | [@Aswin1362](https://github.com/Aswin1362)                    |         0        |
-| Tseme Botlhe         | [@Tsemester123](https://github.com/Tsemester123)              |         1        |
+| Tseme Botlhe         | [@Tsemester123](https://github.com/Tsemester123)              |         1        |1
 | Nikhil Varshney      | [@Codengg](https://github.com/Codengg)                        |         0        |
 | Gokul Charade        | [@gokulcharade](https://github.com/gokulcharade)              |         0        |
 | Ivan Shoom           | [@shoom1337](https://github.com/shoom1337)                    |         1        |
@@ -215,4 +215,5 @@
 | Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
-| Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)
+| Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |              
+| MOHAMMAD SHAIBAZ QAISAR| [@MOHAMMADSHAIBAZQAISAR](https://github.com/MOHAMMADSHAIBAZQAISAR) |  1        |
