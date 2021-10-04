@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c76191ada7.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background-image:url('test2bg.jpg');
+            background-repeat: repeat;
+        }
+        .extra{
+            visibility: visible;
+            animation-duration: 0.3s;
+            display: block;
+        }
+        
+        
+        #bar{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            overflow: hidden;
+            
+           }
+           #bar li{
+        list-style-type: none !important;
+           }
+        .sidebar{
+            margin: -25px !important;
+               position: absolute;
+               display: none;
+               width: 320px;
+               height: 100vh;
+               overflow: hidden;
+               background: #042331;
+               z-index: 8;
+              animation-name: slide1;
+            animation-duration: .5s ; 
+            }
+            
+            .sidebar header{
+                font-size: 22px;
+                color: white;
+               text-align: center;
+               line-height: 70px;
+               background: #0088ea;
+               user-select: none;
+            }
+            .sidebar header img{
+                width: 200px;
+                height: 90px;
+                z-index: 99;
+                object-fit: contain;
+
+            }
+            .sidebar ul a{
+                display: block;
+                height: 100%;
+                width: 100%;
+                line-height: 65px;
+                font-size: 20px;
+                color: white;
+                padding-left: 12px;
+                box-sizing: border-box;
+                list-style: none;
+                text-decoration: none;
+                transition: .4s;
+            }
+            .sidebar ul li:hover a{
+                padding-left: 20px;
+                
+            }
+            .sidebar ul a i{
+                margin: 10px;
+            }
+            #check{
+                display: none;
+            }   
+            
+            label #btn, label #cancel{
+                position: absolute;
+                cursor: pointer;
+                background: #0088ea;
+                border-radius: 3px;
+            }
+            
+            label #btn{
+                right: 40px;
+                top: 25px;
+                font-size: 35px;
+                color: white;
+                padding: 6px 12px;
+                transition: all .5s ;
+        }
+        label #cancel{
+            display: none;
+            z-index: 1111;
+            top: 17px;
+            font-size: 30px;
+            color: #0a5275;
+            padding: 4px 9px;
+            transition: all .5s ease;
+        }
+        #check:checked ~ .sidebar{
+            right: 0;
+        }
+        #check:checked ~ label #btn{
+            right: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            right: 240px;
+            top: 26px;
+        }
+        .left-side{
+            position: absolute;
+            background-color: #e2dcdc;
+            height: 100vh;
+            top: 0px;
+            left: 0px;
+            width: 67em;
+            overflow-y: auto;
+            padding: 22px 0;
+            display: none;
+            opacity: 1;
+            animation-name: slide;
+            animation-duration: 1s ;
+            
+        }
+        .left-side h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.5rem;
+            margin: 10px;
+            color: #0088ea;
+            font-weight: bold;
+        }
+        
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+        }
+        .align-list > ul > li {
+            font-size: 14px;
+            color: #000;
+            padding-top: 45px;
+        }
+        .align-list > ul > li > a {
+            color: #303030;
+            font-family:  Arial;
+            text-decoration: none;
+        }
+        .align-list > ul > li > a:hover{
+            color:#0088ea ;
+        }
+        .left-side:hover{
+            display: block;
+        }
+        @keyframes slide{
+            0%{
+                opacity: 0;
+                width: 50%;
+            }
+            
+            100%{
+                opacity: 1;
+                width: 90%;
+            }
+        }
+        
+        @keyframes slide1{
+            0%{
+                opacity: 0.2;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            
+            100%{
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .sidebar {
+              width: 108%;
+              height:100%;
+            }
+            #check:checked ~ label #cancel {
+                right: 350px;
+            }
+            .sidebar a {float: right;}
+            div.content {margin-right: 0;}
+            .sidebarhover ul li:hover a{
+                padding-left: 20px;
+                
+            }
+        }
+        
+        /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+        @media screen and (max-width: 400px) {
+            body{
+                overflow: hidden;}
+        
+            .sidebar a {
+                float: none;
+            }
+            #check:checked ~ label #cancel {
+                right: 304px;
+            }
+          }
+    </style>
+</head>
+
+<body>
+    <div class="container extra">
+
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" onclick="sidebar(); dis()" id="btn"></i>
+            <i class="fas fa-times " onclick="cancel(); dis1()" id="cancel"></i>
+        </label>
+        <div class="sidebar sidebarhover" id="sidenav">
+            <div class="img">
+               <header><a href="https://brigadesolutions.com/"> <img src="logo-removebg-preview.png" alt="" srcset=""></a></header>
+            </div>
+            <ul id=" bar " style="padding-left: 0px">
+                <li><a href="#"><i class="fas fa-home "></i>Home</li>
+                </a>
+                <li onmouseover="mouseover()"  onmouseout="mouseout()" ><a href="#"><i class="fas fa-link"></i>About </a></li>
+                <li  onmouseover="mouseover1()" onmouseout="mouseout1()" ><a href="#"><i class="far fa-list-alt"></i>Services</a></li>
+                <li onmouseover="mouseover2()" onmouseout="mouseout2()"><a href="#"><i class="fas fa-briefcase"></i>Business verticals</a></li>
+            </ul>
+        </div>
+
+
+        <div class="left-side" id="about">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2 class="h2-heading mb10">About </h2>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 align-list">
+                    <div class="row m-2">
+                    <ul class="list-unstyled li-separator">
+                        <li> <a href="https://www.edgeverve.com/" title="EdgeVerve">Overview</a> </li><hr>
+
+                        <li> <a href="https://www.edgeverve.com/finacle/" title="Infosys Finacle">Why Brigade?</a> </li><hr>
+                        <li> <a href="/navigate-your-next/live-enterprise-suite.html"
+                                title="Infosys Live Enterprise Suite">Board of Directors</a> </li><hr>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 align-list">
+                    <ul class="list-unstyled li-separator">
+                        <li> <a href="http://www.panaya.com" title="Panaya">Our Leadership</a> </li><hr>
+                        <li> <a href="http://www.skava.com" title="Skava">Global Delivery Model</a> </li><hr>
+                        <li> <a href="/products-and-platforms/wingspan.html" title="Infosys Wingspan">Awards & Recognitions</a> </li><hr>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="left-side" id="service">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2 class="h2-heading mb10">Services</h2>
+            </div>
+            <div class="row m-2">
+                <div class="col-md-6 col-sm-12 col-xs-12 align-list">
+                    <ul class="list-unstyled li-separator">
+                        <li> <a href="https://www.edgeverve.com/" title="EdgeVerve">Private Equilty Research</a> </li><hr>
+                        <li> <a href="https://www.edgeverve.com/finacle/" title="Infosys Finacle">Account payable/ Receivable</a> </li><hr>
+                        <li> <a href="/navigate-your-next/live-enterprise-suite.html"
+                                title="Infosys Live Enterprise Suite">Customer Support</a> </li><hr>
+                        <li> <a href="https://www.edgeverve.com/artificial-intelligence/nia/"
+                                title="Infosys Nia">Tech Support</a> </li><hr>
+                        <li> <a href="/products-and-platforms/cortex.html" title="Infosys Cortex">Logistics</a>
+                        </li><hr>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 align-list">
+                    <ul class="list-unstyled li-separator">
+                        <li> <a href="http://www.panaya.com" title="Panaya">Fulfillment Services</a> </li><hr>
+                        <li> <a href="http://www.skava.com" title="Skava">Sales Support & Up Selling</a> </li><hr>
+                        <li> <a href="/products-and-platforms/wingspan.html" title="Infosys Wingspan">Loan & Lease Processing</a> </li><hr>
+                        <li> <a href="/products-and-platforms/helix.html" title="Infosys HELIX">Back Office Processing</a>
+                        </li><hr>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="left-side" id="business">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2 class="h2-heading mb10">Business verticals</h2>
+            </div>
+            <div class="row m-2">
+                <div class="col-md-6 col-sm-12 col-xs-12 align-list">
+                    <ul class="list-unstyled li-separator">
+                        <li> <a href="https://www.edgeverve.com/" title="EdgeVerve">Private Equilty</a> </li>
+                        <hr>
+                        <li> <a href="https://www.edgeverve.com/finacle/" title="Infosys Finacle">Customer Electronics</a> </li>
+                        <hr>
+                        <li> <a href="/navigate-your-next/live-enterprise-suite.html"
+                                title="Infosys Live Enterprise Suite">Logistics</a> </li>
+                                <hr>
+                        <li> <a href="https://www.edgeverve.com/artificial-intelligence/nia/"
+                                title="Infosys Nia">Technology </a> </li>
+                                <hr>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 align-list">
+                    <ul class="list-unstyled li-separator ">
+                        <li> <a href="http://www.panaya.com" class="mar" title="Panaya">Retail</a> </li><hr>
+                        <li> <a href="http://www.skava.com" title="Skava">Telecom</a> </li><hr>
+                        <li> <a href="/products-and-platforms/wingspan.html" title="Infosys Wingspan">BFSI</a> </li><hr>
+                        <li> <a href="/products-and-platforms/meridian.html" title="Infosys Meridian">Healthcare & Life Sciences</a> </li><hr>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function mouseover() {
+            document.getElementById("about").style = "display:block; ";
+        }
+
+        function mouseout() {
+            document.getElementById("about").style = ".left-side:hover{display:block;}";
+        }
+
+        function mouseover1() {
+            document.getElementById("service").style= "display :block;";
+        }
+        function mouseout1() {
+            document.getElementById("service").style = ".left-side:hover{display:block;}";
+        }
+
+        function mouseover2() {
+            document.getElementById("business").style= "display:block;";
+        }
+        function mouseout2() {
+            document.getElementById("business").style = ".left-side:hover{display:block;}";
+        }
+        
+        function sidebar(){
+            document.getElementById("sidenav").style = "display:block; transition: all 5s; overflow:hidden;";
+            
+        }
+        function cancel(){
+            document.getElementById("sidenav").style = "display:none;";
+
+        }
+        
+        function dis(){
+             document.getElementById("cancel").style = "display:block;";
+
+        }
+        function dis1(){
+            document.getElementById("cancel").style = "display:none;";
+
+        }
+    
+    </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
