@@ -208,6 +208,7 @@
 | Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
 | Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
+| Sean Kerwin          | [@lordkerwin](https://github.com/lordkerwin)                  |         1        |
 | Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |               
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
