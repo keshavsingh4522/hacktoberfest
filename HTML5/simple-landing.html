@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India</title>
+    <style>
+      html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+}
+
+
+.header {
+  text-align: center;
+  background: url("https://images.pexels.com/photos/3699921/pexels-photo-3699921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.header h1 {
+  color:#FF9933;
+  margin: 0;
+  font-size: 100px;
+}
+
+
+.header p {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+.header .btn {
+  margin-top: 30px;
+  background-color: #22d165;
+  color:blue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+
+.feature {
+  background: url("https://images.pexels.com/photos/1007425/pexels-photo-1007425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  height: 350px;
+ 
+}
+.feature .container {
+  position: relative;
+  top: 90px;
+}
+
+.feature h2 {
+  color: #fff;
+  font-size: 35px;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+
+a.btn:hover {
+  background-color: #ff6600;
+  color: rgb(58, 77, 184);
+  font-weight: 600;
+}
+
+  .card-parent {
+    font-family: Oxygen, sans-serif;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 2rem;
+  }
+  
+  ul,
+  a,
+  li,
+  button {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .card {
+    box-shadow: 0px 2px 20px var(--clr-gray200);
+    border-radius: var(--radius);
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  
+  
+  .card img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 200ms ease-in;
+  }
+  
+  .card-title {
+    padding: 1rem;
+  }
+  
+  .card-description {
+     padding: 0 1rem;
+  }
+  .card-btn {
+     padding: 1rem;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 1rem;
+      border: 2px solid var(--clr-primary);
+      background: transparent;
+      color: var(--clr-primary);
+      border-radius: var(--radius);
+      transition: background 200ms ease-in, color 200ms ease-in;
+  }
+  
+  .card:hover {
+     transform: scale(1.02);
+  }
+  
+  .card-btn:hover {
+    background: var(--clr-primary);
+    color: white;
+  }
+ 
+    </style>
+</head>
+<body>
+  
+
+<div class="header">
+    <div class="container">
+      <h1>India</h1>
+      <p>India is famous for its ancient history, varied landscapes and diverse culture.</p>
+      <a href="#section1" class="btn">Know More</a>
+    </div>
+  </div>
+  
+  <section id="section1">
+  <div class="card-parent">
+        <div class="card">
+    <div class="card__body">
+      <img src="https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="history" class="card-image">
+      <h2 class="card-title">History</h2>
+      <p class="card-description"><b>What is the brief history of India?</b> <br><br>The history of India starts with the existence of India itself as It located in the continent of Asia, India covers 2,973,193 square kilometers of land and 314,070 square kilometers of water. </p>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/History_of_India"
+    ><button class="card-btn">Know more</button></a>
+  </div>
+
+  <div class="card">
+    <div class="card__body">
+      <img src="https://images.pexels.com/photos/57901/pexels-photo-57901.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="card__image">
+      <h2 class="card-title">Culture</h2>
+      <p class="card-description"><b>India is a country full of diverse rich cultures</b> <br><br> Indian culture is the heritage of social norms, ethical values, traditional customs, belief systems, political systems, artifacts and technologies that originated in or are associated with the Indian subcontinent. </p>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Culture_of_India"
+    ><button class="card-btn">Know more</button></a>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img src="https://images.pexels.com/photos/8083429/pexels-photo-8083429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="card__image">
+      <h2 class="card-title">Geography</h2>
+      <p class="card-description"> <b>How Geography of India is very interesting?</b> <br><br> India, country that occupies the greater part of South Asia. Its capital is New Delhi, built in the 20th century just south of the historic hub of Old Delhi to serve as India’s administrative centre.</p>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Geography_of_India"
+    ><button class="card-btn">Know more</button></a>
+  </div>
+  </div>
+</section>
+
+
+
+ 
+  <!-- Feature -->
+  <div class="feature">
+    <div class="container">
+      <h2>Vande Mataram ! Thank you for reading</h2>
+    </div>
+  </div>
+  
+    
+</body>
+</html>
