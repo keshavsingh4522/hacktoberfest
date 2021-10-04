@@ -107,4 +107,4 @@
 | Sneha Mishra         | [@Medulla9991](https://github.com/Medulla9991)                |         1        |
 | Eka Pradana          | [@oalahbro](https://github.com/oalahbro)                      |         1        |
 | Gary Zhao            | [@garyjzhao](https://github.com/garyjzhao)                    |         1        |
-| Siddhant             | [@SiddhantManze](https://github.com/SiddhantManze)            |         1        |
+| Siddhant Manze       | [@SiddhantManze](https://github.com/SiddhantManze)            |         1        |
