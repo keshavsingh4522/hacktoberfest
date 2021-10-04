@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            font-size: 15px;
+        }
+
+        .style {
+            display: flex;
+            margin: 10px 34px;
+            padding: 12px;
+        }
+
+        #iFunction {
+            width: 82%;
+            border: 1px solid rgba(104, 99, 99, 0.267);
+        }
+
+        #iOperation {
+            border: 1px solid rgba(104, 99, 99, 0.267);
+            width: 82%;
+
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            left: 70%;
+            max-width: 400px;
+            margin: auto;
+            height: 397px;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .heading {
+            margin: 24px;
+            display: flex;
+            font-size: 29px;
+
+        }
+
+        .btn button {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+            background-color: rgb(255, 255, 255);
+            border: none;
+            text-align: center;
+            width: 310px;
+            font-weight: bold;
+            height: 44px;
+            font-size: 19px;
+            border-radius: 5px;
+             margin: 12px;
+            
+        }
+
+        .btn button:hover {
+            transition: 1s;
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .md button {
+            margin-top: 34px;
+        }
+    </style>
+    <script>
+
+        function changeddl(obj) {
+
+            var text = obj.options[obj.selectedIndex].text;
+            var ddl2 = document.querySelectorAll('#iOperation option');
+            for (var i = 1; i < ddl2.length; i++) {
+                var option = ddl2[i];
+                option.style.display = 'none';
+
+                if (text == '') {
+                    if ([''].indexOf(option.text) == -1)
+                        option.style.display = 'none'
+                }
+
+                if (text == 'Accounts') {
+                    if (['Gayatri Nirbhaya Saving Account', 'Gayatri Pariwar Account', 'Current Account', 'Gayatri vidyarthi Account', 'Gayatri Suraksha Account', 'Gayatri Saving Institution Account', 'Gayatri PMJDY Saving Account'].indexOf(option.text) > -1)
+                        option.style.display = 'block'
+
+                }
+                if (text == 'Loans') {
+                    if (['Gayatri Gold Loan', 'Covid-19 Gold Loan', 'Gayatri Janatha Gold Loan', 'Gayatri Asara Gold Loan', 'Gayatri Saral Unnati Gold Loan', 'Gayatri Mortgage Loan', 'SOD Against Property', 'Overdraft CC', 'Gayatri Saral Term Loan', 'Gayatri Mortgage Term Loan', 'Gayatri Saral Asara Loan', 'Gayatri Saral CC Loan', 'Normal Loan on NSC/KVP', 'LIC Loan', 'KISAN MITRA TL', 'KISAN MITRA CC', 'Normal Loan on DL', 'Secured Overdraft (OD)', 'Housing Loan', 'Commerical Housing Loan', 'Term Loan Misc', 'Loans Against Rent Receivable'].indexOf(option.text) > -1)
+                        option.style.display = 'block'
+                }
+                if (text == 'Services') {
+                    if (['AEPS Services', 'APBS Services', 'ATM & Recycler', 'Card E-Lock Feature', 'DBT Services', 'e-Statements', 'Debit Card Services', 'BBPS Service', 'Gayatri BC/CSC', 'Mobile Banking', 'Tollfree Banking', 'UPI Services', 'Kiosk Bank', 'NACH Credit And Debit', 'Micro ATM', 'NEFT/RIGS'].indexOf(option.text) > -1)
+                        option.style.display = 'block'
+                }
+                if (text == 'Deposits') {
+                    if (['Fixed Deposits', 'Recurring Deposits', 'Bulk Deposits', 'Lockers'].indexOf(option.text) > -1)
+                        option.style.display = 'block'
+                }
+            }
+        }
+        function redirect() {
+            option1 = document.getElementById('iFunction').value;
+            option2 = document.getElementById('iOperation').value;
+
+
+            //accounts options
+            if (option1 == '1' && option2 == '1_21') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-nirbhaya-saving-account/";
+            }
+            if (option1 == '1' && option2 == '1_22') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-pariwar-account/";
+            }
+            if (option1 == '1' && option2 == '1_23') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-current-account/";
+            }
+            if (option1 == '1' && option2 == '1_24') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-vidyarthi-account/";
+            }
+            if (option1 == '1' && option2 == '1_25') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-suraksha-account/";
+            }
+            if (option1 == '1' && option2 == '1_26') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-saving-institution-account/";
+            }
+            if (option1 == '1' && option2 == '1_27') {
+                window.location.href = "https://gayatribank.in/accounts/gayatri-pmjdy-savings-account/";
+            }
+
+
+
+            //Loans options
+            if (option1 == '2' && option2 == '2_21') {
+                window.location.href = "https://gayatribank.in/loan-types/gold-loan-a-c/";
+            }
+
+
+            if (option1 == '2' && option2 == '2_22') {
+                window.location.href = "https://gayatribank.in/loan-types/covid-19-gold-loan/";
+            }
+            if (option1 == '2' && option2 == '2_23') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-janatha-gold-loan/";
+            }
+            if (option1 == '2' && option2 == '2_24') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-asara-gold-loan/";
+            }
+            if (option1 == '2' && option2 == '2_25') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-unnati-gold-loan/";
+            }
+            if (option1 == '2' && option2 == '2_26') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-saral-unnati-gold-loan/";
+            }
+            if (option1 == '2' && option2 == '2_27') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-saral-cc/";
+            }
+            if (option1 == '2' && option2 == '2_28') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-mortgage-cc/";
+            }
+            if (option1 == '2' && option2 == '2_29') {
+                window.location.href = "https://gayatribank.in/loan-types/sod-against-property/";
+            }
+            if (option1 == '2' && option2 == '2_30') {
+                window.location.href = "https://gayatribank.in/loan-types/overdraftcc/";
+            }
+            if (option1 == '2' && option2 == '2_31') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-saral-term-loan/";
+            }
+            if (option1 == '2' && option2 == '2_32') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-mortgage-term-loan/";
+            }
+            if (option1 == '2' && option2 == '2_33') {
+                window.location.href = "https://gayatribank.in/loan-types/gayatri-saral-asara-loan/";
+            }
+            if (option1 == '2' && option2 == '2_34') {
+                window.location.href = "https://gayatribank.in/loan-types/normal-loan-on-nsc-kvp/";
+            }
+            if (option1 == '2' && option2 == '2_35') {
+                window.location.href = "https://gayatribank.in/loan-types/lic-loans/";
+            }
+            if (option1 == '2' && option2 == '2_36') {
+                window.location.href = "https://gayatribank.in/loan-types/sod-against-lic-nsc-kvp-bonds/";
+            }
+            if (option1 == '2' && option2 == '2_37') {
+                window.location.href = "https://gayatribank.in/loan-types/kisan-mitra-tl/";
+            }
+            if (option1 == '2' && option2 == '2_38') {
+                window.location.href = "https://gayatribank.in/loan-types/kisan-mitra-cc/";
+            }
+            if (option1 == '2' && option2 == '2_39') {
+                window.location.href = "https://gayatribank.in/loan-types/normal-loan-on-dl/";
+            }
+            if (option1 == '2' && option2 == '2_40') {
+                window.location.href = "https://gayatribank.in/loan-types/secured-overdrafts-od/";
+            }
+            if (option1 == '2' && option2 == '2_41') {
+                window.location.href = "https://gayatribank.in/loan-types/housing-loan/";
+            }
+            if (option1 == '2' && option2 == '2_42') {
+                window.location.href = "https://gayatribank.in/loan-types/commercial-housing-loan/";
+            }
+            if (option1 == '2' && option2 == '2_43') {
+                window.location.href = "https://gayatribank.in/loan-types/term-loan-misc/";
+            }
+            if (option1 == '2' && option2 == '2_44') {
+                window.location.href = "https://gayatribank.in/loan-types/loan-against-rent-receivables/";
+            }
+
+
+            //Services
+            if (option1 == '3' && option2 == '2_21') {
+                window.location.href = "https://gayatribank.in/services/aeps-services/";
+            }
+            if (option1 == '3' && option2 == '2_22') {
+                window.location.href = "https://gayatribank.in/services/apbs-services/";
+            }
+            if (option1 == '3' && option2 == '2_23') {
+                window.location.href = "https://gayatribank.in/services/atm-and-recycler-services/";
+            }
+            if (option1 == '3' && option2 == '2_24') {
+                window.location.href = "https://gayatribank.in/services/card-e-lock-feature/";
+            }
+            if (option1 == '3' && option2 == '2_25') {
+                window.location.href = "https://gayatribank.in/services/dbt-services/";
+            }
+            if (option1 == '3' && option2 == '2_26') {
+                window.location.href = "https://gayatribank.in/services/e-statements/";
+            }
+            if (option1 == '3' && option2 == '2_27') {
+                window.location.href = "https://gayatribank.in/services/debit-card-services/";
+            }
+            if (option1 == '3' && option2 == '2_28') {
+                window.location.href = "https://gayatribank.in/services/gayatri-bbps/";
+            }
+            if (option1 == '3' && option2 == '2_29') {
+                window.location.href = "https://gayatribank.in/services/gayatri-bc-csc-points/";
+            }
+            if (option1 == '3' && option2 == '2_30') {
+                window.location.href = "https://gayatribank.in/services/gayatri-mobile-banking/";
+            }
+            if (option1 == '3' && option2 == '2_31') {
+                window.location.href = "https://gayatribank.in/services/gayatri-tollfree-banking/";
+            }
+            if (option1 == '3' && option2 == '2_32') {
+                window.location.href = "https://gayatribank.in/services/gayatri-upi/";
+            }
+            if (option1 == '3' && option2 == '2_33') {
+                window.location.href = "https://gayatribank.in/services/kiosk-banking/";
+            }
+            if (option1 == '3' && option2 == '2_34') {
+                window.location.href = "https://gayatribank.in/services/nach-services/";
+            }
+            if (option1 == '3' && option2 == '2_35') {
+                window.location.href = "https://gayatribank.in/services/micro-atm/";
+            }
+            if (option1 == '3' && option2 == '2_36') {
+                window.location.href = "https://gayatribank.in/services/neft-rtgs/";
+            }
+
+            //Deposits
+            if (option1 == '4' && option2 == '2_21') {
+                window.location.href = "https://gayatribank.in/deposits/fixed-deposits/";
+            }
+            if (option1 == '4' && option2 == '2_22') {
+                window.location.href = "https://gayatribank.in/deposits/recurring-deposits/";
+            }
+            if (option1 == '4' && option2 == '2_23') {
+                window.location.href = "https://gayatribank.in/deposits/gayatri-bulk-deposit-scheme/";
+            }
+            if (option1 == '4' && option2 == '2_24') {
+                window.location.href = "https://gayatribank.in/deposits/safe-deposit-lockers/";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="card">
+        <p class="heading">What are you looking for?</p>
+        <select id="iFunction" name="nFunction" onchange="changeddl(this)" class="style">
+            <option value="-1" selected="">Select Product/Service</option>
+            <option value="1">Accounts</option>
+            <option value="2">Loans</option>
+            <option value="3">Services</option>
+            <option value="4">Deposits</option>
+        </select>
+
+        <br>
+        <select id="iOperation" name="nOperation" class=" style" ,onchange="location = this.value;">
+            <option value="-1" selected="">Select Product/Service Type</option>
+            <option value="1_21">Gayatri Nirbhaya Saving Account</option>
+            <option value="1_22">Gayatri Pariwar Account</option>
+            <option value="1_23">Current Account</option>
+            <option value="1_24">Gayatri vidyarthi Account</option>
+            <option value="1_25">Gayatri Suraksha Account</option>
+            <option value="1_26">Gayatri Saving Institution Account</option>
+            <option value="1_27">Gayatri PMJDY Saving Account</option>
+
+
+
+
+            <option value="2_21">Gayatri Gold Loan</option>
+            <option value="2_22">Covid-19 Gold Loan</option>
+            <option value="2_23">Gayatri Janatha Gold Loan</option>
+            <option value="2_24">Gayatri Asara Gold Loan</option>
+            <option value="2_25">Gayatri Saral Unnati Gold Loan</option>
+            <option value="2_26">Gayatri Saral CC Loan</option>
+            <option value="2_27">Gayatri Mortgage Loan</option>
+            <option value="2_28">SOD Against Property</option>
+            <option value="2_29">Overdraft CC</option>
+            <option value="2_30">Gayatri Saral Term Loan</option>
+            <option value="2_31">Gayatri Mortgage Term Loan</option>
+            <option value="2_32">Gayatri Saral Asara Loan</option>
+            <option value="2_33">Normal Loan on NSC/KVP</option>
+            <option value="2_34">LIC Loan</option>
+            <option value="2_35">SOD Against LIC/NSC/KVP Bonds</option>
+            <option value="2_36">KISAN MITRA TL</option>
+            <option value="2_37">KISAN MITRA CC</option>
+            <option value="2_38">SOD Against LIC/NSC/KVP Bonds</option>
+            <option value="2_39">Normal Loan on DL</option>
+            <option value="2_40">Secured Overdraft (OD)</option>
+            <option value="2_41">Housing Loan</option>
+            <option value="2_42">Commerical Housing Loan</option>
+            <option value="2_43">Term Loan Misc</option>
+            <option value="2_44">Loans Against Rent Receivable</option>
+
+
+            <option value="2_21">AEPS Services</option>
+            <option value="2_22">APBS Services</option>
+            <option value="2_23">ATM & Recycler</option>
+            <option value="2_24">Card E-Lock Feature</option>
+            <option value="2_25">DBT Services</option>
+            <option value="2_26">e-Statements</option>
+            <option value="2_27">Debit Card Services</option>
+            <option value="2_28">BBPS Service</option>
+            <option value="2_29">Gayatri BC/CSC</option>
+            <option value="2_30">Mobile Banking</option>
+            <option value="2_31">Tollfree Banking</option>
+            <option value="2_32">UPI Services</option>
+            <option value="2_33">Kiosk Bank</option>
+            <option value="2_34">NACH Credit And Debit</option>
+            <option value="2_35">Micro ATM</option>
+            <option value="2_36">NEFT/RIGS</option>
+
+
+            <option value="2_21">Fixed Deposits</option>
+            <option value="2_22">Recurring Deposits</option>
+            <option value="2_23">Bulk Deposits</option>
+            <option value="2_24">Lockers</option>
+            <br>
+        </select>
+        <div class="btn md">
+            <button type="submit" id="executelink" onclick="redirect();"><span>Ok</span></button>
+        </div>
+        <div class="btn">
+            <a href="https://amit9.aidaform.com/loans"> <button type="submit"><span>Apply Online</span></button></a>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
