@@ -1,27 +1,32 @@
-// C code to linearly search x in arr[].
-// If x is present then return its location, otherwise return -1
-
+// Linear Search
 #include <stdio.h>
 
-int search(int arr[], int n, int x)
-{
-	int i;
-	for (i = 0; i < n; i++)
-		if (arr[i] == x)
-			return i;
-	return -1;
-}
 
 int main(void)
-{
-	int arr[] = { 2, 36, 4, 15, 40 };
-	int x = 4;
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	// Function call
-	int result = search(arr, n, x);
-	(result == -1)
-		? printf("Element is not present in array")
-		: printf("Element is present at index %d", result);
+{	
+	int n;
+	printf("Enter the number of value you want to enter in the array\n");
+	scanf("%d",&n);
+	int arr[n],i;
+	printf("Enter the %d elements in the array\n",n);
+	for(i=0;i<=n-1;i++);
+	{
+		scanf("%d",&arr[i]);
+	}	
+	int data;
+	printf("Enter the number you want to seach in this array using the linear search\n");
+	scanf("%d",&data);
+	for(i=0;i<=n-1;i++)
+	{
+		if(arr[i] == data) 
+		{
+			printf("The data is in %d index and in %d position\n", i, i+1);
+			break;
+		}
+	}
+	if(i == n)
+	{
+		printf("The data is not present in the array\n"):
+	}
 	return 0;
 }
