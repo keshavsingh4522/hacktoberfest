@@ -16,6 +16,7 @@
 | Sumit Soni           | [@isumit19](https://github.com/isumit19/)                     |         0        |
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
 | Hero Tiwari          | [@Skywalkers-24](https://github.com/Skywalkers-24/)           |         0        |
+| Sarthak Nirala       | [@sarthak88221](https://github.com/Sarthak88221)           |         0        |
 | Sarthak Shastri      | [@sarthak815](https://github.com/sarthak815)                  |         0        |
 | Aman Gupta           | [@find-aman](https://github.com/find-aman)                    |         1        |
 | Vatsal Narwal        | [@VatsalNarwal](https://github.com/VatsalNarwal)              |         0        |
