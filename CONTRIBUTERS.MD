@@ -45,6 +45,7 @@
 | Muhammad Bilal       | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |         0        |
 | Sandi Aris           | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din         | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
+| Shravya              | [@ShravyaMallya](https://github.com/ShravyaMallya)            |         1        |
 | Ganzabahl            | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
 | Ashish               | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain         | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
