@@ -8,5 +8,5 @@ Please ensure your pull request adheres to the following guidelines:
 
 Thank you for your suggestions!
 
-Name - Anshir Chaudhary
-Github - https://github.com/Anshir08
+Name - Preeti Kumari
+Github - https://github.com/preeti999
