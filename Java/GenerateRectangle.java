@@ -2,6 +2,10 @@ import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
 public class GenerateRectangle {
     public static String generateRectangle(int x, int y) {
         String xString = "⬜".repeat(x) + "\n";
@@ -26,6 +30,8 @@ public class GenerateRectangle {
             System.out.println("You need to enter a number and it needs to be under or equal to 30,000.");
         } catch (NoSuchElementException exception) {
             System.out.println("You need to type an integer.");
+        } catch (IllegalArgumentException exception) {
+            System.out.print(exception.getLocalizedMessage());
         } catch (Exception exception) {
             System.out.println("You need to type a valid integer!");
         }
