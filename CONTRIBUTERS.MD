@@ -216,3 +216,4 @@
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)
+| Rajat Sharma         | [@Rajat_Sharma](https://github.com/Rajat-Sharma1710)          |         0        |
