@@ -1,3 +1,7 @@
+<div align="centre">
+    <b>dont contribute in this repo, contribute only in below mentioned repo</b>
+</div>
+
 # Special Note For Everyone
 ```py
 '''
@@ -12,11 +16,8 @@ keep in mind that repo has hacktoberfest topic..
 '''
 ```
 
-### dont contribute in this repo, contribute only in below repo,.
-[open-for-everyone/HacktoberFest-2021](https://github.com/open-for-everyone/HacktoberFest-2021)
 
-# check this before commiting code
-[open-for-everyone/hacktoberfest2021/discussions/747](https://github.com/open-for-everyone/hacktoberfest2021/discussions/747)
+
 
 <p align="center">
     <a href="https://hacktoberfest.digitalocean.com/">
@@ -48,7 +49,7 @@ keep in mind that repo has hacktoberfest topic..
 
 | Repository                                                  | Issues                                                                                                                                                           | Pull Requests                                                                                                                                                     | Forks                                                                                                                                                             |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [hacktoberfest2021](https://github.com/open-for-everyone/HacktoberFest-2021)         | [![GitHub issues](https://img.shields.io/github/issues/open-for-everyone/HacktoberFest-2021?color=pink&logo=github)](https://github.com/open-for-everyone/HacktoberFest-2021/issues)         | [![GitHub PRs](https://img.shields.io/github/issues-pr/open-for-everyone/HacktoberFest-2021?style=social&logo=github)](https://github.com/open-for-everyone/HacktoberFest-2021/pulls)         | [![GitHub forks](https://img.shields.io/github/forks/open-for-everyone/HacktoberFest-2021?logo=git)](https://github.com/open-for-everyone/HacktoberFest-2021/network)                         |
+| [new repo of hacktoberfest-2021](https://github.com/keshavsingh4522/HacktoberFest-2021)         | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/HacktoberFest-2021?color=pink&logo=github)](https://github.com/keshavsingh4522/HacktoberFest-2021/issues)         | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/HacktoberFest-2021?style=social&logo=github)](https://github.com/keshavsingh4522/HacktoberFest-2021/pulls)         | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/HacktoberFest-2021?logo=git)](https://github.com/keshavsingh4522/HacktoberFest-2021/network)                         |
 | [Python](https://github.com/keshavsingh4522/Python)         | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/Python?color=pink&logo=github)](https://github.com/keshavsingh4522/Python/issues)         | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/Python?style=social&logo=github)](https://github.com/keshavsingh4522/Python/pulls)         | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/Python?logo=git)](https://github.com/keshavsingh4522/Python/network)                         |
 | [C](https://github.com/keshavsingh4522/c/)                  | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/c?color=pink&logo=github)](https://github.com/keshavsingh4522/c/issues)                   | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/c?style=social&logo=github)](https://github.com/keshavsingh4522/c/pulls)                   | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/c?logo=git)](https://github.com/keshavsingh4522/c/network)                                   |
 | [Javascript](https://github.com/keshavsingh4522/javascript) | [![GitHub issues](https://img.shields.io/github/issues/keshavsingh4522/javascript?color=pink&logo=github)](https://github.com/keshavsingh4522/javascript/issues) | [![GitHub PRs](https://img.shields.io/github/issues-pr/keshavsingh4522/javascript?style=social&logo=github)](https://github.com/keshavsingh4522/javascript/pulls) | [![GitHub forks](https://img.shields.io/github/forks/keshavsingh4522/javascript?logo=git)](https://github.com/keshavsingh4522/javascript/network)                 |
