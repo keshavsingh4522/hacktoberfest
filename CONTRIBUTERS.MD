@@ -176,3 +176,4 @@
 | Kadambini Panda      | [@kadambinipanda] (https://github.com/kadambinipanda)         |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
+| Amar Mehta           | [@amar13mehta](https://github.com/amar13mehta)                |         1        |
