@@ -2,10 +2,6 @@ import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
-
 public class GenerateRectangle {
     public static String generateRectangle(int x, int y) {
         String xString = "⬜".repeat(x) + "\n";
