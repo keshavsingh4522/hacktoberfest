@@ -1,3 +1,7 @@
+<div align="centre">
+    <b>dont contribute in this repo, contribute only in below mentioned repo</b>
+</div>
+
 # Special Note For Everyone
 ```py
 '''
@@ -12,8 +16,7 @@ keep in mind that repo has hacktoberfest topic..
 '''
 ```
 
-### dont contribute in this repo, contribute only in below repo,.
-[open-for-everyone/HacktoberFest-2021](https://github.com/keshavsingh4522/HacktoberFest-2021)
+
 
 
 <p align="center">
