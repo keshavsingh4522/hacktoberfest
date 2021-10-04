@@ -10,3 +10,7 @@ Thank you for your suggestions!
 
 Name - Anshir Chaudhary
 Github - https://github.com/Anshir08
+
+
+Name - Harpreet Madaan
+Github - https://github.com/Harpreet199
