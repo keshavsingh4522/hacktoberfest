@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 204, 204);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  /* border: 3px solid green; */
+  color: rgb(224, 28, 61);
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  font-weight: bold;
+}
+
+.envelope-container {
+  /* border: 3px solid purple; */
+  height: 300px;
+  width: 450px;
+  background-color: salmon;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.env-content {
+  /* border: 3px solid yellow; */
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.env-content p {
+  font-size: 30px;
+  font-weight: bold;
+  color: brown;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.envelope {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid rgb(164 79 185);
+  border-right: 225px solid rgb(153 78 181);
+  border-left: 225px solid rgb(180 93 202);
+  z-index: 3;
+}
+
+.env {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 225px solid transparent;
+  border-left: 225px solid transparent;
+  border-right: 225px solid transparent;
+  transform-origin: top;
+  transition: transform 0.25s linear;
+}
+
+.env.open {
+  border-top: 150px solid rgb(156 49 162);
+  transform: rotateX(0deg);
+  z-index: 3;
+  transition-delay: 0.75s;
+}
+
+.env.close {
+  border-top: 150px solid #b31262;
+  transform: rotateX(90deg);
+  z-index: 1;
+  transition-delay: 0.5s;
+}
+
+.envelope-container:hover .env.open {
+  transform: rotateX(90deg);
+  transition-delay: 0s;
+}
+
+.envelope-container:hover .env.close {
+  transform: rotateX(180deg);
+  transition-delay: 0.25s;
+}
+
+.envelope-container:hover .env-content {
+  transform: translateY(-50px);
+  transition-delay: 0.5s;
+}
