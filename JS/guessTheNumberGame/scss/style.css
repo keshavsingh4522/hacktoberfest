@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+.content button {
+  font-family: "Itim", cursive;
+}
+
+.content .heading {
+  font-family: "Carter One", cursive;
+  color: #0082df;
+}
+
+.content .NumberGenerate {
+  font-family: "Carter One", cursive;
+}
+
+.content h3#message {
+  font-family: "Itim", cursive;
+  border-radius: 5px;
+}
+
+.content .attempts, .content .highScore {
+  font-family: "Carter One", cursive;
+}
+
+label {
+  font-family: "Carter One", cursive;
+  color: #d80202;
+}
+
+textarea {
+  font-family: "Carter One", cursive;
+}
+
+.red {
+  color: #ff0000;
+}
+/*# sourceMappingURL=style.css.map */

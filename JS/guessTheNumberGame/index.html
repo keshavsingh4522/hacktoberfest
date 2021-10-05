@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <div class="content">
+        <div class="container text-center">
+            <h1 class="mt-5 heading">Guess The Number Game</h1>
+            <button class="btn btn-success mt-4" id="generate">Let's Play</button>
+            <h5 class="mt-2"><span class="NumberGenerate"></span></h5>
+        </div>
+        <div class="container col-lg-4 col-md-6 col-sm-12 mt-5">
+            <input type="tel" class="form-control" id="userGuess" placeholder="Enter Your Guess" disabled maxlength="3">
+            <button class="btn btn-primary mt-3 col-12" id="check" disabled>Check</button>
+            <h3 id='message' class="text-center mt-2"></h3>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 col-md-6">
+                <h3 class="attempts mt-5 text-primary">Attempt: <span class="counter">10</span></h3>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-md-6">
+                <h3 class="highScore mt-5 text-primary">High Score: <span class="highScoreValue">0</span></h3>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="container col-lg-4 col-sm-12 col-md-6 mt-5">
+      <label for="exampleFormControlTextarea1" class="form-label">Values You have Entered</label>
+      <textarea class="userGuessValues form-control col-lg-6 mb-5" readonly  rows="3"></textarea>
+    </div>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- js file -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
