@@ -10,3 +10,6 @@ Thank you for your suggestions!
 
 Name - Anshir Chaudhary
 Github - https://github.com/Anshir08
+
+Name - Sruti Verma
+Github - https://github.com/Srutiverma123
