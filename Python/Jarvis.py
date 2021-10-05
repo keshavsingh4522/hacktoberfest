@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
         elif 'news' in query:
             try:
-                jsonObj = urlopen('http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8310479d0e7f473fad636f532b41b8b0')
+                jsonObj = urlopen('http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                 data = json.load(jsonObj)
                 i = 1
                 speak("Here are some top headline from you")
