@@ -1,5 +1,7 @@
 //PROBLEM STATEMENT URL:-https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
 
+//EFFICIENT APPROACH USING TWO-POINTERS APPRAOCH
+
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
