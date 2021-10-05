@@ -1,27 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+///Main Function
+int main()
+{
+     int i,j,count=0;
 
-int main() {
-    
-    int i,j;
+      //Print prime number between 1 to 100
+      cout<<"print prime number between 1 to 100\n";
 
-    for(i=2;i<101;i++) {
-    bool x=true;
-    
-    for (j=2;j<(i-1);j++) {
+      //For loop for printing values between 1 to 100
+         for(i=2;i<=100;i++)
+           {
+             for(j=1;j<=i;j++)
+               {
+                   if(i%j==0)
+                   count++;
 
-    if(i%j==0) {
-        x=false;
-        break;
-    }
-
-    }
-
-    if(x==true) {
-        cout<<i<<endl;
-    }
-
-    }
-
-    return 0;
+               }
+            if(count==2)
+          cout<<" "<<i;
+        count=0;
+           }
+return 0;
 }
