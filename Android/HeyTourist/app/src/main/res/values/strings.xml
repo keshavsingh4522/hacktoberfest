@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HeyTourist</string>
+    <string name="action_settings">Settings</string>
+    <string name="back">Back</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="Simply">Simply makes design good</string>
+    <string name="Hey_Tourist">Hey Tourist</string>
+    <string name="Clover">Clover</string>
+    <string name="bg">bg</string>
+    <string name="Explore">Explore</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="emailicon">emailicon</string>
+    <string name="passwordicon">passwordicon</string>
+    <string name="Name">Name</string>
+    <string name="phone">phone</string>
+    <string name="FavIcon">FavIcon</string>
+    <string name="CountryImg">CountryImg</string>
+    <string name="CountryName">Country Name</string>
+    <string name="CapitalCity">Capital City</string>
+    <string name="CountryDesc">Description</string>
+    <string name="AddNote">Add Note</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="favorite">Favorite</string>
+    <string name="country">Country</string>
+    <string name="add_note_btn">Add Note</string>
+</resources>

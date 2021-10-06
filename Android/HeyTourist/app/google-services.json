@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "64425112270",
+    "firebase_url": "https://heytourist-7383e.firebaseio.com",
+    "project_id": "heytourist-7383e",
+    "storage_bucket": "heytourist-7383e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64425112270:android:451ffcbd9aac7243c8169f",
+        "android_client_info": {
+          "package_name": "com.example.tourist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64425112270-hleif8v5jck1svud421uieonkq44frrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuUXAwvo4ZNSS19rxxZXvUAFaYEko-8-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64425112270-hleif8v5jck1svud421uieonkq44frrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
