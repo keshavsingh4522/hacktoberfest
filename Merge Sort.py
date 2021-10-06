@@ -11,6 +11,16 @@ def mergeSort(myList):
         j = 0    
         # Iterator for the main list
         k = 0       
+        # Recursive call on each half
+        mergeSort(left)
+        mergeSort(right)
+
+        # Two iterators for traversing the two halves
+        i = 0
+        j = 0
+        
+        # Iterator for the main list
+        k = 0
         while i < len(left) and j < len(right):
             if left[i] <= right[j]:
               # The value from the left half has been used
