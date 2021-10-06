@@ -184,21 +184,23 @@ Steps for adding your name below
 <td align="center"><a href="https://github.com/drd3rp"><img src="https://avatars3.githubusercontent.com/drd3rp?size=400" width="100px;" alt=""/><br /><sub><b>Tristan Brown</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=drd3rp" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/VatsalNarwal"><img src="https://avatars3.githubusercontent.com/VatsalNarwal?size=400" width="100px;" alt=""/><br /><sub><b>Vatsal Narwal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=VatsalNarwal" title="Code"> :computer: </a> </td>
 </tr>
-<tr><td align="center"><a href="https://github.com/shoom1337"><kbd><img src="https://avatars3.githubusercontent.com/shoom1337?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ivan Shoom</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=shoom1337" title="Code"> :computer: </a> </td>
+<tr>
+    <td align="center"><a href="https://github.com/shoom1337"><kbd><img src="https://avatars3.githubusercontent.com/shoom1337?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ivan Shoom</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=shoom1337" title="Code"> :computer: </a> </td>
     <td align="center">
         <a href="https://github.com/agrajagrawal">
             <kbd><img src="https://avatars3.githubusercontent.com/agrajagrawal?size=400" width="100px;" alt=""/></kbd><br />
             <sub><b>Agraj Agrawal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=agrajagrawal" title="Code"> :computer:
         </a>
     </td>
-    <td align="center"><a href="https://github.com/anmol-19"><kbd><img src="https://avatars3.githubusercontent.com/anmol-19?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Anmol Jain</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=anmol-19" title="Code"> :computer: </a> </td>
-    
-    <td align="center">
+     <td align="center">
         <a href="https://github.com/Candida18">
             <kbd><img src="https://avatars3.githubusercontent.com/Candida18?size=400" width="100px;" alt=""/></kbd><br />
             <sub><b>Candida Noronha</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=Candida18" title="Code"> :computer:
         </a>
     </td>
+    <td align="center"><a href="https://github.com/anmol-19"><kbd><img src="https://avatars3.githubusercontent.com/anmol-19?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Anmol Jain</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=anmol-19" title="Code"> :computer: </a> </td>
+    
+   
     
 
 </tr>
