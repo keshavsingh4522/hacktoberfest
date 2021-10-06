@@ -217,3 +217,4 @@
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
 | Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
+| Mudit Tripathi       | [@Mudit88](https://github.com/Mudit88)                        |         1        |
