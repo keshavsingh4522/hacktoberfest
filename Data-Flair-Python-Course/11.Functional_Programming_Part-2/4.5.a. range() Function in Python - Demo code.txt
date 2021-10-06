@@ -1,0 +1,36 @@
+range(8)
+list(range(8))
+
+list(range(-7,3))
+list(range(-7,3,2))
+
+for item in range(6):
+	print(item*2)
+
+
+
+
+#Multiples- Write a function that takes a number and another to decide how many multiples of the first number to print. It should do this without using a loop.
+
+def multiples(m,n):
+	muls=range(m,m*n+1,n)
+	print(*muls)
+
+
+multiples(7,7)
+
+
+
+
+#Weird alliteration, as we call it, is when in a string, where one word ends with a certain letter, the next word begins with that letter. Like ‘when nails shine’. Write a function that takes a string and determines whether it observes weird alliteration.
+
+def weird_alliteration(string):
+	words=string.split(' ')
+	for index in range(len(words)-1):
+		if words[index][len(words[index])-1]!=words[index+1][0]: return False
+	return True
+
+
+weird_alliteration('When nails shine')
+
+weird_alliteration('Are you serious?')

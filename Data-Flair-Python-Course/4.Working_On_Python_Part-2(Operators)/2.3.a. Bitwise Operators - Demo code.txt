@@ -1,0 +1,70 @@
+5 and 7
+5&7
+
+0&1
+0|1
+1&1
+0 | True
+
+4<<1
+
+
+
+
+
+
+#Toggled Digits- Write a function that takes a number, toggles the digit at a specified position in its binary form, and returns the number that results.
+
+def toggle(num,pos):
+	num^=(1<<pos)
+	return num
+
+
+toggle(4,1)
+
+toggle(4,2)
+
+toggle(7,2)
+
+
+
+
+
+#Doubles- Write a function that prints n number of items in a series- this series begins at 3 and doubles the number each time.
+
+def doubles(n):
+    num=3
+    for index in range(n):
+        num=eval(bin(num))<<1
+        print(num)
+
+
+doubles(3)
+
+doubles(6)
+
+
+
+
+
+#Troubled Addition- Write a function that adds two numbers without using the + operator or the built-in sum() function.
+
+def add(a,b):
+    return a-~b-1
+
+add(3,7)
+add(3,-7)
+
+
+
+
+
+#Bitwise Swap- Write a function that takes two integers and swaps them before returning them.
+
+def bitwise_swap(a,b):
+	a^=b
+	b^=a
+	a^=b
+	return a,b
+
+bitwise_swap(4,21)

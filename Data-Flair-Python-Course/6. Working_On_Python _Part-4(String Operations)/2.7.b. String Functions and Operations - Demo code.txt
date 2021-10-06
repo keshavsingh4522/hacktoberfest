@@ -1,0 +1,86 @@
+len('Hello')
+
+'Hello'.lower()
+
+'Hello, world!'.startswith('Hell')
+
+'*'.join(['twenty','seven','foxes'])
+
+'ba'+'na'*2
+
+'na' in 'banana'
+
+
+
+
+
+
+#Isograms- Write a function that determines whether a word is an isogram. An isogram is a word where no letter repeats. Spaces and hyphens are exempted from this rule.
+
+def isogram(word):
+	for letter in word:
+		if word.count(letter)>1 and letter.isalpha(): return False
+	return True
+
+
+isogram('isogram')
+
+isogram('psychology')
+
+isogram('pickets')
+
+isogram('8-lanes-right')
+
+
+
+
+
+#Pangram- A pangram is a sentence that has each letter in the English alphabet at least once. Write a function that checks whether a string is a pangram.
+
+def pangram(sent):
+	for letter in 'abcdefghijklmnopqrstuvwxyz':
+		if letter not in sent.lower():
+			return False
+	return True
+
+
+pangram('Whoever said this')
+
+pangram('The quick brown fox jumps over the lazy dog')
+
+
+
+
+
+#Super Isograms- Write a function that takes a sentence or a phrase, then analyzes it to determine whether each word in it is an isogram. Bear in mind that this analysis is case-insensitive.
+
+def super_isogram(sentence):
+	for word in sentence.split(' '):
+		for letter in word:
+			if word.count(letter.lower())>1:
+				return False
+	return True
+
+
+super_isogram('The quick brown fox jumps over the lazy dog')
+super_isogram('See eye to eye')
+super_isogram('The best of both worlds')
+super_isogram('Once in a blue moon')
+
+
+
+
+
+#The First and the Last- A function takes in a sentence. Make it return the number of times a word has its first and last characters the same as those of the entire sentence.
+
+def same_subs(sentence):
+	count=0
+	for word in sentence.split(' '):
+		if (word[0]+word[-1]).lower()==(sentence[0]+sentence[-1]).lower():
+			count+=1
+	return count
+
+
+same_subs('This was a good day and the tests were great too! The energy is tremendous')
+
+same_subs('All of you need to get to the Alpha for a meeting on amoeba')

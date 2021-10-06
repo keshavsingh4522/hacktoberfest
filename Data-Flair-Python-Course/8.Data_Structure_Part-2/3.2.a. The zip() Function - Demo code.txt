@@ -1,0 +1,62 @@
+for item in zip([1,2,3],['red','green','blue']):
+	print(item)
+
+set(zip([1,2],[3,4,5]))
+
+pairs=zip([1,2,3],['a','b','c'],['#','*','$'])
+nums,letters,chars=zip(*pairs)
+nums, letters, chars
+
+
+
+
+
+#Groceries- Write a function that takes in a list of tuples of items and their prices. Make it return a list of items and another of their prices.
+
+def shopping_list(groceries):
+	items,prices=zip(*groceries)
+	return list(items),list(prices)
+
+
+shopping_list([('milk',29),('eggs',19),('bananas',19)])
+
+
+
+
+
+#Conflicts- A function takes in a list. Adjacent numbers don’t like to stand together; write a function that creates tuples from alternate numbers in the list.
+
+def conflicts(list1):
+	return list(zip(list1[:],list1[2:]))
+
+
+conflicts([1,2,3,4,5,6,7,8,9])
+
+
+
+
+
+
+#Miles Apart- Write a function that takes in two integers of equal lengths. Return the sum of the distance between its individual digits.
+
+def distance(a,b):
+	assert(len(str(a))==len(str(b)))
+	return sum([abs(int(digit1)-int(digit2)) for digit1,digit2 in zip(list(str(a)),list(str(b)))])
+
+distance(252,371)
+distance(2,999)
+distance(200,999)
+
+
+
+
+
+
+#Group Projects- Write a function that takes in two strings holding names of students in two groups. For a group project, pair the students according to their roll numbers. There may only be two students in one group.
+
+def make_pairs(group1,group2):
+	group1,group2=group1.split(','),group2.split(',')
+	for pair in zip(group1,group2):
+		print("%s is with %s" %(pair[0],pair[1]))
+
+make_pairs('Ayushi,Ruchi,Mikayla,Aaron','Helen,Rebecca,Cassidy,Caleb')

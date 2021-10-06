@@ -1,0 +1,12 @@
+#Objective- To install Python on Windows
+
+CHECK ARCHITECTURE OF MACHINE
+
+*go to python.org and download the installer*
+*open it*
+*customize installation*
+*install*
+
+*show in start menu*
+*show in cmd*
+*show IDLE*

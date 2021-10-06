@@ -1,0 +1,62 @@
+print("Hello")
+
+sum([2,3])
+
+name='Ayushi'
+name=7
+
+a=b=7
+a,b=b,a
+
+if 2<1:
+	print("First")
+elif 2==1:
+	print("Second")
+else:
+	print("Third")
+
+
+-----------------------------------
+
+a=\
+    10\
+    +20
+
+a
+
+"Hello\
+hi"
+
+a=(
+	10
+	+20)
+
+----------------------------
+
+a=7; print(a)
+
+if 2>1: print("2")
+
+----------------------------
+
+*Put a blank line*
+
+if 2>1:
+	print("1")
+	 print("2")
+
+#This is a comment
+
+#First line of comment
+#Second line of comment
+#Third line of comment
+
+------------------------------
+
+def add(a,b):
+	"""
+		This function adds a and b
+	"""
+	return a+b
+
+add.__doc__

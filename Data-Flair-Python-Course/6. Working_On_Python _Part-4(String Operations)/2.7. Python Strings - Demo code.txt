@@ -1,0 +1,37 @@
+#Right to Left- Write a function that takes a string and returns it while reversing the words that are 4 or more in length.
+
+def right_to_left(sentence):
+    return ' '.join([word[::-1] if len(word)>=4 else word for word in sentence.split(' ')])
+
+right_to_left('Can we not pretend to pretend')
+
+
+
+
+
+#Palindrome- Write a function that determines whether the number/string provided to it is a palindrome. A palindrome is a word, phrase, or sequence reading the same backwards as forwards.
+
+def is_palindrome(val):
+	return str(val)==str(val)[::-1]
+
+is_palindrome('1n0n1')
+
+
+
+
+
+#Guest List- 110 people RSVP’d yes to the annual Comic Con this year. Write a function that takes in their names and strips away everything but their first names.
+
+def guest_list(attendees):
+	return [name.split(' ')[0] for name in attendees]
+
+guest_list(['Ayushi Sharma', 'Renuka Phadke', 'Animesh Vyas', 'Rinu Gupta'])
+
+
+
+
+
+#Prefixed- Write a function that takes a list of strings and a string prefix and returns a list of strings beginning with that prefix.
+
+def prefixed(strings,prefix):
+    return [string for string in strings if string.startswith(prefix)]

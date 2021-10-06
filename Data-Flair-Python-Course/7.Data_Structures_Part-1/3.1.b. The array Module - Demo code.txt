@@ -1,0 +1,24 @@
+import array
+
+arr=array.array('i',[7,9,8])
+arr
+
+array.array('u', 'hello \u2641')
+
+array.typecodes
+arr.typecode
+
+arr.append(6)
+arr
+
+arr=array.array('i',[7,9,6,7,2,5])
+arr.count(7)
+
+arr.insert(2,4)
+arr
+
+arr.pop(2)
+
+arr.tolist()
+
+arr[2:7]

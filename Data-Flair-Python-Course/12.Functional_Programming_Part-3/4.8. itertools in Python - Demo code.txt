@@ -1,0 +1,51 @@
+import itertools
+
+for num in itertools.count(2,2):
+	if num>12: break
+	print(num)
+
+count=0
+for item in itertools.cycle([‘blue’,‘green’]):
+                if count>7: break
+                print(item)
+                count+=1
+
+count=0
+for item in itertools.repeat(7):
+	if count>5: break
+	print(item)
+	count+=1
+
+for item in itertools.repeat(7,6):
+	print(item)
+
+
+
+
+
+
+#Quarters- Write a function that displays amounts from one quarter to two dollars.
+
+from itertools import count
+def quarters():
+    evens=count(start=0.25,step=0.25)
+    return list(next(evens) for _ in range(8))
+
+quarters()
+
+
+
+
+
+
+#Perms- Write a function that takes a word and a size, and returns permutations of given size from the characters of the word.
+
+from itertools import permutations
+def perms(word,size):
+    print('\n'.join(sorted(''.join(p) for p in permutations(word,size))))
+
+perms('HAIR',2)
+
+perms('123',2)
+
+perms('AIR',3)

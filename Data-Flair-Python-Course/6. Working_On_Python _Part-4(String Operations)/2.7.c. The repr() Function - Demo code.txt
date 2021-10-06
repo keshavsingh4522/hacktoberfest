@@ -1,0 +1,40 @@
+msg='Hello, world!'
+repr(msg)
+eval("'Hello, world!'")
+
+class fruit:
+	def __init__(self,species):
+		self.species=species
+	def __repr__(self):
+		return repr('a '+self.species)
+
+kiwi=fruit('kiwi')
+repr(kiwi)
+
+
+name='Ayushi'
+print(repr(name))
+print(str(name))
+
+
+
+import datetime
+t=datetime.datetime.now()
+str(t)
+eval(str(t))
+repr(t)
+eval(repr(t))
+
+class one:
+       def __repr__(self):
+              return '__repr__'
+       def __str__(self):
+              return '__str__'
+
+obj=one()
+
+obj
+repr(obj)
+print(obj)
+str(obj)
+f'{obj}'

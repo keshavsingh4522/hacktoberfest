@@ -1,0 +1,99 @@
+#Star Diamond- Write a function that prints out a diamond of stars, length 7.
+
+Output:
+
+      *
+    ***
+  *****
+*******
+  *****
+    ***
+      *
+
+
+
+
+def star_diamond():
+	for row in range(4):
+		for space in range(3-row):
+			print(' ',end='')
+		for star in range(row+1):
+			print('*',end='')
+		for star in range(row):
+			print('*',end='')
+		print()
+	for row in range(3):
+		for space in range(row+1):
+			print(' ',end='')
+		for star in range(3-row):
+			print('*',end='')
+		for star in range(2-row):
+			print('*',end='')
+		print()
+
+star_diamond()
+
+
+
+
+#Matrix Multiplication- Write a function that takes in two multidimensional matrices, multiplies them, and returns the resulting matrix. If the matrices cannot be multiplied, declare so.
+
+def mm(m1,m2):
+    if len(m1[0])!=len(m2):
+        print("Matrices not compatible for multiplication")
+        return
+    result=[[0 for i in range(len(m2[0]))] for j in range(len(m1))]
+    for row in range(len(m1)):
+        for col in range(len(m2[0])):
+            for temp in range(len(m2)):
+                result[row][col]+=m1[row][temp]*m2[temp][col]
+    return result
+
+mm([[2,3,2],[2,1,1]],[[2,1,1],[4,5,6]])
+
+mm([[12,7,3],[4,5,6],[7,8,9]],[[5,8,1,2],[6,7,3,0],[4,5,9,1]])
+
+
+
+
+#Number Pyramid- Write a function that prints out the following pyramid of numbers making use of loops.
+
+def num_pyramid(n):
+	num=1
+	for rows in range(n):
+		for row in range(rows+1):
+			print(num, end=' ')
+			num+=1
+		print()
+
+num_pyramid(5)
+
+
+
+
+#Number Diagonal- Write a function that prints out the following square with numbers in the diagonal.
+
+def num_diagonal():
+    for row in range(1,6):
+        for col in range(1,6):
+            if row==col: print(row,end='')
+            else: print(0,end='')
+        print()
+
+num_diagonal()
+
+
+
+
+#High Low- Write a function that takes an integer n and prints out a receding pyramid where each row first rises up to n, and then decreases.
+
+def high_low(n):
+    for row in range(1,n+1):
+        for col in range(row,n+1):
+            print(col,end=' ')
+        for col in range(n-1,row-1,-1):
+            print(col,end=' ')
+        print()
+
+high_low(5)
+high_low(4)

@@ -1,0 +1,38 @@
+def outer(x):
+	def inner():
+		print(x)
+	return inner
+
+func = outer(7)
+func()
+
+
+
+
+def outer(x):
+	result=0
+	def inner(n):
+		nonlocal result
+		while n>0:
+			result+=x*n
+			n-=1
+		return result
+	return inner
+
+func = outer(7)
+func(3)
+
+func = outer(3)
+func(3)
+
+
+
+def outer(func):
+	def inner(msg):
+		func(msg)
+	return inner
+def sayhi(msg):
+	print(msg)
+
+myfunc = outer(sayhi)
+myfunc(“Hello”)

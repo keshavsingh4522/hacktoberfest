@@ -1,0 +1,42 @@
+msg="Hello, world"
+arr=bytes(msg,'utf-8')
+arr
+
+bytes(7)
+
+bytes([7,2,3,5])
+
+bytes.fromhex('FFFF F21E     ')
+
+b'\xff\xff\xf2\x1e'.hex()
+
+
+
+msg='Hello, world'
+bytearray(msg,'utf-8')
+
+bytearray(7)
+
+bytearray([7,2,3,5])
+
+arr=bytearray([7,2,3,5])
+arr.append(6)
+arr
+
+
+
+b'\x04\x01\x03\x02\x01\x03'.count(b'\x01\x03')
+b'\x04\x01\x03\x02\x01\x03'.partition(b'\x03')
+bytearray(b'Hello, world').upper()
+
+
+
+msg=bytearray('Hello, world','utf-8')
+mv=memoryview(msg)
+mv[1]
+
+list(mv[1:3])
+mv[1]=65
+msg
+
+mv.tolist()

@@ -1,0 +1,28 @@
+#Objective- To get to know the Python Interpreter
+
+import this
+help()
+modules string
+quit
+
+2+3
+
+(2+(3*4))
+
+for i in range(6):
+	for j in range(i):
+		print('*',end='')
+		j+=1
+	print()
+
+1/0
+
+if range
+import os
+os.
+print(
+
+
+for _ in [1,2,3]: print('Hi')
+
+cats_only=7

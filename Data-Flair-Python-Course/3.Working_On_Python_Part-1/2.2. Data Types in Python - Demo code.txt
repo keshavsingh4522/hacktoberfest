@@ -1,0 +1,49 @@
+7
+
+7.7
+
+2+3j
+
+'Ahmedabad'
+
+'10'+10
+
+[1,2,3]
+
+(1,2,3)
+
+{1: 'Ahmedabad', 2: 'Indore'}
+
+2>1
+
+{1,3,2}
+
+int(3.7)
+
+
+
+
+
+#The Dictionary- Assume a string of characters. Write a function that returns it with the characters arranged in lexicographic order (as they would posit in a dictionary).
+
+def dictionary(word):
+    return ''.join(sorted(list(word)))
+
+dictionary('Ayushi')
+
+dictionary('hula hoop')
+
+dictionary('hippopotamus')
+
+
+
+
+
+#The Middle- Write a function that takes a string and returns the character at the middle of it. If it is a string of even length and it has two middle positions, return the character at the first one.
+
+def the_middle(string):
+	return string[int((len(string)-1)/2)]
+
+the_middle('become')
+
+the_middle('world')

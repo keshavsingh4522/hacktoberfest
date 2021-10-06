@@ -1,0 +1,45 @@
+#Fibonacci Series- Write a function that takes, from the user, the number of numbers to print, and prints the Fibonacci series upto that length. Make use of recursion.
+
+a,b=0,1
+num=int(input("How many?"))
+print(0,1,end=' ')
+def fibr(num):
+    if num==2: return
+    global a,b
+    a,b=b,a+b
+    print(b,end=' ')
+    fibr(num-1)
+
+fibr(num)
+
+
+
+#Two and Square- Write a function that prints a certain series. The first number it prints is 1; for each number it prints, it adds two and squares it to obtain the next number to print. This function takes in the number of numbers to print.
+
+def two_and_square(count,num=-1):
+	if count<1: return
+	num=(num+2)**2
+	print(num); count-=1
+	two_and_square(count,num)
+
+
+
+#Binary Search- Write a function that recursively performs a binary search on a list. A binary search is where it takes data in ascending order, the value to search, and the start and end indices of the data. It first checks at the middle of the data- if the value to find is equal to the value here, it returns it. If it is smaller, it searches in the left half; else, the right half.
+
+def binary(data, v, start, end):
+	mid=int((start+end)/2)
+	if start>end: return -1
+	elif data[mid]==v: return mid
+	elif data[mid]>v: return binary(data, v, start, mid-1)
+	else: return binary(data, v, mid+1, end)
+
+binary([2,7,12,14,21,26,27,30,49],25,0,8)
+binary([2,7,12,14,21,26,27,30,49],21,0,8)
+
+#Counting- Without using a loop, write a function that prints numbers 1 to 100.
+
+def count(n=1):
+	print(n)
+	if n<100: return count(n+1)
+
+count()

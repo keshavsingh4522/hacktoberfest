@@ -1,0 +1,16 @@
+code='num1,num2=7,8;print(f"{num1}+{num2}={num1+num2}")'
+exec(code)
+
+code=input('What shall we do today?')
+for num in range(6): print(num,num**2,num**3)
+exec(code)
+
+exec('{num:num**3 for num in range(6)}')
+eval('{num:num**3 for num in range(6)}')
+
+import os
+code=input('What shall we do today?')
+print(os.listdir())
+exec(code)
+
+exec('print(dir())',{'built':__builtins__},{'sum':sum,'iter':iter})

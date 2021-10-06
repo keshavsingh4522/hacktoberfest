@@ -1,0 +1,61 @@
+#Modern Sum- Write a function to add two integers a and b, and return their sum if it doesn't lie in the inclusive range of 9..18; in which case, it should return 100.
+
+def modern_sum(a,b):
+	return 100 if (a+b>=9 and a+b<=18) else a+b
+
+def modern_sum(a,b):
+       	return 100*(a+b>=9 and a+b<=18) or a+b
+
+modern_sum(8,1)
+
+
+
+
+
+
+#Add Round- Write two functions. The first should round an integer up to the next multiple of 10 if the rightmost digit is 5 or greater, else round it down to the previous multiple of 10. The second function should return the sum of the rounded values of two integers.
+
+def add_round(a,b):
+	return round(a)+round(b)
+
+def round(num):
+	return num-(num%10)+10 if num%10>=5 else num-(num%10)
+
+add_round(14,16)
+
+
+
+
+
+
+#BMI Calculator- Write a function that takes in an individual’s weight and height (in metric units - kg and cm) and calculates their BMI. It should also suggest whether this is considered underweight, normal weight, overweight, or obese; use the following ranges:
+
+Less than 18.5 - Underweight
+18.5 to 24.9 - Normal weight
+25 to 29.9 - Overweight
+30 or more - Obese
+
+You may use a helper function.
+
+def bmi_calculator(weight,height):
+    results(weight/(height/100)**2)
+
+def results(bmi):
+    result="underweight" if bmi<18.5 else "normal weight" if bmi>=18.5 and bmi<=24.9 else "overweight" if bmi>=25 and bmi<=29.9 else "obese"
+    print("Your BMI is "+str(round(bmi,1))+"; this is considered "+str(result))
+
+bmi_calculator(55,160)
+
+
+
+
+
+
+#One's Complement- Write a function that returns the one’s complement of a string representing a binary number.
+
+def ones_complement(bin):
+	return ''.join([str((1,0)[int(digit)]) for digit in bin])
+
+
+ones_complement('11010')
+ones_complement('0010')

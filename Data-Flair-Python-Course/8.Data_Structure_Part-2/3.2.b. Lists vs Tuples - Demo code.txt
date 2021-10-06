@@ -1,0 +1,51 @@
+names=('red','green','blue')
+
+colors=['red','green','blue']
+
+colors.append('occur')
+
+names[2]='occur'
+
+(23,22,[2,4,1])
+
+[23,22,(2,4,1)]
+
+
+
+
+
+#Everything is Even- Write a function that, in a range, prints out numbers with all even digits- like 846.
+
+def even_evens(start,end):
+	evens=[]
+	for num in range(start,end+1):
+		if all(map(lambda x:x%2==0,[int(digit) for digit in str(num)])): evens.append(num)
+	return evens
+
+
+
+even_evens(0,100)
+
+even_evens(50,550)
+
+
+
+
+
+#Parentheses- Write a function that accepts a string of parentheses and extracts from it properly-closed groups of parentheses.
+
+def parentheses(text):
+	groups,group=[],''
+	count=0
+	for char in text:
+		group+=char
+		count=count+1 if char=='(' else count-1
+		if count==0:
+			groups.append(group)
+			group=''
+	return groups
+
+
+parentheses('((()())())')
+
+parentheses('((()())())(()())()')

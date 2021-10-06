@@ -1,0 +1,53 @@
+#Fizzbuzz- Write a program to print numbers 1 to 100, each on a new line.
+Print "Fizz" at the place of numbers multiples of 3.
+Print "Buzz" at the place of numbers multiples of 5.
+Print "FizzBuzz" at the place of numbers multiples of both 3 and 5.
+
+def fizzbuzz():
+	for num in range(1,101):
+		if num%3==0: print("Fizz",end='');
+		if num%5==0: print("Buzz"); continue
+		if num%3==0: print(); continue
+		print(num)
+
+fizzbuzz()
+
+
+
+
+#Double Sum- Write a function that returns the sum of two integers. If, however, the first is twice the second, return twice their sum.
+
+def double_sum(a,b):
+	return (1+int(a==2*b))*(a+b)
+
+
+
+
+#All Evens- Write a function that takes an inclusive interval from the user and returns all values where all digits are even.
+
+def all_evens(a,b,res=[]):
+	for num in range(a,b+1):
+		if all([int(digit)%2==0 for digit in [char for char in str(num)]]):
+			res.append(num)
+	return res
+
+
+all_evens(200,500)
+
+
+
+
+
+#Up- Write a function that takes a list of integers and checks whether they are arranged in a strictly increasing order.
+
+def up(arr):
+	for index1 in range(len(arr)):
+		for index2 in range(index1+1, len(arr)):
+			if arr[index1]>=arr[index2]:
+				return False
+	return True
+
+
+up([4,5,6])
+up([4,6,6])
+up([6,5,6])

@@ -1,0 +1,44 @@
+(1,)
+(1,2,3)
+1,
+1,2,3
+
+(1,2,3)[2]
+
+a=(1,2,3)
+del a[2]
+a[2]=7
+
+sum(a)
+
+
+
+
+
+
+#Apples and Oranges- Write a function that takes in a list of fruits holding the number of apples and oranges- tuples of such numbers. Apples have 2 points and oranges have 3. Make the function return the total number of points for each case.
+
+def fruits(values):
+	results=dict()
+	for point in values:
+		results[point]=2*point[0]+3*point[1]
+	return results
+
+
+fruits([(2,3),(4,3),(4,7)])
+
+
+
+
+
+
+#Tuple Pyramid- Write a function that creates a tuple with a string, adding a counter to it each time until it reaches desired height.
+
+def pyramid(string,height):
+    tup=(string)
+    for index in range(1,height+1):
+        tup=(tup,index)
+        print(tup)
+
+
+pyramid('egypt',7)

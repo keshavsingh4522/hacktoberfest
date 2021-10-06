@@ -1,0 +1,138 @@
+a\
+   =\
+   10
+
+a
+
+"""Hi
+How are you?"""
+
+"Hi\
+How are you?"
+
+#This is a comment
+
+if 2>1:
+	print("Yes")
+
+"I'm fine"
+
+s="I'm fine"
+
+score=96
+
+print(f"I scored a {score} on the Spanish test")
+
+
+
+
+
+
+#Mean and Median- Write a function that takes in a list of numbers, computes the mean and median, and returns True if the median value is greater than the mean of the numbers. Otherwise, return False.
+
+def mean_median(scores):
+	mean=sum(scores)/len(scores)
+	median=sorted(scores)[int(len(scores)/2)]
+	if median>mean: return True
+	return False
+
+
+mean_median([3,4,3,2,9,7,11,12,13])
+
+mean_median([3,4,3,2,9,7,11,12,13,14,14])
+
+
+
+
+
+#Mad Libs- Write a function to simulate the popular kids game Mad Libs. Take the following inputs from the player:
+#A random last name
+#A noun
+#The time of day
+#An adjective
+#A verb present, that ends in ing
+#A body part
+#A number
+#A noun
+#A verb base form
+#A liquid
+#A number
+#A period of time- day, month, year, etc
+#A noun plural
+#An animal
+#A noun plural
+#Player name
+#
+#Use the inputs, respectively, to fill in the blanks in the following story:
+
+<photo>
+
+def mad_libs():
+    inputs,pos=[],['a random last name','a noun','the time of day','an adjective','a verb present, that ends in ing','a body part','a number','a noun','a verb base form','a liquid','a number','a period of time- day, month, year, etc','a noun plural','an animal','a noun plural','your name']
+    for part in pos: inputs.append(input(f'Give me {part}'))
+    print("""Dear Dr. {0},
+
+I cannot make it to {1} this {2}. I am very {3} and cannot stop {4} my {5}. I have a fever of {6} degrees and the doctor ordered me to stay in {7} and {8} lots of {9}. Also, can I have a {10} {11} extension on the essay about {12}? My {13} ate it and now I have to start all over!
+
+Best {14},
+
+{15}""".format(*inputs))
+
+
+
+
+
+mad_libs()
+
+Rooney
+bottle
+noon
+red
+puking
+shoulder
+7
+bag
+run
+gasoline
+8
+April
+hecklers
+cat
+police
+Maddie
+
+
+
+
+
+
+#Baby Shark- Write a function to print out the lyrics to the popular kids song ‘Baby Shark’.
+
+def print_doo():
+	return ' doo'*6
+
+def baby_shark():
+	sharks=['Baby','Mommy','Daddy','Grandma','Grandpa']
+	for shark in sharks:
+		for index in range(3): print(shark+' shark,%s' %(print_doo()))
+		print(shark+' shark!\n')
+	for index in range(3):
+		print('Let\'s go hunt,%s' %(print_doo()))
+	print('Let\'s go hunt!\n\nRun away..')
+
+baby_shark()
+
+
+
+
+
+
+
+#Alphabetical- Write a function that takes in a string of words separated by commas and sorts the words before returning them in the same format.
+
+def alphabetical(words):
+	return ','.join(sorted(words.split(',')))
+
+
+
+alphabetical('user,phone,labels,exhale')
