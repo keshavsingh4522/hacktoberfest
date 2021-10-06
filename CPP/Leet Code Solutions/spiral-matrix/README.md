@@ -1,4 +1,4 @@
-<h2>54. Spiral Matrix</h2><h3>Medium</h3><hr><div><p>Given an m x n matrix, return all elements of the matrix in spiral order.</p>
+<h2>54. Spiral Matrix</h2><h3>Medium</h3><hr><div><p>Given an <code>m x n</code> <code>matrix</code>, return all elements of the <code>matrix</code> in spiral order.</p>
 
 
 <p><strong>Example 1:</strong></p>
