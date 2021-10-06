@@ -1,0 +1,74 @@
+[letter for letter in 'anxiety']
+
+[num for num in range(8) if num%3==0]
+
+[num for num in range(8) if num%2==0 if num%3==0]
+
+["Even" if num%2==0 else "Odd" for num in range(8)]
+
+
+
+
+
+
+
+#Threes- Use list comprehension to build a function that returns multiples of 3 that are smaller than the number n.
+
+def threes(n):
+	return [item for item in range(n) if item%3==0]
+
+
+threes(15)
+
+threes(47)
+
+
+
+
+
+#Game of Tuples- Write a function that asks the user to input a string of integers separated with spaces. It then returns a tuple from these values.
+
+def game_of_tuples():
+    s=input("Enter a string of numbers separated with spaces")
+    return tuple([int(item) for item in s.split(' ')])
+
+
+7 2 7 9 4 3 1 6
+
+7
+
+
+
+
+#Empty Promises- Write a function that takes in a list of integers and shifts all zeros to the end of the list.
+
+def empty_promises(arr):
+	zeros=arr.count(0)
+	arr=[val for val in arr if val!=0]
+	for i in range(zeros): arr.append(0)
+	return arr
+
+empty_promises([2,0,2,4,0,0,4,9])
+
+
+
+
+#Concatenating Lists- Write a function that takes in a list of lists and concatenates all the immediate sublists into one.
+
+def concat(*lists):
+	return [i for l in lists for i in l]
+
+
+concat([1,2,3],[4,5,6,7],[8])
+
+
+
+
+
+#Stronger Lists- Write a function that multiplies each value in a list with the length of the list and returns that.
+
+def stronger_list(arr):
+	return [val*len(arr) for val in arr]
+
+
+stronger_list([1,9,4,7])

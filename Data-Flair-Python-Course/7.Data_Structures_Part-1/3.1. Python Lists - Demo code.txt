@@ -1,0 +1,47 @@
+#Back to Front- Write a function that accepts a string of multiple words, then prints the words back to front.
+
+def back_to_front(string):
+	return ' '.join(reversed(string.split(' ')))
+
+back_to_front('two joys and few perils')
+
+
+
+
+
+#Duplicates- Write a function that accepts some numbers into a list, then prints the ones appearing in the
+list more than once.
+
+list,dups=input('Enter numbers separated by comma').split(','),[]
+for num in list:
+	if list.count(num)>1: dups.append(num)
+
+for num in set(dups): print(num)
+
+duplicates(7,4,3,4,7,3,5)
+
+
+
+
+
+#Indefinite Articles- Ignoring words like 'honest' that do not begin with a vowel, yet go with the article 'an', write
+a function that prepends the proper indefinite article ('a' or 'an') to a noun.
+
+vowels=['a','e','i','o','u']
+def add_indefinite_article(noun):
+	return 'an '+noun if noun[0] in vowels else 'a '+noun
+
+add_indefinite_article('umbrella')
+
+
+
+
+
+#Resistor Color Coding- Write a function to understand the color coding of 4-band resistors. It takes in the first three
+values(ignoring tolerance) and calculates the resistance in Ohms (O).
+
+color_codes=['black','brown','red','orange','yellow','green','blue','violet','grey','white']
+def calc_resistance(digit1,digit2,multiplier):
+        return str((color_codes.index(digit1)*10+color_codes.index(digit2))*10**color_codes.index(multiplier))+' Ohms'
+
+calc_resistance('yellow','blue','white')

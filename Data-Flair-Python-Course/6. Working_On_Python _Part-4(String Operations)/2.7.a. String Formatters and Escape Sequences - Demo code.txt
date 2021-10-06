@@ -1,0 +1,102 @@
+print('I\'m an astronaut')
+
+print('I\t\'m an astronaut')
+
+print('\\/')
+
+a=7
+print(f'I have {a} cats')
+
+print('I have {0} cats'.format(a))
+
+print('I have {a} cats'.format(a=5))
+
+print('I have {b} dogs'.format(b=3))
+
+b=11
+print("%d and %d" %(a,b))
+
+
+
+
+#Tall, Taller, Tallest- Write a function that takes in a person’s height in cm and represents it in feet and inches.
+
+def get_height(height):
+	feet=height/30.48
+	inches=(feet%1)*12
+	print(f'You are {int(feet)}\' {round(inches,1)}" tall.')
+
+
+get_height(160)
+
+get_height(179)
+
+get_height(134)
+
+
+
+
+
+#To Gerund- Write a function that takes a verb and converts it into its Gerund form. Gerund is a verb form that functions as a noun, ending in ‘ing’.
+
+def to_gerund(verb):
+	if verb[-1]=='e':
+		return f'{verb} becomes {verb[:-1]+"ing"}'
+	if verb[-3:]!='ing':
+		return f'{verb} becomes {verb+"ing"}'
+	return verb
+
+
+
+to_gerund('bake')
+
+to_gerund('jump')
+
+to_gerund('hike')
+
+to_gerund('bathe')
+
+to_gerund('hitting')
+
+
+
+
+
+
+
+#Only Even Caps- Write a function that takes in a string. Make it capitalize the letters with even ASCII values and turn to lowercase those with odd ASCII values.
+
+def even_caps(sentence):
+	s=''
+	for char in sentence:
+		if char.isalpha() and ord(char)!=32:
+			if char.islower() and ord(char)%2==0:
+				s+=chr(ord(char)-32)
+			elif char.isupper() and ord(char)%2!=0:
+				s+=chr(ord(char)+32)
+			else: s+=char
+		else: s+=char
+	return s
+
+even_caps('I got all I need in a world of doubt')
+even_caps('Here in the ashes, your soul cries out')
+
+
+
+
+
+
+#Abbreviations- Write a function that takes in two lists. The first holds abbreviations and the second holds words. Your task is to make it make sure no abbreviation suggests more than one word in the second list.
+
+def abbreviation(abbs,words):
+	for abb in abbs:
+		count=0
+		for word in words:
+			if word.startswith(abb):
+				count+=1
+		if count!=1: return False
+	return True
+
+
+abbreviation(['h','hel','b'],['help','hello','holy','biased','helium'])
+abbreviation(['ho','help','hell','heli','b'],['help','hello','holy','biased','helium'])

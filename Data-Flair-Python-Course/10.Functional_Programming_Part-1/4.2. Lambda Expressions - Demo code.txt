@@ -1,0 +1,33 @@
+lambda :print("Goodbye.")
+
+(lambda :print("Goodbye."))()
+
+lambda a,b:a+b
+
+list(filter(lambda x:x%2==0, [1, 2, 3, 4, 5, 6]))
+
+
+
+
+
+#Double Triple- Write a function that takes a list and doubles each even value. It triples all other values.
+
+def double_triple(mylist):
+	return list(map(lambda x:x*2 if x%2==0 else x*3,mylist))
+
+double_triple([4,5,4,2,8,5,9])
+
+
+
+
+
+#Add All- Write a function that takes an integer and returns the sum of integers starting from 1, up to this number.
+
+from functools import reduce
+def add_all(num):
+    return reduce(lambda a,b:a+b,range(num+1))
+    #or return sum(range(1,num+1))
+
+add_all(4)
+add_all(8)
+add_all(12)

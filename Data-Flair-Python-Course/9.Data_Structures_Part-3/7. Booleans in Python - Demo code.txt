@@ -1,0 +1,55 @@
+bool(2)
+
+bool(2>1)
+
+'hey4'.isalpha()
+
+True+True
+
+False is 0
+
+
+
+
+
+#Pay Visit- A restaurant in Miami stays open from 2 to 5. If, however, it is a weekday, it closes for that time and stays open for all other hours. Given the day of the week and the current hour, write a function to help you decide whether to pay a visit.
+
+def pay_visit(hour,weekday):
+	return (not(weekday) and hour>=2 and hour<5) or (weekday and (hour<2 or hour>=5))
+
+pay_visit(2,True)
+
+pay_visit(4,True)
+
+pay_visit(5,True)
+
+pay_visit(2,False)
+
+pay_visit(4,False)
+
+pay_visit(5,False)
+
+
+
+
+
+#Money Maker- You are given an integer value indicating an amount of money. Write a function that takes the value and adds commas before every third digit from the end. 100000 should become 100,000.
+
+def money_maker(amount):
+	amount=str(amount)
+	if len(amount)<4: return amount
+	s='';count=0
+	for index in range(len(amount)-1,-1,-1):
+		count+=1; s+=amount[index];
+		if count%3==0 and index!=0: s+=',';
+	return s[::-1]
+
+money_maker(100000)
+
+money_maker(1000000)
+
+money_maker(10000)
+
+money_maker(100)
+
+money_maker(1000)

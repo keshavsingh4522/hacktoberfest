@@ -1,0 +1,70 @@
+2==2.0
+
+(1,2,3)>(1,4,3)
+
+3>=3
+
+'hello'!='Hello'
+
+
+
+
+#Battle of Numbers- Write a function that takes a list and returns the greatest number without using the max() function.
+
+def battle_of_numbers(numbers):
+	winner=numbers[0]
+	for num in numbers:
+		if num>winner: winner=num
+	return winner
+
+
+
+battle_of_numbers([2,4,2,9,0,2])
+
+battle_of_numbers([3,7,3,8,2])
+
+battle_of_numbers([3,7,3,-8,2])
+
+
+
+
+#Anagrams- Write a function that takes two strings and checks whether they are anagrams. An anagram is a word or phrase formed by rearranging the letters of another.
+
+def anagrams(word1,word2):
+	return sorted(word1.lower())==sorted(word2.lower())
+
+
+anagrams('alert','alter')
+
+anagrams('alert','later')
+
+anagrams('alert','talor')
+
+anagrams('alert','alert')
+
+
+
+
+
+#The Last Digit- Write a function that takes 3 integers and returns True if the last digit of the result of multiplication of the first two equals that of the third.
+
+def last_digit(a,b,c):
+	return str(a*b)[-1]==str(c)[-1]
+
+
+last_digit(13,32,226)
+last_digit(27,22,729)
+last_digit(765,544,0)
+
+
+
+
+
+#Tale of Twins- Write a function that takes in an integer, then checks whether it is greater than the integer that is its mirror image.
+
+def larger_twin(num):
+	return num>=int(str(num)[::-1])
+
+larger_twin(73)
+larger_twin(7)
+larger_twin(132)

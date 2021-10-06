@@ -1,0 +1,85 @@
+2+3
+
+3>=3
+
+a=7
+a**=3
+a
+
+7>7 and 2>-1
+
+'me' in 'disappointment'
+
+'2' is "2"
+
+2^3
+
+
+
+
+
+#Next Perfect Square- A perfect square is an integer, the square root of which is also an integer. Write a function that takes in a non-negative integer and returns the next perfect square. If the integer, however, is not a perfect square itself, it makes it known.
+
+import math
+def next_perfect_square(num):
+	return (int(math.sqrt(num))+1)**2 if math.sqrt(num)%1==0 else "Not a perfect square itself"
+
+
+next_perfect_square(0)
+
+next_perfect_square(1)
+
+next_perfect_square(3)
+
+next_perfect_square(4)
+
+
+
+
+
+#Remove Vowels- Write a function that takes a string and removes any vowels in it.
+
+def remove_vowels(string):
+	s=''
+	for letter in string:
+		if letter not in ['a','e','i','o','u']: s+=letter;
+	return s
+
+
+remove_vowels('She was a pyramid')
+
+remove_vowels('Hello, welcome home')
+
+
+
+
+
+#Volume of a Sphere- Write a function that takes in a sphere’s radius and calculates its volume rounded to two decimal places. You can import the value of pi from the math module for this.
+
+import math
+def sphere_volume(radius):
+	return round(4/3*math.pi*radius**3,2)
+
+sphere_volume(6)
+
+sphere_volume(12.2)
+
+
+
+
+
+
+#Valid Password- Write a function that determines whether a string makes for a valid password. For this, it must be at least 6-characters long and at most 12-characters long. It also must have at least one letter, one digit, and one character from $, #, and @.
+
+def valid_password(password):
+	p=list(password)
+	if len(password)<6 or len(password)>12: return False
+	if not(any(i.isdigit() for i in p)): return False
+	if not(any(i in '$#@' for i in p)): return False
+	if not(any(i.isalpha() for i in p)): return False
+	return True
+
+valid_password('abc')
+valid_password('ab6c')
+valid_password('ab6c!')
+valid_password('ab6c!#')

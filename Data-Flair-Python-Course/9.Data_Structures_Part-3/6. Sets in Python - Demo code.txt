@@ -1,0 +1,45 @@
+a={3,1,1,2}
+
+a
+
+a={[1,2,3],4}
+
+a[1]
+
+a.discard(1)
+
+a
+
+a.add(1)
+
+a
+
+set1,set2,set3={1,2,3},{3,4,5},{5,6,7}
+
+set1.union(set2,set3)
+
+
+
+
+
+#The Commons- Write a function that takes two lists and from that, gets the values common in the two lists. Do this without making an intersection on the two sets.
+
+def the_commons(list1,list2):
+	return set([num for num in list2 if num in list1])
+
+the_commons([2,9,7],[3,4,1])
+
+the_commons([1,4,3,2,5],[2,4,2,7,9])
+
+the_commons([1,4,3,2,5,8,6],[2,8,4,2,7,9])
+
+
+
+
+#Subscribers- Write a function that takes in the ID’s of the people who subscribed to Netflix, and of those who subscribed to Hotstar. Make it return the number of people that have at least one subscription.
+
+def subscribers(netflix,hotstar):
+    return len(set(netflix).union(set(hotstar)))
+
+
+subscribers([22,759,232,476,449,34,55,593],[759,33,311,34,29,23,442])

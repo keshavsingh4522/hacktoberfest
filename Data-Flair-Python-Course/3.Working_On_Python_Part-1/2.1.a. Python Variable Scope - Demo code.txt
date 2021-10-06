@@ -1,0 +1,117 @@
+b=8
+def func():
+	a=7
+	print(a)
+	print(b)
+
+	
+func()
+
+a
+
+----------------------------------
+
+a = 0
+def func():
+	print(a)
+	a = 1
+	print(a)
+
+
+func()
+
+-------------------------------------
+
+def func(a=0):
+	a+=1
+	print(a)
+
+func()
+
+
+----------------------------------
+
+
+def red():
+                a=1
+                def blue():
+                                b=2
+                                print(a)
+                                print(b)
+                blue()
+                print(a)
+
+red()
+
+
+
+-------------------------------------
+
+
+
+a=1
+def counter():
+	a=2
+                print(a)
+   
+counter()
+
+print(a)
+
+
+
+------------------------------------
+
+
+def counter():
+	global a
+	a = 2
+                print(a)
+   
+counter()
+
+
+print(a)
+
+
+
+
+
+--------------------------------------
+
+
+
+
+def red():
+	a=1
+              	def blue():
+   		a = 2
+		b = 2
+		print(a)
+		print(b)
+	blue()
+	print(a)
+  
+red()
+
+
+
+
+
+-------------------------------------------
+
+
+
+
+def red():
+	a=1
+              	def blue():
+		nonlocal a
+   		a = 2
+		b = 2
+		print(a)
+		print(b)
+	blue()
+	print(a)
+  
+red()

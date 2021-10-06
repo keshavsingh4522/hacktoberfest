@@ -1,0 +1,55 @@
+num=7
+eval('num**3')
+
+expr=input('Enter an expression in terms of x')
+3*x**4+4*x**2+2*x+6
+x=int(input('Enter the value of x'))
+7
+eval(expr)
+
+
+def double(n): return n*2
+def triple(n): return n*3
+choice=input('What shall we do?')
+triple
+num=input('What number?')
+8
+choice+='('+num+')'
+eval(choice)
+
+
+
+
+
+
+#Best Complements- Write a function that takes a binary string, adds 1 to it, then returns its 1’s complement.
+
+def complement(binary):
+    return ~eval(str(eval('0b'+binary if binary[:2]!='0b' else binary)+1))
+
+
+complement('0b111')
+
+complement('111')
+
+complement(‘0’)
+
+
+
+
+
+#Pocket Interpreter- Write a function that acts as an interpreter that quits on feeding ‘bye’ to it.
+
+def interpreter():
+    print('>>> ',end='')
+    expression=input()
+    if expression=='bye': return
+    print(eval(expression))
+    interpreter()
+
+
+interpreter()
+
+2+3
+5%3
+bye

@@ -1,0 +1,68 @@
+a=798.321
+
+721
+
+complex(2,3)
+
+0xFE
+
+
+
+
+#NOT Gate- Build a function that simulates a NOT Gate. If the input is 0, it returns 1. And if it is 1, it returns 0. But do this without using logical, ternary, conditional, or bitwise operators.
+
+def not_gate(digit):
+	return 1-digit
+	#or return [1,0][digit]
+
+
+not_gate(0)
+
+not_gate(1)
+
+
+#Expanded- Write a function that expands a number. For instance, 42301 becomes 40000+2000+300+1.
+
+def expanded(num):
+	num=str(num)
+	return '+'.join([num[index]+'0'*(len(num)-1-index) for index in range(len(num)) if num[index]!='0'])
+
+
+expanded(429)
+
+expanded(32401)
+
+
+
+
+
+
+#Dog Age Calculator- A dog’s age, for the first two years, is said to be equal to 10.5 human years for each year. Every consequent year amounts to 4 human years. Write a function that takes the human_age from the user and calculates the age in dog years.
+
+def dog_age(human_age):
+	assert(human_age>=0)
+	return str((human_age)*10.5-((human_age-2)>0)*(human_age-2)*6.5)+' years'
+
+dog_age(0)
+dog_age(1)
+dog_age(2)
+dog_age(3)
+dog_age(4)
+dog_age(9)
+
+
+
+
+
+
+#Binary to Decimal- Write a function that takes a number in 1s and 0s considering it binary, and returns its decimal equivalent.
+
+def to_decimal(binary):
+	decimal,mul=0,len(str(binary))-1
+	for digit in str(binary):
+		decimal+=int(digit)*2**mul
+		mul-=1
+	return decimal
+
+to_decimal(111)
+to_decimal(101)

@@ -1,0 +1,80 @@
+def decor(func):
+         def wrap():
+             print("$$$$$$$$$$$$$$$$$$$$$$")
+             func()
+             print("$$$$$$$$$$$$$$$$$$$$$$")
+          return wrap
+
+def sayhello():
+          print("Hello")
+
+newfunc=decor(sayhello)
+
+newfunc()
+
+
+
+def decor1(func):
+        def wrap():
+               print("$$$$$$$$$$$$$$")
+               func()
+               print("$$$$$$$$$$$$$$")
+         return wrap
+
+def decor2(func):
+        def wrap():
+               print("##############")
+               func()
+               print("##############")
+        return wrap
+
+@decor1
+@decor2
+def sayhello():
+         print("Hello")
+
+sayhello()
+
+
+
+
+
+
+#Phone Numbers- Write a function that takes, from the user, a phone number, and adds the country code for India before returning it with a space in the middle.
+
+def decor(func):
+	def wrap(num):
+		return '+91 '+num[-10:-5]+' '+num[-5:]
+	return wrap
+
+@decor
+def phone(num):
+	return num
+
+
+phone('9826262079')
+
+phone('+919826262079')
+
+
+
+
+
+
+#Add Article- Write a function that takes a word and adds the appropriate article before it- ‘a’ or ‘an. You can ignore the words that begin with a vowel sound- like hour.
+
+def decor(func):
+	def wrap(word):
+		return 'an '+word if word[0] in ['a','e','i','o','u'] else 'a '+word
+	return wrap
+
+@decor
+def add_article(word):
+	return word
+
+
+add_article('book')
+
+add_article('orange')
+
+add_article('flower')

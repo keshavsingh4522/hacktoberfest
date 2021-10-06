@@ -1,0 +1,62 @@
+lingo={‘PB&J’:‘Peanut Butter and Jelly’,‘PJ’:‘Pyjamas’}
+
+{x*x:x for x in range(8)}
+
+
+animals={}
+
+animals[1]='dog'
+
+animals[2]='cat'
+
+animals[3]='ferret'
+
+animals
+
+animals[4]
+
+sorted(animals)
+
+animals.keys()
+
+animals.get(2,0)
+
+
+
+
+
+#The Costliest Three- You are given a dictionary holding items from a store, and their prices. Write a function that returns the items with the highest price, the second-highest, and the third-highest. If two items cost the same, include both.
+
+def the_costliest_three(items):
+    for item in [(item,price) for (item,price) in items.items() if price in sorted(items.values())[-3:]]:
+        print(item)
+
+the_costliest_three({'shoes': 79, 'scarves': 29, 'berets': 39, 'bodysuits': 59, 'leggings': 39})
+
+the_cotliest_three({'shoes': 79, 'scarves': 29, 'berets': 39, 'bodysuits': 59, 'leggings': 39,'sweaters':129})
+
+
+
+
+
+
+#Roll Numbers- Write a function that takes a list of the names of students and assigns roll numbers to first names in a lexicographic order, then prints them out.
+
+def rolls(names):
+	roll_nums={sorted(names).index(name)+1:name.split(' ')[0] for name in sorted(names)}
+	for roll in sorted(roll_nums): print (roll,roll_nums[roll])
+
+rolls(['Ayushi Sharma', 'Anjali Raizada', 'Zoya Khan', 'Rinu Srivastava'])
+
+
+
+
+
+
+#Who's the Boss?- Write a function that takes in a dictionary of employees and their salaries, then uses the highest salary to predict who’s the boss of the company.
+
+def highest_salary(salaries):
+	return [employee for employee,salary in salaries.items() if salary==max(salaries.values())][0]+' is the boss'
+
+
+highest_salary({'Dwight':25000,'Michael':34000,'Pam':12000,'Jim':20000,'Angela':20000})

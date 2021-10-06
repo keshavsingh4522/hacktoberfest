@@ -1,0 +1,67 @@
+list=[1,2,3,4,5]
+
+list[1:4]
+
+'helloworld'[2:7]
+
+'helloworld'[::2]
+
+
+
+
+
+
+#Double Evens- Write a function that checks every other index in a string and returns True only if it contains any letter at least twice.
+
+def double_evens(string):
+	return any(filter(lambda letter:string[1::2].count(letter)>1,string[1::2]))
+
+
+double_evens('hello')
+
+double_evens('hello world')
+
+double_evens('heleo worrd')
+
+
+
+
+#Two Lists- Write a function that takes two lists of equal lengths and interleaves their values. So it takes one value from list1, another from list2, another from list1, and so on until both lists exhaust.
+
+def two_lists(list1,list2):
+	temp=list1*2
+	temp[::2]=list1
+	temp[1::2]=list2
+	return temp
+
+
+two_lists([1,2,3],['a','b','c'])
+
+
+
+
+
+#The Greatest- Write a function that takes in a list of integers and returns True only if for each value in the list, the sum of the previous values is lesser.
+
+def greatest(arr):
+	for index1 in range(1,len(arr)):
+		if arr[index1]<=sum(arr[:index1]):
+			return False
+	return True
+
+greatest([2,3,4])
+greatest([2,3,6,13])
+
+
+
+
+
+#Divide and Conquer- Write a function that takes in a word and a size, and breaks it down into substrings of the given size.
+
+def divide(word,size):
+	return [word[index:index+size] for index in range(0, len(word), size)]
+
+
+divide('clueluess',2)
+divide('clueluess',3)
+divide('fascinating',3)

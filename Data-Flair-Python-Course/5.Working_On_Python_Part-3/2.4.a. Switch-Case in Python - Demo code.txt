@@ -1,0 +1,59 @@
+def week(day):
+	switcher={
+		0:'Sunday',
+		1:'Monday',
+		2:'Tuesday',
+		3:'Wednesday',
+		4:'Thursday',
+		5:'Friday',
+		6:'Saturday'
+	}
+	return switcher.get(day,"Invalid day of week")
+
+
+week(2)
+week(0)
+week(7)
+
+
+class Switcher(object):
+	def indirect(self,i):
+		method_name='number_'+str(i)
+		method=getattr(self,method_name,lambda :'Invalid')
+		return method()
+	def number_0(self):
+		return 'zero'
+	def number_1(self):
+		return 'one'
+	def number_2(self):
+		return 'two'
+
+
+s=Switcher()
+s.indirect(2)
+s.indirect(4)
+s.number_1()
+
+
+
+
+
+
+#IVR- Write a function that simulates the IVR (Interactive Voice Response) menu for a travels company.
+
+def menu():
+    choice=int(input('Welcome to Star Travels. Thank you for calling us. Please select from the menu\
+\n1. Home\n2. Booking\n3. Enquiry\n4. Complaints\n5. Exit'))
+    switcher={
+        1:'Home',
+        2:'Booking',
+        3:'Enquiry',
+        4:'Complaints',
+        5:'Exit'
+    }
+    return 'Taking you to '+switcher.get(choice,'Please enter a valid choice')
+
+
+
+menu()
+3

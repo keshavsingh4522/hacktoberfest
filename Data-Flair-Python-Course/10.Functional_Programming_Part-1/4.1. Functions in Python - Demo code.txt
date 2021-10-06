@@ -1,0 +1,64 @@
+def add(num1,num2):
+	return num1+num2
+
+add(2,-3)
+
+def hello():
+	"""
+	This function says hello
+	"""
+	print("Hello")
+
+hello.__doc__
+
+(lambda a,b:a**(b+2))(3,4)
+
+
+
+
+
+#nth Prime- Write a function (you may use helper functions) that takes in a number n and returns the nth prime number.
+
+def is_prime(n):
+	if n==1: return False
+	for num in range(2,int(n/2)+1):
+		if n%num==0: return False
+	return True
+
+def next_prime(n):
+	num=n+1
+	while num>n:
+		if is_prime(num): return num
+		num+=1
+
+def nth_prime(n):
+	count,p=0,2
+	while count<n-1: p=next_prime(p); count+=1
+	return p
+
+
+nth_prime(1)
+
+nth_prime(4)
+
+nth_prime(10)
+
+
+
+#Caesar Cipher- Write a function implementing the Caesar cipher. Such a cipher is one that uses a very simple encryption technique. If the key is 2, ‘a’ becomes ‘c’, ‘b’ becomes ‘a’, and so on. This completes a full cycle as ‘y’ becomes ‘A’ and ‘z’ becomes ‘B’. Encrypt messages to send to a friend.
+
+def caesar(message,key):
+	alphabet=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+	s=''
+	for letter in message:
+		if letter in ' !@#$%^&*()_-+={[}]:;"\'<,>.?/~`': s+=letter; continue
+		s+=alphabet[(alphabet.index(letter)+key)%52]
+	return s
+
+caesar('Did you blow the whistle yet?',3)
+
+caesar('Did you blow the whistle yet?',2)
+
+caesar('Did you blow the whistle yet?',0)
+
+caesar('Did you blow the whistle yet?',-3)

@@ -1,0 +1,50 @@
+def sum(a,b):
+	return a+b
+
+sum(2,3)
+
+sum(2)
+
+sum(3,b=4)
+
+def sum(a,b=3):
+	return a+b
+
+sum(2)
+
+def add_all(*args):
+	return sum([arg for arg in args])
+
+add_all(3,4,5)
+
+
+
+
+
+#Counting Arguments- Write a function of variable arity- one that takes any number of arguments. Make it return the number of arguments it receives in a call.
+
+def count(*args):
+	return len(args)
+
+
+count()
+
+count(4,5)
+
+count('a',2,7.7)
+
+
+
+
+
+#Joining Path- Write a function that takes parts of a path and joins them using forward slashes.
+
+def join_path(*paths):
+	return '/'.join([path.lstrip('/').rstrip('/') for path in paths])+'/'
+
+
+join_path('Users/')
+
+join_path('/Users','Ayushi')
+
+join_path('Users/','Ayushi/Desktop')
