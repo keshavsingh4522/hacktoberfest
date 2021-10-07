@@ -54,4 +54,4 @@
 | Saurav Navdhare   | [@Saurav-Navdhare](https://github.com/Saurav-Navdhare)        |
 | Mohan             | [@stone-dr](https://github.com/stone-dr)                      |
 | Ibad Mukrom       | [@IbadMukrom](https://github.com/IbadMukrom)                  |
-| Kritik Agarwal    | [@Agarwal-Kritik](https://github.com/Kritik007)               |
+| Kritik Agarwal    | [@Kritik007](https://github.com/Kritik007)               |
