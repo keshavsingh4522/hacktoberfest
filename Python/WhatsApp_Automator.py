@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Apr 14 10:26:29 2019
 
 @author: KUNTAL
 """
@@ -12,7 +11,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-driver=webdriver.Chrome("C:\\Users\\KUNTAL\\Documents\\chromedriver")
+driver=webdriver.Chrome("filepath\\to\\your\\chromdriver")
 
 driver.get("https://web.whatsapp.com/")
 wait= WebDriverWait(driver, 600)
