@@ -109,15 +109,15 @@ public class Kosaraju
 		graph.addEdge(2, 5);
 		graph.addEdge(3, 6);
 		graph.addEdge(4, 1);
-        graph.addEdge(5, 8);
-        graph.addEdge(6, 0);
-        graph.addEdge(7, 4);
-        graph.addEdge(7, 5);
-        graph.addEdge(8, 6);
-        graph.addEdge(8, 2);
+        	graph.addEdge(5, 8);
+        	graph.addEdge(6, 0);
+        	graph.addEdge(7, 4);
+        	graph.addEdge(7, 5);
+        	graph.addEdge(8, 6);
+        	graph.addEdge(8, 2);
 
 		System.out.println("Strongly connected components are:\n");
 		Kosaraju scc = new Kosaraju(graph);
-        scc.printSCCs();
+        	scc.printSCCs();
 	}
 }
