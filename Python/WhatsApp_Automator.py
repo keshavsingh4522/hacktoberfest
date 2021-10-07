@@ -15,8 +15,8 @@ driver=webdriver.Chrome("filepath\\to\\your\\chromdriver")
 
 driver.get("https://web.whatsapp.com/")
 wait= WebDriverWait(driver, 600)
-target='"Debadrita"'
-string="Love You"
+target='"Recipient_Name"'
+string="Your message here"
 x_arg='//span[contains(@title, '+ target + ')]'
 target=wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
 target.click()
