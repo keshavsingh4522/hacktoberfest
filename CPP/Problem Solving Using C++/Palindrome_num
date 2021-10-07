@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,rem,temp,sum=0;
+    cout<<"Enter the number: ";
+    cin>>n;
+    temp=n;
+    while(n!=0)
+    {
+        rem=n%10;
+        sum=(sum*10)+rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    {
+        cout<<"The number is palindrome";
+    }
+    else{
+        cout<<"The number is not palindrome";
+    }
+}
