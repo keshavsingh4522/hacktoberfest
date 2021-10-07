@@ -1,13 +1,19 @@
-#include<stdio.h>  
-int main()    
-{    
- int i,fact=1,number;    
- printf("Enter a number: ");    
-  scanf("%d",&number);    
-    for(i=1;i<=number;i++)
-    {    
-      fact=fact*i;    
-  }    
-  printf("Factorial of %d is: %d",number,fact);    
-return 0;  
-}   
+#include <stdio.h>
+
+// function to find factorial of given number
+unsigned int factorial(unsigned int n)
+{
+	int res = 1, i;
+	for (i = 2; i <= n; i++)
+		res *= i;
+	return res;
+}
+
+int main()
+{
+	int num = 5;
+	printf(
+		"Factorial of %d is %d", num, factorial(num));
+	return 0;
+}
+
