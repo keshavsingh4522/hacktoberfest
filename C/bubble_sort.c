@@ -1,24 +1,54 @@
-#include<stdio.h>
+// Optimized implementation of Bubble sort
+#include <stdio.h>
+#include <stdbool.h>
+
+void swap(int *xp, int *yp)
+{
+	int temp = *xp;
+	*xp = *yp;
+	*yp = temp;
+}
+
+// An optimized version of Bubble Sort
+void bubbleSort(int arr[], int n)
+{
+int i, j;
+bool swapped;
+for (i = 0; i < n-1; i++)
+{
+	swapped = false;
+	for (j = 0; j < n-i-1; j++)
+	{
+		if (arr[j] > arr[j+1])
+		{
+		swap(&arr[j], &arr[j+1]);
+		swapped = true;
+		}
+	}
+
+	// IF no two elements were swapped by inner loop, then break
+	if (swapped == false)
+		break;
+}
+}
+
+/* Function to print an array */
+void printArray(int arr[], int size)
+{
+	int i;
+	for (i=0; i < size; i++)
+		printf("%d ", arr[i]);
+	printf("n");
+}
+
+// Driver program to test above functions
 int main()
 {
-   int n, temp, i, j;
-   printf ("Enter No of elements in the array \n");
-   scanf("%d",&n);
-   int number[n];
-   printf ("Enter the elements of array \n");
-   for(int i=0;i<n;i++)
-    scanf("%d",&number[i]);
-   for(i=n-2;i>=0;i--){
-      for(j=0;j<=i;j++){
-        if(number[j]>number[j+1]){
-           temp=number[j];
-           number[j]=number[j+1];
-           number[j+1]=temp;
-        }
-      }
-   }
-   printf("Sorted elements: ");
-   for(i=0;i<n;i++)
-      printf(" %d",number[i]);
-   return 0;
+	int arr[] = {64, 34, 25, 12, 22, 11, 90};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	bubbleSort(arr, n);
+	printf("Sorted array: \n");
+	printArray(arr, n);
+	return 0;
 }
+
