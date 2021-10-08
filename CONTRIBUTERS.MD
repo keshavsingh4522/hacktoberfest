@@ -188,7 +188,7 @@
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
-| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                |         1        |
+| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                    |         1        |
 | Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
@@ -206,7 +206,7 @@
 | Manju Thakur         | [@mthakur7](https://github.com/mthakur7)                      |         1        |
 | Atharva patil        | [@Attupatil](https://github.com/Attupatil)                    |         1        |
 | Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
-| Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
+| Saurabh Nikam        | [@saurabh-nikam](https://github.com/saurabh-nikam)            |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
 | Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |               
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
@@ -217,3 +217,4 @@
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
 | Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
+| Gaurav Dalvi         | [@gauravdalvi2012](https://github.com/gauravdalvi2012)        |         0        |
