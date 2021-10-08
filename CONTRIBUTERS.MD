@@ -213,6 +213,7 @@
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
 | Nishant Kumar Singh  | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
+| Anthony Rafael       | [@Anthony-Citizen](https://github.com/Anthony-Citizen)        |         1        |
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
