@@ -9,7 +9,8 @@
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
 | Justinus Hermawan    | [@justinushermawan](https://github.com/justinushermawan/)     |         0        |
 | Yunxin Gan           | [@samganyx](https://github.com/samganyx/)                     |         0        |
-| Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
+| Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)
+| Kriti Pashine        | [@Kriti-999](https://github.com/Kriti-999)                    |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
 | Aniket Nayek         | [@AniketNayek3101](https://github.com/AniketNayek3101)        |         0        |
