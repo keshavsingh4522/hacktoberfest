@@ -1,0 +1,54 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+//using nearest neighbor approach src given
+void salesman(int mat[][4],int v)
+{
+    vector<bool>visit(v,false);
+    
+    //consider source vertex as 0
+    int src_city = 0,temp,sum =0;
+    visit[0] = true;
+    
+    cout<<src_city<<" ";
+    int src =src_city;
+    while(1)
+    {
+        int min = 99999;
+        bool flag = true;
+        for(int i=0;i<v;i++)
+        {
+            if(!visit[i])
+            flag = false;
+            
+            if(min> mat[src][i] && mat[src][i]!=0 &&!visit[i])
+            {
+                min = mat[src][i];
+                temp = i;
+            }
+        }
+        if(flag)
+        {
+            sum+=mat[src][src_city];
+            cout<<src_city;
+            cout<<"\ntotal sum: "<<sum;
+            return;
+        }
+        else{
+            sum+=mat[src][temp];
+            cout<<temp<<" ";
+            src = temp;
+            visit[temp] = true;
+        }
+        
+    }
+    
+}
+
+int main()
+{
+    int v=4; //number of vertices
+    int mat[][4] ={{0,10,15,20},{10,0,35,25},{15,35,0,30},{20,25,30,0}};
+    salesman(mat,v);
+}
