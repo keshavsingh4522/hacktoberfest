@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+body {
+  background: url(xps-kLfkVa_4aXM-unsplash.jpg) no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  padding: 0px 100px;
+  background-color: rgb(0, 29, 61);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  transition: 0.5s;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  display: block;
+  height: 60px;
+  padding: 0px 20px;
+  line-height: 60px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background-color: rgb(22, 113, 155);
+}
+.menu-bar {
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+.drop {
+  position: relative;
+  transition: 1s;
+}
+.drop ul {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 210px;
+  flex-direction: column;
+  margin-right: 10px;
+  padding-right: 10px;
+  display: none;
+}
+.drop ul.active {
+  display: block;
+  height: max-content;
+}
+.drop ul li a {
+  background-color: rgb(22, 113, 155);
+  transition: 0.3s;
+}
+.drop ul li a:hover {
+  background-color: rgb(0, 29, 61);
+}
+.drop::after {
+  position: absolute;
+  content: "\f0d7";
+  font-family: FontAwesome;
+  color: white;
+  font-size: 22px;
+  top: 20px;
+  right: 5px;
+}
+.drop.active::after {
+  content: "\f0d8";
+}
+/* media query */
+@media screen and (max-width: 991px) {
+  header {
+    padding: 0 20px;
+  }
+  .menu-bar {
+    display: block;
+    cursor: pointer;
+  }
+  nav ul {
+    position: fixed;
+    flex-direction: column;
+    top: 60px;
+    left: -100%;
+    background-color: rgb(0, 162, 255);
+    width: 100%;
+    height: 100vh;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  nav ul li {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  nav ul li a {
+    font-size: 22px;
+  }
+  .drop ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
