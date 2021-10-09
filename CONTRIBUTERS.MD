@@ -95,5 +95,5 @@
 | Aman Srivastava      | [@aman1210](https://github.com/aman1210)                      |         1        |
 
 | Chelle Gentemann     | [@cgentemann](https://github.com/cgentemann)                  |         1        |
-
+| Nitin Kumar          | [@capt-doki](https://github.com/capt-doki)                    |         1        |
 
