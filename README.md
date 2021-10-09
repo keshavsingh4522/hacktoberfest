@@ -5,14 +5,14 @@
 # Special Note For Everyone
 ```py
 '''
-always make more then 4 pull request
+Always make more than 4 pull request
 lets you have made only 4 pull request to different projects
 but one project is excluded from hackoctoberfest event then your pull request will not be count and 
 then you have remains 3 valid pull request if these projects is not excluded.
 if you fail to make 4 pull request then you cant get swags or t-shirts.
 
-i will recommend you make pull request to your own repo which is very very saffest side for you..
-keep in mind that repo has hacktoberfest topic..
+I will recommend you make pull request to your own repo which is the safest thing to do..
+Always check if the repository has hactoberfest topic before contributing to it...
 '''
 ```
 
@@ -61,7 +61,7 @@ keep in mind that repo has hacktoberfest topic..
 ## Rules
 
 - Don't use filthy words and be welcome for beginners and other people in this community.
-
+- Do not take part in online bullying
 ---
 
 ## Github Contribution Rules
@@ -90,6 +90,7 @@ Steps for adding your name below
 
 <table>
 <tr><td align="center"><a href="https://github.com/find-aman"><kbd><img src="https://avatars3.githubusercontent.com/find-aman?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Aman Gupta</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=find-aman" title="Code"> :computer: </a> </td>
+<td align="center"><a href="https://avatars.githubusercontent.com/u/54259560?v=4"><kbd><img src="https://avatars.githubusercontent.com/u/54259560?v=4?size=400" width="100px;" alt="Saikat Bishal"/></kbd><br /><sub><b>Saikat Bishal</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=saikatbishaal" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/aman-ku"><kbd><img src="https://avatars3.githubusercontent.com/aman-ku?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Aman Kumar</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=aman-ku" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/SubhanshuMG"><kbd><img src="https://avatars3.githubusercontent.com/SubhanshuMG?size=400" width="100px;" alt=""/></kbd><br /><sub><b>SubhanshuMG</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=SubhanshuMG" title="Code"> :computer: </a> </td>    
 <td align="center"><a href="https://github.com/whysogreen"><kbd><img src="https://avatars3.githubusercontent.com/whysogreen?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Amy Tan</b></sub></a><br /><a href="https://github.com/keshavsingh4522/hacktoberfest2020/commits?author=whysogreen" title="Code"> :computer: </a> </td>
