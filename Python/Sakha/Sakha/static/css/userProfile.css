@@ -1,0 +1,358 @@
+/************************
+PROFILE SUB SECTION 2
+*************************/
+.profile--main--container {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  font-family: 'Poppins',sans-serif;
+}
+
+.profile__sub__container__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile__header__img__container {
+  width: 100%;
+  height: 20em;
+}
+
+.profile__header__img__container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile__avatar__img__container {
+  position: relative;
+}
+
+.profile__avatar__img__container .avatar__container {
+  text-align: Center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.profile__avatar__img__container .avatar__container h2 {
+  font-family: 'Nunito',sans-serif;
+  color: var(--h1-color);
+  line-height: 1.1;
+}
+
+.profile__avatar__img__container .avatar__container p {
+  color: var(--general-color);
+}
+
+.avatar__container div {
+  height: 11em;
+  width: 11em;
+  border-radius: 50%;
+  border: 5px solid var(--color-white);
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.avatar__container div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+/***************************
+PROFILE SUB CONTAINER TWO
+***************************/
+.profile__sub__container__two {
+  margin-top: 7em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto max-content;
+      grid-template-columns: auto -webkit-max-content;
+      grid-template-columns: auto max-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2em;
+  padding: 3em 1.5em;
+  color: var(--profile-para-color);
+}
+
+.profile__sub__container__two > div:not(.follow__btn__container) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: .65em 0;
+}
+
+.profile__sub__container__two > div:not(.follow__btn__container) i {
+  margin-right: .5em;
+}
+
+.follow__btn__container {
+  justify-self: flex-end;
+}
+
+.follow__btn__container button {
+  background-color: var(--h1-color);
+  padding: .3em .6em;
+  border-radius: .6em;
+  display: block;
+  color: var(--color-white);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: .9em;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.follow__btn__container button:hover, .follow__btn__container button:focus {
+  opacity: .75;
+  cursor: pointer;
+}
+
+.follow__details__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.follow__details__container .followers__btn {
+  margin-right: 1em;
+}
+
+.follow__details__container button {
+  color: var(--h1-color);
+  background: transparent;
+  display: block;
+  font-weight: 700;
+  border: none;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.follow__details__container button:hover, .follow__details__container button:focus {
+  opacity: .7;
+  cursor: pointer;
+}
+
+/**************************
+PROFILE USER POSTS SECTION
+*************************/
+.profile__user__posts {
+  max-width: 540px;
+  width: 93%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+}
+
+.profile__user__posts__container {
+  background-color: var(--home-logged-bg);
+  padding: 2em 0;
+}
+
+.profile__user__posts article {
+  width: 100%;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border-radius: .5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.profile__user__posts article:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.post {
+  /***************************
+POST AUTHOR RELATED STYLING
+***************************/
+}
+
+.post__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1em;
+}
+
+.post__author__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.post__author__img__wrapper {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  margin-right: .6em;
+}
+
+.post__author__img__wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid var(--general-color);
+}
+
+.post__author__name__container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.post__author__name__container .author__name {
+  font-size: .9em;
+  color: var(--h1-color);
+  line-height: 1.3;
+}
+
+.post__author__name__container span {
+  line-height: 1.2;
+  font-size: .75em;
+  display: block;
+  color: #636166;
+  font-weight: 600;
+}
+
+/***************************
+POST ASSETS
+***************************/
+.post__content__container {
+  padding: 0 1em;
+}
+
+.post__content__container a {
+  text-decoration: none;
+  display: block;
+  color: #333;
+  font-family: 'Nunito',sans-serif;
+  line-height: 1.5;
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+.post__image__container a {
+  text-decoration: none;
+  display: block;
+}
+
+.post__image__container img {
+  width: 100%;
+  display: block;
+}
+
+/************************
+LIKE AND COMMENT BTNS
+*************************/
+.post__footer {
+  border-top: 1px solid var(--input-border-color);
+  padding: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.heart__btn,
+.comment__btn {
+  text-decoration: none;
+  display: block;
+  color: #3f3d4f;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.heart__btn span,
+.comment__btn span {
+  font-size: .85em;
+}
+
+.heart__btn__active {
+  color: var(--grad-color-1);
+}

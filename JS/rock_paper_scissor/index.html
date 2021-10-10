@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google font CDN for Yeon Sung font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <!-- Google font CDN ends -->
+    <!-- Font Awesome kit --- for icons -->
+    <script src="https://kit.fontawesome.com/788fc8cac3.js" crossorigin="anonymous"></script>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Yeon Sung', cursive;
+        }
+
+        i {
+            font-size: 286px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="border rounded px-4 pb-4">
+            <h1 class="text-center my-4">
+                <img src="image.png" alt="image" width="70px" /> Rock-Paper-Scissor
+            </h1>
+            <div class="text-center my-3" id="iconContainer">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">Press Play Button to start</h1>
+                    </div>
+                  </div>
+            </div>
+            <div class="form-group text-center" id="playDiv">
+                <button class="btn btn-primary btn-block" id="play">Play</button>
+            </div>
+
+            <div class="form-group text-center" id="spinner" style="display: none;">
+                <button class="btn btn-primary btn-block" disabled>
+                    <span class="spinner-border spinner-border-sm"></span>
+                    <span id="loading"></span>
+                </button>
+            </div>
+            <script src="script.js"></script>
+</body>
+
+</html>

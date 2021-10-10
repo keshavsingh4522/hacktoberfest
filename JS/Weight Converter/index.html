@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="wrapper">
+          <h1>Weight Converter</h1>
+          <form class="form">
+            <input
+              type="number"
+              id="input"
+              placeholder="Enter The Number In Pounds"
+            />
+            <select name="select" id="select">
+              <option value="pound" id="pound">Pound</option>
+              <option value="kg" id="kg">Kg</option>
+              <option value="ounce" id="ounce">Ounce</option>
+              <option value="gram" id="gram">Gram</option>
+            </select>
+          </form>
+          <div id="card">
+            <div id="kgSelect" class="selects">
+              Kilogram
+              <div id="kgInput" class="inputs"></div>
+            </div>
+
+            <div id="poundSelect" class="selects">
+              Pound
+              <div id="poundInput" class="inputs"></div>
+            </div>
+            <div id="ounceSelect" class="selects">
+              Ounce
+              <div id="ounceInput" class="inputs"></div>
+            </div>
+            <div id="gramSelect" class="selects">
+              Gram
+              <div id="gramInput" class="inputs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

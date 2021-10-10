@@ -1,0 +1,17 @@
+{
+  "name": "test-discord-api",
+  "version": "1.0.0",
+  "description": "A Discord API Package that will ease the use of Discord API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "CrazyBotBoy",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}

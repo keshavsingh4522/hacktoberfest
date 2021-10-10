@@ -1,0 +1,23 @@
+body {
+    color: white;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clock {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10vw;
+}
+
+#hex-color {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+}
+
+#about {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vw;
+}

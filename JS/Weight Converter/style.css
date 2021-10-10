@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  padding: 1em 2em 4em;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  background: white;
+  justify-content: space-between;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 2em;
+}
+
+select {
+  height: 2em;
+  outline: none;
+  border: none;
+}
+.selects:nth-child(1),
+.selects:nth-child(2) {
+  margin-top: 0.5em;
+}
+.selects {
+  background: white;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  min-height: 50px;
+  font-size: 1.3rem;
+  padding-left: 0.3em;
+}

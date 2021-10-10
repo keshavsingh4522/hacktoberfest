@@ -1,0 +1,154 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/userProfile.min.css')}}">
+{% endblock stylesheet %}
+
+{% block body %}
+<main class="profile--main--container">
+
+
+    <!-- _____________________________  User pictures  _________________________________ -->
+    <section class="profile__sub__container__one">
+
+        <div class="profile__header__img__container">
+            <img src="{{url_for('static', filename='user-images/'+user.header_pic)}}" alt="User Header Picture" class="header__img">
+        </div>
+
+        <div class="profile__avatar__img__container">
+
+            <div class="avatar__container">
+                <div class="avatar__wrapper">
+                    <img src="{{url_for('static', filename='user-images/'+user.profile_pic)}}" alt="User Profile Picture" class="avatar">
+                </div>
+                <h2>{{user.firstname}} {{user.lastname}}</h2>
+                <p>@{{user.username}}</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ______________________________________________ -->
+
+
+
+
+    <!-- ______________________________  User Info section  __________________________________ -->
+    <section class="profile__sub__container__two">
+
+        <div>
+            {% if user.about_user %}
+            <p class="about_user">{{user.about_user}}</p>
+            {% endif %}
+
+            {% if user.address %}
+            <div class="location__container">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>{{user.address}}</span>
+            </div>
+            {% endif %}
+
+            <div class="follow__details__container">
+                <button class="followers__btn">{{user.followers.count()}} Followers</button>
+                <button class="following__btn">{{user.followed.count()}} Following</button>
+            </div>
+        </div>
+
+        <div class="follow__btn__container">
+
+            {% if current_user.is_following(user) %}
+            <button class="follow__btn " data-userid="{{user.id}}">
+                following
+            </button>
+
+            {% else %}
+            <button class="follow__btn" data-userid="{{user.id}}">
+                follow
+            </button>
+            {% endif %}
+
+        </div>
+
+    </section>
+    <!-- ______________________________________________ -->
+
+
+
+    
+    <!--------------------------------- All the posts of the current user ---------------------------------->
+    <section class="profile__user__posts__container">
+
+        <div class="profile__user__posts">
+        
+            {% for post in posts %}
+            <article>
+
+                <div class="post__header">
+
+                    <div class="post__author__container">
+
+                        <div class="post__author__img__wrapper">
+                            <img src="{{url_for('static',filename='user-images/'+ user.profile_pic)}}" alt="">
+                        </div>
+
+                        <div class="post__author__name__container">
+                            <p class="author__name" title='Post Author'>{{user.firstname}}</p>
+                            <span>{{post.postDate.strftime('%d/%m/%Y')}}</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="post__body">
+
+                    <div class="post__content__container">
+                        <a href="">
+                            {{post.content | truncate(250, False, '')}}
+                        </a>
+                    </div>
+
+                    {% if post.postImage %}
+                    <div class="post__image__container">
+                        <a href="">
+                            <img src="{{url_for('static',filename='user-images/'+post.postImage)}}" alt="Post Image">
+                        </a>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+
+                <div class="post__footer">
+                    {% if current_user.has_liked(post) %}
+                    <button class="heart__btn heart__btn__active" data-postid = {{post.id}}>
+                        <i class="fas fa-heart"></i>
+                    {% else %}   
+                    <button class="heart__btn" data-postid = {{post.id}}>
+                        <i class="far fa-heart"></i>
+                    {% endif %}
+
+                        <span style="color:rgb(63, 61, 79)">{{post.likes.count()}}</span>
+                    </button>
+
+                    <a href="" class="comment__btn" title='Comment'>
+                        <i class="fas fa-comment-alt"></i>
+                        <span>10</span>
+                    </a>
+                </div>
+
+            </article>
+            {% endfor %}
+            
+        </div>
+
+    </section>
+
+    
+</main>
+{% endblock body %}
+
+
+{% block script %}
+<script src="{{url_for('static',filename='js/userProfile.js')}}"></script>
+{% endblock %}
