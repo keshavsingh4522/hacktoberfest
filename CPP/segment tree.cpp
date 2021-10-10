@@ -3,7 +3,7 @@ using namespace std;
 #define N 1005
 int n,T[N<<2],arr[N];
 /*
-    
+    // i forgot to add tag
     "Fake" segment tree (with single element update)
     use array instead of pointer
     (Botton-up with bitwise operation )
