@@ -33,6 +33,10 @@
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
 | Satyam Gadekar       | [@07Satyam](https://github.com/07Satyam)                      |         0        |
+| Brajesh Singh        | [@thakurbrajeshsingh](https://github.com/thakurbrajeshsingh)  |         1        |
+
+
+
 | Musadiq Peerzada     | [@muxa11](https://github.com/muxa11)                          |         0        |
 | VAJRESH              | [@VAJRESH](https://github.com/VAJRESH)                        |         1        |
 | Mayank Sharma        | [@MayankGeek](https://github.com/MayankGeek)                  |         1        |
