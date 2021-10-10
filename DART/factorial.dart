@@ -22,6 +22,14 @@ int factorial(int num) {
   return fac;
 }
 
+int factorialRecursion(int fact){
+	if(fact==0){
+			return 1;
+	}
+	int facto = fact*factorialRecursion(fact-1);
+	return facto;
+}
+
 void main() {
   
   // Test the Function
