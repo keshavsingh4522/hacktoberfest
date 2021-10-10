@@ -1,5 +1,7 @@
 //Sorting Array Using Selection Sort.
+package com.java;
 
+import java.util.Arrays;
 
 public class Selection_Sort{
     public static void main(String[] args) {
