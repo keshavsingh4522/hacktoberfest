@@ -1,0 +1,23 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block title %}My Blog{% endblock %}
+<link href="{% static "css/blog.css" %}" rel="stylesheet">
+{% block content %}
+<h1 class="d-flex justify-content-center display-1">My Blog</h1>
+<div class="col-10">
+    {% for post in posts %}
+        <div class="card m-4">
+            <div class="card-body">
+                <h2 class="card-title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                <p class="card-text">{{ post.body|truncatewords:30|linebreaks }}</p>
+                <h6 class="card-subtitle text-muted d-flex justify-content-end">Published {{ post.publish }} by {{ post.author }}</h6>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}
+{% block numberingpages %}
+    <nav class="navbar fixed-bottom navbar-dark bg-light d-flex justify-content-center">
+        {% include "./pagination.html" with page=posts %}
+    </nav>
+{% endblock %}
