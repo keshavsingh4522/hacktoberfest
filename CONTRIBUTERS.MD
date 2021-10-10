@@ -8,6 +8,7 @@
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
 | Justinus Hermawan    | [@justinushermawan](https://github.com/justinushermawan/)     |         0        |
+| Hemant Kumar Mandal  | [@Hemant1101](https://github.com/Hemant1101)                  |         0        |
 | Yunxin Gan           | [@samganyx](https://github.com/samganyx/)                     |         0        |
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
