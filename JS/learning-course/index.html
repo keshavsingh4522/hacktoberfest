@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <audio src="/Maroon 5 - Wait.mp3" type="audio/mpeg" id="audio"></audio>
+  <div id="app">
+    <h1 id="title">JavaScript - The Web Audio API</h1>
+    
+    <div class="control-card">
+      <input id="volume" type="range" min="0" max="1" step="0.01" value="1" orient="vertical">
+      
+      <div class="controls-wrapper">
+        <button class="paused" id="playbtn"></button>
+        <span id="time"></span>
+        <input type="range" id="seeker" min="0" max="1" step="0.01">
+        <span id="duration"></span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

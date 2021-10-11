@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 6px 6px !important;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, #577399 49%, #577399 51%, rgba(0, 0, 0, 0) 55%);
+  background-color: white;
+}
+
+button {
+  background-color: unset;
+  border: unset;
+  outline: unset;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  /* Use latest modern browser to see effects of gap property */
+  gap: 20px;
+
+  max-width: 425px;
+  margin: 0 auto;
+}
+
+.control-card {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  
+  padding: 8px 16px;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.controls-wrapper > input {
+  flex: 1;
+}
+
+.controls-wrapper > span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.playing {
+  position: relative;
+}
+
+.playing::after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 48px;
+  width: 48px;
+  background-image: url('/pause.svg');
+}
+
+.paused {
+  position: relative;
+}
+
+.paused::after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 48px;
+  width: 48px;
+  background-image: url('/play.svg');
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#volume[type=range][orient=vertical] {
+  writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
+  width: 8px;
+  height: 70px;
+  padding: 0 5px;
+}
