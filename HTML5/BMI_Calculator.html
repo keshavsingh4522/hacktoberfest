@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+<script>
+function calculateBmi() {
+    var weight = document.techBMI.weight.value
+    var height = document.techBMI.height.value
+    if(weight > 0 && height > 0){	
+    var finalBmi = weight/(height*height)
+    document.techBMI.bmi.value = finalBmi.toFixed(3);
+    if(finalBmi < 18.5){
+    document.techBMI.meaning.value = "You are unhealthy, too thin."
+        }
+    if(finalBmi > 18.5 && finalBmi < 25){
+    document.techBMI.meaning.value = "You are healthy enough."
+        }
+    if(finalBmi > 25 &&  finalBmi <30){
+    document.techBMI.meaning.value = "You have overweight."
+        }
+    if(finalBmi > 30){
+    document.techBMI.meaning.value = "Your condition is serious."
+        }
+        }
+        else{
+        alert("Data you've entered might be incorrect. Please check and try again.")
+        }
+    
+        }
+</script>
+</head>
+<style>
+*   {
+    box-sizing: border-box;
+    background: rgb(235, 232, 232);
+}
+.decoration-one {
+    background-color:rgb(249, 154, 154);
+    margin: 0;
+    border:0;
+    border-radius: 12px;
+    padding: 9px;
+    font-weight: bold;
+}
+.decoration-one:hover {
+    background-color:yellow;
+}
+div{
+    width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+</style>
+<body>
+    <div>
+        <form name="techBMI">
+        <h3>BMI Calculator</h3>
+        <br/>
+        <input type="text" name="weight" placeholder="Enter Weight (kg)" size="20"><br /><br/>
+        <input type="text" name="height" placeholder="Enter Height (Meters)" size="20"><br /><br/>
+        <input class="decoration-one px-3 py-2" type="button" value="Calculate BMI" onClick="calculateBmi()"><br /><br/>
+        <input type="text" name="bmi" placeholder="Your BMI Will be here" size="20"><br /><br/>
+        <input type="text" name="meaning" size="35"><br /><br/>
+        <input class="decoration-one px-3 py-2" type="reset" value="Reset" />
+        <br/>
+        </form>
+        </div>
+</body>
+</html>
