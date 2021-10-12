@@ -1,0 +1,11 @@
+import java.util.*;
+public class findChar{
+
+  public static int findChar(String word, char target){
+    //Your code goes here
+    for(int i = 0; i < word.length(); i++){
+      if(word.charAt(i)=target) return i;
+    }
+    return -1;
+  }
+}
