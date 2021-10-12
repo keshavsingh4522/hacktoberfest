@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(270deg,yellow,red);
+}
+div{
+    text-align: center;
+}
+#textbox{
+    display: block;
+width: 70%;
+height: 23.375rem;
+margin: auto;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+margin-top: 2%;
+font-size: 15px;
+}
+button{
+    font-size: 30px;
+    margin: auto;
+}
+p{
+    font-size: 30px;
+    font-style: oblique;
+}
