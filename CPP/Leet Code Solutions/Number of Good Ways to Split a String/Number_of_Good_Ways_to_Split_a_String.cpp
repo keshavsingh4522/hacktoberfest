@@ -1,3 +1,12 @@
+/* Using Prefix Sum Technique
+Maintain Two arrays and Using Prefix Sum
+
+Front[] - ith index Store count of unique characters in the range [0..i]
+Back[] - ith index Store count of unique characters in the range [i....n-1]
+
+Then by comparing values of both array, we get answer in O(n) time.
+*/
+
 class Solution {
 public:
     int numSplits(string s) {
