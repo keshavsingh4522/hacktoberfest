@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+#include<stdlib.h>
 int main()
 {
-    int arr[50];
     int n, number, ind = -1;
     printf("Enter the number of elements : ");
     scanf("%d", &n);
+    int* arr = malloc(sizeof(int) * n);
     printf("Enter Array Elements : ");
     for (int i = 0; i < n; i++)
     {
