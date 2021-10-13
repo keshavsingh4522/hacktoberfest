@@ -3,13 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void inti_code() {
-#ifndef ONLINE_JUDGE
-	freopen("../input.txt", "r", stdin);
-	freopen("../output.txt", "w", stdout);
-#endif
-}
-
 // TC : O(n^2) Sc: O(1)
 // int trap_water(int heights[], int n) {
 // 	int result = 0;
@@ -82,9 +75,6 @@ int trap_water(int heights[], int n) {
 }
 
 int main() {
-
-	inti_code();
-
 	int n; cin >> n;
 
 	int arr[n];
