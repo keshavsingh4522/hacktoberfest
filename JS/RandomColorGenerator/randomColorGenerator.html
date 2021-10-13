@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Colors</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .btn-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .btn {
+                width: 10rem;
+                height: 3rem;
+                border: 0.2rem black solid;
+                border-radius: 0.5rem;
+                margin: 10px auto;
+                cursor: pointer;
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .colorBox {
+                width: calc(20% - 4px);
+                height: 100px;
+                background-color: blueviolet;
+                border: 2px solid black;
+                margin: 2px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow: burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="btn-container"><button class="btn">Click me!</button></div>
+        <div class="container"></div>
+    </body>
+
+    <script>
+        const container = document.querySelector('.container');
+        const btn = document.querySelector('.btn');
+        const colors = '1234567890abcdef';
+
+        function randomColors() {
+            let colorValue = '';
+            for (let i = 0; i < 6; i++) {
+                colorValue += colors.charAt(
+                    Math.floor(Math.random() * colors.length)
+                );
+            }
+            return '#' + colorValue;
+        }
+        btn.addEventListener('click', () => {
+            container.innerHTML = '';
+            for (let i = 0; i < 50; i++) {
+                const colorBox = document.createElement('div');
+                colorBox.classList = 'colorBox';
+                let x = randomColors();
+                colorBox.style.backgroundColor = x;
+                colorBox.innerText = x;
+                container.appendChild(colorBox);
+            }
+        });
+    </script>
+</html>
