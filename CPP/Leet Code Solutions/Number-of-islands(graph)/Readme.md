@@ -14,10 +14,12 @@ An island is surrounded by water and is formed by connecting adjacent lands hori
 ]
 
 <strong>Output:</strong> 1
-<strong>Explanation:</strong> There is one island(i.e one block of connected 1's in the matrix)  ["1","1","1","1"," "],
-             ["1","1"," ","1"," "],
-             ["1","1"," "," "," "]
-             and the rest is water .
+<strong>Explanation:</strong> There is one island(i.e one block of connected 1's in the matrix)
+["1","1","1","1"," "],
+["1","1"," ","1"," "],
+["1","1"," "," "," "]
+
+and the rest is water .
 </pre>
 
 <p><strong>Example 2:</strong></p>
