@@ -12,7 +12,7 @@ import datetime
  Enter the no of post to like. 
  If you like to run this bot with headless browser change "toRunwith" to True.
  Your all up and ready to roll!
-								- MdFarhaan
+							
 ====================== '''
 
 #=============================================
