@@ -26,7 +26,7 @@ text_turtle.hideturtle()
 score_turtle = t.Turtle()
 score_turtle.hideturtle()
 score_turtle.speed(0)
-
+#Outside gaming window
 def outside_window():
     left_wall = -t.window_width()/2
     right_wall = t.window_width()/2
@@ -35,14 +35,14 @@ def outside_window():
     (x,y) = caterpillar.pos()
     outside = x < left_wall or  x > right_wall or  y < bottom_wall or y > top_wall
     return outside
-
+#Game Over
 def game_over():
     caterpillar.color('yellow')
     leaf.color('yellow')
     t.penup()
     t.hideturtle()
     t.write('GAME OVER!',align='center' , font=('Aerial',30,'normal'))
-
+#Displaying Score
 def display_score(current_score):
     score_turtle.clear()
     score_turtle.penup()
@@ -50,13 +50,13 @@ def display_score(current_score):
     y = (t.window_height() / 2)-50
     score_turtle.setpos(x,y)
     score_turtle.write(str(current_score) , align = 'right',font=('Arial',40,'bold'))
-
+#Placing a Leaf
 def place_leaf():
     leaf.hideturtle()
     leaf.setx(rd.randint(-200,200))
     leaf.sety(rd.randint(-200,200))
     leaf.showturtle()
-
+#Start of Game
 def start_game():
     global game_started
     if game_started:
@@ -85,23 +85,23 @@ def start_game():
         if outside_window():
             game_over()
             break
-
+#Moving Up
 def move_up():
     if caterpillar.heading() == 0 or caterpillar.heading() == 180:
         caterpillar.setheading(90)
-
+#Moving Down
 def move_down():
     if caterpillar.heading() == 0 or caterpillar.heading() == 180:
         caterpillar.setheading(270)
-
+#Moving Left
 def move_left():
     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
         caterpillar.setheading(180)
-
+#Moving Right
 def move_right():
     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
         caterpillar.setheading(0)
-
+#Main Function
 t.onkey(start_game,'space')
 t.onkey(move_up,'Up')
 t.onkey(move_right,'Right')
