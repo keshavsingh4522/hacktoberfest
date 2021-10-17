@@ -33,7 +33,6 @@
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
 | Satyam Gadekar       | [@07Satyam](https://github.com/07Satyam)                      |         0        |
-| Prateek Majumder     | [@prateekmaj21](https://github.com/prateekmaj21)                      |         0        |
 | Musadiq Peerzada     | [@muxa11](https://github.com/muxa11)                          |         0        |
 | VAJRESH              | [@VAJRESH](https://github.com/VAJRESH)                        |         1        |
 | Mayank Sharma        | [@MayankGeek](https://github.com/MayankGeek)                  |         1        |
@@ -218,3 +217,4 @@
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
 | Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
+| Prateek Majumder     | [@prateekmaj21](https://github.com/prateekmaj21)              |         1        |
