@@ -1,28 +1,26 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
- int n, i, max, min, a[100];
- printf("Enter total number of elements:");
- scanf("%d",&n);
- printf("Enter values:");
- for (i=0;i<n;i++)
- {
- 	scanf("%d", &a[i]);
- }
- max=a[0];
- min=a[0];
- for (i=1;i<n;i++)
- {
- 	if (a[i]>max)
- 	{
- 		max=a[i];
+	int n, M, max=M, min=M, temp;
+	printf("Enter total number of elements: ");
+	scanf("%d",&n);
+	for (int i=1;i<n;i++)
+	{
+		printf("Enter value %d: ", i);
+		scanf("%d", &M);
+		if (M < min)
+		{
+			temp = M;
+			M = max;
+			min = temp;
+		}
+		else{
+			temp = M;
+			M = max;
+			max = temp;
+		}
 	}
-	if (a[i]<min)
- 	{
- 		min=a[i];
-	}
- }
- printf("Maximum element: %d\n", max);
- printf("Minimum element: %d", min);
- return 0;
- }
+	printf("Maximum: %d\n", max);
+	printf("Minimum: %d\n", min);
+	return 0;
+}
