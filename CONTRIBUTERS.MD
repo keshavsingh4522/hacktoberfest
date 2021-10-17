@@ -29,6 +29,7 @@
 | Rithvik Ayithapu     | [@rithvik2607](https://github.com/rithvik2607)                |         0        |
 | Divy                 | [@dr-one-punch](https://github.com/dr-one-punch)              |         0        |
 | Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
+| Caleb Felix          | [@calebfelix](https://github.com/calebfelix)                  |         0        |
 | Dakshay Ahuja        | [@dakshayahuja](https://github.com/dakshayahuja)              |         0        |
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
