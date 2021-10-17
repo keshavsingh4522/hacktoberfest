@@ -1,0 +1,3 @@
+[submodule "Powershell/oh-my-posh"]
+	path = Powershell/oh-my-posh
+	url = https://github.com/csrakowski/oh-my-posh.git
