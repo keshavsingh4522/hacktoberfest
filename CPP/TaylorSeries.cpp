@@ -1,4 +1,4 @@
-/A code to find e^x using taylor series
+//A code to find e^x using taylor series
 #include <iostream>
 using namespace std;
 // Function to find e^x
