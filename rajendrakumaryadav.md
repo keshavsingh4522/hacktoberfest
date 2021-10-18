@@ -1,0 +1,2 @@
+- Rajendra Kumar R Yadav
+- Added Open Hashing Algorithm implementation in C.
