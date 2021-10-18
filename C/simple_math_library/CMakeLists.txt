@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.18)
+project(simplemath VERSION 0.1 DESCRIPTION "SIMPLE MATH Library")
+file(GLOB libsources "src/*.c")
+add_library(simplemath ${libsources})
+add_executable(simplemath_exec main.c)
+target_include_directories(simplemath_exec PUBLIC "${PROJECT_SOURCE_DIR}/include")
+target_include_directories(simplemath PUBLIC "${PROJECT_SOURCE_DIR}/include")
+target_link_libraries(simplemath_exec simplemath)
