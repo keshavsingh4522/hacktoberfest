@@ -4,9 +4,9 @@ int adj[1001][1001];
 int main()
 {
     int n,m;
-    cout<<"enter number of nodes";
+    cout<<"Enter number of nodes";
     cin>>n;
-    cout<<"enter number of edges";
+    cout<<"Enter number of edges";
     cin>>m;
     adj[n+1][n+1];
     for(int i=0;i<m;i++)
