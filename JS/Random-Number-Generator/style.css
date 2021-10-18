@@ -1,0 +1,153 @@
+.RandomContainer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    min-width: 350px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+  }
+  
+  .inputBox {
+    position: relative;
+    width: 700px;
+  }
+  
+  .inputBox input {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin: 15px 0 20px;
+    background: #151515;
+    outline: none;
+    padding: 0 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #fff;
+    /*    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.05),
+      inset 4px 4px 10px rgba(0, 0, 0, 1),
+       inset -4px -4px 10px rgba(0, 0, 0, 1),
+      4px 4px 10px rgba(255, 255, 255, 0.05);  */
+  
+    text-align: center;
+  }
+  
+  .min label {
+    float: left;
+    line-height: 80px;
+    font-size: 25px;
+  }
+  .max label {
+    float: left;
+    line-height: 80px;
+    font-size: 25px;
+  }
+  
+  .range-random .min-number {
+    display: flex;
+    float: left;
+    margin-left: 3%;
+    margin-right: 9%;
+    width: 35%;
+  }
+  
+  .range-random .max-number {
+    display: flex;
+    float: right;
+    width: 35%;
+  }
+  
+  .inputBox input::placeholder {
+    letter-spacing: 0px;
+  }
+  
+  .inputBox #btn {
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .inputBox #btn:active {
+    background: #9c27b0;
+  }
+  
+  
+  @media (min-device-width: 50px) and (max-device-width: 480px)  {
+  
+    .RandomContainer {
+      position: relative;
+      width: 80%;
+      height: 400px;
+      min-width: 250px;
+      min-height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      user-select: none;
+    }
+  
+    .inputBox {
+      position: relative;
+      width: 250px;
+    }
+  
+    .inputBox input {
+      position: relative;
+      width: 6  0%;
+      height: 60px;
+      border: none;
+      margin: 15px 0 20px;
+      background: #151515;
+      outline: none;
+      padding: 0 20px;
+      font-size: 18px;
+      letter-spacing: 4px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      color: #fff;
+      text-align: center;
+    }
+  
+    
+    .min label {
+      float: left;
+      margin-right: 10%;
+      margin-left:20%;
+      line-height: 80px;
+      font-size: 25px;
+    }
+    .max label {
+      float: left;
+      margin-left:20%;
+      margin-right: 10%;
+      line-height: 80px;
+      font-size: 25px;
+    }
+  
+    .range-random .min-number {
+      display: flex;
+      float: left;
+      width: 35%;
+    }
+    
+    .range-random .max-number {
+      display: flex;
+      float: left;
+      width: 35%;
+    }
+  
+    }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Number Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Random Generator</h1>
+    <div class="RandomContainer">
+        <div class="inputBox">
+            <div class="range-random">
+                <span class="min">
+                    <label>Min:</label>
+                    <input class="min-number" type="number" placeholder="minimun" value="0">
+                </span>
+                <span class="max">
+                    <label>Max:</label>
+                    <input class="max-number" type="number" placeholder="maximum" value="100">
+                </span>
+            </div>
+
+            <input type="text" name="" placeholder="Your Number" id="result" readonly="">
+            <div id="btn">Generate</div>
+        </div>
+    </div>
+
+    <script src="randomGen.js"></script>
+</body>
+
+</html>
