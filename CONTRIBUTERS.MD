@@ -28,7 +28,7 @@
 | Souvik Nayak         | [@Souvik-Nayak](https://github.com/Souvik-Nayak)              |         1        |
 | Rithvik Ayithapu     | [@rithvik2607](https://github.com/rithvik2607)                |         0        |
 | Divy                 | [@dr-one-punch](https://github.com/dr-one-punch)              |         0        |
-| Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
+| Meet Bhatia          | [@meetb02](https://github.com/meetb02)                        |         0        |
 | Dakshay Ahuja        | [@dakshayahuja](https://github.com/dakshayahuja)              |         0        |
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
@@ -188,7 +188,7 @@
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
-| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                |         1        |
+| Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                    |         1        |
 | Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
