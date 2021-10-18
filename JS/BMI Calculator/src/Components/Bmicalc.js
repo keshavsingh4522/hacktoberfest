@@ -8,7 +8,6 @@ const Bmicalc = () => {
   const [bmi, setBmi] = useState(0);
   const [status, setStatus] = useState();
 
-
   const calculate = (e) => {
     e.preventDefault();
     const isValid =
