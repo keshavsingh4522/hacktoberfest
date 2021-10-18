@@ -1,18 +1,20 @@
+from kivy.uix.image import Image
 from kivy.uix.screenmanager import Screen
 from kivymd.uix.label import MDLabel
 from pytube import YouTube
 import pytube
 from kivymd.app import MDApp
-from kivymd.uix.button import MDRectangleFlatButton
+from kivymd.uix.button import MDFillRoundFlatButton
 from kivymd.uix.textfield import MDTextField
 
 
 class MainApp(MDApp):
     def build(self):
         screen = Screen()
-
+        self.theme_cls.primary_palette="Pink"
         def download_video(url):
             if url != None:
+                message.text = "Downloading..."
                 try:
                     my_video = YouTube(url)
                     print(my_video.title)
@@ -21,9 +23,10 @@ class MainApp(MDApp):
                     print(my_video.description)
                     print(my_video.thumbnail_url)
                     my_video = my_video.streams.get_highest_resolution()
-                    st = []
-                    title.text=my_video.title
-                    # my_video.download()
+
+                    my_video.download('Media')
+
+                    message.text ="Video Downloaded Successfully."
                 except pytube.exceptions.RegexMatchError:
                     print('The Regex pattern did not return any matches for the video: {}'.format(url))
 
@@ -32,6 +35,8 @@ class MainApp(MDApp):
 
                 except pytube.exceptions.VideoUnavailable:
                     print('The following video is unavailable: {}'.format(url))
+                # my_video.download()
+
         url = MDTextField(
             size_hint=(0.8, 1),
             hint_text= "Enter video Url",
@@ -41,28 +46,38 @@ class MainApp(MDApp):
             on_focus=self.set_error_message,
             pos_hint={"center_x": 0.5, "center_y": 0.5},
         )
-        title = MDLabel(
+        message = MDLabel(
         text= "",
         halign= "center",
-        theme_text_color= "Custom",
         pos_hint={"center_x": 0.5, "center_y": 0.2},
+        color= (0, 1, 0)
         )
+
         screen.add_widget(
-            MDRectangleFlatButton(
+            MDFillRoundFlatButton(
                 text="Youtube Downloader",
-                pos_hint={"center_x": 0.5, "center_y": 0.3},
+                pos_hint={"center_x": 0.5, "center_y": 0.4},
                 on_press = lambda x:download_video(url.text),
             ),
         )
         screen.add_widget(
             url
+
         )
         screen.add_widget(
-            title
+            Image(
+                source="logo.png",
+                pos_hint={"center_x": 0.5, "center_y": 0.7},
+                size_hint_x=0.3,
+                size_hint_y=0.3
+                  )
+        )
+        screen.add_widget(
+            message
         )
 
         return screen
-        # print(url.text)
+        
 
     def set_error_message(self, instance_textfield):
         self.screen.ids.text_field_error.error = True
@@ -74,12 +89,6 @@ MainApp().run()
 
 
 
-# print('Choose One: ')
-# for stream in my_video.streams:
-#     st.append(stream)
-#     print(stream)
-#
-# ch = input()
 
 
 
