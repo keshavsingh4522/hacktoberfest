@@ -1,5 +1,10 @@
-class Solution {
-    public int numDecodings(String s) {
+public class DecodeWays{
+    public static void main(String args[]){
+        String s="123234";
+        System.out.print(numDecodings(s));
+        
+    }
+    public static int numDecodings(String s) {
       
         int dp[]=new int[s.length()+1];
         Arrays.fill(dp,-1);
