@@ -9,5 +9,5 @@ def TowerOfHanoi(n, source, destination, auxiliary):
 
 
 # Driver code
-n = 4                               
+n = 4             
 TowerOfHanoi(n, 'A', 'B', 'C')        # function calling with arguments
