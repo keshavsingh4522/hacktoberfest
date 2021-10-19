@@ -1,0 +1,10 @@
+s = input("Enter a word: ")
+def pallindrome(s):
+  s = s.lower()
+  return s == s[::-1]
+  
+ res = pallindrome(s)
+ if res == True:
+  print(f"The word '{s}' is a pallindrome"}
+ else:
+  print(f"The word '{s}' is not a pallindrome"}
