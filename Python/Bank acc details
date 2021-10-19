@@ -25,4 +25,4 @@ elif i ==2:
     amt = int(input("Enter the amount you want to deposit: Rs "))
     obj.deposit(amt)
 else:
-    print("Error!...Please try again.") 
+    print("Error! Please try again.") 
