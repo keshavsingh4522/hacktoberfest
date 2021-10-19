@@ -10,3 +10,17 @@ while(i <= a and i <= b):
     i = i + 1
     
 print("\n HCF of {0} and {1} = {2}".format(a, b, gcd))
+
+
+#function created to calculate GCD optimally
+def gcd(a, b):
+    if (b==0):
+        return a
+
+
+    else:
+        a_new = a%b
+        return gcd(b,a_new)
+
+
+print("GCD is: ",gcd(a,b))
