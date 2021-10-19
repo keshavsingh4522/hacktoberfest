@@ -1,0 +1,28 @@
+class Bank():
+    def __init__(self, accname, accnum, balance):
+        self.accname = accname
+        self.accnum = accnum
+        self.balance = balance
+    def withdraw(self, amt):
+        self.amt = amt
+        print(f"Rs {amt} withdrawn from your account number: {accnum}")
+        availbal = balance - amt
+        print(f"Hello {accname} your available balance is Rs {availbal}")
+    def deposit(self, amt):
+        print(f"Rs {amt} has been deposited to you account number: {accnum}")
+        availbal = balance + amt
+        print(f"Hello {accname} you available balance is Rs {availbal}")
+
+accname = input("Enter the account holder name: ")
+accnum = input("Enter your account number: ")
+balance = int(input("Enter the balance amount: Rs "))
+obj = Bank(accname, accnum, balance)
+i = int(input("Please enter your choice \nPress 1 to withdraw money \nPress 2 to deposit money\n"))
+if i == 1:
+    amt = int(input("Enter the amount you want to withdraw: Rs "))
+    obj.withdraw(amt)
+elif i ==2:
+    amt = int(input("Enter the amount you want to deposit: Rs "))
+    obj.deposit(amt)
+else:
+    print("Error!...Please try again.") 
