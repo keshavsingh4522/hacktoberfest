@@ -1,0 +1,55 @@
+class Person:
+    def __init__(self):
+        self.name = input("Enter your name: ")
+        self.address = input("Enter your address: ")
+        self.phone = int(input("Enter your phone number: "))
+
+class Student(Person):
+    def __init__(self):
+        super().__init__()
+        self.roll_no = input("Enter your roll number: ")
+        print("\nEnter your Semester I marks")
+        tot_1 = 0
+        tot_2 = 0
+        for i in range(1, 6):
+            self.marks_1 = input(f"Enter subject {i} marks: ")
+            tot_1 += int(self.marks_1)
+        print("\nEnter your Semester II marks")
+        for i in range(1, 6):
+            self.marks_2 = input(f"Enter subject {i} marks: ")
+            tot_2 += int(self.marks_2)
+    
+class Sports(Student):
+    def __init__(self):
+        super().__init__()
+        grade = int(input("Enter your Sports marks: "))
+        if grade >= 90 and grade <=100:
+            Sports = 'A'
+        elif grade>=70 and grade<90:
+            Sports = 'B'
+        elif grade>=50 and grade<70:
+            Sports = 'C'
+        elif grade>=40 and grade<50:
+            Sports = 'D'
+        elif grade>=0 and grade<40:
+            Sports = 'Fail'
+        else:
+            print("Error!...Enter correct Sports marks.")
+        #print(f"{name}, your Sports grade is: {Sports}")
+    
+class Result(Sports):
+    def __init__(self):
+        super().__init__()
+
+    def display(self):
+        print("\n\nDisplaying your details: ")
+        print(f"Name: {self.name}")
+        print(f"Address: {self.address}")
+        print(f"Phone number: {self.phone}")
+        print(f"Roll number: {self.roll_no}")
+        print(f"Sem I total marks: {self.tot_1}")
+        print(f"Sem II total marks: {self.tot_2}")
+        print(f"Sports Grade: {self.s_grade}")
+
+student = Result()
+student.display()
