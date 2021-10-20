@@ -1,11 +1,11 @@
 '''
-Given an expression string exp, write a program to examine whether the pairs and the orders of “{“, “}”, “(“, “)”, “[“, “]” are correct in exp.
+Given an expression string exp, write a program to examine whether the pairs and the orders of â€œ{â€œ, â€œ}â€, â€œ(â€œ, â€œ)â€, â€œ[â€œ, â€œ]â€ are correct in exp.
 Input:
 {[()]}
 Output:
 1
 '''
-def isBalanced(self, s):
+def isBalanced(s):
         stk=[]
         top=-1
         for i in range(len(s)):
