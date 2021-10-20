@@ -1,4 +1,4 @@
-import math
+import math #Project: Calculator for Sin, Cosine, and Tan
 import numpy
 from fractions import Fraction
 
