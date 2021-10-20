@@ -1,10 +1,7 @@
-//Code for Fibonacci series in JavaScript
-const nthFibonacci = (n) => {
-  // set the base case(fib[0] = 0, fib[1] = 1)
-  let fib = [0, 1]
-  for (let i = 2; i <= n; i++) {
-      fib.push(fib[i - 1] + fib[i - 2]);
-  }
-
-  return fib[n];
+function fib(n) {
+  let phi = (1 + Math.sqrt(5)) / 2;
+  return Math.round(Math.pow(phi, n) / Math.sqrt(5));
 }
+ 
+let n = 9;
+  document.write(fib(n));
