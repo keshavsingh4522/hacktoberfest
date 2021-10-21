@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Nunito', sans-serif;
+   background: #eeeeee;
+}
+.wrapper-main {
+   background: #ffffff;
+   padding: 30px 50px 50px 50px;
+   border-radius: 5px;
+}
+@media only screen and (min-width: 991px) {
+   .banner img {
+      max-width: 65%;
+      height: auto;
+   }
+}
+
+.main-title,
+.output-title {
+   color: #222831 !important;
+}
+.sub-title {
+   color: #393e46;
+}
+.take-input input {
+   width: 100%;
+   background: #edeaea;
+   border: none;
+   padding: 20px;
+   height: 50px;
+   border-radius: 3px;
+}
+.take-input input::placeholder {
+   color: #b3b5b7;
+}
+.take-input input:focus,
+textarea:focus,
+select:focus {
+   outline: none;
+}
+.form-btn button {
+   width: 90%;
+   border: none;
+   font-size: 1.1rem;
+   padding: 12px;
+   background: #00adb5;
+   color: #fdfefe;
+   border-radius: 3px;
+}
+
+@media only screen and (max-width: 992px) {
+   .form-btn button {
+      padding: 0;
+      height: 50px;
+      width: 100px;
+   }
+}
+
+.output-value .form-control:focus {
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(180, 147, 147, 0.6);
+}
+
+.copy-btn button {
+   font-size: 1.1rem;
+   border: none;
+   border-radius: 5px;
+   background: #00adb5;
+   color: #fdfefe;
+   padding: 8px 25px;
+}
