@@ -1,18 +1,18 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
 using namespace std;
-char* reverse(char *str, int len);
-int main()
-{
-    long long int t;
-    cin>>t;
-    while(t--)
-    {
-        char str[10000];
-        cin>>str;
-        long long int len=strlen(str);
-        char *ch=reverse(str,len);
-        cout<<ch;
-        cout<<endl;
-    }
-        return 0;
+
+void reverseString(string s){
+    if(s.length()==0)
+        return;
+    string restStr = s.substr(1);
+    reverseString(restStr);
+    cout<<s[0];
+}
+
+int main(){
+    string str;
+    cin>>str;
+
+    reverseString(str);
 }
