@@ -1,43 +1,32 @@
 #include<bits/stdc++.h>
 using namespace std;
- 
-//Efficient implementation with time complexity - O(N).
-int maxWater(int arr[], int n)
-{
-    int left = 0; 
-    int right = n-1;
-    int res = 0;
-    int maxleft = 0, maxright = 0;
-    while(left <= right)
-    {
-        if(arr[left] <= arr[right])
-        {
-            if(arr[left] >= maxleft) 
-                maxleft = arr[left];
-            else 
-                res += maxleft-arr[left];
+
+int trapped_Rainwater(vector<int> v){
+    int n = v.size();
+    int ans = 0;
+    stack<int> st;
+
+    for(int i=0; i<n; i++){
+        while(!st.empty() && v[st.top()]<v[i]){
+            int curr = st.top();
+            st.pop();
+
+            if(st.empty())
+                break;
             
-            left++;
+            int diff = i-st.top()-1;
+            ans += (min(v[st.top()], v[i]) - v[curr]) * diff;
         }
-        else
-        {
-            if(arr[right] >= maxright) 
-                maxright = arr[right];
-            else
-                res += maxright-arr[right];
-            
-            right--;
-        }
+        st.push(i);
     }
-    return res;
+    return ans;
 }
- 
-int main()
-{
-    int arr[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    int n = sizeof(arr)/sizeof(arr[0]);
-     
-    cout << maxWater(arr, n);
-     
+
+int main(){
+    vector<int> v = {0,1,0,2,1,0,1,3,2,1,2,1};
+    
+    int ans = trapped_Rainwater(v);
+    cout<<ans<<endl;
+    
     return 0;
 }
