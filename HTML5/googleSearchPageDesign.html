@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+
+  <body style="background: url('https://images.unsplash.com/photo-1548041347-390744c58da6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=792&q=80');
+  background-repeat: no-repeat; background-size: cover;
+  height: 100%; width: 100%; margin:0px; padding: 0px;">
+  <style>
+    *{
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .searchInput {
+      width: 400px;
+      border: none;
+      padding: 15px;
+      border-radius: 40px;
+    }
+
+    .gobuttons {
+      padding: 10px 20px 10px 20px;
+      border-radius: 20px;
+      color: white;
+      background-color: blue;
+      border: none;
+    }
+  </style>
+  <div style="text-align: center;top: 50%;
+  left: 50%; position: absolute;
+  transform: translate(-50%, -50%);">
+    <p>
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+    </p>
+    <p>
+      <input type="text" class="searchInput" placeholder="Search Google" />
+    </p>
+    <p>
+      <input type="button" class="gobuttons" onclick="search()" value="Search" />
+      <input type="button" class="gobuttons" onclick="search()" value="I'm Feeling Lucky" />
+    </p>
+
+  </div>
+
+  <script>
+    const searchInput = document.querySelector('.searchInput');
+    function search() {
+      location.assign('https://www.google.com/search?q=' + searchInput.value);
+    }
+  </script>
+
+  </body>
+</html>
