@@ -1,0 +1,108 @@
+.modal-content .light-mode{
+    color: black;
+    background-color:white;
+    border-color:black;
+}
+.modal-content .dark-mode{
+    color: white;
+    background-color:black;
+    border-color:black;
+}
+.modal-header .light-mode{
+    color: black;
+    background-color:white;
+    border-color:black;
+}
+.modal-header .dark-mode{
+    color: white;
+    background-color:black;
+    border-color:black;
+}
+.custom-navbar.light-mode {
+    background-color: #ff9666;
+    color: white;
+}
+
+.custom-navbar.dark-mode {
+    background-color: #491700;
+    color : #ff9666;
+}
+
+
+.nav-link.light-mode {
+    color: white;
+}
+
+.nav-link.dark-mode {
+    color : #ff9666;
+}
+
+
+body.light-mode {
+    background-color: rgb(255, 228, 193);
+    color: black;
+}
+
+body.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.contents.light-mode {
+    background-color: #ffead0;
+    width: 100%;
+    height: max(100vh, 100%);
+}
+
+.contents.dark-mode {
+    color: black;
+    background-color: rgb(255, 207, 103);
+    width: 100%;
+    height: max(100vh, 100%);
+}
+
+
+.contents.light-mode thead th {
+    box-shadow: 0 0 2px #836032c2;
+    padding-inline: 20px;
+    padding-block: 8px;
+}
+
+.contents.dark-mode thead th {
+    box-shadow: 0 0 2px #836032c2;
+    padding-inline: 20px;
+    padding-block: 8px;
+}
+
+
+.contents.light-mode tbody td {
+    border-block: 2px solid #836032;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+.contents.dark-mode tbody td {
+    border-block: 2px solid #836032;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+
+.todolist.light-mode {
+    color: #000
+}
+
+.todolist.dark-mode {
+    color: rgb(255, 255, 255)
+}
+
+
+.btn.light-mode {
+    background-color: black;
+    color: white;
+}
+
+.btn.dark-mode {
+    background-color: black;
+    color: white;
+}
