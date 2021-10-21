@@ -64,8 +64,7 @@ clearlist = () => {
 }
 update();
 
-// for creating dark mode 
-
+// functionality for switching between dark and light modes
 var dark = localStorage['darkmodestatus']
 if (dark == undefined) {
     localStorage.setItem('darkmodestatus', 'no')
