@@ -1,0 +1,21 @@
+PACKAGES USED AND  THEIR VERSION:
+
+
+pandas  version 1.2.4
+numpy   version 1.19.5
+seaborn version 0.11.1 
+lightgbm version 3.2.1
+sklearn version 0.24.2 
+python version 3.9.2 
+
+
+
+ENVIRONMENT USED :
+-Jupyter notebook
+
+
+ALGORITHM USED:
+LGBMClassifier 
+
+ 
+
