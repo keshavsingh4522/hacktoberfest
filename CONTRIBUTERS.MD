@@ -1,6 +1,8 @@
 | Name                  | Github                                                        | Starred the repo |
 | --------------------- | ------------------------------------------------------------- | ---------------- |
-| Spardha               | [@Spardha-hash](https://github.com/Spardha-hash).            |         0        |
+| Kaan Akyuz           | [@akykaan](https://github.com/akykaan).
+|         1        |
+| Spardha              | [@Spardha-hash](https://github.com/Spardha-hash).            |         0        |
 | Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
