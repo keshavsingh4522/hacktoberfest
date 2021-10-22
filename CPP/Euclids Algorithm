@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+  int a , b ;
+  cin>>a>>b;
+  int num1 = min(a,b);
+  int num2 = max(a,b);
+  while(num2%num1!=0){
+    int temp = num2%num1 ;
+    num2 = num1 ;
+    num1 = temp ;
+  }
+  cout<<"GCD of "<<a<<" and "<<b<<" is "<<num2;
+  return 0;
+}
+
+// Euclids Algorithm finds GCD of two given number in the smallest time complexity . 
+// Time complexity of Euclids Algorithm in O(log(min(a,b))
