@@ -3,6 +3,7 @@
 | Spardha               | [@Spardha-hash](https://github.com/Spardha-hash).            |         0        |
 | Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
+| Arshad Ali           | [@arshad32365](https://github.com/arshad32365)                |         1        |
 | Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
