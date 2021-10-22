@@ -2,7 +2,7 @@
 using namespace std;
 void swapping(int &a, int &b) {         //swap the content of a and b
    int temp;
-   temp = a;
+   temp = a; //temp is used to store temporary values
    a = b;
    b = temp;
 }
@@ -19,7 +19,7 @@ void selectionSort(int *array, int size) {
          if(array[j] < array[imin])
             imin = j;
          //placing in correct position
-         swap(array[i], array[imin]);
+         swap(array[i], array[imin]); //swapping the values
    }
 }
 int main() {
