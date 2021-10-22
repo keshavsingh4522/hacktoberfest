@@ -17,8 +17,7 @@ int main (){
     s1.push(6);
     s1.push(7);
     s1.display();
-    cout << s1.getSize();
-    cout << endl;
+    cout << s1.getSize()<<endl;
     stack <int> s3; 
     cout << s3.getSize();
     return 0;
