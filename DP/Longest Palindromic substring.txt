@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namesopace std;
+
+
+// Time Complexity O(N*N)
+// Space Complexity O(N*N)
+int main()
+{
+   string s;
+   cin>>s;
+   cout<<longestPalindrome(s)<<"\n";
+}
+string longestPalindrome(string str1) {
+        string str2=string(str1.rbegin(),str1.rend());
+        int n = str1.length();
+        int m= str2.length();
+        int dp[n+1][m+1];
+        int max=0;
+        string res;
+        for(int i=0; i<=n; i++)
+        {
+            for(int j=0; j<=m; j++)
+            {   if(i==0 || j==0){ dp[i][j] = 0;}
+             
+                else if(str1[i-1] == str2[j-1])
+                {
+                    dp[i][j] = 1 + dp[i-1][j-1];
+                    
+                    if(dp[i][j]>max)
+                    {
+                        string temp = str1.substr(i-dp[i][j], dp[i][j]) ;
+                        
+                        string revtemp = string(temp.rbegin(),temp.rend());
+                        if(revtemp==temp)
+                        {
+                            max = dp[i][j] ;
+                            res = temp ;
+                        }
+                    }
+                }
+                else
+                { dp[i][j] = 0 ; }
+            }
+        }
+
+        return res;
+}
