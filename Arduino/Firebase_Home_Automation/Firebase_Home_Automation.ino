@@ -11,7 +11,7 @@
 #define WIFI_PASSWORD "12345678"  
  
 String myString;
-int vr = A0; // variable resistor connected 
+int vr = A0; // variable resistor is connected 
 int sdata = 0; // The variable resistor value will be stored in sdata.
  
 void setup()
@@ -29,7 +29,7 @@ void setup()
     delay(500);
       }
   Serial.println();
-  Serial.print("connected: ");
+  Serial.print(" got connected: ");
   Serial.println(WiFi.localIP());
   
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
