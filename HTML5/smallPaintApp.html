@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Paint</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script> 
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow:hidden;
+}
+
+.p5Canvas{
+    border:2px solid black;
+    width:100px ;
+    position: absolute;
+    margin:auto;
+    left:0;right:0;
+    margin-top:30px;
+}
+
+nav{
+    width:100%;
+    margin: 10px 40px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <b>Color:</b>
+        <input  class="color" type="color" name="color" >
+        <b>Stroke:</b>
+        <input  class="strokeWeight" type="range" name="stroke" min="0" max="20" />
+        <button class="saveImage" >Download</button>
+    </nav>
+    <script>
+
+function setup() {
+  let canvas = createCanvas(window.innerWidth - 80, 550);
+  background(255);
+  let saveImage = document.querySelector(".saveImage");
+  saveImage.addEventListener("click", (e) => {
+    saveCanvas(canvas, "myImage", "jpg");
+  });
+}
+
+let changeColorElm = document.querySelector(".color");
+let changeStrokeWeightElm = document.querySelector(".strokeWeight");
+
+changeColorElm.addEventListener("change", (e) => {
+  properties.currentColor = e.target.value;
+});
+
+changeStrokeWeightElm.addEventListener("change", (e) => {
+  properties.currentStroke = e.target.value;
+});
+
+// convert hexa to rgb
+function hexToRgb(hex) {
+  let aRgbHex = hex.substring(1).match(/.{1,2}/g);
+  let aRgb = {
+    r: parseInt(aRgbHex[0], 16),
+    g: parseInt(aRgbHex[1], 16),
+    b: parseInt(aRgbHex[2], 16),
+  };
+  return aRgb;
+}
+
+let properties = {
+  currentColor: changeColorElm.value,
+  currentStroke: changeStrokeWeightElm.value,
+};
+
+let editor = {
+  drawWithPencil: () => {
+    if (mouseIsPressed && (movedX !== 0 || movedY !== 0)) {
+      let strokeColor = hexToRgb(properties.currentColor);
+      stroke(strokeColor.r, strokeColor.g, strokeColor.b);
+      strokeWeight(properties.currentStroke);
+      strokeJoin(ROUND);
+      beginShape();
+      line(pmouseX, pmouseY, mouseX, mouseY);
+    }
+  },
+};
+
+function draw() {
+  editor.drawWithPencil();
+}
+    </script>
+    
+</body>
+</html>
