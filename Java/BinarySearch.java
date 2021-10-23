@@ -1,8 +1,9 @@
+
 import java.util.*;
 public class BinarySearch { 
 
     public static int binarySearch(int[] arr, int x) {
-    	//Your code goes here
+    
         int start = 0;
         int end  = arr.length-1;
         
