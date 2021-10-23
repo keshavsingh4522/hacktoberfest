@@ -96,7 +96,7 @@
 | Santanu Biswas       | [@SantanuxD](https://github.com/SantanuxD)                    |         1        |
 | Chetan Atrawalkar    | [@ChetanAtrawalkarCA](https://github.com/ChetanAtrawalkarCA)  |         1        |
 | Bhaskar Kumar        | [@bhaskarkumar1](https://github.com/bhaskarkumar1)            |         1        |
-| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        | 
+| Amy Tan              | [@whysogreen](https://github.com/whysogreen)                  |         1        |
 | Amrit Anwesh         | [@shinozaki1595](https://github.com/shinozaki1595)            |         1        |
 | Ravi Gupta           | [@guptaravi540](https://github.com/@guptaravi540)             |         0        |
 | Vaibhav Sharma       | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
@@ -171,7 +171,7 @@
 | Ishan Bhardwaj       | [@IB-14](https://github.com/IB-14)                            |         0        |
 | Sahil Rout           | [@SahilRout](https://github.com/SahilRout)                    |         1        |
 | Daksh Jain           | [@DakshJain](https://github.com/Dakshjain1)                   |         1        |
-| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
+| Chirantan Mazumdar   | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        |
 | Sarvesh Kumar Dwivedi| [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
 | Kamal Singh Khanna   |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
 | Ganesh Majhi         | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
@@ -208,7 +208,7 @@
 | Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
 | Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
-| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |               
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
@@ -217,3 +217,4 @@
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
 | Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
+| CrackMayo            | [@crackmayo](https://github.com/CrackMayo)                    |         0        |
