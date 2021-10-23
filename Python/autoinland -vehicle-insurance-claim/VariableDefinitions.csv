@@ -1,0 +1,14 @@
+ID,Unique ID for the customer
+Policy Start Date,Date policy started
+Policy End Date,Date policy ended
+Gender,Gender of the customer
+Age,Age of the customer
+ProductName,Name of Insurance policy
+First Transaction Date,First date payment was made
+No_Pol,Number of policies the customer has
+Car_Category,Type of car
+Subject_Car_Colour,Car colour
+Subject_Car_Make,Car make
+LGA_Name,City where policy was purchased
+State,State where policy was purchased
+No_of_claims_3_mon_period,Wether the customer claimed within a 3 month period. 
