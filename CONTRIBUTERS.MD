@@ -2,6 +2,7 @@
 | --------------------- | ------------------------------------------------------------- | ---------------- |
 | Spardha               | [@Spardha-hash](https://github.com/Spardha-hash).            |         0        |
 | Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
+| ayushiitbhu2800      | [@ayushiitbhu2800](https://github.com/ayushiitbhu2800)        |         1        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
