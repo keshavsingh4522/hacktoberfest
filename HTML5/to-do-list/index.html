@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="light-mode">
+
+        <nav class="navbar navbar-expand-lg custom-navbar light-mode">
+            <div class="container-fluid">
+                <span class="navbar-brand">TODO LIST</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <span class="active nav-link light-mode " aria-current="page">Home</span>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="btn light-mode" id="darkmode">Switch to dark mode</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <h2 class="text-center my-3 todolist light-mode">To do list</h2>
+
+    <div class="container">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input type="email" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary my-3" id="add">Add to list</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Clear list
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog light-mode bordered">
+                <div class="modal-content light-mode">
+                    <div class="modal-header light-mode">
+                        <h5 class="modal-title light-mode" id="exampleModalLabel">Do you really want to clear the list ?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body light-mode">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" onclick="clearlist()" data-bs-dismiss="modal"
+                            id="clearlist">Just Do It!</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="items">
+
+        <table class="contents light-mode">
+            <thead>
+                <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Elements will be inserted here -->
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Our own script here  -->
+    <script src="index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+
+
+</html>
