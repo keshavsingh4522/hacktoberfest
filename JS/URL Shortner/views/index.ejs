@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- bootstrap -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+         crossorigin="anonymous"
+      />
+      <!-- favicon -->
+      <link rel="shortcut icon" href="/img/url.svg" type="image/x-icon" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/style.css" />
+
+      <title>TeenURL | LinkShortner by Mehedi</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="wrapper-main mt-5 mb-4">
+            <header class="header-top row">
+               <nav class="navbar navbar-light py-0 col-10">
+                  <div class="container-fluid px-0">
+                     <a class="navbar-brand" style="color: #222831" href="/">
+                        <img
+                           src="img/url.svg"
+                           alt=""
+                           width="30"
+                           height="24"
+                           class="d-inline-block align-text-top"
+                        />
+                        LinkShortner
+                     </a>
+                  </div>
+               </nav>
+
+               <div class="github-link col-2 text-end">
+                  <a
+                     href="https://github.com/MehedilslamRipon/Teen-URL"
+                     target="_blank"
+                     ><img
+                        style="height: 35px"
+                        src="img/GitHub-Mark-64px.png"
+                        alt="Github"
+                  /></a>
+               </div>
+            </header>
+            <div class="child-container col-10 col-md-8 col-lg-6 mt-4 mx-auto">
+               <div class="banner text-center mx-auto">
+                  <img
+                     class="img-fluid"
+                     src="img/undraw_share_link_qtxe.svg"
+                     alt="Link Shortner"
+                  />
+               </div>
+
+               <div class="main-title text-center mt-3">
+                  <h1>Shorten Any Links</h1>
+               </div>
+
+               <div class="sub-title text-center">
+                  <p>
+                     Build and protect your brand using powerful and
+                     recognizable short link. It's free forever!
+                  </p>
+               </div>
+
+               <% if (locals.error) { %>
+               <div class="show-error mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                     <symbol
+                        id="exclamation-triangle-fill"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                        />
+                     </symbol>
+                  </svg>
+
+                  <div
+                     class="
+                        alert alert-danger alert-dismissible
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                        fade
+                        show
+                     "
+                     role="alert"
+                  >
+                     <div class="error-msg d-flex align-items-baseline">
+                        <div class="err-ico">
+                           <svg
+                              class="bi flex-shrink-0 me-2"
+                              width="24"
+                              height="24"
+                           >
+                              <use xlink:href="#exclamation-triangle-fill" />
+                           </svg>
+                        </div>
+                        <div class="err-msg">
+                           <p class="pb-0 mb-0"><%= error %></p>
+                        </div>
+                     </div>
+                     <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                     ></button>
+                  </div>
+               </div>
+               <% } %>
+
+               <div class="form-area">
+                  <form action="/" method="post">
+                     <div
+                        class="
+                           input-wrapper
+                           row
+                           justify-content-between
+                           text-center
+                        "
+                     >
+                        <div class="take-input px-0 col-md-8">
+                           <input
+                              required
+                              type="url"
+                              name="url"
+                              id="url"
+                              placeholder="Type or Pase Your Link"
+                           />
+                        </div>
+                        <div class="form-btn mt-3 mt-sm-3 mt-md-0 col-md-4">
+                           <button type="submit">Shorten</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+
+               <% if (locals.short_url) { %>
+               <div class="output-area text-center mt-5">
+                  <div class="output-title">
+                     <h2>Link Shortened:</h2>
+                  </div>
+                  <div class="output-value w-75 d-block mx-auto">
+                     <input
+                        title="Your Shortened URL"
+                        class="w-100 form-control"
+                        type="url"
+                        name="url"
+                        placeholder="https://example.com"
+                        id="myInput"
+                        value="<%= short_url %>"
+                        required
+                     />
+                  </div>
+                  <div class="copy-btn mt-3">
+                     <button onclick="myFunction()" type="button">Copy</button>
+                  </div>
+               </div>
+               <% } %>
+            </div>
+         </div>
+
+         <div class="credit-area text-center">
+            <a
+               style="text-decoration: none; color: #222831"
+               href="https://facebook.com/mehediislamripon"
+            >
+               <p>&copy; Mehedi Islam Ripon</p>
+            </a>
+         </div>
+      </div>
+
+      <!-- bootstrap -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+         crossorigin="anonymous"
+      ></script>
+
+      <!-- sweetAlert -->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+      <!-- custom script -->
+      <script src="js/script.js"></script>
+   </body>
+</html>
