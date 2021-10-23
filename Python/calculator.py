@@ -23,10 +23,14 @@ print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5-Square Root")
+print("6-sine")
+print("7-cosine")
+print("8-tangent")
 
 while True:
     # take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4/5/6/7/8): ")
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4'):
