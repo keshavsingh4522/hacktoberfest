@@ -1,113 +1,103 @@
 #include<bits/stdc++.h>
-using namespace std; 
-
-struct Node 
+using namespace std;
+class node // class
 {
+    public:
     int data;
-    Node *next;
-    Node(int x)
-    {
-        data=x;
-        next=NULL;
-    }
-};
-
-Node* Iend(Node *head,int x)
+    node* next;
+};  
+void print(node* head) // print linklist
 {
-    Node *temp=new Node(x);
-    if(head==NULL)
-    return temp;
-    Node *curr=head;
-    while(curr->next!=nullptr)
+    node* temp = head;
+    while(temp)
     {
-        curr=curr->next;
+        cout<<temp -> data<<" --> ";
+        temp = temp -> next;
     }
-    curr->next=temp;
-    return head;
-
+    cout<<"NULL"<<"\n";
 }
-
-Node* Ibeg(Node *head, int x)
+node* reverse(node* head) // reverse linked list
 {
-    Node *temp=new Node(x);
-    if(head==nullptr)
-    {
-        return temp;
-    }
-    
-    Node *curr=head;
-    head=temp;
-    head->next=curr;
-    return head;
-}
-
-Node *Imiddle(Node *head, int x, int pos)
-{
-    Node *temp=new Node(x);
-    Node *curr=head;
-    if(pos==1)
-    {
-        temp->next=head;
-        return temp;
-    }
-    for(int i=1; i<=pos-2 && curr!=nullptr; i++)// goes till that node where changes happen
-    {
-        curr=curr->next;
-    }
-    if(curr==nullptr)
+    if(!head || !head->next)
     {
         return head;
     }
-    temp->next=curr->next;
-    curr->next=temp;
-    return head;
+    node* temp = reverse(head->next);
+    node* tail = head->next;
+    tail->next = head;
+    head->next = NULL;
+    return temp;
 }
-
-void disp(Node* head)
-{
-    Node* k=head;
-    if(head == nullptr)
-    {
-        cout<<"The LL is Empty";
-        return;
-    }
-    while(k!=nullptr)
-    {
-        cout<<k->data<<" ";
-        k=k->next;
-    }
-    return;
-}
-
 int main()
 {
-    int n;
-    cin>>n;
-    Node* head=NULL;
-    for(int i=1;i<=n;i++)
+    node* n1 = new node();
+    cout<<"enter the node data: ";
+    cin>>n1 -> data;
+    node* head = n1;
+    node* tail = n1;
+    char ch;
+    cout<<"do you want to enter new node y/n: ";
+    cin>>ch;
+    while(ch=='y') // create linklist
     {
-        int k;
-        cin>>k;
-        head=Iend(head,k);
+        node* n = new node();
+        cout<<"enter the node data: ";
+        cin>>n-> data;
+        tail-> next = n;
+        tail = n;
+        cout<<"do you want to enter new node y/n: ";
+        cin>>ch;
     }
-    
-    disp(head);
-    int m;
-    cin>>m;
-    for(int i=1;i<=m;i++)
+    print(head);
+    cout<<"do you want to insert any node in between: (y/n) ";
+    cin>>ch;
+    while(ch=='y') // enter at any index in linklist
     {
-        int k;
-        cin>>k;
-        head=Ibeg(head,k);
+        int i;
+        cout<<"at what position, please specify the index: ";
+        cin>>i;
+        int check=1;
+        node* temp = head;
+        if(i==0)
+        {
+            node* n = new node();
+            cout<<"enter node data: ";
+            cin>>n->data;
+            n->next = temp;
+            head = n;
+            print(head);
+            cout<<"do you want to insert any node in between: (y/n) ";
+            cin>>ch;
+        }
+        else
+        {
+            while(temp)
+            {
+                if(check==i)
+                break;
+                check++;
+                temp = temp->next;
+            }
+            node *pos = temp->next;
+            node* n = new node();
+            cout<<"enter node data: ";
+            cin>>n->data;
+            temp->next = n;
+            n->next = pos;
+            print(head);
+            cout<<"do you want to insert any node in between: (y/n) ";
+            cin>>ch;
+        }
     }
-
-    disp(head);
-    int l,pos;
-    cin>>l>>pos; 
-    head=Imiddle(head,l,pos);
-
-    disp(head);
-
+    cout<<"do you want to reverse the linked list: (y/n) ";
+    cin>>ch;
+    while(ch=='y')
+    {
+        node* rev = reverse(head);
+        print(rev);
+        cout<<"do you want to reverse the linked list: (y/n) ";
+        cin>>ch;
+        head = rev;
+    }
     return 0;
-
 }
