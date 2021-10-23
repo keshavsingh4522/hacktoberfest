@@ -1,6 +1,6 @@
 ---
 name: 🐛 Error
-about: Create a issue to help us to improve this project ✨
+about: An issue must be created inorder to improve the project ✨
 title: "Error: "
 labels: 👀 needs triage, 🐛 error
 ---
