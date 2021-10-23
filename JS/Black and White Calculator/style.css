@@ -1,0 +1,30 @@
+<!--MY STYLESHEET-->
+
+        body {
+            margin-left: 200px;
+        }
+
+        .title {
+            margin-top: 10px;
+            color: black;
+            text-align: center;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        input[type="button"] {
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            background-color: white;
+            border: 2px solid black;
+            width: 100%;
+        }
+     p{
+         font-size: 15px;
+         color: red;
+     }
