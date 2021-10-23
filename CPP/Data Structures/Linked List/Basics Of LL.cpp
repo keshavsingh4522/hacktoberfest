@@ -65,7 +65,7 @@ Node *Imiddle(Node *head, int x, int pos)
 
 void disp(Node* head)
 {
-    Node* k=head;
+    Node* G=head;
     if(head == nullptr)
     {
         cout<<"The LL is Empty";
@@ -73,8 +73,8 @@ void disp(Node* head)
     }
     while(k!=nullptr)
     {
-        cout<<k->data<<" ";
-        k=k->next;
+        cout<<G->data<<" ";
+        G=G->next;
     }
     return;
 }
