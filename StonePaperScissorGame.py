@@ -23,7 +23,7 @@ def play_game(human,com):
     #humanc =  int(input("Enter the choice here 1-3 : "))
     num = int(input("Enter the choice here 1-3 : "))
     humanc = validate(num)
-        
+    #Random  
     comc = random.randint(1,3)
     display_result(humanc, comc)
     
@@ -114,3 +114,4 @@ while(i < 40):
     else:   
         print()
         play_game(human,com)
+#End of file#
