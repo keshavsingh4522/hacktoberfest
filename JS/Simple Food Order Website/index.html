@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="icon" href="cart-img/Group 51.png">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-responsive">
+            <img src="cart-img/Group 51.png" onclick="home()" class="logo" id="logo" alt="logo">
+            <div class="nav-search" style="text-align: center;">
+            </div>
+            <div class="access">
+                <a href="#" id="notification"><i class="fa fa-bell"></i></a>
+                <a href="#" id="cart" onclick="cart()" ><i class="fa fa-shopping-cart"></i>cart</a>
+                <a href="#" id="bars"><i class="fa fa-bars"></i></a>
+                <a href="#" id="account"><i class="fa fa-user-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+    <div id="main">
+
+        <!-- categories section -->
+        <div id="categories">
+            <div class="brand">
+                <div class="img-container">
+                    <img src="cart-img/food1-removebg-preview.png" class="brand-img" alt="food1">
+                </div>
+                <h4 id="brand-name">Taco</h4>
+            </div>
+            <div class="brand">
+                <div class="img-container">
+                    <img src="cart-img/food2-removebg-preview.png" class="brand-img" alt="food2">
+                </div>
+                <h4 id="brand-name">Afang soup</h4>
+            </div>
+            <div class="brand">
+                <div class="img-container">
+                    <img src="cart-img/food3-removebg-preview.png" class="brand-img" alt="food3">
+                </div>
+                <h4 id="brand-name">Sharwama</h4>
+            </div>
+            <div class="brand">
+                <div class="img-container">
+                    <img src="cart-img/food4-removebg-preview.png" class="brand-img" alt="food4">
+                </div>
+                <h4 id="brand-name">Spagheti</h4>
+            </div>
+            <div class="brand">
+                <div class="img-container">
+                    <img src="cart-img/food5-removebg-preview.png" class="brand-img" alt="food5">
+                </div>
+                <h4 id="brand-name">Chicken soup</h4>
+            </div>
+            <div class="brand">
+                <div class="img-container">
+                    <img src="cart-img/food6-removebg-preview.png" class="brand-img" alt="food6">
+                </div>
+                <h4 id="brand-name">Jollof rice</h4>
+            </div>
+        </div>
+        <!-- End of categories section -->
+
+        <!-- Latest food section -->
+        <section class="categories">
+            <div class="title-container">
+                <h1 id="title">Latest foods</h1>
+                <button type="button" id="item-btn">View All</button>
+            </div>
+
+            <div id="card" class="card">
+
+            </div>
+        </section>
+        <!-- End of latest food section -->
+
+        <!-- New foods -->
+        <section class="categories">
+            <div class="title-container">
+                <h1 id="title">New foods</h1>
+                <button type="button" id="item-btn">View All</button>
+            </div>
+
+            <div id="new" class="card">
+
+            </div>
+
+        </section>
+        <!-- End of new foods -->
+
+        <!-- footer section -->
+        <footer>
+            <p id="footer-title">Our support team</p>
+            <div class="footer">
+                <div class="support">
+                    <ul>
+                        <h3>Know About Us</h3>
+                        <li><a href="#" id="know us">Know Us</a></li>
+                        <li><a href="#" id="refund-policy">Refund policy</a></li>
+                        <li><a href="#" id="policy">Our policy</a></li>
+                        <li><a href="#" id="return-product">How to Return ?</a></li>
+                        <li><a href="#" id="terms">Terms & conditions</a></li>
+                        <li><a href="#" id="privacy">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <h3>Contact Us</h3>
+                        <li><i class="fa fa-facebook"></i><a href="#" id="facebook">Facebook</a></li>
+                        <li><i class="fa fa-twitter"></i><a href="#" id="twitter">Twitter</a></li>
+                        <li><i class="fa fa-instagram"></i><a href="#" id="instagram">Instagram</a></li>
+                        <li><i class="fa fa-telegram"></i><a href="#" id="telegram">Telegram</a></li>
+                    </ul>
+                </div>
+
+                <div class="address">
+                    <h3>Office Address</h3>
+                    <p>No 16, Afaha Uqua Road, Uqua,</p>
+                    <p>Eket, Akwaibom State,</p>
+                    <p>Nigeria.</p>
+                    <p>Phone No : +2349038154101</p>
+                </div>
+            </div>
+
+            <div id="copyright">
+                <p>&#169 : 2021 Africinnovate.com. All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- End of footer section -->
+    </div>
+
+
+
+    <!-- Cart list section -->
+    <div id="cart-container">
+        <p id="cart-title">Your <strong>Cart</strong></p>
+        <div id="cart-itself">
+
+        </div>
+
+            <div id="total">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End of cart list section -->
+
+    <script src="cart.js"></script>
+</body>
+</html>
