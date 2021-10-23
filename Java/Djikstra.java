@@ -1,3 +1,4 @@
+//This code is for understanding dijkstra algorithm
 import java.util.*;
 
 public class GFG {
