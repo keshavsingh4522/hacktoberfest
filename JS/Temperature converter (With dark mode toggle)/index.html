@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperature Converter</title>
+  </head>
+  <body class="dark-mode">
+
+    <form class="converter-body dark-mode">
+      <h1>Temperature Converter</h1>
+      <div style="text-align: right; margin-bottom: -15px;">
+        <div class="dark-mode" style="margin-bottom: -15px;">
+          Toggle dark mode
+        </div>
+
+        <label class="switch">
+    <input type="checkbox" onclick="toggleDarkMode()">
+    <span class="slider round"></span>
+  </label>
+      </div>
+
+      <p class="increasefont dark-mode" style="margin-bottom: -20px;">Select input unit</p>
+      <p>
+        <select class="select-button" id="inputUnit" style="padding: 10px 0px 10px 0px;" name="unit">
+          <option value="cel">Celsius</option>
+          <option value="far">Fahrenheit</option>
+          <option value="kel">Kelvin</option>
+        </select>
+      </p>
+      <p>
+        <div id="errordiv"></div>
+        <input type="text" id="inp-box" autofocus name="temperature" placeholder="Enter temperature"></input>
+      </p>
+
+      <p class="increasefont dark-mode" style="margin-bottom: -20px;">Select unit to convert to</p>
+      <p>
+        <select class="select-button" id="convertTo" style="padding: 10px 0px 10px 0px;" name="unit">
+          <option value="cel">Celsius</option>
+          <option value="far">Fahrenheit</option>
+          <option value="kel">Kelvin</option>
+        </select>
+      </p>
+      <p>
+        <input type="submit" name="submit" id="submit-button" value="Convert" />
+      </p>
+      <div class="" id="result">
+
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
