@@ -1,0 +1,18 @@
+<form action="/create" method="post">
+  <input type="url" name="long_url" autocomplete="off" placeholder="Long URL" required><br>
+  <label>https://localhost:5000/</label>
+  <input type="text" name="short_url" autocomplete="off" placeholder="Short URL" required><br>
+  <input type="submit" name="submit"value='Create URL'>
+</form>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+  {{message}}
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+{% if link %}
+<a href="{{ link }}">{{ link }}</a>
+{% endif %}
