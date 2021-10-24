@@ -1,0 +1,24 @@
+body {
+    background-color: #C9CCD5 !important;
+    margin: 0px;
+    padding: 0px !important;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    height: 90%;
+
+    background-color: #93B5C6;
+    z-index: 1;
+
+    border-radius: 25px;
+
+
+    overflow: hidden;
+    display: block;
+}
