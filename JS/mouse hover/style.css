@@ -1,0 +1,68 @@
+.{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba( 153, 108, 19, 0.892 ),rgba( 188, 149, 71, 0.892 ));
+    cursor: pointer;
+}
+.face{
+    position: relative;
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(rgba( 227, 182, 32, 0.892 ),rgba( 243, 241, 129, 0.892 ));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face::before{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: linear-gradient(rgba( 217, 70, 48, 0.839 ),rgba( 183, 33, 10, 0.747 ));
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+}
+.face:hover::before{
+    top: 210px;
+    width: 150px;
+    height:20px;
+    background:  linear-gradient(rgba( 217, 70, 48, 0.839 ),rgba( 183, 33, 10, 0.747 ));
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.5s;
+}
+.eyes{
+    position: relative;
+    top:-40px;
+    display:flex
+}
+.eyes .eye{
+    position: relative;
+    width:80px;
+    height:80px;
+    display: block;
+    background: rgba( 233, 231, 230, 0.747 );
+    margin: 0 15px;
+    border-radius: 50%;
+}
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%,-50%);
+    width:40px;
+    height:40px;
+    background: linear-gradient(rgba( 2, 2, 2, 0.967 ),rgba( 56, 56, 45, 0.967 ));
+    border-radius: 50%;
+}
