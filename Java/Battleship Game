@@ -1,0 +1,1121 @@
+const keep_alive = require('./keep_alive.js')
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const token = process.env.DISCORD_BOT_SECRET;
+client.login(token);
+
+var command;
+var author;
+var channel;
+var games = [];
+var upLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+var lowLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+var verticals = ["Vertical", "vertical", "v"];
+var horizontals = ["Horizontal", "horizontal", "h"];
+
+client.on('ready', () => {
+  console.log("I’m in");
+  console.log(client.user.username);
+});
+
+client.on('message', msg => {
+  if(msg.author.id != client.user.id)
+  {
+    author = msg.author.id;
+    channel = msg.channel;
+    const current = msg.content;
+    const toBot = current.substring(0,7);
+    if(toBot.toLowerCase() == "gamebot")
+    {
+      command = msg.content.substring(8, msg.content.length);
+      processCommand();
+    }
+  }
+});
+
+function processCommand()
+{
+  if(command == "commands")
+  {
+    channel.send("Command List: \nGameBot new game - start a new game of battleship \nGameBot forfeit - ends the game \nGameBot place ship <row> <column> <direction> - places ship in specified location with specified direction, direction can be specified as \"Vertical\" or \"v\" if you desire \nGameBot fire <row> <column> - shoots at the location specified as long as it is your turn \nGameBot take turn - allows the AI to take its turn \nGameBot show ships - shows you all of your ship's locations \nGameBot show guesses - shows the guesses you have made so far \nGameBot show computer guesses - shows the guesses the computer has made so far \nGameBot status - shows what command the GameBot is currently waiting for");
+  }
+  else if(command == "new game")
+  {
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+      }
+    }
+    if(gameRunning)
+    {
+      channel.send("You already have a game running. If you wish to end this game, send \"GameBot forfeit\"");
+    }
+    else
+    {
+      var gameID = games.length;
+      games[games.length] = new Game();
+      games[gameID].humanPlayer.printMyShips();
+      channel.send("Place a ship with the length of 5 spaces")
+    }
+  }
+  else if(command == "show ships")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      games[gameID].humanPlayer.printMyShips();
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command.substring(0, 10) == "place ship")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      if(games[gameID].shipsPlaced > 4)
+      {
+        channel.send("You have already placed all of your ships");
+      }
+      else
+      {
+        var row = command.substring(11,12);
+        var col = command.substring(13, 14);
+        var direction = command.substring(15,command.length);
+        var correctRow = false;
+        var correctDirection = false;
+        var correctCol = false;
+        if(col == 1)
+        {
+          if(command.substring(14, 15) == "0")
+          {
+            col = 10;
+            direction = command.substring(16,command.length);
+          }
+        }
+
+        col--;
+
+        for(var i = 0; i < 10; i++)
+        {
+          if(row == upLetters[i] || row == lowLetters[i])
+          {
+            correctRow = true;
+            row = i;
+          }
+        }
+        for(var i = 0; i < 3; i++)
+        {
+          if(direction == horizontals[i])
+          {
+            correctDirection = true;
+            direction = 0;
+          }
+          else if(direction == verticals[i])
+          {
+            correctDirection = true;
+            direction = 1;
+          }
+        }
+        if(col >= 0 && col < 10)
+        {
+          correctCol = true;
+        }
+        if(correctRow && correctCol && correctDirection)
+        {
+          games[gameID].ships[games[gameID].shipsPlaced].setDirection(direction);
+          games[gameID].ships[games[gameID].shipsPlaced].setLocation(row, col);
+          if(doesntCollide(games[gameID].ships[games[gameID].shipsPlaced], gameID))
+          {
+            games[gameID].humanPlayer.shipsGrid.addShip(games[gameID].ships[games[gameID].shipsPlaced]);
+            games[gameID].shipsPlaced++;
+            games[gameID].humanPlayer.printMyShips();
+            if(games[gameID].shipsPlaced < 5)
+            {
+              channel.send("Place a ship with the length of " + games[gameID].humanPlayer.shipLengths[games[gameID].shipsPlaced]);
+            }
+            else
+            {
+              setUpComputerShips(gameID);
+              games[gameID].humanPlayer.printMyGuesses();
+              channel.send("Fire when ready");
+              games[gameID].shipsSet = true;
+            }
+          }
+          else
+          {
+            channel.send("You have entered invalid information, please try again");
+          }
+        }
+        else
+        {
+          channel.send("You have entered invalid information, please try again");
+        }
+      }
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command.substring(0, 4) == "fire")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      if(games[gameID].shipsSet)
+      {
+        if(games[gameID].turn == 1)
+        {
+          var row = command.substring(5,6);
+          var col = command.substring(7, 8);
+          var correctRow = false;
+          var correctCol = false;
+
+          col--;
+
+          for(var i = 0; i < 10; i++)
+          {
+            if(row == upLetters[i] || row == lowLetters[i])
+            {
+              correctRow = true;
+              row = i;
+            }
+          }
+          if(col >= 0 && col < 10)
+          {
+            correctCol = true;
+          }
+          if(correctRow && correctCol && !alreadyGuessed(games[gameID].humanPlayer, row, col))
+          {
+            games[gameID].turn = 2;
+            if(games[gameID].computerPlayer.shipsGrid.hasShip(row, col))
+            {
+              games[gameID].humanPlayer.opponentsGrid.markHit(row, col);
+              games[gameID].computerPlayer.playersGrid.markHit(row, col);
+              games[gameID].computerPlayer.addAnotherHit();
+              games[gameID].humanPlayer.printMyGuesses();
+              channel.send("Hit, your opponent has " + games[gameID].computerPlayer.getHitsRemaining() + " hits remaining");
+              for(var i = 0; i < 5; i++)
+              {
+                if(games[gameID].compShips[i].isSunk(games[gameID].computerPlayer))
+                {
+                  channel.send("You have sunk a battleship!");
+                }
+              }
+              if(games[gameID].computerPlayer.getHitsRemaining() == 0)
+              {
+                channel.send("Congratulations, you won! You can now start a new game by sending \"GameBot new game\"");
+                games[gameID].playerID = undefined;
+              }
+              else
+              {
+                
+              }
+            }
+            else
+            {
+              games[gameID].humanPlayer.opponentsGrid.markMiss(row, col);
+              games[gameID].computerPlayer.playersGrid.markMiss(row, col);
+              games[gameID].humanPlayer.printMyGuesses();
+              channel.send("Miss, your opponent has " + games[gameID].computerPlayer.getHitsRemaining() + " hits remaining");
+              channel.send("Send \"GameBot take turn\" to show the enemy's turn");
+            }
+          }
+          else
+          {
+            if(alreadyGuessed(games[gameID].humanPlayer, row, col))
+            {
+              channel.send("This location has already been guessed, please try again");
+            }
+            else
+            {
+              channel.send("You have inserted invalid information, please try again");
+            }
+          }
+        }
+        else
+        {
+          channel.send("It is not your turn. To see your opponents turn, send \"GameBot take turn\"");
+        }
+      }
+      else
+      {
+        channel.send("You have not placed all of your ships yet, place them by sending \"GameBot place ship <row> <column> <direction>\"");
+      }
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command == "take turn")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      if(games[gameID].shipsSet)
+      {
+        if(games[gameID].turn == 2)
+        {
+          askForCompGuess(gameID);
+          games[gameID].turn = 1;
+        }
+        else
+        {
+          channel.send("It is not your opponents turn, take yours by sending \"GameBot fire <row> <column>\"");
+        }
+      }
+      else
+      {
+        channel.send("You have not placed all of your ships yet, place them by sending \"GameBot place ship <row> <column> <direction>\"");
+      }
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command == "show guesses")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      games[gameID].humanPlayer.printMyGuesses();
+      channel.send("Your opponent has " + games[gameID].computerPlayer.getHitsRemaining() + " hits remaining");
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command == "show computer guesses")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      games[gameID].computerPlayer.printMyGuesses();
+      channel.send("You have " + games[gameID].humanPlayer.getHitsRemaining() + " hits remaining");
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command == "status")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      if(!games[gameID].shipsSet)
+      {
+        channel.send("You currently need to set your ships, to do so send \"GameBot place ship <row> <column> <direction>\"");
+      }
+      else if(games[gameID].turn == 1)
+      {
+        channel.send("You currently need to fire upon your opponent, to do so send \"GameBot fire <row> <column>\"");
+      }
+      else
+      {
+        channel.send("You currently need to let your opponent take its turn, to do so send \"GameBot take turn\"");
+      }
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else if(command == "forfeit")
+  {
+    var gameID;
+    var gameRunning = false;
+    for(var i = 0; i < games.length; i++)
+    {
+      if(author == games[i].playerID)
+      {
+        gameRunning = true;
+        gameID = i;
+      }
+    }
+    if(gameRunning)
+    {
+      channel.send("You have forfeited, you can now start a new game by sending \"GameBot new game\"");
+      games[gameID].playerID = undefined;
+    }
+    else
+    {
+      channel.send("You do not have a game running");
+    }
+  }
+  else
+  {
+    channel.send("I do not know this command");
+  }
+}
+
+function askForCompGuess(gameID)
+{
+  const game = games[gameID];
+  var row = 0;
+  var col = 0;
+  if(game.hitRowAI != -1 && game.level2 == false)
+  {
+    row = game.hitRowAI;
+    col = game.hitColAI;
+    var decide = Math.round(Math.random());
+    var decide2 = Math.round(Math.random());
+    if(decide == 0)
+    {
+      if(decide2 == 0)
+      {
+        row = game.hitRowAI - 1;
+      }
+      else
+      {
+        row = game.hitRowAI + 1;
+      }
+    }
+    if(decide == 1)
+    {
+      if(decide2 == 0)
+      {
+        col = game.hitColAI - 1;
+      }
+      else
+      {
+        col = game.hitColAI + 1;
+      }
+    }
+    while(row > 9 || col > 9 || row < 0 || col < 0 || alreadyGuessed(game.computerPlayer, row, col))
+    {
+      row = game.hitRowAI;
+      col = game.hitColAI;
+      decide = Math.round(Math.random());
+      decide2 = Math.round(Math.random());
+      if(decide == 0)
+      {
+        if(decide2 == 0)
+        {
+          row = game.hitRowAI - 1;
+        }
+        else
+        {
+          row = game.hitRowAI + 1;
+        }
+      }
+      if(decide == 1)
+      {
+        if(decide2 == 0)
+        {
+          col = game.hitColAI - 1;
+        }
+        else
+        {
+          col = game.hitColAI + 1;
+        }
+      } 
+    }
+  }
+  else if(game.hitRowAI != -1 && game.level2 == true)
+  {
+    row = game.hitRowAI;
+    col = game.hitColAI;
+    if(game.hitDirection == 1)
+    {
+      row = game.hitRowAI - (game.hitCount);
+    }
+    if(game.hitDirection == 2)
+    {
+      col = game.hitColAI + (game.hitCount);
+    }
+    if(game.hitDirection == 3)
+    {
+      row = game.hitRowAI + (game.hitCount);
+    }
+    if(game.hitDirection == 4)
+    {
+      col = game.hitColAI - (game.hitCount);
+    }
+    if(row > 9 || col > 9 || row < 0 || col < 0 || alreadyGuessed(game.computerPlayer, row, col) && game.directionChange == false)
+    {
+      row = game.hitRowAI;
+      col = game.hitColAI;
+      game.hitCount = 1;
+      game.directionChange = true;
+      if(game.hitDirection == 1)
+      {
+        row = game.hitRowAI + (game.hitCount);
+      }
+      if(game.hitDirection == 2)
+      {
+        col = game.hitColAI - (game.hitCount);
+      }
+      if(game.hitDirection == 3)
+      {
+        row = game.hitRowAI - (game.hitCount);
+      }
+      if(game.hitDirection == 4)
+      {
+        col = game.hitColAI + (game.hitCount);
+      }
+    }
+    if(row > 9 || col > 9 || row < 0 || col < 0 || alreadyGuessed(game.computerPlayer, row, col) && game.directionChange == true)
+    {
+      row = Math.round(Math.random() * 9);
+      col = Math.round(Math.random() * 9);
+      game.hitRowAI = -1;
+      game.hitColAI = -1;
+      game.hitCount = 0;
+      game.level2 = false;
+      game.directionChange = false;
+      while(alreadyGuessed(game.computerPlayer, row, col))
+      {
+        Math.round(Math.random() * 9);
+        Math.round(Math.random() * 9);
+      }
+    }
+  }
+  else
+  {
+    row = Math.round(Math.random() * 9);
+    col = Math.round(Math.random() * 9);
+    while(alreadyGuessed(game.computerPlayer, row, col))
+    {
+      Math.round(Math.random() * 9);
+      Math.round(Math.random() * 9);
+    }
+  }
+  if(game.humanPlayer.shipsGrid.hasShip(row, col))
+  {
+    game.humanPlayer.playersGrid.markHit(row, col);
+    game.computerPlayer.opponentsGrid.markHit(row, col);
+    game.humanPlayer.addAnotherHit();
+    game.humanPlayer.playersGrid.printStatus();
+    channel.send("Hit, you have " + game.humanPlayer.getHitsRemaining() + " hits remaining");
+    if(game.hitCount == 0)
+    {
+      game.hitRowAI = row;
+      game.hitColAI = col;
+    }
+    game.hitCount++;
+    if(game.hitCount == 2)
+    {
+      game.level2 = true;
+      if(row < game.hitRowAI)
+      {
+        game.hitDirection = 1;
+      }
+      if(col > game.hitColAI)
+      {
+        game.hitDirection = 2;
+      }
+      if(row > game.hitRowAI)
+      {
+        game.hitDirection = 3;
+      }
+      if(col < game.hitColAI)
+      {
+        game.hitDirection = 4;
+      }
+    }
+    for(var i = 0; i < 5; i++)
+    {
+      if(game.ships[i].isSunk(game.humanPlayer))
+      {
+        channel.send("One of your battleships has been sunk");
+        game.hitRowAI = -1;
+        game.hitColAI = -1;
+        game.hitCount = 0;
+        game.level2 = false;
+        game.directionChange = false;
+      }
+    }
+    if(games[gameID].humanPlayer.getHitsRemaining() == 0)
+    {
+      channel.send("Sorry, you have been defeated. You can now start a new game by sending \"GameBot new game\"");
+      games[gameID].playerID = undefined;
+    }
+  }
+  else
+  {
+    game.humanPlayer.playersGrid.markMiss(row, col);
+    game.computerPlayer.opponentsGrid.markMiss(row, col);
+    game.humanPlayer.playersGrid.printStatus();
+    channel.send("Miss, you have " + game.humanPlayer.getHitsRemaining() + " hits remaining");
+  }
+}
+
+function alreadyGuessed(player, row, col)
+{
+  if(player.opponentsGrid.getStatus(row, col) != 0)
+  {
+    return true;
+  }
+  return false;
+}
+
+function compDoesntCollide(s, gameID)
+{
+  if(s.getDirection() == 0)
+  {
+    if(s.getLength() + s.getCol() > 10)
+    {
+      return true;
+    }
+  }
+  if(s.getDirection() == 1)
+  {
+    if(s.getLength() + s.getRow() > 10)
+    {
+      return true;
+    }
+  }
+  for(var i = 0; i < s.getLength(); i++)
+  {
+    if(s.getDirection() == 0)
+    {
+      if(games[gameID].computerPlayer.shipsGrid.hasShip(s.getRow(), s.getCol() + i))
+      {
+        return true;
+      }
+    }
+    if(s.getDirection() == 1)
+    {
+      if(games[gameID].computerPlayer.shipsGrid.hasShip(s.getRow() + i, s.getCol()))
+      {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+function setUpComputerShips(gameID)
+{
+  for(var i = 0; i < games[gameID].compShips.length; i++)
+  {
+    var row = Math.round(Math.random() * 9);
+    var col = Math.round(Math.random() * 9);
+    var direction = Math.round(Math.random());
+    games[gameID].compShips[i].setLocation(row, col);
+    games[gameID].compShips[i].setDirection(direction);
+    while(row >= 10 || col >= 10 || compDoesntCollide(games[gameID].compShips[i], gameID))
+    {
+      row = Math.round(Math.random() * 9);
+      col = Math.round(Math.random() * 9);
+      direction = Math.round(Math.random());
+      games[gameID].compShips[i].setLocation(row, col);
+      games[gameID].compShips[i].setDirection(direction);
+    }
+    games[gameID].computerPlayer.chooseShipLocation(games[gameID].compShips[i], row, col, direction);
+  }
+}
+
+function doesntCollide(s, gameID)
+{
+  if(s.getDirection() == 0)
+  {
+    if(s.getLength() + s.getCol() > 10)
+    {
+      return false;
+    }
+  }
+  if(s.getDirection() == 1)
+  {
+    if(s.getLength() + s.getRow() > 10)
+    {
+      return false;
+    }
+  }
+  for(var i = 0; i < s.getLength(); i++)
+  {
+    if(s.getDirection() == 0)
+    {
+      if(games[gameID].humanPlayer.shipsGrid.hasShip(s.getRow(), s.getCol() + i))
+      {
+        return false;
+      }
+    }
+    if(s.getDirection() == 1)
+    {
+      if(games[gameID].humanPlayer.shipsGrid.hasShip(s.getRow() + i, s.getCol()))
+      {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+function Array()
+{
+  this.arr = [];
+}
+
+function Grid()
+{
+  this.letters = ["A", "B ", "C", "D", "E ", "F ", "G", "H", "I  ", "J "];
+  this.grid = [];
+  for(var i = 0; i < 10; i++)
+  {
+    this.grid[i] = new Array;
+    for(var j = 0; j < 10; j++)
+    {
+      this.grid[i].arr[j] = new Location();
+    }
+  }
+  this.markHit = function(row, col)
+  {
+    this.grid[row].arr[col].setStatus(1);
+  }
+  
+  this.markMiss = function(row, col)
+  {
+    this.grid[row].arr[col].setStatus(2);
+  }
+  
+  this.setStatus = function(row, col, status)
+  {
+    this.grid[row].arr[col].setStatus(status);
+  }
+  
+  this.getStatus = function(row, col)
+  {
+    return this.grid[row].arr[col].getStatus();
+  }
+  
+  this.alreadyGuessed = function(row, col)
+  {
+    if(this.grid[row].arr[col].getStatus() == 0)
+    {
+      return false;
+    }
+    return true;
+  }
+  
+  this.setShip = function(row, col, val)
+  {
+    this.grid[row].arr[col].setShip(val);
+  }
+  
+  this.hasShip = function(row, col)
+  {
+    return this.grid[row].arr[col].hasShip();
+  }
+  
+  
+  this.get = function(row, col)
+  {
+    return this.grid[row].arr[col];
+  }
+  
+  this.numRows = function()
+  {
+    return 10;
+  }
+  
+  this.numCols = function()
+  {
+    return 10;
+  }
+  
+  this.printStatus = function()
+  {
+    var sendResult = ".       1    2    3    4    5    6    7    8    9    10\n";
+    for(var i = 0; i < 10; i++)
+    {
+      sendResult += this.letters[i] + "   ";
+      for(var j = 0; j < 10; j++)
+      {
+        if(this.grid[i].arr[j].getStatus() == 0)
+        {
+          sendResult += "-     ";
+        }
+        if(this.grid[i].arr[j].getStatus() == 1)
+        {
+          sendResult = sendResult.substring(0, sendResult.length - 1);
+          sendResult += "X     ";
+        }
+        if(this.grid[i].arr[j].getStatus() == 2)
+        {
+          sendResult = sendResult.substring(0, sendResult.length - 1);
+          sendResult += "O     ";
+        }
+      }
+      sendResult += "\n";
+    }
+    channel.send(sendResult);
+  }
+  
+  this.printShips = function()
+  {
+    var sendResult = ".      1    2    3    4    5    6    7    8    9    10\n";
+    for(var i = 0; i < 10; i++)
+    {
+      sendResult += this.letters[i] + "   ";
+      for(var j = 0; j < 10; j++)
+      {
+        if(this.grid[i].arr[j].hasShip())
+        {
+          sendResult = sendResult.substring(0, sendResult.length - 1);
+          sendResult += "X     ";
+        }
+        else
+        {
+          sendResult += "-     ";
+        }
+      }
+      sendResult += "\n";
+    }
+    channel.send(sendResult);
+  }
+
+  this.addShip = function(s)
+  {
+    for(var i = 0; i < s.getLength(); i++)
+    {
+      console.log(s);
+      if(s.getDirection() == 1)
+      {
+        this.grid[s.getRow() + i].arr[s.getCol()].setShip(true);
+      }
+      else
+      {
+        this.grid[s.getRow()].arr[s.getCol() + i].setShip(true);
+      }
+    }
+  }
+}
+
+function Location()
+{
+  this.status = 0;
+  this.shipOrNo = false;
+
+  this.checkHit = function()
+  {
+    if(this.status == 1)
+    {
+      return true;
+    }
+    return false;
+  }
+
+  this.checkMiss = function()
+  {
+    if(this.status == 2)
+    {
+      return true;
+    }
+    return false;
+  }
+
+  this.isUnguessed = function()
+  {
+    if(this.status == 0)
+    {
+      return true;
+    }
+    return false;
+  }
+
+  this.markHit = function()
+  {
+    this.status = 1;
+  }
+
+  this.markMiss = function()
+  {
+    this.status = 2;
+  }
+
+  this.hasShip = function()
+  {
+    return this.shipOrNo;
+  }
+
+  this.setShip = function(val)
+  {
+    this.shipOrNo = val;
+  }
+
+  this.setStatus = function(status)
+  {
+    this.status = status;
+  }
+
+  this.getStatus = function()
+  {
+    return this.status;
+  }
+}
+
+function Ship(length)
+{
+  this.row = -1;
+  this.col = -1;
+  this.length = -1;
+  this.direction = -1;
+
+  this.length = length;
+  this.isNewlySunk = true;
+  
+  this.isSunk = function(player)
+  {
+    for(var i = 0; i < length; i++)
+    {
+      if(this.direction == 0)
+      {
+        if(player.playersGrid.getStatus(this.row, this.col + i) != 1)
+        {
+          return false;
+        }
+      }
+      if(this.direction == 1)
+      {
+        if(player.playersGrid.getStatus(this.row + i, this.col) != 1)
+        {
+          return false;
+        }
+      }
+    }
+    if(this.isNewlySunk == true)
+    {
+      this.isNewlySunk = false;
+      return true;
+    }
+    return false;
+  }
+
+  this.isLocationSet = function()
+  {
+    if(this.row != -1 && this.col != -1)
+    {
+      return true;
+    }
+    return false;
+  }
+  
+  this.isDirectionSet = function()
+  {
+    if(this.direction != -1)
+    {
+      return true;
+    }
+    return false;
+  }
+
+  this.setLocation = function(row, col)
+  {
+    this.col = col;
+    this.row = row;
+  }
+  
+  this.setDirection = function(direction)
+  {
+    this.direction = direction;
+  }
+  
+  this.getRow = function()
+  {
+    return this.row;
+  }
+  
+  this.getCol = function()
+  {
+    return this.col;
+  }
+  
+  this.getLength = function()
+  {
+    return this.length;
+  }
+  
+  this.getDirection = function()
+  {
+    return this.direction;
+  }
+  
+  this.directionToString = function()
+  {
+    if(this.direction == 0)
+    {
+      return "horizontal";
+    }
+    if(this.direction == 1)
+    {
+      return "vertical";
+    }
+    return "unset";
+  }
+  
+  this.locationToString = function()
+  {
+    return "(" + this.row + ", " + this.col + ")";
+  }
+  
+  this.toString = function()
+  {
+    if(this.isLocationSet())
+    {
+      if(this.isDirectionSet())
+      {
+        return this.directionToString() + " ship of length " + this.length + " at " + this.locationToString();
+      }
+      else
+      {
+        return "unset direction ship of length " + this.length + " at " + this.locationToString();
+      }
+    }
+    else
+    {
+      if(this.isDirectionSet())
+      {
+        return this.directionToString() + " direction ship of length " + this.length + " at (unset location)";
+      }
+      else
+      {
+        return "unset direction ship of length " + this.length + " at (unset location)";
+      }
+    }
+  }
+}
+
+function Player()
+{
+  this.shipLengths = [5, 4, 3, 3, 2];
+  this.shipsGrid = new Grid();
+  this.opponentsGrid = new Grid();
+  this.playersGrid = new Grid();
+  this.hitsRemaining = 17;
+
+  this.getHitsRemaining = function()
+  {
+    return this.hitsRemaining;
+  }
+  this.addAnotherHit = function()
+  {
+    this.hitsRemaining--;
+  }
+  this.printMyShips = function()
+  {
+    this.shipsGrid.printShips();
+  }
+  this.printMyGuesses = function()
+  {
+    this.opponentsGrid.printStatus();
+  }
+  this.printOpponentGuesses = function()
+  {
+    this.playersGrid.printStatus();
+  }
+  this.recordOpponentGuess = function(row, col)
+  {
+    if(this.shipsGrid.hasShip(row, col))
+    {
+      this.playersGrid.setStatus(row, col, 1);
+    }
+    else
+    {
+      this.playersGrid.setStatus(row, col, 2);
+    }
+  }
+  this.chooseShipLocation = function(s, row, col, direction)
+  {
+    s.setDirection(direction);
+    s.setLocation(row, col);
+    this.shipsGrid.addShip(s);
+  }
+}
+
+function Game()
+{
+  this.playerID = author;
+  this.humanPlayer = new Player();
+  this.computerPlayer = new Player();
+  this.ships = [];
+  this.compShips = [];
+  this.shipsPlaced = 0;
+  this.turn = 1;
+  this.hitRowAI = -1;
+  this.hitColAI = -1;
+  this.hitCount = 0;
+  this.hitDirection = 0;
+  this.level2 = false;
+  this.directionChange = false;
+  this.shipsSet = false;
+
+  for(var i = 0; i < 5; i++)
+  {
+    this.ships[i] = new Ship(this.humanPlayer.shipLengths[i]);
+    this.compShips[i] = new Ship(this.humanPlayer.shipLengths[i]);
+  }
+}
