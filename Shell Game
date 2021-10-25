@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <div class="game-container">
+    <p class="instructions">
+      Find the ball
+    </p>
+    <div class="shell-game">
+      <div class="cups-box">
+        <div id="cup1" class="cup cup-1"></div>
+        <div id="cup2" class="cup cup-2"></div>
+        <div id="cup3" class="cup cup-3"></div>
+        <div id="ball"></div>
+      </div>
+    </div>
+    <button id="btnStart">START</button>
+  </div>
+  
+  <style>
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+body {
+  margin: 0;
+  font-size: 14px;
+  background-color: #9cdee0;
+}
+body p {
+  margin: 0;
+  padding: 0;
+}
+body * {
+  outline: none;
+}
+.game-container {
+  position: relative;
+  width: 100%;
+  background-color: #9cdee0;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.instructions {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.571em;
+  padding-top: 30px;
+}
+
+.shell-game {
+  position: relative;
+  width: 99%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.cups-box {
+  position: absolute;
+  width: 788px;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.cup {
+  position: absolute;
+  width: 196px;
+  height: 286px;
+  background-image: url(https://redcactus725.000webhostapp.com/assets/images/shellGame/cup.png);
+  background-repeat: no-repeat;
+  top: 50px;
+}
+.cup-2 {
+  left: 296px;
+}
+.cup-3 {
+  left: 592px;
+}
+
+#ball {
+  position: absolute;
+  width: 155px;
+  height: 103px;
+  background-image: url(https://redcactus725.000webhostapp.com/assets/images/shellGame/ball.png);
+  background-repeat: no-repeat;
+  left: 146px;
+  top: 256px;
+}
+
+#btnStart {
+  cursor: pointer;
+  height: 40px;
+  width: 90%;
+  max-width: 250px;
+  border: 0;
+  background-color: #151f75;
+  font-size: 1.571em;
+  line-height: 1.8em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+</style>
+</head>
+
+<script type="text/javascript">
+$(function(){
+
+	var intMoves = 5; // number of moves
+	var speed = 0.5; // initial speed of moves - increase each moves
+	var maxSpeed = 0.2; // maximum speed of moves
+
+	var objMovePattern = []; // object contain a pattern for the cup shifting
+	var ball = $('#ball');
+	var widthBall = (ball.width()/2)-40;
+	var firstCup;
+
+	(function init() {
+		objMovePattern = generateMovePatterns();
+		$('#btnStart').on('click', startGame);
+	})();
+
+	function startGame(event) {
+		$(event.currentTarget).remove();
+		firstCup = Math.round(Math.random()*2+1);
+		var cup = $('.cup-'+firstCup);
+		TweenMax.to(cup, 0.5,{y:-130});
+		TweenMax.to(ball, 0.5,{left: cup.position().left+widthBall, y:-30, onComplete:function(){
+			ball.css('z-index', '1');
+			$('.cup').css('z-index', '10');
+			TweenMax.to(cup, 0.5,{y:0, onComplete:shakeCups});
+		}});
+	}
+
+	function shakeCups() {
+		ball.css('display', 'none');
+		var aPos = [$('.cup-'+objMovePattern[0][0]).position().left, $('.cup-'+objMovePattern[0][1]).position().left, $('.cup-'+objMovePattern[0][2]).position().left];
+		for(var i = 0; i < objMovePattern.length; i++){
+			speed = (speed > maxSpeed) ? speed/1.1 : maxSpeed;
+			TweenMax.to($('.cup-'+objMovePattern[i][0]), speed,{left: aPos[0], delay:speed*i, ease:Sine.easeOut});
+			TweenMax.to($('.cup-'+objMovePattern[i][1]), speed,{left: aPos[1], delay:speed*i, ease:Sine.easeOut});
+			if(i == (objMovePattern.length-1)) TweenMax.to($('.cup-'+objMovePattern[i][2]), speed,{left: aPos[2], delay:speed*i, ease:Sine.easeOut, onComplete: unableCupClick});
+			else TweenMax.to($('.cup-'+objMovePattern[i][2]), speed,{left: aPos[2], delay:speed*i, ease:Sine.easeOut});
+		}
+	}
+
+	function unableCupClick() {
+		$('.cup').css('cursor', 'pointer');
+		$('.cup').on('click', clickCup);
+	}
+
+	function clickCup(event) {
+		var currentCup = $(event.currentTarget);
+		currentCup.off('click');
+		currentCup.css('cursor', 'default');
+		var iCup = currentCup.attr('id').split('cup')[1];
+		ball.css({'left':$('.cup-'+firstCup).position().left+widthBall, 'display':'block'});
+		TweenMax.to($('.cup-'+iCup), 0.5,{y: -130, ease:Sine.easeIn, delay:0.1});
+	}
+
+	// Tool functions
+
+	function generateMovePatterns() {
+		var objMoves = [[1,2,3]]; // initial state, cups order
+		var aMoves = [1,2,3];
+
+		for(var i = 0; i < intMoves; i++){
+			var initialPattern = [1,2,3];
+			var objShuffledPattern = shuffle(initialPattern);
+			while(objShuffledPattern[0] == objMoves[i][0]){
+				objShuffledPattern = shuffle(initialPattern);
+			}
+			objMoves.push(objShuffledPattern);
+		}
+
+		return objMoves;
+	}
+
+	function shuffle(array) {
+		var currentIndex = array.length, temporaryValue, randomIndex;
+
+		// While there remain elements to shuffle...
+		while (0 !== currentIndex) {
+
+			// Pick a remaining element...
+			randomIndex = Math.floor(Math.random() * currentIndex);
+			currentIndex -= 1;
+
+			// And swap it with the current element.
+			temporaryValue = array[currentIndex];
+			array[currentIndex] = array[randomIndex];
+			array[randomIndex] = temporaryValue;
+		}
+
+		return array;
+	}
+
+});
+</script>
+</html>
