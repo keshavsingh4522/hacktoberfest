@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<div class="handle">
+  <div class="display">Elevator Simulator</div>
+  <div class="buttons">
+    <div class="btn-container bottom">
+      <button class="btn-floor" data-set-floor="0">T</button>
+    </div>
+    <div class="btn-container floor">
+      <button class="btn-floor floor" data-set-floor="1">1</button>
+    </div>
+    <div class="btn-container floor">
+      <button class="btn-floor floor" data-set-floor="2">2</button>
+    </div>
+    <div class="btn-container floor">
+      <button class="btn-floor floor" data-set-floor="3">3</button>
+    </div>
+    <div class="btn-container floor">
+      <button class="btn-floor floor" data-set-floor="4">4</button>
+    </div>
+    <div class="btn-container floor">
+      <button class="btn-floor floor" data-set-floor="5">5</button>
+    </div>
+    <div class="btn-container floor">
+      <button class="btn-floor floor" data-set-floor="6">6</button>
+    </div>
+  </div>
+</div>
+<div class="building">
+  <div class="elevator-container">
+    <div class="elevator">
+      <div class="elevator-door"></div>
+      <div class="elevator-light"></div>
+    </div>
+  </div>
+  <div class="floors">
+    <div class="floor" data-floor="0">
+      <div class="floor-door"></div>
+    </div>
+    <div class="floor" data-floor="1">
+      <div class="floor-window"></div>
+    </div>
+    <div class="floor" data-floor="2">
+      <div class="floor-window"></div>
+    </div>
+    <div class="floor" data-floor="3">
+      <div class="floor-window"></div>
+    </div>
+    <div class="floor" data-floor="4">
+      <div class="floor-window"></div>
+    </div>
+    <div class="floor" data-floor="5">
+      <div class="floor-window"></div>
+    </div>
+    <div class="floor" data-floor="6">
+      <div class="floor-window"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+body {
+  font: sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.handle {
+  position: absolute;
+  width: 250px;
+  border-radius: 15px;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+  padding: 15px;
+  background: radial-gradient(center, circle, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), radial-gradient(center, circle farthest-corner, grey, #a6a6a6);
+  background-size: 10px 10px, 10px 10px, 100% 100%;
+  background-position: 1px 1px, 0px 0px, center center;
+}
+
+.display {
+  background: lime;
+  background-image: repeating-linear-gradient(0deg, #00e600 0px, #00e600 2px, transparent 2px, transparent 10px), repeating-linear-gradient(90deg, #00e600, #00e600 2px, transparent 2px, transparent 9px);
+  border: 11px solid #333;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px 17px;
+  font-family: Space Mono, monospace;
+  height: 80px;
+  overflow-y: hidden;
+  color: #000;
+  line-height: 1.45;
+  box-shadow: inset 0px 0px 0px 2px black, 0px 0px 0px 2px black;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  height: 370px;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.btn-container {
+  flex-basis: 50%;
+  position: relative;
+}
+.btn-container.bottom {
+  flex-basis: 100%;
+}
+
+button.btn-floor {
+  position: relative;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid lightgray;
+  box-shadow: inset 0px 0px 2px 1px gray, inset 0px -3px 4px rgba(0, 0, 0, 0.3), inset 0px 3px 4px rgba(255, 255, 255, 0.6), 0px -2px 3px rgba(0, 0, 0, 0.6), 0px 1px 2px rgba(255, 255, 255, 0.7), 0px 0px 1px 1px black, 0px 0px 0px 5px gray, 0px 0px 1px 6px black;
+  display: block;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  color: #3c3c3c;
+  outline: none;
+}
+button.btn-floor:hover {
+  border-color: lime;
+}
+button.btn-floor:active, button.btn-floor.active {
+  background: lime;
+  color: #ccffcc;
+  border-color: green;
+}
+
+.building {
+  width: 300px;
+  position: absolute;
+  background: #ccc26b;
+  background-image: linear-gradient(rgba(204, 194, 107, 0.6), rgba(204, 194, 107, 0.6)), url("http://gdj.graphicdesignjunction.com/wp-content/uploads/2011/05/photoshop-texture-35.jpg");
+  background-size: cover, cover;
+  height: 460px;
+  left: 300px;
+  top: 50px;
+}
+.building:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: inherit;
+  top: -30px;
+  left: 85px;
+  width: 130px;
+  height: 30px;
+}
+.building:after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #333;
+  bottom: -20px;
+  left: -15px;
+  width: 330px;
+  height: 20px;
+}
+
+.floors {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: stretch;
+  flex-direction: column-reverse;
+}
+.floors .floor {
+  position: relative;
+  height: 100%;
+}
+.floors .floor:after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border-top: 10px solid turquoise;
+  opacity: 0.8;
+}
+.floors .floor .floor-door {
+  background: silver;
+  background-image: repeating-linear-gradient(90deg, transparent 0px, transparent 33px, #333 33px, #333 37px, transparent 37px, transparent 70px);
+  width: 80px;
+  height: 55px;
+  border: 5px solid #333;
+  border-bottom: none;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+.floors .floor .floor-window {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.floors .floor .floor-window:after, .floors .floor .floor-window:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: goldenrod;
+  border: 2px solid darkgoldenrod;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  margin-left: -20px;
+}
+.floors .floor .floor-window:after {
+  left: 80%;
+}
+.floors .floor .floor-window:before {
+  left: 20%;
+}
+
+.elevator-container {
+  position: absolute;
+  background: turquoise;
+  width: 100px;
+  left: 100px;
+  height: 100%;
+  z-index: 10;
+}
+.elevator-container .elevator {
+  width: 40px;
+  height: 60px;
+  margin-left: -20px;
+  margin-top: 7px;
+  left: 50%;
+  background: white;
+  border: 3px solid #333;
+  border-top-width: 10px;
+  position: absolute;
+}
+.elevator-container .elevator-door {
+  width: 100%;
+  height: 100%;
+  right: 0;
+  position: relative;
+  background: silver;
+  background: radial-gradient(center, circle, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), radial-gradient(center, circle farthest-corner, grey, #8a8a8a);
+  background-size: 7px 7px, 7px 7px, 100% 100%;
+  background-position: 1px 1px, 0px 0px, center center;
+}
+.elevator-container .elevator-light {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  background: lime;
+}
+</style>
+</head>
+
+<script type="text/javascript">
+window.onload = () => {
+  let elevator = document.querySelector(".elevator");
+  let elevatorDoor = elevator.querySelector(".elevator-door");
+  let elevatorLight = elevator.querySelector(".elevator-light");
+  let floors = document.querySelectorAll(".building .floor");
+  let buttons = document.querySelectorAll(".handle button");
+  let display = document.querySelector(".display");
+
+  var destinyFloors = [];
+  var currentFloor = null;
+  var leavingFloor = false;
+  var elevatorStatus = 'idle';
+  var elevatorWaitingTime = 2000;
+  var elevatorWaitTime = 2000;
+  var previousTime = new Date().getTime();
+  var deltaTime = 0;
+
+  elevatorDoor.style.width = "1px";
+  elevator.style.offsetTop = floors[0].offsetTop + "px";
+
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      let setFloor = this.getAttribute("data-set-floor");
+      let selectedFloor = Array.prototype.slice.apply(
+      document.querySelectorAll(".building .floor")).
+      filter(f => f.getAttribute("data-floor") == setFloor)[0];
+
+      if (destinyFloors.find(df => df.getAttribute("data-floor") == selectedFloor.getAttribute("data-floor")) == null) {
+        if (selectedFloor.getAttribute("data-floor") != currentFloor.getAttribute("data-floor")) {
+          destinyFloors.push(selectedFloor);
+        }
+      }
+      leavingFloor = true;
+      if (elevatorStatus == 'idle') {
+        elevatorStatus = 'closing';
+      }
+    });
+  });
+
+  function updateElevator() {
+    deltaTime = new Date().getTime() - previousTime;
+    previousTime = new Date().getTime();
+
+    requestAnimationFrame(updateElevator);
+    // console.log(elevator.offsetTop)
+    var elevatorWithinFloor = false;
+    for (let i = 0; i < floors.length; i++) {
+      if (elevator.offsetTop > floors[i].offsetTop && elevator.offsetTop < floors[i].offsetTop + 10) {
+        // console.log("elevator within floor "+i);
+        elevatorWithinFloor = true;
+        currentFloor = floors[i];
+
+        if (!leavingFloor) {
+          if (destinyFloors.some(df => df.getAttribute("data-floor") == currentFloor.getAttribute("data-floor"))) {
+            // console.log("Reached floor")
+            destinyFloors = destinyFloors.filter(df => df.getAttribute("data-floor") != currentFloor.getAttribute("data-floor"));
+            elevatorStatus = 'opening';
+          }
+
+        } else {
+          // console.log("Leaving floor")
+        }
+      }
+    }
+
+    if (!elevatorWithinFloor) {
+      // console.log("Elevator out of any floor")
+      if (leavingFloor) {
+        leavingFloor = false;
+      }
+    }
+
+    if (elevatorStatus != 'moving') {
+      if (elevatorStatus == 'opening') {
+        if (elevatorDoor.offsetWidth > 1) {
+          elevatorDoor.style.width = elevatorDoor.offsetWidth - 1 + "px";
+        } else {
+          if (destinyFloors.length == 0) {
+            elevatorStatus = 'idle';
+          } else {
+            elevatorStatus = 'waiting';
+            elevatorWaitingTime = elevatorWaitTime;
+          }
+        }
+      }
+      if (elevatorStatus == 'waiting') {
+        if (elevatorWaitingTime > 0) {
+          elevatorWaitingTime -= deltaTime;
+        } else {
+          elevatorStatus = 'closing';
+        }
+      }
+      if (elevatorStatus == 'closing') {
+        if (elevatorDoor.offsetWidth < 34) {
+          elevatorDoor.style.width = elevatorDoor.offsetWidth + 1 + "px";
+        } else {
+          elevatorStatus = 'moving';
+        }
+      }
+    }
+
+    if (destinyFloors[0] != null && elevatorStatus == 'moving') {
+      if (destinyFloors[0].offsetTop > elevator.offsetTop - 7) {
+        elevator.style.top = elevator.offsetTop - 7 + 2 + "px";
+      } else {
+        elevator.style.top = elevator.offsetTop - 7 - 2 + "px";
+      }
+    }
+
+    updateButtons();
+    updateDisplay();
+  }
+  updateElevator();
+
+  function updateDisplay() {
+    display.innerHTML = [
+    "Ground Floor",
+    "First Floor",
+    "Second Floor",
+    "Third Floor",
+    "Fourth Floor",
+    "Fifth Floor",
+    "Sixth Floor"][
+    parseInt(currentFloor.getAttribute("data-floor"))] + " " + (
+    destinyFloors[0] != null ?
+    destinyFloors[0].offsetTop < currentFloor.offsetTop ?
+    '<br />Going Up' :
+    '<br />Going Down' :
+    '');
+  }
+
+  function updateButtons() {
+    buttons.forEach(button => {
+      if (destinyFloors.find(df => df.getAttribute("data-floor") == button.getAttribute("data-set-floor"))) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
+    });
+  }
+};
+</script>
+</html>
