@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url('./bg.jpg');
+    background-size: cover;
+}
+
+#a-view-container,#b-view-container,#c-view-container{
+    color: white;
+}
+.container{
+    width: 425px;
+    background-color: #E8E1D9;
+    margin: 0 auto;
+    /* opacity: 0.5; */
+    padding: 1rem;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 10px 10px;
+    box-sizing: border-box; 
+}   
+
+.mode{
+    margin: 10px 0;
+}
+
+
+.d-inline{
+    display: inline-block;
+    padding: 10px;
+    background-color: #125C13;
+}
+
+
+.title-2,
+.title-3,
+.title-4{
+    font-size: 16px;
+}
+.add-ico{
+    /* margin: 100px 0; */
+    padding: 10px;
+    /* background-color: blue; */
+}
+.dropzone-container{
+    /* padding: 10px; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,select{
+    display: inline-block;
+}
+.dropzone{
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px 0;
+    background-color: #F4A442;
+}
+
+.input-container{
+    width:70%;
+    padding: 5px;
+    margin: 0 auto 10px;
+}
+
+.input-a,.input-b,.input-c,.pangkat-a,.pangkat-b{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid #125C13;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+
+}
+
+.dragging{
+    opacity: 0.5;
+    background-color: red;
+}
+
+.step-result-container{
+    padding: 10px;
+    background: #F4A442;
+    margin: 10px;    
+}
+.input-all{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.input-all button {
+    background: #123C13;
+    border: 0;
+    padding: 20px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.input-all input {
+    padding: 10px;
+}
