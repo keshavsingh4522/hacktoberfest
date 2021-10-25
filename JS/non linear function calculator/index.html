@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Regula Fasi</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-1">Calculator Non-Linear Function </h1>
+        <!-- <h2 class="title-2">Nama : Mohammad Firmansyah</h2>
+        <h2 class="title-2">Npm : 20081010022</h2>
+        <h2 class="title-3">KELAS : Metode Numerik D </h2>
+        <h2 class="title-4">UPN Veteran Jawa Timur </h2> --> 
+
+        <select name="mode" id="mode" class="mode">
+            <option value="mode-1">False Position</option>
+            <option value="mode-2">Secant</option>
+        </select>
+
+        <div id="title">
+            <h2>
+                <div>
+                    <div id="posisi-1" class="d-inline">
+                        <div id="a-view-container"  >
+                            <span id="a-view"></span>x^
+                            <span id="a-pangkat-view">2</span>
+                            <span id="operator-1-view">+</span>
+                        </div>
+                    </div>
+
+
+                    <div id="posisi-2" class="d-inline">
+                        <div id="b-view-container"  >
+                            <span id="b-view">e</span>^
+                            <span id="b-pangkat-view">x</span>
+                            <span id="operator-2-view">+</span>
+                        </div>
+                    </div>
+                    <div id="posisi-3" class="d-inline">
+                        <div id="c-view-container">
+                            <span id="c-view">4</span> = 0
+                        </div>
+                    </div>
+                </div>
+            </h2>
+
+                <!-- <button class="add-ico" id="template-1">+</button>
+                <button class="add-ico" id="template-2">+2</button> -->
+        </div>
+        <div class="dropzone-container">
+            <div class="dropzone" id="dropzone-1">
+                <div class="input-container" draggable="true" name="dropzone-1" id="input-a">
+                    <input type="text" name="a" id="a" class="input-a">
+                    <!-- <span class="label-input-a">A</span> -->
+                    
+                    <!-- <span class="label-pangkat-a">Pangkat</span>   -->
+                    <input type="text" name="pangkat-a" id="pangkat-a" class="pangkat-a">
+                    <select name="lambang-1" id="lambang-1" class="lambang-input">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <!-- <option value="x">x</option> -->
+                        <!-- <option value="/">/</option> -->
+                    </select> 
+                </div>
+            </div>
+
+            <div class="dropzone" id="dropzone-2">
+                <div class="input-container" draggable="true" name="dropzone-2" id="input-b">
+                    <input type="text" name="b" id="b" class="input-b"> 
+                   <!-- <span class="label-input-b">B</span> --> 
+                   
+                    <!-- <span class="label-pangkat-b">Pangkat</span> --> 
+                    <input type="text" name="pangkat-b" id="pangkat-b" class="pangkat-b"> 
+       
+                   <select name="lambang-2" id="lambang-2" class="lambang-input">
+                       <option value="+">+</option>
+                       <option value="-">-</option>
+                       <!-- <option value="x">x</option> -->
+                       <!-- <option value="/">/</option> -->
+                   </select>  
+                </div>
+            </div>
+            <div class="dropzone"id="dropzone-3">
+                <div class="input-container" draggable="true">
+                    <input type="text" name="c" id="c" class="input-c">
+                    <!-- <span class="input-c"></span>   -->
+                </div>
+            </div>
+        </div>
+        <div class="input-all">
+            <label for="x-value" id="x-value-label">First Guess </label>
+            <input type="text" name="x-value" id="x-value">
+            <br>
+            <label for="y-value" id="y-value-label">Second Guess</label>
+            <input type="text" name="y-value" id="y-value">
+            <br>
+            <label for="e-value">Error Tolerance </label>
+            <input type="text" name="e-value" id="e-value">
+            <br>
+            <button id="process-id">Process</button>
+        </div>
+
+        <div class="container-final">
+            <h2>Final Result x = </h2>
+            <h2 id="hasil-ahkir">0</h2>
+        </div>
+    </div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
