@@ -196,6 +196,7 @@
 | Bikram Purkait       | [@IamBikramPurkait](https://github.com/IamBikramPurkait)      |         1        |
 | Yashas H Majmudar    | [@yashas-hm](https://github.com/yashas-hm)                    |         1        |
 | Muhammad Gimnastiar  | [@muhammadgimnastiar](https://github.com/muhammadgimnastiar)  |         1        |
+| Jonathan C           | [@tobeornottobeadev](https://github.com/tobeornottobeadev)    |         1        |
 | Kadambini Panda      | [@kadambinipanda](https://github.com/kadambinipanda)          |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
