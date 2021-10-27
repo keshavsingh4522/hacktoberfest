@@ -1,42 +1,33 @@
-75. Sort Colors
-Medium
+<h2>75. Sort Colors</h2><h3>Medium</h3><hr><div><p>Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>
+ <p>We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.</p>
+<p>You must solve this problem without using the library's sort function.</p>
 
-7465
+<p></p>
 
-352
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [2,0,2,1,1,0]
+<strong>Output:</strong> [0,0,1,1,2,2]
+</pre>
 
-Add to List
+<p><strong>Example 2:</strong></p>
 
-Share
-Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+<pre><strong>Input:</strong> nums = [2,0,1]
+<strong>Output:</strong> Output: [0,1,2]
+</pre>
 
-We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+<p><strong>Example 3:</strong></p>
 
-You must solve this problem without using the library's sort function.
+<pre><strong>Input:</strong> nums = [0]
+<strong>Output:</strong> [0]
+</pre>
 
- 
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-Example 1:
-
-Input: nums = [2,0,2,1,1,0]
-Output: [0,0,1,1,2,2]
-Example 2:
-
-Input: nums = [2,0,1]
-Output: [0,1,2]
-Example 3:
-
-Input: nums = [0]
-Output: [0]
-Example 4:
-
-Input: nums = [1]
-Output: [1]
- 
-
-Constraints:
-
-n == nums.length
-1 <= n <= 300
-nums[i] is 0, 1, or 2.
- 
+<ul>
+	<li>n == nums.length</li>
+	<li>1 <= n <= 300</li>
+ <li>nums[i] is 0, 1, or 2.</li>
+</ul>
+</div>
