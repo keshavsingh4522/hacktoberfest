@@ -1,0 +1,84 @@
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 32pt;
+  z-index: 10;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#droparea {
+  width: 100%;
+
+}
+
+#zeit{
+  width: 100%;
+  float: left;
+  color: white;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+#bestzeit {
+  width: 100%;
+  color: white;
+  margin-left: 30px;
+}
+
+#controls {
+  width: 100%;
+  color: white;
+  margin-left: 30px;
+}
+
+#player {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: yellow;
+  bottom: 0px;
+  left: 50%;
+  background-image: url(../res/image/football.png);
+  background-size: cover;
+}
+
+#gameOverScreen {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  width: 40%;
+  height: 40%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: none;
+  border-radius: 15px;
+}
+
+#gameOverScreen button {
+  background-color: lightgreen;
+  font-size: 50pt;
+  padding: 10px;
+}

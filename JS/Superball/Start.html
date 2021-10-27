@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Superball - made by WAR0</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="src/styles/style.css">
+    <script src="src/scripts/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+	
+    <!-- Scripts -->
+    <script src="src/scripts/app.js"></script>
+    <script src="src/scripts/keybindings.js"></script>
+    <script src="src/scripts/ball.js"></script>
+
+    <!-- Views -->
+    <script src="src/views/view_main.js"></script>
+
+    <!-- Controller -->
+    <script src="src/controller/controller_main.js"></script>
+
+    <!-- Init -->
+    <script>
+      var app = new App();
+      app.addView({
+        name: 'Main',
+        view: viewMain,
+        controller: controllerMain
+      });
+      app.showView('Main').placeAt('content');
+    </script>
+  </body>
+</html>
