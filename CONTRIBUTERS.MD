@@ -111,6 +111,8 @@
 | Hardik Sharma        | [@hardik302001](https://github.com/hardik302001)              |         1        |
 | Raghav Rastogi       | [@raghav2404](https://github.com/raghav2404)                  |         0        |
 | Nirbhay Sigh         | [@nirbhay007](https://github.com/nirbhay007)                  |         1        |
+| Saatvat Gupta        | [@Saatvat](https://github.com/Saatvat)
+|         1        |
 | Koddi Evangelista    | [@Koddi-Evangelista](https://github.com/Koddi-Evangelista)    |         1        |
 | Nukholis Ramadhan    | [@ramadh-an](https://github.com/ramadh-an)                    |         1        |
 | Ravi                 | [@srravigupt](https://github.com/srravigupt)                  |         0        |
