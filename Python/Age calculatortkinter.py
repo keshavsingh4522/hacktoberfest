@@ -1,6 +1,6 @@
 import datetime
 import tkinter as tk
-window=tk.Tk()
+window = tk.Tk()
 window.geometry("620x780")
 window.title(" Age Calculator App ")
 name = tk.Label(text = "Name")
@@ -27,7 +27,7 @@ def getInput():
     textArea.grid(column=1,row=6)
     answer = " Heyy {tiger}!!!. You are {age} years old!!! ".format(tiger=name, age=tiger.age())
     textArea.insert(tk.END,answer)
-button=tk.Button(window,text="Calculate Age",command=getInput,bg="pink")
+button = tk.Button(window,text="Calculate Age",command=getInput,bg="pink")
 button.grid(column=1,row=5)
 class Person:
     def __init__(self,name,birthdate):
