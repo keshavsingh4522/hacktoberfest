@@ -1,0 +1,355 @@
+"""
+    Name:Tambe Tabitha,
+    Occupation:Data analyst,
+    UserName : tab1tha,
+    StarredTheRepo:true,
+    FavouriteQuote: The world is unfolding as it should
+
+Code description : Guide to manipulating data that has multiple indexes.
+"""
+import pandas as pd
+import numpy as np
+
+# TODO rerun and refill the result sections considering the newly added seed value.
+np.random.seed(26)
+
+index = [("California", 2000),("California", 2010),
+("New York", 2000), ("New York", 2010),
+("Texas", 2000), ("Texas", 2010)]
+
+populations = [33871648,37253956,
+18976457,19378102,
+20851820,25145561]
+
+# Create a pandas object
+pops = pd.Series(populations, index=index)
+
+# simple filter
+select1 = pops[("New York", 2000):("Texas",2010)]
+
+# try: all the population points gathered in 2010
+select2 = pops[[i for i in pops.index if i[1]==2010]]
+
+""" the better way: Pandas multiIndex"""
+# create multiIndex
+index = pd.MultiIndex.from_tuples(index)
+#  Use newly created index to reindex the pops pandas series
+pops = pops.reindex(index)
+"""
+print(pops) produces
+California  2000    33871648
+            2010    37253956
+New York    2000    18976457
+            2010    19378102
+Texas       2000    20851820
+            2010    25145561
+dtype: int64
+
+notice that repetitive values in the first column are truncated.
+"""
+
+# select all values with a second index of 2010 using multiIndexing, that is, all 
+# the population values recorded in the year 2010 irrespective of location.
+select3 = pops[:,2010]
+"""
+California    37253956
+New York      19378102
+Texas         25145561
+dtype: int64"""
+
+# MultiIndex as an extra dimension
+pops.unstack() #this doesn't change what is stored in pops
+"""
+                2000      2010
+California  33871648  37253956
+New York    18976457  19378102
+Texas       20851820  25145561
+
+the data type now is <class 'pandas.core.frame.DataFrame'>
+
+MultiIndex to dataframe (unstack) and back to MultiIndex (stack)
+print(pops.unstack().stack())
+
+MultiIndex enable multiple dimensioned dataframes to exist in pandas series.
+"""
+# Advantage of MultiIndexing over just using a DataFrame
+pop_df = pd.DataFrame({"total":pops, "under18":[9267089,9284094,4687374,4318033,5906301,6879014]})
+
+"""
+                    total  under18
+California 2000  33871648  9267089
+           2010  37253956  9284094
+New York   2000  18976457  4687374
+           2010  19378102  4318033
+Texas      2000  20851820  5906301
+           2010  25145561  6879014
+"""
+#calculating the population density per year.
+#create series of population densities.
+pop_dense = pop_df["under18"]/pop_df["total"]
+pop_dense.unstack()
+"""
+                2000      2010
+California  0.273594  0.249211
+New York    0.247010  0.222831
+Texas       0.283251  0.273568
+"""
+
+"Methods of MultiIndex creation"
+# Pass a list of two or more arrays as index to the df or series constructor.
+df = pd.DataFrame(np.random.rand(4,2), index=[["a","a","b","b"],[1,2,1,2]], columns=["data1", "data2"])
+
+# passing a dictionary with tuples as keys. A multiIndex is intuitively created.
+data = {("California", 2000):33871648,
+        ("California", 2010):37253956,
+        ("New York", 2000):18976457,
+        ("New York", 2010):19378102,
+        ("Texas", 2000):20851820,
+        ("Texas", 2010):25145561}
+data = pd.Series(data)
+
+"""
+pd.MultiIndex.from_tuples("list of tuples")
+pd.MultiIndex.from_arrays("list of arrays")
+pd.MultiIndex.from_product(["a","b"],[1,2]) would give a1,a2,b1,b2 as indices
+.from_product forms a multiIndex from a cartesian product of single indices.
+"""
+# naming index levels
+pops.index.names = ["city", "year"]
+
+# MultiIndex for columns
+"""Create as you would an index but replace "index" with "columns"
+columns = pd.MultiIndex.from_product(arrays_here, names=[list of column level names])
+
+Then create a dataframe as such
+df = pd.DataFrame(data, index=index_created, columns=columns_created)
+
+which can be indexed using the column names e.g df['col1'] gives all available data for col1
+"""
+
+#Indexing and Slicing a MultiIndex
+select4 = pops["California"]
+"""
+year
+2000    33871648
+2010    37253956
+dtype: int64
+"""
+select5 = pops["California",2000]
+"""
+33871648
+"""
+select6 =  pops[:,2000]
+"""
+city
+California    33871648
+New York      18976457
+Texas         20851820
+dtype: int64
+"""
+# slicing
+select7 = pops["New York": "Texas"]
+"""
+city      year
+New York  2000    18976457
+          2010    19378102
+Texas     2000    20851820
+          2010    25145561
+dtype: int64
+"""
+# selection based on boolean mask. Masking
+select8 = pops[pops>20000000]
+"""
+city        year
+California  2000    33871648
+            2010    37253956
+Texas       2000    20851820
+            2010    25145561
+dtype: int64
+"""
+# fancy indexing
+select9 = pops[["California", "Texas"]]
+"""
+city        year
+California  2000    33871648
+            2010    37253956
+Texas       2000    20851820
+            2010    25145561
+dtype: int64
+"""
+# TODO set a seed for np.random
+
+# Multiple indexed DataFrames
+indx = pd.MultiIndex.from_product([[2013,2014],[1,2]], names=["year", "visit"])
+cols = pd.MultiIndex.from_product([["Bob", "Guido", "Sue"], ["HR", "temp"]], names=["subject", "type"])
+dta = np.round(np.random.randn(4,6),1) # round to one decimal place
+dta[:,::2]*=10 #multiply alternate columns of all rows by 10
+dta +=37 # create sample health data. heart rate and temperature.
+health_data = pd.DataFrame(dta, index=indx, columns=cols)
+"""subject      Bob       Guido         Sue      
+type          HR  temp    HR  temp    HR  temp
+year visit                                    
+2013 1      68.0  37.1  43.0  36.2  30.0  37.5
+     2      40.0  36.1  47.0  37.6  57.0  36.9
+2014 1      51.0  35.4  29.0  38.9  22.0  35.9
+     2      35.0  36.8  37.0  36.7  11.0  36.2"""
+select10 = health_data["Guido"]
+"""
+type          HR  temp
+year visit            
+2013 1      53.0  38.0
+     2      42.0  37.6
+2014 1      33.0  37.3
+     2      31.0  36.2
+"""
+select11 = health_data.loc[2013,1]
+# columns are primary so .loc has to be used to access and index in multiple indexed DataFrames.
+"""
+subject   Bob       Guido         Sue      
+type       HR  temp    HR  temp    HR  temp
+visit                                      
+1        33.0  36.2  26.0  38.8  33.0  36.0
+2        35.0  36.8  19.0  37.1  43.0  36.6
+"""
+# .loc is used to get rows i.e indexes by default. if columns want to be gotten, 
+# all the rows muust be explicitly grabbed first using .loc[:, column_slice]
+# that is health_data["Guido"] == health_data.loc[:, "Guido"]
+idx = pd.IndexSlice
+# select12 = health_data.loc[(:,1),(:,"HR")] produces a syntax error
+select12 = health_data.loc[idx[:,1], idx[:,"HR"]]
+# to get all the heart rates recorded on the first visit.
+"""
+subject      Bob Guido   Sue
+type          HR    HR    HR
+year visit                  
+2013 1      50.0  40.0  39.0
+2014 1      30.0  40.0  48.0
+"""
+
+# REARRANGING MULTIINDICES. SORTING
+"""Many of the slicing operations on MultiIndices will fail if the index is not sorted"""
+index_unsorted = pd.MultiIndex.from_product([["a","c","b"], [1,2]])
+numbers = pd.Series(np.random.rand(6), index=index_unsorted)
+numbers.index.names = ['char', 'int']
+"""
+char  int
+a     1      0.394449
+      2      0.622676
+c     1      0.681818
+      2      0.871383
+b     1      0.840613
+      2      0.471428
+"""
+# numbers['a':'b'] produces UnsortedIndexError
+numbers_sorted = numbers.sort_index()
+"""
+char  int
+a     1      0.929833
+      2      0.368083
+b     1      0.158251
+      2      0.885909
+c     1      0.298500
+      2      0.444031
+"""
+select13 = numbers_sorted['a':'b']
+"""
+char  int
+a     1      0.470595
+      2      0.893561
+b     1      0.042810
+      2      0.900820
+"""
+
+# STACKING AND UNSTACKING INDICES
+numbers.unstack() # does not change in place. i.e numbers remains the same.
+"""
+int          1         2
+char                    
+a     0.039433  0.711224
+b     0.108741  0.595642
+c     0.766696  0.258580
+"""
+# .unstack is level=-1 by default i.e the innermost level.
+numbers.unstack(level=0)
+"""
+char         a         b         c
+int                               
+1     0.379377  0.647447  0.750011
+2     0.484582  0.694712  0.133949
+"""
+
+# to come back to the initial MultiIndex, use stack() for the default else unstack()
+numbers.unstack().stack()
+numbers.unstack(level=0).unstack()
+"""
+char  int
+a     1      0.709170
+      2      0.046916
+b     1      0.099017
+      2      0.023957
+c     1      0.891390
+      2      0.656554
+"""
+# Check the role of pd.melt in unpivoting DataFrames.
+
+# INDEX SETTING AND RESETTING
+p = numbers.reset_index() # Does not change in place
+"""
+  char  int         0
+0    a    1  0.904142
+1    a    2  0.577573
+2    c    1  0.654550
+3    c    2  0.820509
+4    b    1  0.863920
+5    b    2  0.598886
+"""
+p.set_index(["char", "int"])
+
+"""
+char int          
+a    1    0.457068
+     2    0.801025
+c    1    0.189085
+     2    0.331934
+b    1    0.803632
+     2    0.401808
+"""
+
+# DATA AGGREGATIONS ON MULTI-INDICES
+"""
+Remembering  the health_data DataFrame
+
+subject      Bob       Guido         Sue      
+type          HR  temp    HR  temp    HR  temp
+year visit                                    
+2013 1      26.0  37.9  27.0  39.1  46.0  37.0
+     2      57.0  38.2  24.0  37.5  44.0  36.2
+2014 1      27.0  37.6  26.0  36.8  38.0  36.8
+     2      42.0  36.8  56.0  37.2  27.0  36.7
+
+"""
+# the average values over the two visits per person
+select14 = health_data.mean(level="year")
+"""
+subject   Bob        Guido         Sue       
+type       HR   temp    HR  temp    HR   temp
+year                                         
+2013     45.0  37.90  39.5  37.0  42.0  36.60
+2014     44.5  37.15  27.0  36.4  25.0  36.65
+"""
+# the average values of heart rate and temperature per year over all participants.
+select15 = health_data.mean(axis=1, level="type")
+"""
+type               HR       temp
+year visit                      
+2013 1      37.666667  36.366667
+     2      32.666667  37.133333
+2014 1      41.333333  37.466667
+     2      40.333333  37.633333
+"""
+# 1D Series
+# 2D DataFrame
+# 3D Panel
+# 4D Panel4D
+
+print(select15)
