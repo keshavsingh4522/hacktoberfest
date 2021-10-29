@@ -18,6 +18,7 @@
 | Hero Tiwari          | [@Skywalkers-24](https://github.com/Skywalkers-24/)           |         0        |
 | Sarthak Shastri      | [@sarthak815](https://github.com/sarthak815)                  |         0        |
 | Aman Gupta           | [@find-aman](https://github.com/find-aman)                    |         1        |
+| Ron Elgazar          | [@ronelgazar](https://github.com/ronelgazar)                  |         1        |
 | Vatsal Narwal        | [@VatsalNarwal](https://github.com/VatsalNarwal)              |         0        |
 | Pratik Shirodkar     | [@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)      |         0        |
 | Ramya Neelakantan    | [@ramya-neelakantan](https://github.com/ramya-neelakantan)    |         1        |
