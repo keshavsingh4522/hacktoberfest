@@ -190,6 +190,7 @@
 | Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
 | Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                |         1        |
 | Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
+| Sagun-png            | [@rohitamrutkar1204](https://github.com/Sagun-png)            |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
@@ -217,3 +218,4 @@
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
 | Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
+| Shreyash Lokhande    | [@shreyash-lokhande](https://github.com/shreyash-lokhande)    |         1        |
