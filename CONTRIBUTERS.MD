@@ -12,6 +12,7 @@
 | Shruti Jha           | [@ShrutiJha31](https://github.com/ShrutiJha31/)               |         0        |
 | Jobin                | [@Jobin01334](https://github.com/Jobin01334)                  |         1        |
 | Richard Timothy      | [@RichardTimothy1307](https://github.com/RichardTimothy1307/) |         0        |
+| Tambe Tabitha        | [@tab1tha](https://github.com/tab1tha/)                       |         0        |
 | Aniket Nayek         | [@AniketNayek3101](https://github.com/AniketNayek3101)        |         0        |
 | Sumit Soni           | [@isumit19](https://github.com/isumit19/)                     |         0        |
 | Siddarth Awasthi     | [@siddarth308](https://github.com/siddarth308/)               |         0        |
