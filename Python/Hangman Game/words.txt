@@ -1,0 +1,156 @@
+Python
+pygame 
+artificial intelligence
+machine learning 
+data science 
+numpy
+pandas
+matplotlib
+tensorflow
+scipy
+web scripting
+web development
+html
+css
+javascript
+c
+java
+concatenation
+string
+networking
+topology
+sql
+skillitlearn
+hacking
+hashing
+mapping
+computers
+hardware
+software
+algorithms
+data structures
+linked list
+stack
+queues
+binary tree
+heaps
+graphs
+mesh
+array
+pointers
+inheritance
+polymorphism
+encapsulation
+abstaction
+data hiding
+cybersecurity
+ethical hacking
+classes
+object
+constructors
+overloading
+preprocessor
+cpu
+scheduling
+android development
+kotlin
+application
+compiler
+errors
+database
+documents
+file server
+garbage value
+machine
+http
+website
+webpage
+internet
+hypertext
+programming
+neural networks
+deep learning
+virus
+process
+information
+data
+cloud computing
+cpu
+cookies
+cybercrime
+command prompt
+configure
+domain
+data mining
+methodology
+modularity
+debugging
+firewall 
+trojan horse
+flowchart
+pseudo codes
+megabyte
+gigabytes
+kilobytes
+terabytes
+format
+interface
+iteration
+inbox
+integer
+float
+charcter
+structure
+functions
+function overloading
+ip address
+kernel 
+keyboard
+Linux
+redhat
+administration
+macro
+memory 
+monitor
+modem
+malware
+nodes
+operating system
+open source
+output
+input
+online
+offline
+plug in 
+piracy
+paste
+copy
+password
+programmer
+protocol
+print
+reboot
+restore
+scanner
+script
+social networking
+spreadsheet
+syntax errors
+supercomputers 
+spyware
+trojan horse
+spam 
+junk 
+inbox
+security
+storage
+ram
+rom
+terminal
+template
+urllib
+Unix
+user interface
+upload
+download
+virtual memory
