@@ -1,0 +1,42 @@
+name: random_jokes
+
+description: A new Flutter application.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.3
+  get_it: ^3.0.3
+  equatable: ^2.0.3
+  flutter_bloc: ^7.0.1
+  bloc: ^7.0.0
+  bloc_test: ^8.0.2
+
+
+dev_dependencies:
+
+  flutter_launcher_icons: "^0.9.0"
+  flutter_test:
+    sdk: flutter
+  test: ^1.16.5
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/logo.png
