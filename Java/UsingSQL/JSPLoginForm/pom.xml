@@ -273,7 +273,7 @@
         <filtering>true</filtering>
       </resource>
       <resource>
-        <directory>src/main/resources/${target}</directory>
+        <directory>src/main/resources/dev</directory>
       </resource>
     </resources>
 
