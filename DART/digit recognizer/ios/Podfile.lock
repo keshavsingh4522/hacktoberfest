@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - TensorFlowLite (1.13.1)
+  - tflite (1.0.6):
+    - Flutter
+    - TensorFlowLite
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - tflite (from `.symlinks/plugins/tflite/ios`)
+
+SPEC REPOS:
+  trunk:
+    - TensorFlowLite
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  tflite:
+    :path: ".symlinks/plugins/tflite/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  TensorFlowLite: 8b9dc4eb32eac0f8cb660c66bca7604da56dcc5a
+  tflite: 487522100c94a00c227074f4f1cd5372c75ba961
+
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+
+COCOAPODS: 1.9.3
