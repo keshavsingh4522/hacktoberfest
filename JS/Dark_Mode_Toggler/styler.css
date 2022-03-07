@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 10px;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 80%;
+}
+
+.container {
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Toggler starts here */
+:root {
+  --light-color: rgb(231, 225, 225);
+  --dark-color: rgb(34, 33, 33);
+  --right-color: rgb(212, 127, 0);
+
+  --background: var(--light-color);
+  --foreground: var(--dark-color);
+}
+
+.modedark {
+  --light-color: white;
+  --dark-color: rgb(36, 33, 33);
+  --right-color: orange;
+
+  --background: var(--dark-color);
+  --foreground: var(--light-color);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+section.main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.text-container > * {
+  margin-bottom: 15px;
+  margin-right: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  color:rgb(12, 147, 209)
+}
+
+.btn {
+  font-size: 1.4rem;
+  border: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+
+
+
+.btn::first-child {
+  margin-right: 1rem;
+}
+
+.btn-left {
+  background: var(--foreground);
+  color: var(--background);
+  margin-right: 8px;
+}
+
+.btn-left:hover {
+    cursor: pointer;
+    background: rgb(95, 65, 65);
+}
+
+.btn-right {
+  background-color: var(--right-color);
+  color: var(--light-color);
+}
+
+.btn-right:hover {
+    cursor: pointer;
+    background: rgb(194, 97, 33);
+}
+
+.intro-img {
+  text-align: right;
+}
+
+.intro-img img {
+  width: 50%;
+}
+
+footer {
+  background: var(--foreground);
+  width: 100%;
+  height: 10vh;
+  color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggler {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: 1px solid var(--foreground);
+  font-size: 14px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-txt {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 3px;
+}
