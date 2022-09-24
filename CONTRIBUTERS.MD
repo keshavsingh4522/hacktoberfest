@@ -58,7 +58,7 @@
 | Raghav Agarwal       | [@ragharwal](https://github.com/ragharwal)                    |         0        |
 | Ananya Sharma        | [@AnanyaSharma22](https://github.com/AnanyaSharma22)          |         0        |
 | Kwame Violet Taylor  | [@KwameTaylor](https://github.com/KwameTaylor)                |         1        |
-| Tanmay Khandelwal    | [@Dude-901](https://github.com/Dude-901)                      |         1        |
+| Lokesh Srivastava    | [@Lokeshsri11](https://github.com/Lokeshsri11)                |         1        |
 | B Rahul              | [@rahulbollisetty](https://github.com/rahulbollisetty)        |         0        |
 | AbuBakar Sheikh      | [@onymousproduktions](https://github.com/onymousproduktions)  |         0        |
 | Dung T. Vo           | [@dungxibo123](https://github.com/dungxibo123)                |         0        |
