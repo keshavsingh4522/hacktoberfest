@@ -1,0 +1,53 @@
+1. Arrays & Strings
+Basic Array And Strings Questions
+Kadane’s Algorithm
+Dutch National Flag Algorithm
+
+2. Multidimensional Arrays
+Rotation based problems.
+Traversal Based Problems
+
+3. Sorting Algorithms & Searching
+Insertion Sort
+Selection Sort.
+Binary Search on Arrays and matrices
+
+4.Linked Lists
+Reversal Problems
+Sorting Problems.
+Slow And Fast Pointers
+Modify In Linked list
+
+5.Stacks and Queues
+ Implementation Problems
+Application Problems.
+
+6.Binary Trees
+Construction Of BST
+Conversion Based Problems
+Modification in BST
+Standard Problems
+
+7.Recursion and Backtracking
+ Basic Recursion Questions
+Divide And Conquer
+
+8.Priority Queues and Heaps
+Implementation Based problems
+Conversion based problems
+K Based Problems
+
+9.Graphs
+Graph Traversals – BFS And DFS
+MST
+Shortest Path Algorithms
+Topological Sort
+Graphs in Matrix
+
+10.Dynamic Programming
+DP with Arrays
+DP With Strings
+DP With Maths
+DP With Trees
+Breaking And Partition Based Problems
+Counting Based Problems
