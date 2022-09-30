@@ -7,7 +7,7 @@ let colors = [ 'red', 'blue', 'green', 'orange', 'purple', 'black', 'yellow'];
 let button = document.getElementById('button');
 
 //Add event listener
-button.addEventListener('click', function(){
+button.addEventListener('click', () => {
     //select a random number between 0 - 6
     let index = parseInt((Math.random()*colors.length)+1);
     //grab the canvas
