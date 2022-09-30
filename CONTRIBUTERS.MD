@@ -1,5 +1,6 @@
 | Name                  | Github                                                        | Starred the repo |
 | --------------------- | ------------------------------------------------------------- | ---------------- |
+| Hussain Lohawala      | [@H9660](https://github.com/H9660).            |                       1        |
 | Spardha               | [@Spardha-hash](https://github.com/Spardha-hash).            |         0        |
 | Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
