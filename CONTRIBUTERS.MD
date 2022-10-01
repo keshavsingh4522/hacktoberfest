@@ -1,5 +1,6 @@
 | Name                  | Github                                                        | Starred the repo |
 | --------------------- | ------------------------------------------------------------- | ---------------- |
+| Aditya Nigam         | [@adityanigam1](https://github.com/adityanigam1).            |         0        |
 | Spardha               | [@Spardha-hash](https://github.com/Spardha-hash).            |         0        |
 | Spacify              | [@fts18](https://github.com/fts18)                            |         0        |
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
@@ -216,4 +217,5 @@
 | Ayush Singla         | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov    | [@papa-het](https://github.com/Papa-het)                      |         1        |
 | Abhishek Mukherjee|  | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
+| Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
 | Daniel Aparecido     | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
