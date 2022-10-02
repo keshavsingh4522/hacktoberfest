@@ -6,14 +6,14 @@ lower_alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p
 numbers = ['0','1','2','3','4','5','6','7','8','9']
 symbols = ['*','/','.','?','[]',';','@','!','$','#','^','%','&','+','-']
 
-positive_response = ['y','yes','ok','Y']
-negative_response = ['n','N','no']
+positive_response = ['y','yes','ok']
+negative_response = ['n','no']
 
 sym_include = input("Include Symbols? (y/n) ")
 
-if sym_include in positive_response:	
+if sym_include.lower() in positive_response:	
 	characters = upper_alphabet + lower_alphabet + numbers + symbols
-elif sym_include in negative_response:
+elif sym_include.lower() in negative_response:
 	characters = upper_alphabet + lower_alphabet + numbers
 
 print('\n')
@@ -29,4 +29,7 @@ while length != n:
 	n = n + 1
 
 print('\n')
+print("The generated password is: *BELOW LINE")
+
 print(password)
+print("\nEND")
