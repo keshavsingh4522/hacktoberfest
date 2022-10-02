@@ -1,0 +1,14 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "A cool timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Shisui",
+  "license": "ISC",
+  "dependencies": {
+    "ms-prettify": "^1.3.3"
+  }
+}
