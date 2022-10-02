@@ -1,40 +1,44 @@
 
-import java.util.Arrays;
+import java.util.Scanner;
 
-public class BubbleSort {
+public class Main {
 
-	public static void main(String[] args) {
-		int[] arr = { 5, 4, 3, 2, 1 };
+	public static void main(String[] args)
+	{
+	    int i;
+	    Scanner sc=new Scanner(System.in);
+		System.out.print(" How much elements do you want in array ? ");
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		System.out.println("Enter values:-");
+		for( i=0;i<n;i++)
+		{
+		    arr[i]=sc.nextInt();
+		}
 		bubble(arr);
-		System.out.println(Arrays.toString(arr));
+		System.out.print("Sorted array:- ");
+		for(int num:arr)
+		System.out.print(num+" ");
 
 	}
 
-	static void bubble(int[] arr) {
-		
-		boolean swapped;
-//		run the steps N-1 times
+	static void bubble(int[] a) 
+	{
+	    int i,j;
+//run the steps N-1 times
 
-		for (int i = 0; i < arr.length; i++) {
-			swapped = false;
-//			for each step, max item will come at last respective index
-
-			for (int j = 1; j < arr.length - i; j++) {
-//				swap if the items are smaller than previous item
-
-				if (arr[j] < arr[j - 1]) {
-					int temp = arr[j];
-					arr[j] = arr[j - 1];
-					arr[j - 1] = temp;
-					swapped = true;
+		for (i = a.length-1; i >=1; i--) 
+		{
+			for (j = 0; j < i; j++) 
+			{
+//swap if the items are smaller than previous item
+				if (a[j] > a[j+1] ) 
+				{
+					int temp = a[j];
+					a[j] = a[j + 1];
+					a[j+1] = temp;
 				}
 			}
-			
-//			if you did not swap for a particular value of i, it means array is sorted hence stop program
-			
-			if(!swapped)
-				break;
 		}
 	}
-
 }
