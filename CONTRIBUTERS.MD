@@ -32,6 +32,7 @@
 | Dakshay Ahuja        | [@dakshayahuja](https://github.com/dakshayahuja)              |         0        |
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
+| Deepanshu Kumar      | [@deepanshu1334](https://github.com/deepanshu1334)                      |         0        |
 | Satyam Gadekar       | [@07Satyam](https://github.com/07Satyam)                      |         0        |
 | Musadiq Peerzada     | [@muxa11](https://github.com/muxa11)                          |         0        |
 | VAJRESH              | [@VAJRESH](https://github.com/VAJRESH)                        |         1        |
