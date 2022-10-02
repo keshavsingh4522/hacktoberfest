@@ -2,7 +2,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
+# A sorted array is given with right rotation . Find the value x in the array.
 long Search(vector<long> arr ,long l,long r,long x)
 {
     if(l > r )
