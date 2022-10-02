@@ -141,3 +141,4 @@
 | Rohit Amrutkar       | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
 | Ritik Kumar          | [@srivastavaritik](https://github.com/srivastavaritik)        |         1        |
 | Surjyanee Halder     | [@surjyaneeh](https://github.com/surjyaneeh)                  |         1        |
+| Apoorva Mehta        | [@apoorva1823000](https://github.com/apoorva1823000)          |         1        |
