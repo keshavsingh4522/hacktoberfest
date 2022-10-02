@@ -107,6 +107,7 @@
 | Ravi                 | [@guptaravi5400](https://github.com/guptaravi5400)            |         0        |
 | Ananda Andra         | [@anandaandra](https://github.com/anandaandra)                |         0        |
 | Kanishk Chhabra      | [@mrkc2303](https://github.com/mrkc2303)                      |         1        |
+| Suryansh Sinha       | [@suryansh-sinha](https://github.com/suryansh-sinha)          |         1        |
 | Vishal               | [@whysogreen](https://github.com/vishal0535)                  |         0        |
 | Hardik Sharma        | [@hardik302001](https://github.com/hardik302001)              |         1        |
 | Raghav Rastogi       | [@raghav2404](https://github.com/raghav2404)                  |         0        |
