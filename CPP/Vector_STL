@@ -1,0 +1,128 @@
+                                                  _____VECTOR IN C++ STL____
+
+WHAT IS VECTOR?
+  . Vector is dynamic array , vector is a sequence container\
+
+.The storage of the vector is hadled by the compiler at runtime internally\
+
+.AS compered to array , vectors consumes more memory in order to manage storage and grow dynamically\
+
+.BASIC
+ 
+Syntax: vector<data_type>name;
+
+Ways to create vector in c++
+______________________________________________________
+->vector<int> vect;                                  |
+                                                     |   NOTE:  [] can also be used with the vectors , vec.at(i) can also be used.
+    vect.push_back(10);                              |
+    vect.push_back(20);                              |
+    vect.push_back(30);                              |
+                                                     |
+->vector<int> vect(n, 10);                           |
+                                                     |
+->vector<int> vect{ 10, 20, 30 };                    |
+                                                     |
+->int arr[] = { 10, 20, 30 };                        | 
+    int n = sizeof(arr) / sizeof(arr[0]);            |
+                                                     |
+    vector<int> vect(arr, arr + n);                  |
+                                                     |
+->vector<int> vect1{ 10, 20, 30 };                   |
+                                                     |
+    vector<int> vect2(vect1.begin(), vect1.end());   |
+                                                     |
+->vector<int> vect1(10);                             |
+    int value = 5;                                   |
+    fill(vect1.begin(), vect1.end(), value);         |
+->   vector<int>arr{1,2,3};                          |
+       vector<int>::iterator it;                     |
+   for(it = arr.begin();it!= arr.end() ;it++)        |
+            cout<<*it<<"\n";                         |
+     for(auto ele : arr) cout<<ele<<"\n";            |     
+_____________________________________________________|
+->
+
+Modifiers:
+____________________________________________
+push_back() -> Add the element at the end
+______________________________________________
+
+____________________________________________
+pop_back() -> delete the last element
+___________________________________________
+
+______________________________________________________________________________________________________________________________________________
+insert (position, val) -> insert the val before the position, The function returns an iterator which points to the newly inserted element.
+
+insert(position, iterator1, iterator2)
+ position – It specifies the position at which insertion is to be done in vector.
+
+iterator1 – It specifies the starting position from which the elements are to be inserted
+
+iterator2 – It specifies the ending position till which elements are to be inserted
+______________________________________________________________________________________________________________________________________________________
+
+clear() ->Removes all elements from the vector (which are destroyed), leaving the container with a size of 0.
+                  -------------
+______________________________________________________________________________________________________________________________________________________
+
+erase() -> is used to remove elements from a container from the specified position or range.
+
+1. vectorname.erase(position)
+2. vectorname.erase(startingposition, endingposition)   -> removes from a range
+Parameters :
+Position of the element to be removed in the form of iterator.
+or the range specified using start and end iterator.
+Result :
+Elements are removed from the specified
+position of the container.
+
+example:
+ 
+ Input  : myvector= {1, 2, 3, 4, 5}, iterator= myvector.begin()+2
+         myvector.erase(iterator);
+Output : 1, 2, 4, 5
+
+Input  : myvector= {1, 2, 3, 4, 5, 6, 7, 8}, iterator1= myvector.begin()+3, iterator2= myvector.begin()+6
+         myvector.erase(iterator1, iterator2);
+Output : 1, 2, 3, 7, 8
+
+
+// some more tricks
+  
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+bool comparator(int a , int b) 
+{return a>b;}
+int main()
+{
+  // some tricks
+      /*  vector<int>arr(3);
+        //1
+           // all those normal methods
+       // 2
+       vector<int>::iterator it;
+         for(it = arr.begin();it!=arr.end();it++) cin>>*it;
+      //2
+        for(auto it = arr.begin();it!=arr.end();it++) cin>>*it;
+       //3
+       for(auto &i : arr) cin>>i;
+
+       int ar[3];
+       for(auto &i:ar) cin>>i;  //&
+       for(auto i: ar) cout<<i<<" ";
+        */
+ // #####################################################################################################################################
+
+     // sort in decreasing order
+
+       int arr[] = {1,3,2,5,1,2,3,7,3,1,0};
+       int n = sizeof(arr)/sizeof(int);
+    sort(arr,arr+sizeof(arr)/sizeof(arr[0]),comparator);
+    //sort(arr,arr+n,greater<int>()); 
+    for(auto &it : arr) cout<<it<<" ";
+return 0;
+}
+
