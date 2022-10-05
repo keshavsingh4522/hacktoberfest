@@ -1,0 +1,63 @@
+class Solution {
+    int memSolve(vector<int> &nums, int i, vector<int> &dp){
+        if(i == 0) return nums[0];
+        if(i<0) return 0;
+        
+        if(dp[i]!=-1) return dp[i];
+        
+        int inc=nums[i]+memSolve(nums, i-2, dp);
+        int exc=memSolve(nums, i-1, dp);
+        
+        return dp[i]=max(inc,exc);
+    }
+    
+    int tabSolve(vector<int> &nums){
+        vector<int> dp(nums.size(), 0);
+        dp[0]=nums[0];
+        
+        for(int i=1; i<nums.size(); i++){
+            int inc=i>1?nums[i]+dp[i-2]:nums[i];
+            int exc=dp[i-1];
+            dp[i]=max(inc,exc);            
+        }
+        return dp[nums.size()-1];
+    }
+    
+    
+    int opti(vector<int> &nums){
+        int prev1=nums[0], prev2=0;
+        
+        for(int i=1; i<nums.size(); i++){
+            int inc=i>1?nums[i]+prev2:nums[i];
+            int exc=prev1;
+            int curr=max(inc,exc);  
+            prev2=prev1;
+            prev1=curr;
+        }
+        return prev1;
+    }
+public:
+    int rob(vector<int>& nums) {
+        
+        if(nums.size()==1) return nums[0];  
+        vector<int> v1,v2;
+        
+        for(int i=0; i<nums.size(); i++){
+            if(i!=0) v1.push_back(nums[i]);
+            if(i!=nums.size()-1) v2.push_back(nums[i]);
+        }
+        
+        return max(opti(v1),opti(v2));
+        
+        return max(tabSolve(v1),tabSolve(v2));  //Tabulation solution
+        
+        
+        vector<int> dp(v1.size(),-1);           //memoization solution
+        int a1=memSolve(v1,v1.size()-1,dp);
+        dp.clear();
+        dp.resize(v2.size(),-1);
+        int a2=memSolve(v2,v2.size()-1,dp);
+        return max(a1,a2);
+        
+    }
+};
