@@ -1,22 +1,23 @@
 #include <iostream>
-
 using namespace std;
+void toh(int n, char src, char dest, char helper){
+    if(n==0){
+        return;
+ }
 
-void TowerofHanoi(int n,int a,int b,int c)
-{
-    if(n>0)
-    {
-        TowerofHanoi(n-1,a,c,b);
-        cout<<"Move a disk from  "<<a<<" to "<<c<<endl;
-        TowerofHanoi(n-1,b,a,c);
-    }
+    toh(n-1,src,helper,dest);
+    cout<<"Moving "<<n<<" frm "<<src<<" to "<<dest<<endl;
+    toh(n-1,helper,dest,src);
+
 }
 
-int main()
-{
-    int n;//total no of Disks
-    cin>>n;
+int main(){
+int n=3;
+char d,s,h;
+d='C';
+s='A';
+h='B';
+toh(n,s,d,h);
 
-    TowerofHanoi(n,1,2,3);//1 2 3 are the Rods placed
-    return 0;
+
 }
