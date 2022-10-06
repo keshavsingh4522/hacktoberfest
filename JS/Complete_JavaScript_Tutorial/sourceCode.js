@@ -11,7 +11,7 @@
 
 
 
-//**** Section 2👉 Code Editor for writing JS ****/
+//**** Section 2👉 Code Editor for writing JS **/
 
 
 
