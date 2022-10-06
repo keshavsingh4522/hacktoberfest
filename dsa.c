@@ -23,7 +23,7 @@ As an example, 3! = 3 x 2 x 1 = 6
 
 private int factorial(int n){
    //base case
-   if(n == 0){
+   if(n == 0 || n == 1){
       return 1;
    }else{
       return n * factorial(n-1);
@@ -61,7 +61,7 @@ public class RecursionDemo {
 
    private int factorial(int n){
       //base case
-      if(n == 0){
+      if(n == 0 || n == 1){
          return 1;
       }else{
          return n * factorial(n-1);
