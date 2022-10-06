@@ -72,6 +72,7 @@
 | Ibad Mukrom          | [@IbadMukrom](https://github.com/IbadMukrom)                  |         0        |
 | Kritik Agarwal       | [@Agarwal-Kritik](https://github.com/Agarwal-Kritik)          |         1        |
 | Crowfunder           | [@Crowfunder](https://github.com/Crowfunder)                  |         0        |
+| Varshini             | [@amvarsh](https://github.com/amvarsh)                        |         0        |
 | Anirudh Bagri        | [@anirudhbagri](https://github.com/anirudhbagri)              |         0        |
 | Iris ALmeida         | [@7irisalm](https://github.com/7irisalm)                      |         0        |
 | Krosskid12           | [@Krosskid12](https://github.com/Krosskid12)                  |         1        |
