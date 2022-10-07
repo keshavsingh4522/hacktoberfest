@@ -1,0 +1,524 @@
+Video 2.
+Everything in JS happens inside Execution Context
+
+Execution Context Contains two components in it
+
+1. Memory Component :- where all variables and functions are stored in key-value pairs. It is also known as variable environment
+2. Code Component :- This is the place where code is executed line by line. It is also knwon as Thread of Execution.
+
+Javascript is a synchronous and single threaded language. (single threaded in terms that single line is exectuted one by one in a specific order.)
+
+
+Memory Component
+At the start of program JS allocated memory to all variables and functions and they are stored to Memory Component
+At first the variables are assigned as undefined and context inside function are copied as it is to Memory Component
+
+Code Component
+Then code starts executing line by line in code Component and according to code value are updated in Memory Component
+
+
+CODE
+
+var n = 2;
+function square(num){
+	var ans = num*num;
+	return ans;
+}
+var square2 = square(n);
+
+In This
+Memory Component(in key:value form) 			Code Component
+
+n : undefined							1. var n = 2
+square : {}								2. function square(num){}
+square2:undefined							3. square2 invoke square(n)
+>>(after 1st line)
+n updated to 2
+n:2
+>>(after 3rd line)
+square2 get updated to 4
+square2:4
+
+after the 2nd line there is another block of Memory Component and Code Component is created for square Funtion 
+and side by side function calls are pushed in call Stack.
+
+first main func is push
+second function square is pushed 
+After the return of square function call is deleted from stack for that function
+
+
+** Hoisting Concept in JavaScript :-
+
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+JavaScript only hoists declarations, not initializations.
+
+in simple terms we have to declare the variable (anywhere) else it gives Reference error that variable is not declared
+but we can initialized it later and can use before initialization.
+
+
+CODE
+
+console.log(x);	// undefined
+getName();		// Akshat
+console.log(getName);	// [Function:getName]
+
+var x = 7;
+function getName(){
+	console.log("Akshat");
+}
+
+
+The hoisting is easily understand by take a look at execution context as we know 
+Memory Component first store all variables as undefined and function with whole context in key:value pairs
+
+SO 
+In Code Component 
+when 1st line get executed the value of x in memory is still undefined so console(x) is undefiend
+In 2nd Line the function call is there it gives the result as whole function context is already there in Memeory Component which on call gives output
+In 3rd Line console(getName) output is complete function itself which is defined in Memeory Component
+In 4th line x value is updated in memory
+
+NOTE when using () with func will give the output after execution of func and without () gives the context inside the function.
+
+
+**Which type of variables and functions are not get Hoisted?
+
+1. let and const variables 
+Variables defined with let and const are hoisted to the top of the block, but not initialized.
+Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.
+Using a let variable before it is declared will result in a ReferenceError.
+The variable is in a "temporal dead zone" from the start of the block until it is declared:
+
+2. Anonymous function and Fat Arrow function ()=>
+Anonymous function and Fat Arrow function act just like a variable in a memory and variables are undefiend in memory at first ie these two types get undefiend when hoisted
+and we can't call an undefined varibale ie 
+a();  // its like calling an undefiend variable which gives error
+var a = ()=>{}
+
+
+
+**Undefined vs Not Defined in JS
+
+1. Undefined is a type of a variable which is defined but not initialized to any particualr value
+Example :-
+var/let x;		 not with const (why not ? will discuss later)
+console.log(x)	// o/p :- undefined
+
+2. Not Defined means that any particular variable which is used in code is not declared till now
+Example :-
+console.log(x)	// o/p :- ReferenceError: x is not defined
+
+
+** The Scope Chain, Scope & Lexical Environment
+Lexical means in heirarchy or in order
+Lexical Environment means the local Memory along with the lexical environment of its parent 
+
+CODE
+
+function a() {
+    b = 10;
+    console.log(b);
+    c();
+    function c() {
+	  b=12;
+        console.log(b);
+    }
+}
+var b = 11;
+a(); // 10 12
+
+here the Lexical Environment of c is local memory of c along with Lexical Environment of a and then Lexical Environment of main function then to null
+
+It means the children can use the varibales of parent but not vice versa;
+ie func c() can use the varibles of func a() as well as main function;
+func a() can use the varibles of main function
+and can also update the value but the scope of updated value also remains as parent to child not child to parent
+
+but main can't use varibales or object which was declared inside the function a() or func c()
+
+so is a function can't find any variables or object inside its lexical scope then it search further in its parent's scope for variables till null
+
+
+
+** Let & Const
+Let & Const are also Hoisted but they are hoisted differently than var 
+as these variable is in a "temporal dead zone" from the start of the block until it is declared:
+
+CODE
+
+let a = 10;
+console.log(a);
+var b = 100;
+
+so let understand what happens inside
+as we know the variables and func are stored in memory with undefined
+but we see that b(var) is initialized undefined in global memory but a(let) initialized undefined in another meory space
+and we cannot access that memory space withput initializing the 'let' variable.
+
+>> Temporal Dead Zone :-
+The time taken by a let variable after hoisted from being undefined in seperate memory space to get initialized with any value is called Temporal dead zone.
+
+And when you try to access a variable inside temporal dead zone ie(hoisted but not initialized) it gives a refernce error
+
+error you get is "ReferenceError cannot access 'a' before initialization" 
+If u do this
+console.log(a);
+let a = 10;
+
+as 1st line :-  a is still in temporal dead zone
+
+
+** Refernce Error  :-
+if any variable is not defined
+if any varibale is accessed before initialization (in case of let);
+
+** Syntax Error :- 
+Any syntactical Mistakes
+or any redeclaration of any variable (not possible in let but possible in var)
+
+1. var 
+a.var can be hoisted and used before initialization and gives undefined
+b. var can be defined first and initialzed later
+
+2. let
+a. let can be hoisted but cannot be used until it is initialized as it is store in different memory space (script) so it remain in Temporal dead zone unitl gets initialized.
+b. var can be defined first and initialzed later
+
+3. const :- It is most strict variable among all three
+a. behave as same as let when hoisted
+b. const needs to be initialized in same line it declared or defined and we cannot change the value of const later once initialized
+
+
+
+** Shadowing (Important)
+Shadowing is the process in which value of variable is modified in a block level or function level
+
+AS we know let & const have a block scope whereas var has function scope not global
+
+so if we do something like this
+var a = 100;
+let b = 100;
+{
+	a = 10;
+	b = 10;
+console.log(a);   // 10
+console.log(b);   // 10
+}
+console.log(a);  // 10
+console.log(b);  // 100
+
+as we know let has block scope so it updated value remains in scope then back to normal value
+but var value get chnged permanently as its has function scope 
+so var a = 100;
+	{
+		a = 10;
+	}
+and
+ var a = 100;
+ a = 10;
+
+both acts same
+
+
+NOTE :- variables with var has memory stored in global memory space whereas the varibales with block scope like let and const get a new different memory space
+everytime a new block is created thats why the value is not as same as it is in block, when control comes out of block for a block variable (let n const)
+
+
+
+** Closures
+A Closure is a combination of function bundled together (enclosed) with reference to its surrounding state (the lexical environment)
+In other words a Closure gives you the access to an outer function's scope from inner function. In js closures are
+created everytime a function is created at function creation time.
+
+CODE
+
+function x(){
+    var a = 5;
+    function y(){
+        console.log(a);
+    }
+    return y;
+}
+
+var z = x();
+console.log(z); //o/p f:y(){}    <- function stored in memeory as key:value pair
+
+z(); //o/p 5    
+The o/p we get 5 is done by closures, even after calling the x(); at line 240 (it means control comes out of the scope)
+the function y bundled together with its lexical environment where var a = 5; and give o/p as 5 not undefined
+
+
+>> setTimeout function also uses Closures. How?
+
+As we know the JavaScript is a synchronous language so it does not wait for any function. like example below
+the function print "hello" first ie it doesnot wait for setTimeout function to get invoked.
+setTimeout func. when invoked, enables a timer and it set aside from call stack and then control goes to next line here it is log("hello");
+and then prints setTimeout content after the timer is over here it give 5 as result.
+
+so it means even after executing the function x() completely, the value of 'a' is still stores with setTimeout func
+it means a closure is there which bundled the function and its lexical environment together to get value a as 5 not undefiend, even after function move to next line ie console.log("hello");
+
+
+function x(){
+    var a = 5;
+    setTimeout(()=>{
+        console.log(a);
+    },3000);
+    console.log("hello");
+}
+x();  // hello -> and after 3 secs 5
+
+
+
+>> IMPORTANT QUESTION RELATED TO BLOCK LEVEL FUNCTION LEVEL AND ClOSURES
+
+function x() {
+    for (var i = 0; i < 3; i++) {
+        setTimeout(() => {
+            console.log(i);
+        }, 1000);
+    }
+}
+x();  //o/p 3 3 3
+
+Explaination :- what happen here is that after evry iteration there timer is set for an amount of time but the loops goes on 
+incrementing the value of i and stop when cond is false.
+So the i kept incrementing by 1 and i is updating in a same reference because var has function level scope after loop end var i=3
+and when the timer sets off it prints the updated value of i present due to closure because after loop ends, function is over 
+but closure holds func and lexical environment which contains updated value of i as 3
+
+thats why it gave the same result
+...
+In SHORT
+We can say that because of function level scope of var the i kept updating on same reference until loop ends and when setTimeout timer is over it 
+prints the updated i...
+
+
+function y() {
+    for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+            console.log(i);
+        }, 1000);
+    }
+}
+y(); //o/p 0 1 2
+
+// as the let has block level scope so every time loop incrementing i the i is updated on new reference as new block is created for i everytime when loop iterated.
+thay's why o/p is 1 2 3
+
+
+>> If an interviewer asks to do the same but not using let then how to update i value.
+ANS :-  by giving the var i a new function scope everytime
+thats why we make a function, as var has function level scope only
+So value of i inside close() remains same but when comes out of close() there is new copy of i every time function close() invokes
+function z() {
+    for (var i = 0; i < 3; i++) {
+        function close(i) {
+            setTimeout(() => {
+                console.log(i);
+            }, 1000);
+        }
+        close(i);
+    }
+}
+z(); //o/p 0 1 2
+
+
+>> FUNCTION BASICS
+
+** Function Statement or Function Declaration
+function a(){
+	console.log("hello);
+}
+
+** Function Expression
+var b = function (){
+	console.log("hello);
+}
+function used with a value is func expression;
+
+** Difference between these two is in Function hoisting 
+
+ when we call function a(); before defined it
+ then it simply call the function
+
+ when we call function b(); before defined It
+ then it return an error that b is not a function as in memeory environment variables are first assigned as undefined & we can't call undefined
+
+
+** Anonymous Function
+ function (){
+	console.log("hello);
+}
+
+It does not have its own identity so we can assign it to a variable
+
+var solve =   function (){
+	console.log("hello);
+}
+
+and they are also used in place when func are used as value.
+
+
+** Named Function Expression
+var b = function xyz(){
+	console.log("hello);
+}
+
+b(); we can call like this
+xyz(); gives error xyz is not defined as it is locally defined for b 
+
+
+
+** First Class Functions OR First Class Citizens
+The ability of function to use function as value or return as functions are called First Class Functions.
+
+var b = function(d){
+	console.log(d);
+}
+function d(){
+
+}
+
+b(d); // d(){}
+
+
+
+VIDEO 18 NAMASTE JAVASCRIPT PART 1
+
+>> Callback Functions (IMPORTANT) :-
+The functions which are taken as parameters are callback functions
+
+Now we understand how browser works behind the scene when a callback function appears
+
+Things below are known as WEB APIs and thery are not JavaScript
+1. setTimeout()
+2. DOM
+3. fetch()  (for API)
+4. local Storage
+5. Console
+6 Location
+
+So to work with Browser of JS engine we need WEB APIs mentioned above
+
+For The callback Functions to work we need some extra things along with the call stack
+As we know the function comes in call stack and remove one by one after getting executed
+
+let us understand about Event Loop Callback Queue :-
+
+1. Event Loop :- The function of event loop is to check that call stack is empty or not along with
+it also checks that there is not any function in Callback Queue
+
+if the callback queue is not empty and the call stack is empty then the event loop takes the function from queue and send it to call stack for execution
+
+2. Callback Queue :- It contains all the callback functions after a specific time like :- 
+if setTimeout is set for 5000 ms then after timer gets over, the function is added to callback queue.
+or if there is a callback fucntion in an event listener then after the event is invoked the function added to callback queue.
+
+
+** Now lets understand with code 1:-
+
+console.log("start");
+setTimeout(()=>{
+    console.log("timer out")
+},5000);
+console.log("end");
+
+
+** What happens inside call stack :-
+
+first main function came in call stack
+"start" is printed
+after that setTimeout function is invoked and call the Web API to get timer started
+so inside web API environment a callback is registered along with the running timer
+then control come to next step as it did not wait for setTimeout to be complete because js is synchronous
+"end" is printed
+
+when the timer get over then the call back function added to callback queue
+and once the event loop check that call stack is empty and there is a func in callback queue then 
+that function is added to call stack and remove from queue and get executed.
+
+
+
+** Now lets understand with code 2:-
+
+console.log("start");
+document.getElementById("clickme").addEventListener("click",()=>{
+    console.log("button clicked");
+})
+console.log("end");
+
+** What happens inside call stack :-
+first "start" is printed
+then addEventListener is executed and then it call the Web API to get the DOM request
+so inside the Web API environment a callback is registered and event click is attached to it
+then control comes to next Line
+"end" is printed
+Call stack is empty now
+
+so If any user ever invoke the event by click it, then the callback function is added to callback queue
+and event loop check both conditon and if the conditon satisfies
+then it added the callback func to call stack and gets executed
+
+
+NOTE either the event is invokes or the timer is end or not but UNTIL the event loop conditon is satisfies
+which are 
+1. The call stack must be empty. 
+2. There must a func is callback queue
+the callback func doesnot executed.
+
+
+Now there is one more thing similar to callback Queue which is MicroStack Queue
+which works as same as callback queue with event loop and call stack
+
+The only Difference between the callback queue and MicroStack queue is that 
+1. Priority of MicroStack is more than callback queue
+2. The callback function which comes through Promises are added to MicroStack Queue and other than that
+that remaining callback func are added to callback queue.
+
+For Example
+log("hello");
+setTimeout(()=>{},1000);
+fetch("API").then(()=>{})
+log("bye");
+
+first 
+hello is print
+then setTimeout calls setTimeout Web API along with timer
+then fetch API call fetch webAPi and wait for the api to get request
+bye is print
+
+after timer over setTimeout added to callback queue whereas callback func from fetch is added to
+MicroStack queue the func is return from Promises
+
+It means the callback func from fetch will get exectuted first as MicroStack queue has high Priority and then
+callback func from Callback queue gets exectuted.
+
+
+
+Concurrency Model :-
+AS a title of video we can say there are some trust issues with setTimeout
+like we can say that with a code
+
+CODE :- 
+
+log("hello");
+setTimeout(()=>{},5000);
+......millions of lines of code which takes around 10 sec to execute
+log("complete");
+
+
+inside call stack :-
+
+Now first 
+"hello" is print
+setTimeout goes to call webAPI and then after timer gets over move to callback Queue
+then here it takes 10 sec to executing code and then
+"complete" is print
+
+as we know the setTimeout func takes 5 sec to execute but due to millions of lines of code it
+executes after 10 sec so this is called Concurrency Model
+setTimeOut event is to be executed after written 5 sec but takes 10 sec due to large processing of millions of lines of code
+so we can say setTimeout takes atleast 5 sec to execute and it doesnot execute before 5 sec for sure 
+
+AND we can't change that as it is the flow of JS lang as it is synchronous and single threaded language
