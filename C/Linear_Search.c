@@ -1,3 +1,5 @@
+#Code for Linear Search
+
 #include<stdio.h>
 #include<conio.h>
 void main()
