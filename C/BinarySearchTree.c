@@ -1,3 +1,6 @@
+#Code to implement Binary Search Tree
+
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node
