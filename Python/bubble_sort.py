@@ -1,18 +1,29 @@
-#defined function
-def bubble_sort(input_list):
-  #get list length
-  count = len(input_list)
-
-  #Loop through an array
-  for i in range(count):
-    for j in range(0, count - i - 1):
-      #Switch if greater value is found
-      if input_list[j] > input_list[j + 1]:
-        input_list[j], input_list[j + 1] = input_list[j + 1], input_list[j]
-
-#Test simple
-example_list = [71, 77, 9, 11, 88]
-
-#call function
-bubble_sort(example_list)
-print(example_list)
+class BubbleSort {
+	void bubbleSort(int arr[])
+	{
+		int n = arr.length;
+		for (int i = 0; i < n - 1; i++)
+			for (int j = 0; j < n - i - 1; j++)
+				if (arr[j] > arr[j + 1]) {
+					// swap arr[j+1] and arr[j]
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+	}
+	void printArray(int arr[])
+	{
+		int n = arr.length;
+		for (int i = 0; i < n; ++i)
+			System.out.print(arr[i] + " ");
+		System.out.println();
+	}
+	public static void main(String args[])
+	{
+		BubbleSort ob = new BubbleSort();
+		int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
+		ob.bubbleSort(arr);
+		System.out.println("Sorted array");
+		ob.printArray(arr);
+	}
+}
