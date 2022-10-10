@@ -82,7 +82,7 @@
 | Aman Kumar           | [@aman-ku](https://github.com/aman-ku)                        |         1        |
 | Tristan Brown        | [@drd3rp](https://github.com/drd3rp)                          |         0        |
 | Abhinav Verma        | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
-| Tridib Samanta	     | [@tridib2003](https://github.com/tridib2003)                |         0        |
+| Tridib Samanta	     | [@tridib2003](https://github.com/tridib2003)                  |        0         |
 | Garima               | [@Garimakanwaria](https://github.com/Garimakanwaria)          |         1        |
 | Hrishikesh Sharma    | [@hrishikeshps](https://github.com/hrishikeshps)              |         1        |
 | Aswin A              | [@Aswin1362](https://github.com/Aswin1362)                    |         0        |
