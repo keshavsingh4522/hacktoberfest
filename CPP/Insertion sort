@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int insert(int p, int v, int A[], int n){
+    for(int i=n;i>p;i--){
+        A[i]=A[i-1];
+    }
+    A[p]=v;
+    n++;
+}
+int main(){
+    int A[100];
+    int n;
+    cout<<"enter the number of array";
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>A[i];
+     }
+
+insert(2,43,A,n);
+
+for(int i=0;i<n+1;i++){
+    cout<<A[i]<<endl;
+}
+
+return 0;
+}
