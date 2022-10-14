@@ -21,8 +21,17 @@ bool isPrime(int n)
 }
 int main()
 {
+    int num;
     //APPLICATION
-    bool result = isPrime(24498757);
+    cout<<"Enter a number: ";
+    cin>>num;
+    
+    if(!(int)num)
+    {
+        cout<<"Enter a number not a stringer or decimal.";
+        exit(1);
+    }
+    bool result = isPrime(num);
     cout << result << endl;
     cout << (result ? "Prime" : "Not A Prime") << endl;
     return 0;
