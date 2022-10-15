@@ -5,7 +5,7 @@
 # Special Note For Everyone
 ```py
 '''
-always make more then 4 pull requests
+always make more than 4 pull requests
 lets say you have made only 4 pull requests in total to different projects
 but one project is excluded from hackoctoberfest event then your pull request will not be counted and 
 then you will have only 3 valid pull requests remaining if these projects is not excluded.
