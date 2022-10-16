@@ -26,17 +26,15 @@ class stack {
     bool isEmpty(){
         if (top == -1){
             return true;
-        }else {
-            return false;
         }
+        return false;
     }
     
     bool isFull(){
         if (top == size - 1){
             return true;
-        }else {
-            return false;
         }
+        return false;
     }
     
     void push(int data){
@@ -55,20 +53,20 @@ class stack {
             top++;
             p[top] = data;
         }
-       
     }
+    
     int pop(){
         if (isEmpty()){
             cout << "Stack is Empty" << endl;
             return 0;
-        }else {
-            int x = p[top--];
-            return x;
         }
+         int x = p[top--];
+         return x;
     }
     
     void display(){
-        for (int i =0; i<top+1;i++){
+        cout<<"The stack is:"<<endl;
+        for (int i =0; i<=top;i++){
             cout << p[i] << " ";
         }cout << endl;
     }
