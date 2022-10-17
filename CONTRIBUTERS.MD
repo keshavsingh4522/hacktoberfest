@@ -191,6 +191,7 @@
 | Raj Patra 		       | [@raj-patra](https://github.com/raj-patra)                |         1        |
 | Jitendra Kumar Mishra| [@jitendra227](https://github.com/jitendra227)                |         1        |
 | Fikri Khairul Shaleh | [@fikriks](https://github.com/fikriks)                        |         1        |
+| Jyotishmoy konwar    | [@jyotishmoy365](https://github.com/jyotishmoy365)
 | Sahil Sarwar         | [@sk25469](https://github.com/sk25469)                        |         1        |
 | Tanmoy Sengupta      | [@TSG405](https://github.com/tsg405)                          |         1        |
 | Bikram Purkait       | [@IamBikramPurkait](https://github.com/IamBikramPurkait)      |         1        |
