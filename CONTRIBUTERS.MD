@@ -6,6 +6,7 @@
 | Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
 | Keshav Singh         | [@keshavsingh4522](https://github.com/keshavsingh4522/)       |         1        |
+| Satwika              | .[@VSatwika](https://github.com/VSatwika)                     |         1        |
 | Abhay Pratap Rana    | [@officialmrknox](https://github.com/OfficialMrKnoX)          |         0        |
 | Justinus Hermawan    | [@justinushermawan](https://github.com/justinushermawan/)     |         0        |
 | Yunxin Gan           | [@samganyx](https://github.com/samganyx/)                     |         0        |
