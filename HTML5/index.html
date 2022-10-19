@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet"> 
     <title>HTML-CSS-CHALLENGE-3</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -19,33 +19,36 @@
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 18px;
-            background-color: #091921;
+            background-color: #041c29;
         }
 
         p {
-            color: #B5B5C3;
+            color: #9e9ea0;
             font-size: 75%;
         }
 
         h4 {
             font-size: 85%;
-            color: #464E5F;
+            color: #3b414e;
             margin-bottom: 3px;
         }
 
         button {
+            
+            border-radius: 5px;
+            border: 0;
             width: 108px;
             height: 34px;
-            border-radius: 6px;
-            border: 0;
             font-family: Poppins;
             font-weight: 600;
             font-size: 65%;
-            cursor: pointer;
+            cursor:grab;
             color: #fff;
             transition: 250ms;
         }
-
+        button:hover{
+            transform: scale(0.98);
+        }
         .btn-light { background: #3699FF;}
         .btn-light:hover { background: #2380dd;}
         .btn-dark { background: #F64E60;}
@@ -54,7 +57,7 @@
             background: #C9F7F5;
             color: #1BC5BD;
         }
-        .btn-product:hover {background: #94fffa;}
+        .btn-product:hover {background: #55ccc6;}
 
         .container {
             background-color: #fff;
@@ -68,11 +71,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 34px;
+            margin-bottom: 40px;
         }
 
         .herotext-box h2{
-            font-size: 140%;
+            font-size: 135%;
             font-weight: 500;
             line-height: 21px;
             margin-bottom: 12px;
@@ -80,7 +83,7 @@
 
         .btn-container {
             display: flex;
-            gap: 15px;
+            gap: 16px;
         }
 
         .product-titles, .product {
