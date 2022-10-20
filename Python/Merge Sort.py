@@ -28,9 +28,11 @@ def display(arr):
         print(arr[i], end=" ")
     print()
 if __name__ == '__main__':
-    arr = [6, 5, 12, 10, 9, 1]
-    print("Original array")
+    n=int(input("enter length"))
+    arr=[]
+    for i in range(n):
+        arr.append(int(input("enter the element")))
     display(arr)
-    mergeSort(arr)
-    print("Sorted array")
+    print("after sort")
+    mergeSort(arr))
     display(arr)
