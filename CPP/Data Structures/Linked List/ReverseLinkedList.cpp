@@ -54,8 +54,6 @@ void reverseList() {
     cout << "reversed list:\n";
     display(head2);
 }
-
-
 int main() {
     insert(new Node(11));
     insert(new Node(12));
