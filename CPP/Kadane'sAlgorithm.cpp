@@ -1,47 +1,47 @@
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-int getOddOccur(int arr[],int arr_size)
-
+int kadane(vector<int> arr, int n)
 {
+    int res = INT_MIN;
 
-    for(int i=0;i<arr_size;i++)
+    int temp = 0;
 
-    {
+    for(int i = 0; i < n; i++)
+    {
+        temp += arr[i];
+        res = max(res, temp);
 
-    int count=0;
+        if(temp < 0)
+        temp = 0;
+    }
 
-    for(int j=0;j<arr_size;j++)
-
-    {
-
-        if(arr[i]==arr[j])
-
-        count++;
-
-    }
-
-     if(count%2!=0)  return arr[i];
-
-    // if(count%2==0)return arr[i]; for even case
-
-    }
-
-    return -1;
-
+    return res;
 }
 
 int main()
-
 {
+    vector<int> arr;
 
-    int arr[]={2,3,5,4,5,4,5,2,4,6};
+    int n;
 
-    int n=sizeof(arr)/sizeof(arr[0]);
+    cout << "Enter the size of array" << endl;
+    cin >> n;
 
-    cout<<getOddOccur(arr,n);
+    cout << endl;
+    cout << "Enter the elements of array" << endl;
 
-    return 0;
+    int temp;
 
+    for(int i = 0; i < n; i++)
+    {
+        cin >> temp;
+
+        arr.push_back(temp);
+    }
+
+    cout << endl;
+    cout << "Largest sum of contiguous subarray possible: " << kadane(arr, n) << endl;
+
+    return 0;
 }
