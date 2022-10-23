@@ -1,0 +1,3 @@
+word=input("Enter the word: ")
+print("Input word: ",word)
+print(word[::-1])
