@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Add_Group {
     static Scanner input = new Scanner(System.in);
