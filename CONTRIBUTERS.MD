@@ -197,6 +197,7 @@
 | Yashas H Majmudar    | [@yashas-hm](https://github.com/yashas-hm)                    |         1        |
 | Muhammad Gimnastiar  | [@muhammadgimnastiar](https://github.com/muhammadgimnastiar)  |         1        |
 | Kadambini Panda      | [@kadambinipanda](https://github.com/kadambinipanda)          |         1        |
+| partha Sarathy.G.    | [@parthasarathy27] (https://github.com/parthasarathy27).      |         1        |
 | Samyak Jain          | [@samyakjain26](https://github.com/samyakjain26)              |         1        |
 | Arun Kumar Singh     | [@arunsinghsnd](https://github.com/arunsinghsnd)              |         1        |
 | Pavleen Kaur         | [@pavleen14](https://github.com/pavleen14)                    |         1        |
@@ -208,7 +209,7 @@
 | Yashraj Singh Boparai | [@Yashrajsingh2001](https://github.com/Yashrajsingh2001)     |         1        |
 | Saurabh Nikam       | [@saurabh-nikam](https://github.com/saurabh-nikam)             |         1        |
 | Malya Bansal         | [@malyabansalper](https://github.com/malyabansalper)          |         1        |
-| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |               
+| Prateek Shaw         | [@Lucifer12929](https://github.com/Lucifer12929)              |         0        |             
 | Krishna Kumar        | [@Krishnapro](https://github.com/Krishnapro)                  |         1        |
 | Vanshika Mishra      | [@vanshika230](https://github.com/vanshika230)                |         1        |
 | Subhadeep Das        | [@Raven1233](https://github.com/Raven1233)                    |         0        |
