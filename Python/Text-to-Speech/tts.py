@@ -58,6 +58,6 @@ rspin=Spinbox(root,bg='black',fg='turquoise2',width=6,from_=1,to=1000)
 rspin.place(x=283,y=290)
 br=Button(root,text='Set Rate',command=changerate,bg='black',fg='turquoise2',activeforeground='white',activebackground='black')
 br.place(x=283,y=310)
-#mainloop function 
+#mainloop
 text()
 root.mainloop()
