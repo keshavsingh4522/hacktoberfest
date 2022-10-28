@@ -96,3 +96,4 @@ void main()
     printf("\nSearched element is present at %u",r);
     printf("\nSearched element->%d",r->data);
 }
+#exit
