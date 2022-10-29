@@ -52,6 +52,7 @@
 | MenakaKonara         | [@MenakaKonara](https://github.com/MenakaKonara)              |         1        |
 | Shaunak Deshpande    | [@Shaunak04](https://github.com/Shaunak04)                    |         0        |
 | Nikhil Chapre        | [@NikhilC2209](https://github.com/NikhilC2209)                |         0        |
+| Aman Soni            | [@computerwala](https://github.com/computerwala)              |         0        |
 | Ankit Sharma         | [@ANKITSHARMA98](https://github.com/ANKITSHARMA98)            |         0        |
 | Nikhil Sachan        | [@nikhil254](https://github.com/nikhil254)                    |         0        |
 | Ritik Bagora         | [@ritik1999](https://github.com/ritik1999)                    |         0        |
