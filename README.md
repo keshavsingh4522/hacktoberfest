@@ -5,14 +5,14 @@
 # Special Note For Everyone
 ```py
 '''
-always make more then 4 pull request
-lets you have made only 4 pull request to different projects
-but one project is excluded from hackoctoberfest event then your pull request will not be count and 
-then you have remains 3 valid pull request if these projects is not excluded.
-if you fail to make 4 pull request then you cant get swags or t-shirts.
+Always make more then 4 pull requests
+let say you have made only 4 pull request to different projects
+but one project is excluded from hackoctoberfest, then your pull request will not be counted and 
+then you have only 3 valid pull request if those projects are not excluded as well.
+if you fail to make 4 pull request then you can't get swags or t-shirts.
 
-i will recommend you make pull request to your own repo which is very very saffest side for you..
-keep in mind that repo has hacktoberfest topic..
+i recommend you make pull request to your own repo to stay on the safe side.
+make sure that repo has the hacktoberfest topic attached to it.
 '''
 ```
 
@@ -60,7 +60,7 @@ keep in mind that repo has hacktoberfest topic..
 
 ## Rules
 
-- Don't use filthy words and be welcome for beginners and other people in this community.
+- Don't use filthy words and welcome beginners and other people to this community.
 
 ---
 
@@ -198,9 +198,9 @@ Steps for adding your name below
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Contributions of any kind welcome!
+Contributions of any kind are welcome!
 
->    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
+>    NOTE: if you think you should be on the list of contributors but we forgot you, don't be shy and let us know!
 
 ## License
 
