@@ -31,6 +31,7 @@
 | Juli Cheng           | [@julicheng](https://github.com/julicheng)                    |         0        |
 | Dakshay Ahuja        | [@dakshayahuja](https://github.com/dakshayahuja)              |         0        |
 | Rikesh Lal Shrestha  | [@RikLakhe](https://github.com/RikLakhe)                      |         1        |
+| GrithikSai           | [@Grithik4U](https://github.com/grithik4U)                    |         0        |
 | Aman Jain            | [@amanjain](https://github.io/amnjain)                        |         0        |
 | Satyam Gadekar       | [@07Satyam](https://github.com/07Satyam)                      |         0        |
 | Musadiq Peerzada     | [@muxa11](https://github.com/muxa11)                          |         0        |
