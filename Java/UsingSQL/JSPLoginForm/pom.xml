@@ -32,7 +32,7 @@
     <hibernate.version>4.1.11.Final</hibernate.version>
     <hibernate-validator.version>4.0.2.GA</hibernate-validator.version>
     <hsqldb.version>2.2.9</hsqldb.version>
-    <jackson.version>2.1.1</jackson.version>
+    <jackson.version>2.7.9.6</jackson.version>
     <java.version>1.6</java.version>
     <javax-validation.version>1.0.0.GA</javax-validation.version>
     <javamail.version>1.4.5</javamail.version>
