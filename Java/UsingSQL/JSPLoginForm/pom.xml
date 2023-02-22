@@ -47,9 +47,9 @@
     <servlet.version>2.5</servlet.version>
     <sitemesh.version>2.4.2</sitemesh.version>
     <slf4j.version>1.6.6</slf4j.version>
-    <spring.version>3.2.2.RELEASE</spring.version>
-    <spring-data-jpa.version>1.2.0.RELEASE</spring-data-jpa.version>
-    <spring-security.version>3.1.3.RELEASE</spring-security.version>
+    <spring.version>5.2.20.RELEASE</spring.version>
+    <spring-data-jpa.version>2.5.11</spring-data-jpa.version>
+    <spring-security.version>5.5.6</spring-security.version>
     <tomcat.version>7.0.30</tomcat.version>
     <urlrewrite.version>3.2.0</urlrewrite.version>
   </properties>
