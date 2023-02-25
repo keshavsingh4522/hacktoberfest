@@ -29,27 +29,27 @@
     <activation.version>1.1</activation.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons.lang3.version>3.1</commons.lang3.version>
-    <hibernate.version>4.1.11.Final</hibernate.version>
-    <hibernate-validator.version>4.0.2.GA</hibernate-validator.version>
-    <hsqldb.version>2.2.9</hsqldb.version>
-    <jackson.version>2.1.1</jackson.version>
+    <hibernate.version>5.4.24.Final</hibernate.version>
+    <hibernate-validator.version>6.0.23.Final</hibernate-validator.version>
+    <hsqldb.version>2.7.1</hsqldb.version>
+    <jackson.version>2.13.4</jackson.version>
     <java.version>1.6</java.version>
     <javax-validation.version>1.0.0.GA</javax-validation.version>
     <javamail.version>1.4.5</javamail.version>
     <jspc.maven.plugin>2.0-alpha-3</jspc.maven.plugin>
     <jstl.version>1.2</jstl.version>
     <junit.version>4.10</junit.version>
-    <logback.version>1.0.6</logback.version>
+    <logback.version>1.2.7</logback.version>
     <maven.enforcer.plugin>1.0.1</maven.enforcer.plugin>
     <maven.war.plugin>2.2</maven.war.plugin>
     <maven.version.range>[2.2.1,3.1.0]</maven.version.range>
-    <mysql-connector.version>5.1.18</mysql-connector.version>
+    <mysql-connector.version>8.0.28</mysql-connector.version>
     <servlet.version>2.5</servlet.version>
     <sitemesh.version>2.4.2</sitemesh.version>
     <slf4j.version>1.6.6</slf4j.version>
-    <spring.version>3.2.2.RELEASE</spring.version>
-    <spring-data-jpa.version>1.2.0.RELEASE</spring-data-jpa.version>
-    <spring-security.version>3.1.3.RELEASE</spring-security.version>
+    <spring.version>5.2.22.RELEASE</spring.version>
+    <spring-data-jpa.version>2.6.5</spring-data-jpa.version>
+    <spring-security.version>5.5.7</spring-security.version>
     <tomcat.version>7.0.30</tomcat.version>
     <urlrewrite.version>3.2.0</urlrewrite.version>
   </properties>
