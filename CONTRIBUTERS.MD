@@ -45,7 +45,7 @@
 | Muhammad Bilal        | [@Muhammad-Bilal-MB](https://github.com/Muhammad-Bilal-MB)    |         0        |
 | Sandi Aris            | [@Sandi-aris](https://github.com/sandi-aris)                  |         0        |
 | Misbahud Din          | [@Misbahud-Din](https://github.com/Misbahud-Din)              |         0        |
-| Ganzabahl             |  [@Ganzabahl](https://github.com/Ganzabahl)                   |         0        |
+| Ganzabahl             | [@Ganzabahl](https://github.com/Ganzabahl)                    |         0        |
 | Ashish                | [@ashish-garg18](https://github.com/ashish-garg18)            |         0        |
 | Mitarth Jain          | [@mitarthjain](https://github.com/mitarthjain)                |         0        |
 | Arisandi              | [@arisandi1](https://github.com/arisandi1)                    |         0        |
@@ -78,7 +78,7 @@
 | lidonghui             | [@ldh](https://github.com/ldh)                                |         1        |
 | Namita Mutha          | [@namitamutha](https://github.com/namitamutha)                |         0        |
 | Yashi Srivastava      | [@yashii](https://github.com/yashii)                          |         1        |
-| tej-oops-dev          |  [@tej-oops-dev](https://github.com/tej-oops-dev)             |         1        |
+| tej-oops-dev          | [@tej-oops-dev](https://github.com/tej-oops-dev)              |         1        |
 | Aman Kumar            | [@aman-ku](https://github.com/aman-ku)                        |         1        |
 | Tristan Brown         | [@drd3rp](https://github.com/drd3rp)                          |         0        |
 | Abhinav Verma         | [@Abhinav1101](https://github.com/Abhinav1101)                |         0        |
@@ -102,7 +102,7 @@
 | Vaibhav Sharma        | [@vaibhav_7221](https://github.com/vaibhavsharma7221)         |         0        |
 | Aman Sharma           | [@arcAman07](https://github.com/arcAman07)                    |         1        |
 | Vishal Kumar          | [@vishaaal](https://github.com/vishaaal)                      |         1        |
-| Sayan Manna           |[@sayan0306](https://github.com/sayan0306)                     |         0        |
+| Sayan Manna           | [@sayan0306](https://github.com/sayan0306)                    |         0        |
 | Thamal Wijetunge      | [@thamaltw97](https://github.com/Thamaltw97)                  |         1        |
 | Ravi                  | [@guptaravi5400](https://github.com/guptaravi5400)            |         0        |
 | Ananda Andra          | [@anandaandra](https://github.com/anandaandra)                |         0        |
@@ -173,7 +173,7 @@
 | Daksh Jain            | [@DakshJain](https://github.com/Dakshjain1)                   |         1        |
 | Chirantan Mazumdar    | [@Lucifer-002](https://github.com/Lucifer-002)                |         1        | 
 | Sarvesh Kumar Dwivedi | [@sarvesh4396](https://github.com/sarvesh4396)                |         0        |
-| Kamal Singh Khanna    |[@KamalSinghKhanna](https://github.com/KamalSinghKhanna)       |         1        |
+| Kamal Singh Khanna    | [@KamalSinghKhanna](https://github.com/KamalSinghKhanna)      |         1        |
 | Ganesh Majhi          | [@ganeshmajhi](https://github.com/ganeshmajhi)                |         0        |
 | Yothin Homjan         | [@yotheone0909](https://github.com/yotheone0909)              |         0        |
 | Rohit Amrutkar        | [@rohitamrutkar1204](https://github.com/rohitamrutkar1204)    |         1        |
@@ -215,6 +215,6 @@
 | Nishant Kumar Singh   | [@Nishant5476](https://github.com/Nishant5476)                |         1        |
 | Ayush Singla          | [@Ayush-singla27](https://github.com/Ayush-singla27)          |         0        |
 | Yerkin Myrzabekov     | [@papa-het](https://github.com/Papa-het)                      |         1        |
-| Abhishek Mukherjee|   | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
+| Abhishek Mukherjee    | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  |         0        |
 | Daniel Aparecido      | [@oaparecido](https://github.com/Oaparecido)                  |         1        |
 | Piethon               | [@Pyth0nHere](https://github.com/Pyth0nHere)                  |         1        |
