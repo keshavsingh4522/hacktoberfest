@@ -1,0 +1,78 @@
+[
+    {
+        "type": "cash",
+        "text": "$950",
+        "value": 950,
+        "prize": "A trip to Ann Arbor!"
+    },
+    {
+        "type": "bankrupt",
+        "text": "Bankrupt",
+        "prize": false
+    },
+    {
+        "type": "loseturn",
+        "text": "Lose a turn",
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$2500",
+        "value": 2500,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$900",
+        "value": 900,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$700",
+        "value": 700,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$600",
+        "value": 600,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$800",
+        "value": 800,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "One Million",
+        "value": 1000000,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$650",
+        "value": 650,
+        "prize": "A brand new car!"
+    },
+    {
+        "type": "cash",
+        "text": "900",
+        "value": 900,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$700",
+        "value": 700,
+        "prize": false
+    },
+    {
+        "type": "cash",
+        "text": "$600",
+        "value": 600,
+        "prize": false
+    }
+]
