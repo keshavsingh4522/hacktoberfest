@@ -23,7 +23,7 @@
 | Pratik Shirodkar     | [@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)      |         0        |
 | Ramya Neelakantan    | [@ramya-neelakantan](https://github.com/ramya-neelakantan)    |         1        |
 | Kanishk J            | [@Kanishk7559](https://github.com/kanishk7559)                |         0        |
-| Arpit Hamjade        | [@Arpit6400](https://github.com/Arpit6400)
+| Arpit Hamjade        | [@Arpit6400](https://github.com/Arpit6400)                    |         1        |
 | Misa Dravid          | [@misa-bot](https://github.com/misa-bot)                      |         0        |
 | Pranjal Soni         | [@sonipranjal](https://github.com/sonipranjal)                |         0        |
 | Preeti Advani        | [@preetiadvani1](https://github.com/preetiadvani1)            |         1        |
