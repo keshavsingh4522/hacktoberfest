@@ -218,4 +218,3 @@
 | Yerkin Myrzabekov      | [@papa-het](https://github.com/Papa-het)                      | 1                                                            |
 | Abhishek Mukherjee     |                                                               | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee) | 0   |
 | Daniel Aparecido       | [@oaparecido](https://github.com/Oaparecido)                  | 1                                                            |
-| TANYA gupta            | [@TANAY03GUPTA](https://github.com/TANAY03GUPTA)              | 1                                                            |
