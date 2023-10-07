@@ -216,6 +216,7 @@
 | Nishant Kumar Singh    | [@Nishant5476](https://github.com/Nishant5476)                | 1                                                            |
 | Ayush Singla           | [@Ayush-singla27](https://github.com/Ayush-singla27)          | 0                                                            |
 | Yerkin Myrzabekov      | [@papa-het](https://github.com/Papa-het)                      | 1                                                            |
-| Abhishek Mukherjee     |                                                               | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee) | 0   |
+| Abhishek Mukherjee     | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee)  | 0                                                            |
 | Daniel Aparecido       | [@oaparecido](https://github.com/Oaparecido)                  | 1                                                            |
 | Sparsh Shyam           | [@sparshstark](https://github.com/sparshstark)                | 1                                                            |
+| Divyanshu Chaurasiya   | [@divyanshuchaurasiya](https://github.com/Divyanshu960)       | 1                                                            |
