@@ -219,3 +219,4 @@
 | Abhishek Mukherjee     |                                                               | [@abhishekkmukherjee](https://github.com/abhishekkmukherjee) | 0   |
 | Daniel Aparecido       | [@oaparecido](https://github.com/Oaparecido)                  | 1                                                            |
 | Sparsh Shyam           | [@sparshstark](https://github.com/sparshstark)                | 1                                                            |
+| Filippo Lampa          | [filippo-lampa](https://github.com/filippo-lampa)             | 1                                                            |
