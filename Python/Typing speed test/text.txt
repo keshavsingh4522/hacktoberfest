@@ -1,0 +1,7 @@
+Python programming language is one of dynamic and object-oriented programming languages
+Its significant advantage is that facilitates integration with other programing languages.
+The development of Python language was done on the December of 1989.
+Python was made to be easy-to-read-and-understand and powerful.
+A Dutch programmer named 'Guido van Rossum' made Python in 1991.
+Python has become one of the most famous programming languages on the world.
+Python standard library is made up of many functions that come with Python when it's installed.
