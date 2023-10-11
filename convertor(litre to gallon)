@@ -1,0 +1,46 @@
+import tkinter as tk
+
+#make window
+win=tk.Tk()
+win.title("Miles convetror App")
+win.geometry("500x250")
+win.config(bg="light green")
+win.resizable(False,False)
+
+#creating function
+def convert():
+    miles=int(input_val.get())
+    km=round(miles*1.61,2)
+    op_str.set(str(km)+"km")
+    
+def clear():
+    input_val.set(0)
+    op_str.set(0)
+
+
+#making label
+lab1=tk.Label(win,text="Miles to Kilometer",font="calibri 18 bold",
+              fg="blue",bg="white")
+lab1.pack(pady=10)
+
+#making frame
+frame1=tk.Frame(win,bg="white")
+input_val=tk.StringVar()
+entry=tk.Entry(frame1,bd=2,textvariable=input_val)
+entry.insert(0,0)
+btn1=tk.Button(frame1,text="convert",bd=2,fg='blue',bg='pink',
+               font='verdana 12 bold',command=convert)
+btn2=tk.Button(frame1,text="clear",bg="black",fg="red",font="verdana 12 bold",command=clear)
+entry.pack(side="left",padx=10)
+btn2.pack(side="left")
+btn1.pack(side="left")
+frame1.pack(pady=10)
+
+#output label
+op_str=tk.StringVar()
+out=tk.Label(win,text="output",font="calibri 20",bg="light green",fg="black",
+             textvariable=op_str)
+out.pack(pady=5)
+
+
+win.mainloop()
