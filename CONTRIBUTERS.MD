@@ -221,3 +221,4 @@
 | Sparsh Shyam           | [@sparshstark](https://github.com/sparshstark)                | 1                                                            |
 | Praggya Verma          | [@praggyaverma](https://github.com/praggyaverma)              | 1
                                        |
+| Harmanjot Kaur          | [@harmanjot2002](https://github.com/harmanjot2002)              | 1
