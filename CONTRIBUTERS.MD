@@ -1,6 +1,7 @@
 | Name                   | Github                                                        | Starred the repo                                             |
 | ---------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ | --- |
-| Spardha                | [@Spardha-hash](https://github.com/Spardha-hash).             | 0                                                            |
+|Arun Santhosh R A       | [@arun-dot-com](https://github.com/arun-dot-com)              | 1                                                            |
+|Spardha                 | [@Spardha-hash](https://github.com/Spardha-hash).             | 0                                                            |
 | Maheshwar S            | [@Maheshwar-S](https://github.com/Maheshwar-S)                | 1                                                            |
 | Spacify                | [@fts18](https://github.com/fts18)                            | 0                                                            |
 | war0                   | [@war0](https://github.com/war0)                              | 1                                                            |
