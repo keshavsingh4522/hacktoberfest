@@ -1,0 +1,2 @@
+INSERT INTO contacts (prefix, first_name, last_name, email, home_phone) VALUES ('Mr.', 'Tim', 'O''Donnell', 'tim@timodonnell.com', '555.555.1111');
+INSERT INTO contacts (prefix, first_name, last_name, email, home_phone) VALUES (NULL, 'Bob', 'Jones', 'bob.jones@domain.com', '555.555.2222');

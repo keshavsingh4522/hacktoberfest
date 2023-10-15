@@ -1,4 +1,4 @@
+//area of a square
 side = int (input ('inform the side value:'))
-comp = int (input ('enter length value:'))
-area = side * comp
+area = side * side
 print ('Area equals: {}'. format (area))

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:b="http://www.springframework.org/schema/beans"
+         xsi:schemaLocation="
+             http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+             http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+  <http pattern="/css/**" security="none"/>
+  <http pattern="/img/**" security="none"/>
+  <http pattern="/js/**"  security="none"/>
+
+  <http use-expressions="true" auto-config="true" entry-point-ref="authenticationProcessingFilterEntryPoint">
+    <intercept-url pattern="/app/**" requires-channel="https" access="hasRole('USER')"/>
+    <!--<intercept-url pattern="/**"     requires-channel="https" access="hasRole('ROLE_ANONYMOUS')"/>-->
+
+    <form-login login-page="/login"
+                default-target-url='/app/index'
+                authentication-failure-url="/login?invalid=true" />
+
+    <logout logout-success-url="/login" />
+
+    <!--
+    <session-management>
+      <concurrency-control max-sessions="1" />
+    </session-management>
+    -->
+  </http>
+
+  <!-- Automatically receives AuthenticationEvent messages -->
+  <b:bean id="loggerListener" class="org.springframework.security.authentication.event.LoggerListener"/>
+
+  <b:bean id="authenticationProcessingFilterEntryPoint" class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
+    <b:property name="loginFormUrl" value="/login" />
+    <b:property name="forceHttps" value="true" />
+    <b:property name="useForward" value="false" />
+  </b:bean>
+
+
+  <!-- Authenticate against both US and IL Active Directories -->
+  <authentication-manager>
+    <authentication-provider>
+      <user-service>
+        <user name="admin" password="admin" authorities="USER, ADMIN" />
+        <user name="user"  password="user"  authorities="USER" />
+      </user-service>
+    </authentication-provider>
+    <!--
+    <authentication-provider ref="ldapAuthProvider"/>
+    -->
+  </authentication-manager>
+
+  <!--  Active Directory  -->
+  <!--
+  <b:bean id="contextSource" class="org.springframework.security.ldap.DefaultSpringSecurityContextSource">
+    <b:constructor-arg value="ldap://hostname:389/dc=timodonnell,dc=com"/>
+    <b:property name="userDn" value="<bind_dn>"/>
+    <b:property name="password" value="<bind_password>"/>
+  </b:bean>
+
+  <b:bean id="userSearch" class="org.springframework.security.ldap.search.FilterBasedLdapUserSearch">
+    <b:constructor-arg index="0" value=""/>
+    <b:constructor-arg index="1" value="(sAMAccountName={0})"/>
+    <b:constructor-arg index="2" ref="contextSource" />
+  </b:bean>
+
+  <b:bean id="ldapAuthProvider" class="org.springframework.security.ldap.authentication.LdapAuthenticationProvider">
+    <b:constructor-arg>
+      <b:bean class="org.springframework.security.ldap.authentication.BindAuthenticator">
+        <b:constructor-arg ref="contextSource"/>
+        <b:property name="userSearch" ref="userSearch" />
+      </b:bean>
+    </b:constructor-arg>
+    <b:constructor-arg>
+      <b:bean class="org.springframework.security.ldap.userdetails.DefaultLdapAuthoritiesPopulator">
+        <b:constructor-arg ref="contextSource"/>
+        <b:constructor-arg value="ou=Groups"/>
+        <b:property name="groupRoleAttribute" value="cn"/>
+        <b:property name="rolePrefix" value=""/>
+        <b:property name="convertToUpperCase" value="false"/>
+        <b:property name="defaultRole" value="USER"/>
+      </b:bean>
+    </b:constructor-arg>
+  </b:bean>
+  -->
+
+</b:beans>

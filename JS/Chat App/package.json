@@ -1,0 +1,15 @@
+{
+  "name": "28_realtime_chat_app",
+  "version": "1.0.0",
+  "description": "Realtime Chat Application with node, express and websockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sreyom Sresaan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}
