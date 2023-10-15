@@ -1,0 +1,173 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/home.min.css')}}">
+{% endblock stylesheet %}
+
+{% block body %}
+
+<!--____________________________Homepage when user has logged in___________________________-->
+{% if current_user.is_authenticated %}
+<main class="home__logged--main">
+
+    <div class="create__post__btn__container">
+        <a href="{{url_for('create_post')}}" class="create__post__btn">
+            <i class="fas fa-plus-circle"></i>
+            CREATE POST
+        </a>
+    </div>
+
+    <section class="home__logged__posts__container">
+
+        {% for post in posts %}
+        <article>
+
+            <div class="post__header">
+
+                <div class="post__author__container">
+
+                    <div class="post__author__img__wrapper">
+                        <a href="{{url_for('user_profile',user_id=post.author.id)}}" class="img__link" title='Post Author'>
+                            <img src="{{url_for('static',filename='user-images/'+post.author.profile_pic)}}" alt="">
+                        </a>
+                    </div>
+
+                    <div class="post__author__name__container">
+                        <div>
+                            <a href="{{url_for('user_profile',user_id=post.author.id)}}" class="author__name" title='Post Author'>{{post.author.firstname}}</a>
+                            {% if post.author == current_user %}
+                            <p class="current__user">You</p>
+                            {% endif %}
+                        </div>
+
+                        <span>{{post.postDate.strftime('%d/%m/%Y')}}</span>
+                    </div>
+
+                </div>
+
+                {% if post.author == current_user %}
+                <div class="post__related__btn__links__container">
+
+                    <button class="sideNavShowBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                    
+                    <div class="post__related__btn__links">
+                    
+                        <button class="sideNavHideBtn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        
+                        <a href="" title='Edit Post'>
+                            <i class="fas fa-edit"></i>
+                            <span>Edit Post</span>
+                        </a>
+
+                        <a href="{{url_for('delete_post',post_id=post.id)}}" title='Delete Post'>
+                            <i class="fas fa-trash"></i>
+                            <span>Delete Post</span>
+                        </a>
+
+                    </div>
+
+                </div>
+                {% endif %}
+
+            </div>
+
+            <div class="post__body">
+
+                <div class="post__content__container">
+                    <a href="">
+                        {{post.content | truncate(250, False, '')}}
+                    </a>
+                </div>
+
+                {% if post.postImage %}
+                <div class="post__image__container">
+                    <a href="">
+                        <img src="{{url_for('static',filename='user-images/'+post.postImage)}}" alt="Post Image">
+                    </a>
+                </div>
+                {% endif %}
+
+            </div>
+
+            <div class="post__footer">
+                {% if current_user.has_liked(post) %}
+                <button class="heart__btn heart__btn__active" data-postid = {{post.id}}>
+                    <i class="fas fa-heart"></i>
+                {% else %}   
+                <button class="heart__btn" data-postid = {{post.id}}>
+                    <i class="far fa-heart"></i>
+                {% endif %}
+                    <span style="color:rgb(63, 61, 79)">{{post.likes.count()}}</span>
+                </button>
+
+                <a href="" class="comment__btn" title='Comment'>
+                    <i class="fas fa-comment-alt"></i>
+                    <span>10</span>
+                </a>
+            </div>
+
+        </article>
+        {% endfor %}
+
+    </section>
+
+</main>
+
+
+<!--_____________________________Homepage when user has not logged in_____________________________-->
+{% else %}
+<main class="home--general--main">
+
+    <div class="home__svg__container">
+        <img src="{{url_for('static',filename='site-images/home-svg.svg')}}" class="home__svg">
+    </div>
+
+    <div class="home__content__container">
+        <h1>Welcome Folk</h1>
+        <p>
+            Sakha is a social network application which provides a completely new & unique experience about a social application.
+            You can checkout more about the application in <a href="{{url_for('about_us')}}" title="About Us">about us</a> section.
+        </p>
+        <a href="{{url_for('login')}}" class="login__link">
+            <span>Get Started</span>
+            <i class="fas fa-angle-double-right"></i>
+        </a>
+    </div>
+</main>
+<!-- _____________________________________________________ -->
+{% endif %}
+
+{% endblock body %}
+
+
+{% block script %}
+<script src="{{url_for('static',filename='js/home.js')}}"></script>
+{% endblock script %}
+
+
+
+
+
+
+<!-----------------------Overlay Container---------------------->
+{#
+    <section class="overlay__container">
+    
+        <div class="overlay__content">
+            <p>Do you want to delete the post?</p>
+    
+            <div>
+                <a href="{{url_for('delete_post',post_id=post.id)}}" class="delete__btn btn">Confirm</a>
+                <button type="button" class="cancel__btn btn">Cancel</button>
+            </div>
+        </div>
+    
+        <div class="overlay__bg"></div>
+    
+    </section> 
+    #}
+    
+    <!-- _____________________________________________________ -->
