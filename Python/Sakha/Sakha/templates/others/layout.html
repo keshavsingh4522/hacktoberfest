@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rahul Kumar">
+    <meta name="contact" content="rahulkumar47624barnwal@gmail.com">
+    <meta name="keywords" content="Sakha, Social Media,Social Network, Sakha Social Media, Indian Social Media, Social Media Platform, Social Media web application ">
+    <meta name="description" content="Sakha is social network web application which has been created with ❤ for the people.
+                                     It provides a great platform to connect with people around the world.">
+
+
+    <!----------------------- Robot meta tag  ---------------------->
+    <meta name="robots" content="index, follow">
+
+
+    <!-------------------- Application Title ---------------------->
+    <title>{{title}} | Sakha - Social network platform from India for the world</title>
+
+
+    <!--------------------- Application Favicon  ----------------------->
+    <!-- <link rel="shortcut icon" href="../static/site-images/favicon.png" type="image/png"> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename='site-images/favicon.png')}}" type="image/png">
+
+
+    <!---------------------- Google fonts  ------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <!------------------- Fontawesome stylesheet  -------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-------------------- Custom Stylesheet  ---------------------->
+    <!-- <link rel="stylesheet" href="../static/css/layout.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/layout.css')}}">
+
+
+    <!-- --- Jinja block for linking stylesheets in child templates -- -->
+    {% block stylesheet %}
+    {% endblock stylesheet %}
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;800&display=swap');
+    </style>
+
+</head>
+<body>
+     
+
+    <!--___________________Header of the application(includes logo and navigation bar)___________________-->
+    <header class="header--section header--fixed">
+
+        <a href="{{url_for('home')}}" class="logo__link" title="Sakha logo">
+            <img src="{{url_for('static', filename='site-images/logo.png')}}" alt="Sakha Logo" class="logo__image">
+            <p>Sa<span>kh</span>a</p>
+        </a>
+
+         <!--_______________________ Navigation when user has logged in_____________________-->
+        {% if current_user.is_authenticated %}
+        <nav class="navigation">
+
+            <div class="navigation__wrapper">
+                <a href="{{url_for('home')}}" class="navigation__link navigation__home__link" title="Home">
+                    <i class="fa fa-home"></i>
+                </a>
+
+                <div class="navigation__user__profile__wrapper">
+                    <img src="{{url_for('static', filename='user-images/'+current_user.profile_pic)}}" alt="User Avatar">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+
+            </div>
+
+            <div class="navigation__application__stuffs">
+                <h4>User Stuffs</h4>
+
+
+                <a href="{{url_for('profile')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+
+                <a href="{{url_for('create_post')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Create Post</span>
+                </a>
+
+                <a href="{{url_for('settings')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+
+                <a href="{{url_for('avatar')}}" class="navigation__link navigation__application__link"  style="margin-bottom:1em;">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Avatar</span>
+                </a>
+
+
+                <h4>Application Stuffs</h4>
+
+                <a href="" class="navigation__link navigation__application__link">
+                    <i class="fas fa-user-tag"></i>
+                    <span>Our Policies</span>
+                </a>
+
+                <a href="{{url_for('about_us')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-address-book"></i>
+                    <span>About Us</span>
+                </a>
+
+                <a href="{{url_for('contact_us')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Contact Us</span>
+                </a>
+
+                <a href="{{url_for('logout')}}" class="navigation__link navigation__application__link" 
+                style="border-top:.1em solid #666;width:100%;padding-top:.8em;margin-top:1em;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- ______________________________________________ -->
+
+        <!--______________ Navigation when user has not logged in _____________-->
+        {% else %}
+        <nav class="navigation">
+
+            <div class="navigation__wrapper">
+                <a href="{{url_for('home')}}" class="navigation__link navigation__home__link" title="Home">
+                    <i class="fa fa-home"></i>
+                </a>
+
+                <div class="navigation__user__wrapper">
+                    <a href="{{url_for('register')}}" class="navigation__link navigation__user__link" title="Register">
+                        <i class="fa fa-user-plus"></i>
+                        <span>Register</span>
+                    </a>
+
+                    <a href="{{url_for('login')}}" class="navigation__link navigation__user__link" title="Login">
+                        <i class="fa fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </a>
+                </div>
+
+                <button class="navigation__about__btn">
+                    <span class="navigation__about">About</span>
+                    <i class="fas fa-angle-down"></i>
+                </button>
+            </div>
+
+            <div class="navigation__application__stuffs">
+                <h4>Application Stuffs</h4>
+
+                <a href="" class="navigation__link navigation__application__link">
+                    <i class="fas fa-user-tag"></i>
+                    <span>Our Policies</span>
+                </a>
+
+                <a href="{{url_for('about_us')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-address-book"></i>
+                    <span>About Us</span>
+                </a>
+
+                <a href="{{url_for('contact_us')}}" class="navigation__link navigation__application__link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Contact Us</span>
+                </a>
+
+            </div>
+        </nav>
+        {% endif %}
+        <!--________________________________________________-->
+
+    </header>
+
+
+    
+
+    <!-- ________________________ Message Flashing related html ________________________-->
+    {% with messages=get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+    <div class="msg--wrapper">
+    {% for cat, msg in messages %}
+    <div class="msg--container msg--{{cat}}--container">
+        <span class="msg {{cat}}__msg">
+            {{msg}}
+        </span>
+        <button class="msg__hide__btn {{cat}}__hide__btn">&Cross;</button>
+    </div>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+    <!-- __________________________________________________ -->
+
+
+    <!-- --- Jinja block for adding more content in the body of child templates -- -->
+    {% block body %}
+    {% endblock body %}
+
+
+
+    <!--______________________________Footer of the application ______________________________-->
+    <footer class="footer--section">
+
+        <div class="logo__wrapper">
+            <a href="{{url_for('home')}}" class="footer__logo__link" title="Sakha logo">
+                <img src="{{url_for('static', filename='site-images/logo.png')}}" alt="Sakha Logo" class="footer__logo__image">
+                <p>Sa<span>kh</span>a</p>
+            </a>
+        </div>
+
+        <section class="footer__links__section">
+            <nav class="footer__navigation__wrapper">
+
+                <h2>Quick Links</h2>
+
+                <div class="footer__navigation">
+
+                    <div class="footer__navigation__first">
+                        <a href="{{url_for('home')}}" class="footer__navigation__link" title="Home">
+                            <i class="fa fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                        
+                        {% if current_user.is_authenticated %}
+                            <a href="{{url_for('settings')}}" class="footer__navigation__link" title="Settings">
+                                <i class="fa fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <a href="{{url_for('profile')}}" class="footer__navigation__link" title="User Profile">
+                                <i class="fa fa-user"></i>
+                                <span>Profile</span>
+                            </a>
+                        {% else %}
+                            <a href="{{url_for('register')}}" class="footer__navigation__link" title="Register">
+                                <i class="fa fa-user-plus"></i>
+                                <span>Register</span>
+                            </a>
+
+                            <a href="{{url_for('login')}}" class="footer__navigation__link" title="Login">
+                                <i class="fa fa-sign-in-alt"></i>
+                                <span>Login</span>
+                            </a>
+                        {% endif %}
+
+                        <a href="{{url_for('about_us')}}" class="footer__navigation__link">
+                            <i class="fas fa-address-book"></i>
+                            <span>About Us</span>
+                        </a>
+                    </div>
+
+                    <div class="footer__navigation__second">
+                        <a href="{{url_for('contact_us')}}" class="footer__navigation__link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Contact Us</span>
+                        </a>
+
+                        <a href="" class="footer__navigation__link">
+                            <i class="fas fa-user-tag"></i>
+                            <span>Our Policies</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </nav>  
+
+            <div class="social___links___container">
+                <h2>Social Links</h2>
+
+                <div class="social__wrapper">
+                    <a href="" class="social__link" title="github">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                    <a href="" class="social__link" title="codepen">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                    <a href="" class="social__link" title="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social__link" title="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="need__help__wrapper">
+            <span>Need help???</span>
+            <a href="mailto:rahulkumar47624barnwal@gmail.com" title="Email Address">Mail Us</a>
+        </div>
+
+        <div class="copyright__wrapper">
+            <h3>
+                <i class="fa fa-copyright"></i>
+                Copyright reserved since 2021, Team Sakha
+            </h3>
+        </div>
+
+    </footer>
+    <!--______________________________________________________-->
+
+
+    <!-- ___________________________ Script file _____________________________ -->
+    <script src="{{url_for('static', filename='js/layout.js')}}"></script>
+
+
+
+    <!-- --- Jinja block for linking script files in child templates -- -->
+    {% block script %}
+    {% endblock script %}
+
+</body>
+</html>

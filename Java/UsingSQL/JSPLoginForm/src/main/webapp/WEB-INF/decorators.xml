@@ -1,0 +1,19 @@
+<!--
+  SiteMesh decorators definitions.
+ -->
+<decorators defaultdir="/WEB-INF/decorators">
+
+  <!-- Do not decorate any requests matching the following patterns -->
+  <excludes>
+    <pattern>/css/*</pattern>
+    <pattern>/img/*</pattern>
+    <pattern>/js/*</pattern>
+    <pattern>*.json</pattern>
+    <pattern>*.html</pattern>
+  </excludes>
+
+  <decorator name="main" page="layout.jsp">
+    <pattern>/*</pattern>
+  </decorator>
+
+</decorators>

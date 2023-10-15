@@ -30,7 +30,7 @@ class birthdayLogger:
         }
         with open('sample.json', 'w') as f:  
             json.dump(new_entry, f, indent=4)
-            return ("New file created and first entry added")
+            return ("New file has been created and the first entry has been successfully added!")
     
     # function to write to JSON 
     def writeJson(self, filename='database.json'): 
@@ -52,13 +52,13 @@ class birthdayLogger:
             except Exception as e:
                 pass
             if type(name) == int:
-                print('Please Enter valid name')
+                print('Please Enter a valid name.')
             else:
                 break
         # validation of date of birth
         while 1:
-            date_of_birth = input('Enter Date of Birth(DD MM YYYY): ')
-            dob_list = date_of_birth.split(' ')
+            date_of_birth = input('Enter Date of Birth(DD/MM/YYYY): ')
+            dob_list = date_of_birth.split('/')
             if len(dob_list) < 3:
                 print('Please Enter in DD/MM/YYYY format')
             else:
@@ -153,16 +153,17 @@ birthdayChecker()
 # if you want to run it in background comment out below code and uncomment when adding, searching entries
 while 1:
     bd = birthdayLogger()
-    print('Please type the first word of what you want to do')
-    i = input("add a new entry/ all entry list/ search for a name: ")
-    if 'ad' in i:
+    print('Please enter the option number with which you wish to proceed:\n 1)Add a new entry\n 2)Display all entries\n 3)Search for a name\n 4)Quit')
+    i = int(input("Enter your choice: "))
+    if i==1:
         print(bd.addNewEntry())
-    elif 'al' in i:
+    elif i==2:
         print(bd.allEntries())
-    elif 'se' in i:
-        i = input("Enter name for searching")
+    elif i==3:
+        i = input("Enter name for searching:")
         print(bd.find(i))
-    elif 'q' in i:
+    elif i==4:
         break
+
 
 

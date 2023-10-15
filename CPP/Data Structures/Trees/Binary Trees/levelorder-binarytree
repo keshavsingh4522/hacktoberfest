@@ -1,0 +1,68 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class node
+{
+public:
+    int data;
+    node *left;
+    node *right;
+
+    node(int d)
+    {
+        data = d;
+        left = right = NULL;
+    }
+};
+
+node *CreateTree()
+{
+    string v;
+    cin >> v;
+    
+    if (v == "n")
+    {
+        return NULL;
+    }
+    
+    int w=stoi(v);
+    node *root = new node(w);
+    root->left = CreateTree();
+    root->right = CreateTree();
+    return root;
+}
+
+void levelorder(node *root)
+{
+    queue<node*> mq;
+    mq.push(root);
+    
+    while(mq.size()>0)
+    {
+        int cicl=mq.size();
+        
+        for(int i=0;i<cicl;i++)
+        {
+            root=mq.front();
+            mq.pop();
+            cout<<root->data<<" ";
+            
+        if(root->left != NULL){
+          mq.push(root->left);
+        }
+
+        if(root->right != NULL){
+          mq.push(root->right);
+        }
+        }
+        cout<<endl;
+    }
+}
+
+int main()
+{
+    int p;cin>>p;
+    node *root = CreateTree();
+    levelorder(root);
+    return 0;
+}
