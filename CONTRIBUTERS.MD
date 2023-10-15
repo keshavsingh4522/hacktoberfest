@@ -220,4 +220,5 @@
 | Daniel Aparecido       | [@oaparecido](https://github.com/Oaparecido)                  | 1                                                            |
 | Sparsh Shyam           | [@sparshstark](https://github.com/sparshstark)                | 1                                                            |
 | Praggya Verma          | [@praggyaverma](https://github.com/praggyaverma)              | 1
-                                       |
+| Manas Bavaskar         | [@manascb1344](https://github.com/manascb1344)                | 0
+
