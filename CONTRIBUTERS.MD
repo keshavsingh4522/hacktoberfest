@@ -75,6 +75,7 @@
 | Crowfunder             | [@Crowfunder](https://github.com/Crowfunder)                  | 0                                                            |
 | Anirudh Bagri          | [@anirudhbagri](https://github.com/anirudhbagri)              | 0                                                            |
 | Iris ALmeida           | [@7irisalm](https://github.com/7irisalm)                      | 0                                                            |
+| Joseph Remingstonn     | [@JosephRemingston](https://github.com/JosephRemingston)      | 0                                                            |
 | Krosskid12             | [@Krosskid12](https://github.com/Krosskid12)                  | 1                                                            |
 | lidonghui              | [@ldh](https://github.com/ldh)                                | 1                                                            |
 | Namita Mutha           | [@namitamutha](https://github.com/namitamutha)                | 0                                                            |
