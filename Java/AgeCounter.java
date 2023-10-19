@@ -13,12 +13,25 @@ public class AgeCounter {
         //Get Inputs
         System.out.println("Enter Your Birth Year");
         int year=bday.nextInt();
+        while(year>2023 || year<0){
+                    System.out.println("Enter Your Birth Year");
+            year=bday.nextInt();
+        }
       
         System.out.println("Enter Your Birth Month");
         int month=bday.nextInt();
+        while(month>12 || month<0){
+            System.out.println("Enter Your Birth Month");
+            month=bday.nextInt();
+        }
         
         System.out.println("Enter Your Birth Date");
         int day=bday.nextInt();
+        while(day>31 || day<0){
+            System.out.println("Enter Your Birth Date");
+            day=bday.nextInt();
+        }
+        
         
         
         
