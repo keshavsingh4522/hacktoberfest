@@ -221,4 +221,5 @@
 | Sparsh Shyam           | [@sparshstark](https://github.com/sparshstark)                | 1                                                            |
 | Kalkeshwar Yamsani     | [@kalkeshwar](https://github.com/kalkeshwar)			             | 1							                                             	|
 | Praggya Verma          | [@praggyaverma](https://github.com/praggyaverma)              | 1                                                            |
-                                       
+| Amandeep singh parihar | [@amandeep-singh-parihar](https://github.com/amandeep-singh-parihar)          | 
+0                                      
