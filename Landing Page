@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project no. 2</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        header {
+            width: 100%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-image: url("Images/image2.jpg");
+        }
+    </style>
+    <header>
+        <div class="navsection">
+            <div class="leftnav">
+                <h1>SHUBHAMKR.</h1>
+            </div>
+            <div class="rightnav">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>Projects</li>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <h4>Design Development Branding</h4>
+            <h1>Creative & Experienced</h1>
+            <h3> We are the one of the world's top creative design agencies</h3>
+            <button class="btn1">Like & Share</button>
+            <button class="btn2">Subscribe</button>
+        </div>
+
+    </header>
+
+
+</body>
+
+</html>
