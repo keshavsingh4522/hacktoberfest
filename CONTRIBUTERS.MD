@@ -22,7 +22,10 @@
 | Vatsal Narwal          | [@VatsalNarwal](https://github.com/VatsalNarwal)              | 0                                                            |
 | Pratik Shirodkar       | [@Pratik-Shirodkar](https://github.com/Pratik-Shirodkar)      | 0                                                            |
 | Ramya Neelakantan      | [@ramya-neelakantan](https://github.com/ramya-neelakantan)    | 1                                                            |
-| Kanishk J              | [@Kanishk7559](https://github.com/kanishk7559)                | 0                                                            |
+| Kanishk J              | [@Kanishk7559](https://github.com/kanishk7559)                | 0 
+
+| Prince Raj   |         | [@HardCoder404](https://github.com/HardCoder404)              | 0
+
 | Misa Dravid            | [@misa-bot](https://github.com/misa-bot)                      | 0                                                            |
 | Pranjal Soni           | [@sonipranjal](https://github.com/sonipranjal)                | 0                                                            |
 | Preeti Advani          | [@preetiadvani1](https://github.com/preetiadvani1)            | 1                                                            |
