@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  font-family: 'Inter',sans-serif;
+  background-color:#E5E5E5;
+}
+.App {
+  width:550px;
+  height:704px;
+  background: #fff;
+}
+.card-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  flex-direction: column;
+  padding-top:40px;
+  padding-bottom:30px;
+
+}
