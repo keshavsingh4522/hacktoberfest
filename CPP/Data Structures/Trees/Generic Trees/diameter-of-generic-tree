@@ -1,0 +1,168 @@
+#include <bits/stdc++.h>
+#include <vector>
+#include <stack>
+
+using namespace std;
+
+struct Node
+{
+    int data;
+    vector<Node *> children;
+};
+
+Node *construct(int arr[], int n)
+{
+    Node *root = NULL;
+    stack<Node *> st;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == -1)
+        {
+            if (st.size() != 0)
+                st.pop();
+        }
+        else
+        {
+            Node *t = new Node();
+            t->data = arr[i];
+
+            if (st.size() > 0)
+            {
+                Node *top = st.top();
+                top->children.push_back(t);
+            }
+
+            else
+            {
+                root = t;
+            }
+            st.push(t);
+        }
+    }
+    return root;
+};
+
+int size(Node *node)
+{
+    int s = 0;
+
+    for (int i = 0; i < node->children.size(); i++)
+    {
+        s += size(node->children[i]);
+    }
+    s += 1;
+
+    return s;
+}
+
+vector <int> galvin(Node *root, int b){
+    if(root->data == b){
+      vector <int> path;
+      path.push_back(root->data);
+      return path;
+    }
+
+    for(Node *child: root->children){
+      vector<int> ptc = galvin(child, b);
+      if(ptc.size() > 0){
+        ptc.push_back(root->data);
+        return ptc;
+      }
+    }
+    return vector<int>();
+    
+   
+ }
+ 
+ int distanceBetweenNodes(Node *root, int d1, int d2){
+    vector<int> p1=galvin(root, d1);
+    vector<int> p2=galvin(root, d2);
+
+    int i = p1.size() - 1;
+    int j = p2.size() - 1;
+
+    while(i >= 0 && j >= 0 && p1[i] == p2[j]){
+      i--;
+      j--;
+    }
+
+
+    return i+1 + j+1;
+  }
+  
+  
+ bool areSimilar(Node *root,Node *node)
+ {
+     if(root->children.size()!=node->children.size())
+     return false;
+     
+     for (int i = 0; i < node->children.size() ; i++) {
+      Node *c1 = root->children[i];
+      Node *c2 = node->children[i];
+      if (areSimilar(c1, c2) == false) {
+        return false;
+      }
+    }
+    
+     return true;
+ }
+ 
+
+void display(Node *root)
+{
+    if(root == NULL)return;
+    string str = to_string(root->data) + "->";
+    for (Node* child : root->children)
+    {
+        str +=to_string(child->data) + ",";
+    }
+    str += ".";
+    //cout << (str) << endl;
+
+    // for (Node * child : root->children)
+    // {
+    //     display(child);
+    // }
+}
+
+
+static int dia=0;
+
+int diameter(Node *root)
+{
+    int ht=-1;
+    int sh=-1;
+    
+    for (Node *child : root->children) {
+      int ch = diameter(child);
+      if (ch >= ht) {
+        sh = ht;
+        ht = ch;
+      } else if (ch >= sh) {
+        sh = ch;
+      }
+    }
+
+    if (sh + ht + 2 > dia) {
+      dia = sh + ht + 2;
+    }
+
+    ht += 1;
+    return ht;
+
+    
+}
+
+
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    Node *root = construct(arr, n);
+    dia = 0;
+    diameter(root);
+    cout<<dia<<endl;
+  }
