@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+<!--author: Raj Kishore Patra-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.10.0.42867-->
+<category>
+	<pattern>TARGET BOTSTART</pattern>
+	<template>Hello</template>
+</category>
+<category>
+	<pattern>_ ETHERNET _</pattern>
+	<template>Please connect the LAN cable to the red port on your workstation. Please write back to IT if you are unable to get the IP addresss</template>
+</category>
+<category>
+	<pattern>_ ACCOUNT _</pattern>
+	<template>Go to URL : accountsetup.com, Enter personal details along with user id, enter OTP received, click finish. Check email for details.</template>
+</category>
+<category>
+	<pattern>_ CREATE LOGIN _</pattern>
+	<template>
+		<random>
+			<li>We have already created account and details have been sent to user's personal Email ID</li>
+			<li>Account created and details sent to user's personal email ID</li>
+		</random></template>
+</category>
+<category>
+	<pattern>_ LOGIN _</pattern>
+	<template>Go to URL : password.reset.com, Enter you login id, enter password received, reset the password</template>
+</category>
+<category>
+	<pattern>LOGIN _</pattern>
+	<template><srai>Go to URL : password.reset.com, Enter you login id, enter password received, reset the password</srai></template>
+</category>
+<category>
+	<pattern>NEW ACCOUNT _</pattern>
+	<template>Go to URL : accountsetup.com, Enter personal details along with user id, enter OTP received, click finish. Check email for details.</template>
+</category>
+<category>
+	<pattern>_ ACCESS OUTLOOK _</pattern>
+	<template>We have reset the password and communicated to user in a mail already, now user is able to login. Hence marking the ticket resolved</template>
+</category>
+<category>
+	<pattern>_ WIFI NETWORK *</pattern>
+	<template><star /> is removed, connect to ITS7001. Connect IT helpdesk if any more issues.</template>
+</category>
+<category>
+	<pattern>_ WIFI ACCESS _</pattern>
+	<template>First, connect a network cable to your laptop to the red port on your workstation. Run ipconfig /all on your command prompt. Share WiFi Mac or Hardware address to the IT team. IT team then adds your MAC ID to enable WiFi access</template>
+</category>
+<category>
+	<pattern>WIFI ACCESS _</pattern>
+	<template>First, connect a network cable to your laptop to the red port on your workstation. Run ipconfig /all on your command prompt. Share WiFi Mac or Hardware address to the IT team. IT team then adds your MAC ID to enable WiFi access</template>
+</category>
+<category>
+	<pattern>_ VM</pattern>
+	<template>Changed network settings to Bridged and configured network in VM.</template>
+</category>
+<category>
+	<pattern>SERVER * HANGED_</pattern>
+	<template>IT Team has restarted the server <star /> and its accessible now.</template>
+</category>
+<category>
+	<pattern>_ VM _</pattern>
+	<template>IT Team has created VM as per your requirement and configured accordingly and sent the login details in a separate mail.</template>
+</category>
+<category>
+	<pattern>LOGIN CREDENTIALS _</pattern>
+	<template>Password got expired. New password is sent to your email id</template>
+</category>
+<category>
+	<pattern>MY SPACE _ DOWN</pattern>
+	<template>We regret for the inconvinience caused. The issue is with Host server which got rebooted due to a power failure.</template>
+</category>
+<category>
+	<pattern>LOGIN _ NOT_ DISPLAYED</pattern>
+	<template>Login server was down. It is up now. Please check.</template>
+</category>
+<category>
+	<pattern>_ INTERNET _ NOT _</pattern>
+	<template>Go to network tab from bottom right corner, choose ITS7001 network, click on connect</template>
+</category>
+<category>
+	<pattern>_ ACCOUNT _ LOCKED _</pattern>
+	<template>Unlocked the account and new password is sent to your email id.</template>
+</category>
+<category>
+	<pattern>UNABLE _ INTERNET</pattern>
+	<template>Go to network tab from bottom right corner, choose ITS7001 network, click on connect</template>
+</category>
+<category>
+	<pattern>_ INTERNET ISSUE _</pattern>
+	<template>Go to network tab from bottom right corner, choose ITS7001 network, click on connect</template>
+</category>
+<category>
+	<pattern>FORGOT PASSWORD _</pattern>
+	<template>Go to URL : password.reset.com, Enter you login id, enter password received, reset the password</template>
+</category>
+<category>
+	<pattern>_ PASSWORD EXPIRED</pattern>
+	<template>Please reset the passowrd using self service Portal http://ssp.abc.com, Please write back to us if you face any issue.</template>
+</category>
+<category>
+	<pattern>PASSWORD EXPIRED</pattern>
+	<template>Go to URL : password.reset.com, Enter you login id, enter password received, reset the password</template>
+</category>
+<category>
+	<pattern>ACCOUNT LOCKED _</pattern>
+	<template>Unlocked the account and new password is sent to your email id.</template>
+</category>
+<category>
+	<pattern>_ DELETE _ COOKIES</pattern>
+	<template>Microsoft Internet Explorer users can go to 'Tools' (or the little cog icon in the top left), then go to 'Safety' and choose 'Delete browsing history...', you can then choose to delete your Internet cookies. In Google Chrome, go to 'More Tools' and choose 'Clear browsing data...'. Firefox users can go to 'History', then choose 'Clear recent history...'.</template>
+</category>
+<category>
+	<pattern>_ BLUE SCREEN _</pattern>
+	<template>First check the computer's power cord to make sure it is completely plugged into the wall socket. If you are using a plug strip, make sure it is completely plugged into the wall socket and that the power switch on the plug strip is turned on. Some plug strips also have a built in circuit breaker which usually looks like a black or red button near the power switch. Press the button to reset it and see if that solves the problem.</template>
+</category>
+<category>
+	<pattern>DESKTOP NOT _</pattern>
+	<template>First check the computer's power cord to make sure it is completely plugged into the wall socket. If you are using a plug strip, make sure it is completely plugged into the wall socket and that the power switch on the plug strip is turned on. Some plug strips also have a built in circuit breaker which usually looks like a black or red button near the power switch. Press the button to reset it and see if that solves the problem.</template>
+</category>
+<category>
+	<pattern>_ UNABLE _ EMAIL</pattern>
+	<template>Verify that your computer is able to see the Internet and/or other computers to ensure that your computer is not encountering a connection issue, which would be causing your e-mail issue. Ensure that your Internet e-mail server or your Network e-mail server is not encountering issues by contacting either your Internet Service Provider or your Network administrator.</template>
+</category>
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
+</aiml>

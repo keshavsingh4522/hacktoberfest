@@ -1,0 +1,41 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/createPost.min.css')}}">
+{% endblock stylesheet %}
+
+{% block body %}
+<main class="form--main">
+
+    <form method="post" class="form" autocomplete="off" enctype="multipart/form-data">
+        {{form.hidden_tag()}}
+
+        <legend>Create New Post</legend>
+
+        <div class="form__group">
+            {{form.content.label}}
+            {{form.content(spellcheck="false")}}
+            {% if form.content.errors %}
+            {% for error in form.content.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form__group">
+            {{form.postImage.label}}
+            {{form.postImage}}
+            {% if form.postImage.errors %}
+            {% for error in form.postImage.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form__submit__group">
+            {{form.submit}}
+        </div>
+
+    </form>
+   
+</main>
+{% endblock body %}

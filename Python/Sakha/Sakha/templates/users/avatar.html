@@ -1,0 +1,51 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/avatar.min.css')}}">
+{% endblock stylesheet %}
+
+{% block body %}
+<main class="avatar--main">
+
+    <section>
+        <h2>Upload Images</h2>
+
+        <form enctype="multipart/form-data" method="post" class="form">
+            {{form.hidden_tag()}}
+
+            <div class="form__group">
+                {{form.profile_pic.label}}
+                {{form.profile_pic}}
+                {% if form.profile_pic.errors %}
+                {% for error in form.profile_pic.errors %}
+                <span>{{error}}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form__group">
+                {{form.header_pic.label}}
+                {{form.header_pic}}
+                {% if form.header_pic.errors %}
+                {% for error in form.header_pic.errors %}
+                <span>{{error}}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+
+            <div class="form__submit__group">
+                {{form.submit}}
+            </div>
+
+        </form>
+
+        <div class="important__note__container">
+            <h4>Read before uploading : </h4>
+            <p><em>The image file should be of maximum size 3 MB and image format in jpg/svg/gif/png is only allowed</em></p>
+        </div>  
+    </section>
+    
+
+</main>
+{% endblock %}
+
+
