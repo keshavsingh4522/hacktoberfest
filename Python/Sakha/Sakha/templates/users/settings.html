@@ -1,0 +1,108 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/settings.min.css')}}">
+{% endblock %}
+
+{% block body %}
+<main class="settings--main">
+    
+    <!-- _______________________Message Flashing when account details is updated________________________ -->
+    <div class="message--container message--hide">
+        <span class="message">
+            Your account details has been updated.
+        </span>
+        <button class="message__hide__btn">&Cross;</button>
+    </div>
+
+    <div class="settings__heading__container">
+        <h1 class="settings__heading">Account Settings</h1>
+        <p>Hello {{current_user.firstname}}, You can update your account details here.</p>
+    </div>
+
+
+    <!----------------------- Form for modifying firstname and lastname -------------------------->
+    <form method="post" class="nameForm form">
+        {{nameForm.hidden_tag()}}
+
+        <div class="nameForm__name__group form__name__group">
+            <div class="form__group">
+                {{nameForm.firstname.label}}
+                {{nameForm.firstname(placeholder="Enter your firstname", class="firstname__field")}}
+                <span class="field__error"></span>
+            </div>
+
+            <div class="form__group">
+                {{nameForm.lastname.label}}
+                {{nameForm.lastname(placeholder="Enter your lasttname", class="lastname__field")}}
+                <span class="field__error"></span>
+            </div>
+            
+        </div>
+
+        <div class="form__submit__group">
+            {{nameForm.submit}}
+        </div>
+    </form>
+    <!-- ___________________________________________________ -->
+
+
+    <!----------------------- Form for modifying about_user details  -------------------------->
+    <form method="post" class="aboutForm form">
+        {{aboutForm.hidden_tag()}}
+
+        <div class="form__group">
+            {{aboutForm.address.label}}
+            {{aboutForm.address(class="address")}}
+        </div>
+
+        <div class="form__group">
+            {{aboutForm.about_user.label}}
+            {{aboutForm.about_user(class="about_user")}}
+        </div>
+
+
+        <div class="form__submit__group">
+            {{aboutForm.submit}}
+        </div>
+    </form>
+    <!-- ___________________________________________________ -->
+
+
+    <!-------------------------Form for modifying email id and username----------------------->
+    <form method="post" class="uniqueForm form">
+        {{uniqueForm.hidden_tag()}}
+
+        <div class="form__group">
+            {{uniqueForm.username.label}}
+            {{uniqueForm.username(placeholder="Enter username")}}
+            {% if uniqueForm.username.errors %}
+            {% for error in uniqueForm.username.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form__group">
+            {{uniqueForm.email.label}}
+            {{uniqueForm.email(placeholder="Enter Email Address")}}
+            {% if uniqueForm.email.errors %}
+            {% for error in uniqueForm.email.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="form__submit__group">
+            {{aboutForm.submit}}
+        </div>
+
+    </form>
+    <!-- ___________________________________________________ -->
+
+
+</main>
+{% endblock %}
+
+{% block script %}
+<script src="{{url_for('static', filename='js/settings.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,5 @@
+# Add here the folders that not necessary.
+# Folders from the your IDE create automatically
+./.idea
+.vs
+.vscode
