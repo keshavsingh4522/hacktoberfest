@@ -1,0 +1,7 @@
+<!-- In the header or nav section -->
+<header class="nav-bar">
+  <h1>My App</h1>
++  <button id="theme-toggle" class="button" onclick="toggleTheme()">
++    🌙 Toggle Theme
++  </button>
+</header>
