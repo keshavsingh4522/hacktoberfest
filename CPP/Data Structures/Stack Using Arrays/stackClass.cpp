@@ -14,6 +14,10 @@ class stack {
         this -> size = size;
         p = new t[size];
     }
+
+    ~stack(){
+        delete [] p;
+    }
     
     int getSize(){
         return size;
