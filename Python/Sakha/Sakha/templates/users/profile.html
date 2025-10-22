@@ -1,0 +1,200 @@
+{% extends 'others/layout.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/profile.min.css')}}">
+{% endblock stylesheet %}
+
+{% block body %}
+<main class="profile--main--container">
+
+
+    <!-- __________________________User pictures_____________________________ -->
+    <section class="profile__sub__container__one">
+
+        <div class="profile__header__img__container">
+            <a href="{{url_for('avatar')}}" title='Update Header'>
+                <img src="{{url_for('static', filename='user-images/'+current_user.header_pic)}}" alt="Profile Header Image" class="header__img">
+            </a>
+        </div>
+
+        <div class="profile__avatar__img__container">
+
+            <div class="avatar__container">
+                <a href="{{url_for('avatar')}}" title='Update Profile Image'>
+                    <img src="{{url_for('static', filename='user-images/'+current_user.profile_pic)}}" alt="Profile Avatar" class="avatar">
+                </a>
+                <h2>{{current_user.firstname}} {{current_user.lastname}}</h2>
+                <p>@{{current_user.username}}</p>
+            </div>
+
+            <button class="profile__btn">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+
+            <nav class="profile__navigation profile__navigation__hidden">
+                <a href="{{url_for('settings')}}" class="profile__navigation__link">
+                    <i class="fas fa-edit"></i>
+                    <span>Edit Profile</span>
+                </a>
+        
+                <a href="{{url_for('create_post')}}" class="profile__navigation__link">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>CREATE POST</span>
+                </a>
+            </nav>
+
+        </div>
+
+
+    </section>
+    <!-- ______________________________________________ -->
+
+
+
+
+    <!-- ______________________________ User Info section__________________________________ -->
+    <section class="profile__sub__container__two">
+        {% if current_user.about_user %}
+        <p class="about_user">{{current_user.about_user}}</p>
+        {% endif %}
+
+        <div class="join__date__container">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Joined on {{joined_date}}</span>
+        </div>
+
+        {% if current_user.address %}
+        <div class="location__container">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{current_user.address}}</span>
+        </div>
+        {% endif %}
+        
+        <div class="email__container">
+            <i class="fas fa-envelope"></i>
+            <span>{{current_user.email}}</span>
+        </div>
+
+        <div class="follow__details__container">
+            <button class="followers__btn">{{current_user.followers.count()}} Followers</button>
+            <button class="following__btn">{{current_user.followed.all() | length}} Following</button>
+        </div>
+
+    </section>
+    <!-- ______________________________________________ -->
+
+
+
+    
+    <!--------------------------------- All the posts of the current user ---------------------------------->
+    <section class="profile__user__posts__container">
+
+        <div class="profile__user__posts">
+        
+            <div class="create__post__btn__container">
+                <a href="{{url_for('create_post')}}" class="create__post__btn">
+                    <i class="fas fa-plus-circle"></i>
+                    CREATE POST
+                </a>
+            </div>
+
+            {% for post in posts %}
+            <article>
+
+                <div class="post__header">
+
+                    <div class="post__author__container">
+
+                        <div class="post__author__img__wrapper">
+                            <a href="" class="img__link" title='Post Author'>
+                                <img src="{{url_for('static',filename='user-images/'+ current_user.profile_pic)}}" alt="">
+                            </a>
+                        </div>
+
+                        <div class="post__author__name__container">
+                            <div>
+                                <a href="" class="author__name" title='Post Author'>{{current_user.firstname}}</a>
+                            </div>
+
+                            <span>{{post.postDate.strftime('%d/%m/%Y')}}</span>
+                        </div>
+
+                    </div>
+
+                    <div class="post__related__btn__links__container">
+
+                        <button class="sideNavShowBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        
+                        <div class="post__related__btn__links">
+                        
+                            <button class="sideNavHideBtn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            
+                            <a href="" title='Edit Post'>
+                                <i class="fas fa-edit"></i>
+                                <span>Edit Post</span>
+                            </a>
+
+                            <a href="{{url_for('delete_post',post_id=post.id)}}" title='Delete Post'>
+                                <i class="fas fa-trash"></i>
+                                <span>Delete Post</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="post__body">
+
+                    <div class="post__content__container">
+                        <a href="">
+                            {{post.content | truncate(250, False, '')}}
+                        </a>
+                    </div>
+
+                    {% if post.postImage %}
+                    <div class="post__image__container">
+                        <a href="">
+                            <img src="{{url_for('static',filename='user-images/'+post.postImage)}}" alt="Post Image">
+                        </a>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+                <div class="post__footer">
+                    {% if current_user.has_liked(post) %}
+                    <button class="heart__btn heart__btn__active" data-postid = {{post.id}}>
+                        <i class="fas fa-heart"></i>
+                    {% else %}   
+                    <button class="heart__btn" data-postid = {{post.id}}>
+                        <i class="far fa-heart"></i>
+                    {% endif %}
+
+                        <span style="color:rgb(63, 61, 79)">{{post.likes.count()}}</span>
+                    </button>
+
+                    <a href="" class="comment__btn" title='Comment'>
+                        <i class="fas fa-comment-alt"></i>
+                        <span>10</span>
+                    </a>
+                </div>
+
+            </article>
+            {% endfor %}
+            
+        </div>
+
+    </section>
+
+</main>
+{% endblock body %}
+
+
+{% block script %}
+<script src="{{url_for('static',filename='js/profile.js')}}"></script>
+{% endblock %}

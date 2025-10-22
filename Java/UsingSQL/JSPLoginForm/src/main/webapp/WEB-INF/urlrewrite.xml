@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+    "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+
+<urlrewrite default-match-type="wildcard">
+
+  <!-- Add rules here for anything that shouldn't be served up by Spring MVC. -->
+  <!--
+  <rule>
+    <from>/</from>
+    <to type="redirect" last="true">mainMenu</to>
+  </rule>
+  -->
+
+  <rule>
+    <from>/app/**</from>
+    <to last="true" type="redirect">%{context-path}/$1</to>
+  </rule>
+  <rule>
+    <from>/j_spring_security_check</from>
+    <to>/j_spring_security_check</to>
+  </rule>
+  <rule>
+    <from>/j_spring_security_logout</from>
+    <to>/j_spring_security_logout</to>
+  </rule>
+
+
+  <rule>
+    <from>/login*</from>
+    <to>/login.jsp</to>
+  </rule>
+
+  <rule>
+    <from>/logout*</from>
+    <to>/j_spring_security_logout</to>
+  </rule>
+
+  <rule>
+    <from>/favicon*</from>
+    <to last="true">/favicon.ico</to>
+  </rule>
+
+
+  <rule>
+    <from>/img/**</from>
+    <to>/img/$1</to>
+  </rule>
+  <rule>
+    <from>/js/**</from>
+    <to>/js/$1</to>
+  </rule>
+  <rule>
+    <from>/css/**</from>
+    <to>/css/$1</to>
+  </rule>
+
+
+  <!-- Spring MVC -->
+  <rule>
+    <from>/**</from>
+    <to>/app/$1</to>
+  </rule>
+  <outbound-rule>
+    <from>/app/**</from>
+    <to>/$1</to>
+  </outbound-rule>
+
+  <!-- Remove JSESSIONID from URLs when cookies disabled -->
+  <!-- http://stackoverflow.com/questions/962729/is-it-possible-to-disable-jsessionid-in-tomcat-servlet -->
+  <!--
+  <outbound-rule encodefirst="true" match-type="regex">
+    <name>Strip URL Session ID's</name>
+    <from>^(.*?)(?:\;jsessionid=[^\?#]*)?(\?[^#]*)?(#.*)?$</from>
+    <to>$1$2$3</to>
+  </outbound-rule>
+  -->
+
+</urlrewrite>

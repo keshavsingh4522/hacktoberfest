@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		    http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		    http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+  <context:annotation-config/>
+
+  <context:property-placeholder location="classpath:config.properties"/>
+
+
+  <!--
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+        p:driverClassName="${jdbc.driver}"
+        p:url="${jdbc.url}"
+        p:username="${jdbc.username}"
+        p:password="${jdbc.password}"
+        p:validationQuery="SELECT 1"
+        p:testOnBorrow="true"
+        p:maxWait="10000"
+      />
+  -->
+  <jdbc:embedded-database id="dataSource">
+      <jdbc:script location="classpath:db/schema.sql" />
+      <jdbc:script location="classpath:db/seed.sql" />
+  </jdbc:embedded-database>
+
+  <bean id="emFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <property name="dataSource" ref="dataSource" />
+    <property name="packagesToScan" value="com.todc.addressbook.domain" />
+    <property name="jpaVendorAdapter">
+      <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="showSql" value="${jpa.showSql}" />
+        <property name="database" value="${jpa.database}" />
+      </bean>
+    </property>
+  </bean>
+
+  <bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+    <property name="entityManagerFactory" ref="emFactory" />
+  </bean>
+
+  <jpa:repositories base-package="com.todc.addressbook.repository"
+                    entity-manager-factory-ref="emFactory"
+                    transaction-manager-ref="txManager">
+  </jpa:repositories>
+
+</beans>

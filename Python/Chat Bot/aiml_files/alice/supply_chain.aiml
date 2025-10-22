@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+<!--author: Raj Kishore Patra-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.10.0.42867-->
+<category>
+	<pattern>_ DIVISIONS _ SUPPLY CHAIN</pattern>
+	<template>There are four basic divisions for a supply chain : Suppliers, Logistics, Manufacturin, Distribution</template>
+</category>
+<category>
+	<pattern>_ CROSS SHARING _ SUPPLIERS</pattern>
+	<template> Yes, Cross Sharing can be done to compensate for greater load of work</template>
+</category>
+<category>
+	<pattern>_ SUPPLIER LOCATION _</pattern>
+	<template>Yes, It's possible with logistics.</template>
+</category>
+<category>
+	<pattern>_ MINIMIZE _ COST</pattern>
+	<template>By changing quality of product and providing service at proper time.</template>
+</category>
+<category>
+	<pattern>WHO _ CUSTOMERS</pattern>
+	<template>Key customers buy in large quantities, are expected to buy more in the future, or are influential in your industry.</template>
+</category>
+<category>
+	<pattern>HOW _ FIND _</pattern>
+	<template>Analyze industry trends, Conduct surveys, Interview customers, Attend conferences Sponsoring focus groups</template>
+</category>
+<category>
+	<pattern>_ SUPPLY CHAIN MANAGEMENT</pattern>
+	<template>To be effective in improving your company's supply chain, you need to have a broader perspective. For example, a project that reduces procurement costs can end up increasing costs for logistics and operations.</template>
+</category>
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
+</aiml>
