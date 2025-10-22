@@ -1,59 +1,379 @@
-<html>
-    <title>
-
-    </title>
-    <head>
-        <title>Upload a Image</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Portal</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- Popper JS -->
-        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script-->
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
         
+        .upload-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .upload-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        }
+        
+        .upload-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .upload-header h1 {
+            color: #333;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .upload-header p {
+            color: #666;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 0.95rem;
+        }
+        
+        .form-control {
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+        
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            background: white;
+            transform: translateY(-2px);
+        }
+        
+        .form-control::placeholder {
+            color: #adb5bd;
+        }
+        
+        .file-upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .file-upload-area:hover {
+            border-color: #764ba2;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            transform: translateY(-2px);
+        }
+        
+        .file-upload-area i {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .file-upload-area p {
+            color: #666;
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        .file-upload-area input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 12px;
+            padding: 14px 40px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+        
+        .floating-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .shape {
+            position: absolute;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .shape:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: -40px;
+            animation-delay: 0s;
+        }
+        
+        .shape:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            top: 60%;
+            right: -30px;
+            animation-delay: 2s;
+        }
+        
+        .shape:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .upload-container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .upload-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
     </head>
 <body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
     
-    <div class="card" style="width: 40%; margin-top: 5%; margin-left: 30%; padding: 2%;  opacity:0.85;">
-        <div class="card-body">
-            <form method="POST" action="">
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="exampleFormControlInput1">E-mail</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-          
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="exampleFormControlSelect1">Type</label>
-                  <select class="form-control form-control-sm" id="exampleFormControlSelect2">
-                      <option selected="">Select Type</option>
-                      <option>Type A</option>
-                    <option>Type B</option>
-                    <option>Type C</option>
-                    <option>Type D</option>
-                    <option>Type E</option>
-                  </select>
-                </div>
-                
-                <div class="form-group mx-sm-3 mb-2">
-                    <label for="exampleFormControlFile1">Image</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success" style="margin: 3%;">Submit</button>
-              </form>
+    <div class="upload-container fade-in">
+        <div class="upload-header">
+            <h1><i class="fas fa-cloud-upload-alt"></i> Image Upload Portal</h1>
+            <p>Share your moments with the world</p>
         </div>
+        
+        <form method="POST" action="" id="uploadForm">
+            <div class="form-group">
+                <label for="email" class="form-label">
+                    <i class="fas fa-envelope"></i> Email Address
+                </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="category" class="form-label">
+                    <i class="fas fa-tags"></i> Category
+                </label>
+                <select class="form-control" id="category" name="category" required>
+                    <option value="" disabled selected>Choose a category</option>
+                    <option value="nature">🌿 Nature</option>
+                    <option value="portrait">👤 Portrait</option>
+                    <option value="architecture">🏢 Architecture</option>
+                    <option value="food">🍕 Food</option>
+                    <option value="travel">✈️ Travel</option>
+                    <option value="art">🎨 Art</option>
+                    <option value="other">🔧 Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">
+                    <i class="fas fa-image"></i> Upload Image
+                </label>
+                <div class="file-upload-area" onclick="document.getElementById('imageFile').click()">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Click to upload or drag and drop</p>
+                    <small>PNG, JPG, GIF up to 10MB</small>
+                    <input type="file" class="form-control-file" id="imageFile" name="image" accept="image/*" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="description" class="form-label">
+                    <i class="fas fa-comment-alt"></i> Description
+                </label>
+                <textarea class="form-control" id="description" name="description" rows="4" placeholder="Tell us about your image..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Upload Image
+            </button>
+        </form>
     </div>
 
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // File upload preview
+        document.getElementById('imageFile').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const uploadArea = document.querySelector('.file-upload-area');
+                uploadArea.innerHTML = `
+                    <i class="fas fa-check-circle" style="color: #28a745;"></i>
+                    <p>File selected: ${file.name}</p>
+                    <small>Size: ${(file.size / 1024 / 1024).toFixed(2)} MB</small>
+                    <input type="file" class="form-control-file" id="imageFile" name="image" accept="image/*" required>
+                `;
+                uploadArea.style.borderColor = '#28a745';
+                uploadArea.style.background = 'linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.05))';
+            }
+        });
+
+        // Form submission with animation
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
+            submitBtn.disabled = true;
+            
+            // Simulate upload process
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Uploaded Successfully!';
+                submitBtn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+                    document.getElementById('uploadForm').reset();
+                    
+                    // Reset file upload area
+                    const uploadArea = document.querySelector('.file-upload-area');
+                    uploadArea.innerHTML = `
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Click to upload or drag and drop</p>
+                        <small>PNG, JPG, GIF up to 10MB</small>
+                        <input type="file" class="form-control-file" id="imageFile" name="image" accept="image/*" required>
+                    `;
+                    uploadArea.style.borderColor = '#667eea';
+                    uploadArea.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05))';
+                }, 2000);
+            }, 3000);
+        });
+
+        // Add floating animation to form elements
+        const formElements = document.querySelectorAll('.form-group');
+        formElements.forEach((element, index) => {
+            element.style.animationDelay = `${index * 0.1}s`;
+            element.classList.add('fade-in');
+        });
+    </script>
 </body>
 </html>
