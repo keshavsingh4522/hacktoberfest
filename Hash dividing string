@@ -1,0 +1,22 @@
+
+char* stringHash(char* s, int k) {
+    int n = strlen(s);
+    int resultSize = n / k;
+    char* result = (char*)malloc((resultSize + 1) * sizeof(char));
+    if (result == NULL) {
+        return NULL;
+    }
+
+    result[resultSize] = '\0';
+
+    for (int i = 0; i < resultSize; i++) {
+        int sum = 0;
+        for (int j = 0; j < k; j++) {
+            sum += s[i * k + j] - 'a';
+        }
+        int hashedChar = sum % 26;
+        result[i] = 'a' + hashedChar;
+    }
+
+    return result;
+}
