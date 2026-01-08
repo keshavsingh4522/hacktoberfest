@@ -1,51 +1,49 @@
+const gmInput = document.getElementById('gramInput');
+const poundInput = document.getElementById('poundInput');
+const ounceInput = document.getElementById('ounceInput');
+const kgInput = document.getElementById('kgInput');
 
+const input = document.getElementById('input');
 
-const gmInput = document.getElementById("gramInput");
-const poundInput = document.getElementById("poundInput");
-const ounceInput = document.getElementById("ounceInput");
-const kgInput = document.getElementById("kgInput");
+const poundSelect = document.getElementById('poundSelect');
+const kgSelect = document.getElementById('kgSelect');
+const gmSelect = document.getElementById('gramSelect');
+const ounceSelect = document.getElementById('ounceSelect');
 
-const input = document.getElementById("input");
-
-const poundSelect = document.getElementById("poundSelect");
-const kgSelect = document.getElementById("kgSelect");
-const gmSelect = document.getElementById("gramSelect");
-const ounceSelect = document.getElementById("ounceSelect");
-
-select = document.getElementById("select");
+select = document.getElementById('select');
 // inputs = document.querySelectorAll(".inputs");
 
 //Events
 
-input.addEventListener("input", myResult);
-select.addEventListener("change", myResult);
+input.addEventListener('input', myResult);
+select.addEventListener('change', myResult);
 
 //For Pound
-card = document.getElementById("card");
-card.style.visibility = "hidden";
+card = document.getElementById('card');
+card.style.visibility = 'hidden';
 
-input.addEventListener("keyup", () => {
-  card.style.visibility = "visible";
+input.addEventListener('keyup', () => {
+  card.style.visibility = 'visible';
 });
 
 function myResult() {
-  if (select.value === "pound") {
-    poundSelect.style.display = "none";
-    kgSelect.style.display = "block";
-    gmSelect.style.display = "block";
-    ounceSelect.style.display = "block";
-    if (input.value === "") {
+  if (select.value === 'pound') {
+    poundSelect.style.display = 'none';
+    kgSelect.style.display = 'block';
+    gmSelect.style.display = 'block';
+    ounceSelect.style.display = 'block';
+    if (input.value === '') {
       inputsFunction();
     } else {
       forPounds();
     }
-  } else if (select.value === "kg") {
-    input.placeholder = "Enter The Number in Kg";
-    kgSelect.style.display = "none";
-    gmSelect.style.display = "block";
-    poundSelect.style.display = "block";
-    ounceSelect.style.display = "block";
-    if (input.value === "") {
+  } else if (select.value === 'kg') {
+    input.placeholder = 'Enter The Number in Kg';
+    kgSelect.style.display = 'none';
+    gmSelect.style.display = 'block';
+    poundSelect.style.display = 'block';
+    ounceSelect.style.display = 'block';
+    if (input.value === '') {
       inputsFunction();
     } else {
       poundInput.textContent = `${input.value}kg is ${input.value * 2}pounds`;
@@ -54,13 +52,13 @@ function myResult() {
       } ounce`;
       gmInput.textContent = `${input.value}kg is ${input.value * 1000}gm`;
     }
-  } else if (select.value === "gram") {
-    input.placeholder = "Enter The Number in gram";
-    gmSelect.style.display = "none";
-    kgSelect.style.display = "block";
-    poundSelect.style.display = "block";
-    ounceSelect.style.display = "block";
-    if (input.value === "") {
+  } else if (select.value === 'gram') {
+    input.placeholder = 'Enter The Number in gram';
+    gmSelect.style.display = 'none';
+    kgSelect.style.display = 'block';
+    poundSelect.style.display = 'block';
+    ounceSelect.style.display = 'block';
+    if (input.value === '') {
       inputsFunction();
     } else {
       poundInput.textContent = `${input.value}gm is ${
@@ -72,12 +70,12 @@ function myResult() {
       kgInput.textContent = `${input.value}gm is ${input.value * 1000}kg`;
     }
   } else {
-    input.placeholder = "Enter The Number in Ounce";
-    ounceSelect.style.display = "none";
-    gmSelect.style.display = "block";
-    poundSelect.style.display = "block";
-    kgSelect.style.display = "block";
-    if (input.value === "") {
+    input.placeholder = 'Enter The Number in Ounce';
+    ounceSelect.style.display = 'none';
+    gmSelect.style.display = 'block';
+    poundSelect.style.display = 'block';
+    kgSelect.style.display = 'block';
+    if (input.value === '') {
       inputsFunction();
     } else {
       poundInput.textContent = `${input.value}ounce is ${
@@ -94,8 +92,8 @@ function myResult() {
 }
 
 function inputsFunction() {
-  inputs.forEach((input) => {
-    input.textContent = "";
+  inputs.forEach(input => {
+    input.textContent = '';
   });
 }
 

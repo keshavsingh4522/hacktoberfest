@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -17,14 +18,42 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #f4f4f4;
   color: white;
 }
 
 .wrapper {
-  padding: 1em 2em 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  color: rgb(43, 226, 217);
 }
-h1 {
+.wrapper .main-wrapper {
+  padding: 20px;
+}
+
+.wrapper .sideinfo {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .sideinfo .img-container {
+  width: 500px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container img {
+  width: 100%;
+}
+.wrapper h1 {
   font-size: 3rem;
   margin-bottom: 0.3em;
   text-align: center;
@@ -35,6 +64,7 @@ form {
   width: 100%;
   background: white;
   justify-content: space-between;
+  align-items: center;
 }
 
 input {
@@ -42,12 +72,18 @@ input {
   border: none;
   width: 80%;
   height: 2em;
+  padding-left: 10px;
+  font-size: 1.3rem;
 }
 
 select {
   height: 2em;
   outline: none;
   border: none;
+  font-size: 1.3rem;
+  background-color: #333;
+  width: 20%;
+  color: white;
 }
 .selects:nth-child(1),
 .selects:nth-child(2) {
@@ -55,10 +91,28 @@ select {
 }
 .selects {
   background: white;
-  color: black;
-  font-weight: 900;
   margin-bottom: 0.5em;
   min-height: 50px;
   font-size: 1.3rem;
   padding-left: 0.3em;
+}
+
+#kgSelect,
+#poundSelect,
+#ounceSelect,
+#gramSelect {
+  padding: 20px 10px;
+  box-shadow: 2px 2px 2px grey;
+}
+#kgSelect h4 {
+  color: rgb(80, 127, 255);
+}
+#poundSelect h4 {
+  color: rgb(0, 255, 149);
+}
+#ounceSelect h4 {
+  color: rgb(255, 68, 43);
+}
+#gramSelect h4 {
+  color: rgb(130, 139, 0);
 }
