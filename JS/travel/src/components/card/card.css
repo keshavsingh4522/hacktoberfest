@@ -1,0 +1,62 @@
+.card{
+    width:470px;
+    height:166px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:20px;
+}
+.card .img-container{
+    max-width:125px;
+    height:100%;
+    
+}
+.card .img-container img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.card .text-container{
+    width:100%;
+    height:80%;
+    padding:20px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.card .text-container .subtitle{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:5px;
+}
+.card .text-container .subtitle .country{
+font-size:10.24px;
+font-weight: 500;
+color:#2B283A;
+letter-spacing: 1.5px;
+margin-right: 6px;
+margin-left:2px;
+}
+.card .text-container .subtitle .view{
+    font-size:10.24px;
+    color:#918E9B;
+    text-decoration: underline;
+}
+.card .text-container h1{
+    font-size:25px;
+    font-weight:bolder;
+    margin:0;
+}
+.card .text-container .date{
+    font-size:10.24px;
+    font-weight: bolder;
+}
+.card .text-container .parag{
+    font-size:10.24px;
+    color:#2B283A;
+    max-width:326px;
+}
