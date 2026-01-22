@@ -1,5 +1,6 @@
 | Name                   | Github                                                        | Starred the repo                                             |
 | ---------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ | --- |
+| Mohd Abbas Haidar      | [@the-hdr](https://github.com/the-hdr).                       | 1                                                            |
 | Spardha                | [@Spardha-hash](https://github.com/Spardha-hash).             | 0                                                            |
 | Maheshwar S            | [@Maheshwar-S](https://github.com/Maheshwar-S)                | 1                                                            |
 | Spacify                | [@fts18](https://github.com/fts18)                            | 0                                                            |
